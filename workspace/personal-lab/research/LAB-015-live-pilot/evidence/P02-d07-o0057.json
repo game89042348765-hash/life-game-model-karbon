@@ -1,0 +1,56 @@
+{
+  "title": "LifeGame Ритм Lab — лаборатория",
+  "url": "http://127.0.0.1:42367/personal-lab/",
+  "virtual_time_observed": "2026-11-22T16:00:26.913Z",
+  "modal": false,
+  "viewport": {
+    "width": 1100,
+    "height": 900
+  },
+  "visible_text": "Мой ритм\n22 ноября, воскресенье\nПолный\nСегодня\nНа сегодня здесь свободно.\nДобавить в ритм\nНастроить\nБлижайшие события\nПодготовить счёт заказчику\n25 ноября, среда\nСохранено",
+  "elements": [
+    {
+      "element": "e1",
+      "label": "Полный",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 743,
+        "y": 26,
+        "width": 73,
+        "height": 28
+      },
+      "value": ""
+    },
+    {
+      "element": "e2",
+      "label": "Добавить в ритм",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 284,
+        "y": 222,
+        "width": 145,
+        "height": 36
+      },
+      "value": ""
+    },
+    {
+      "element": "e3",
+      "label": "Настроить",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 437,
+        "y": 222,
+        "width": 102,
+        "height": 36
+      },
+      "value": ""
+    }
+  ],
+  "observation_id": "P02-d07-o0057",
+  "screenshot": "/workspace/life-game/personal-lab/verification/LAB-015-ai-pilot-20261112T193728Z/P02/day-07/P02-d07-o0057.png",
+  "actions_used": 5,
+  "action_budget": 22
+}

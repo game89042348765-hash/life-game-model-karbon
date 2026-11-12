@@ -1,0 +1,696 @@
+{
+  "inventory_version": 1,
+  "task": "LAB-013",
+  "date": "2026-11-12",
+  "timezone": "Europe/Moscow",
+  "baseline_commit": "50bfec575c6d173be901fd60d38c1fc576668651",
+  "purpose": "Existing lab tools for later APP-MAP; not a restriction on broad Atlas research",
+  "unit": "user-facing tool or supporting capability, not a canonical Atlas mechanism",
+  "verification": "Code-backed inventory; not independent acceptance of every feature",
+  "main_personal_updated": false,
+  "source_sha256": {
+    "personal-lab/app.js": "31d39c49ae44826b78a4fd000a6f9961546d3a5f72361a90b1cb9700135cd627",
+    "personal-lab/experiments/ai-strategy/ai-context.js": "c8cd247cbdb46a5934ba3533ea0a3b3040fb340f9a5a3e25f9d2fdff5f026d22",
+    "personal-lab/experiments/ai-strategy/ai-ui.js": "d8e8bf23fb795bee1ba998ca7e5b14c0d7f04067d821b4e1838421faa54ca0fb",
+    "personal-lab/experiments/flexible-complexity/flex-model.js": "123a473eedb5ca89fe577d97e4afcee9bc6cd22592c13d204d23428a0b55a28e",
+    "personal-lab/experiments/flexible-complexity/flex-ui.js": "1a9585a8728912ce5715e0388823633e595c85e38279e349a0c3231f329e2cb0",
+    "personal-lab/persistence.js": "8c7738ac2c7bf741dd835329104c254948721e2f7a8dec74167a4e937b55fbad",
+    "personal-lab/planning.js": "55a0170e210ddcf8b5d767102254208e9df5cbe7a6fd7dd5c0d45bf3a35f1422",
+    "personal-lab/pwa.js": "c83a520c878580afc998ca82db1a3d737d5e606f312c64471bc4d766a54e91ee",
+    "personal-lab/sw.js": "cb5126b197d47d2512b22e0097da4e86a6e5da81b51b69567b5bcbd1408ac308",
+    "personal-lab/experiments/ai-strategy/app.js": "fbf8742a7a6c8e4708dc0685f75463a242f83c2b50d7a54001393f8514841bf8",
+    "personal-lab/experiments/ai-strategy/sw.js": "b75497ececd1da507926475cce620e7d6b79884a523186a1a0c261ad96f39fff",
+    "personal-lab/experiments/flexible-complexity/app.js": "0b9c0230ca3f2e2a7ac433fd6cbc8f886a40e9601b52cf4dc5e6c0d029ad117b",
+    "personal-lab/experiments/flexible-complexity/sw.js": "b0689b97a9e878a8e34530112c710a3cd7eb9924d43f83b10a10ad42b5877b6f"
+  },
+  "tools": [
+    {
+      "id": "LG-001",
+      "group": "Ввод и повседневные действия",
+      "name": "Быстрое добавление",
+      "description": "Записывает мысль или создаёт действие с минимального ввода.",
+      "status": "implemented_in_lab",
+      "entry": "Плавающий +",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function quickAdd",
+        "line": 2021
+      }
+    },
+    {
+      "id": "LG-002",
+      "group": "Ввод и повседневные действия",
+      "name": "Быстрое выполнение",
+      "description": "Находит существующее дело для отметки; объясняет ранее завершённые разовые записи.",
+      "status": "implemented_in_lab",
+      "entry": "Молния в заголовке",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function quickDoneBody",
+        "line": 2065
+      }
+    },
+    {
+      "id": "LG-003",
+      "group": "Ввод и повседневные действия",
+      "name": "Поиск",
+      "description": "Находит записи разных типов и открывает их карточки.",
+      "status": "implemented_in_lab",
+      "entry": "Лупа в заголовке",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function searchBody",
+        "line": 2088
+      }
+    },
+    {
+      "id": "LG-004",
+      "group": "Ввод и повседневные действия",
+      "name": "Входящие",
+      "description": "Собирает мысли и новые записи для дальнейшего разбора.",
+      "status": "implemented_in_lab",
+      "entry": "Входящие",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.inbox=",
+        "line": 1995
+      }
+    },
+    {
+      "id": "LG-005",
+      "group": "Ввод и повседневные действия",
+      "name": "Конструктор дня",
+      "description": "Собирает видимые сегодня действия, позволяет добавлять и убирать их на день.",
+      "status": "implemented_in_lab",
+      "entry": "День",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.day=",
+        "line": 1053
+      }
+    },
+    {
+      "id": "LG-006",
+      "group": "Ввод и повседневные действия",
+      "name": "Ключевое действие",
+      "description": "Выделяет важное задание звёздочкой и включает его в дневной план.",
+      "status": "implemented_in_lab",
+      "entry": "Звезда у задания",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "ACT[\"key\"]",
+        "line": 1112
+      }
+    },
+    {
+      "id": "LG-007",
+      "group": "Ввод и повседневные действия",
+      "name": "Ручной учёт времени",
+      "description": "Записывает уже потраченные минуты; позволяет исправить их отдельно от выполнения и награды.",
+      "status": "implemented_in_lab",
+      "entry": "Карточка / меню дела → Записать время",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function manualTimeSheet",
+        "line": 2622
+      }
+    },
+    {
+      "id": "LG-008",
+      "group": "Ввод и повседневные действия",
+      "name": "Таймер",
+      "description": "Ведёт рабочий подход; его минуты подтверждаются отдельно от отметки дела.",
+      "status": "implemented_in_lab",
+      "entry": "Виджеты → Время для важного",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function timerBody",
+        "line": 2656
+      }
+    },
+    {
+      "id": "LG-009",
+      "group": "Режим дня и контекст",
+      "name": "Темп дня",
+      "description": "Подбирает видимые действия под выбранный темп сегодняшнего дня.",
+      "status": "implemented_in_lab",
+      "entry": "День → Темп сегодняшнего дня",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "ACT[\"tempo\"]",
+        "line": 1088
+      }
+    },
+    {
+      "id": "LG-010",
+      "group": "Режим дня и контекст",
+      "name": "Фокус",
+      "description": "Ограничивает рабочие направления с отдельными правилами календаря.",
+      "status": "implemented_in_lab",
+      "entry": "Режим фокуса",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "ACT[\"focus-open\"]",
+        "line": 1543
+      }
+    },
+    {
+      "id": "LG-011",
+      "group": "Режим дня и контекст",
+      "name": "Творческая пауза",
+      "description": "Снимает обычные ожидания по делам на период паузы; календарь имеет свои правила.",
+      "status": "implemented_in_lab",
+      "entry": "Творческий режим",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "ACT[\"creative-open\"]",
+        "line": 1561
+      }
+    },
+    {
+      "id": "LG-012",
+      "group": "Режим дня и контекст",
+      "name": "Локации",
+      "description": "Применяет профили места вручную или по расписанию, меняет видимость и оформление.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Локации",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.locations=",
+        "line": 868
+      }
+    },
+    {
+      "id": "LG-013",
+      "group": "Стратегия",
+      "name": "Карта и блоки жизни",
+      "description": "Организует направления жизни и их текущие состояния.",
+      "status": "implemented_in_lab",
+      "entry": "Карта",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.map=",
+        "line": 1213
+      }
+    },
+    {
+      "id": "LG-014",
+      "group": "Стратегия",
+      "name": "Конструктор этапов",
+      "description": "Создаёт и упорядочивает этапы внутри блока, связывает их с целями и действиями.",
+      "status": "implemented_in_lab",
+      "entry": "Карта → блок → этап",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function stageEditor",
+        "line": 1352
+      }
+    },
+    {
+      "id": "LG-015",
+      "group": "Стратегия",
+      "name": "Цели",
+      "description": "Формулирует результат и связывает с ним конкретные действия этапа.",
+      "status": "implemented_in_lab",
+      "entry": "Этап → цель; быстрое добавление",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function goalEditor",
+        "line": 1433
+      }
+    },
+    {
+      "id": "LG-016",
+      "group": "Стратегия",
+      "name": "Разделы блока",
+      "description": "Настраивает состав разделов полной или упрощённой структуры блока.",
+      "status": "implemented_in_lab",
+      "entry": "Настройки блока",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "const PRESETS=",
+        "line": 91
+      }
+    },
+    {
+      "id": "LG-017",
+      "group": "Действия и календарь",
+      "name": "Задания",
+      "description": "Хранит разовые и повторяющиеся дела, связи и правила показа.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Задания",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.tasks=",
+        "line": 1628
+      }
+    },
+    {
+      "id": "LG-018",
+      "group": "Действия и календарь",
+      "name": "Привычки",
+      "description": "Учитывает подходы, дневную норму и достижение цели привычки.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Привычки",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.habits=",
+        "line": 1628
+      }
+    },
+    {
+      "id": "LG-019",
+      "group": "Действия и календарь",
+      "name": "Квесты",
+      "description": "Ведёт конечный результат как счётчик или список шагов.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Квесты",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.quests=",
+        "line": 1628
+      }
+    },
+    {
+      "id": "LG-020",
+      "group": "Действия и календарь",
+      "name": "Календарь",
+      "description": "Показывает дела на даты и время.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Календарь",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.calendar=",
+        "line": 1628
+      }
+    },
+    {
+      "id": "LG-021",
+      "group": "Действия и календарь",
+      "name": "Повторение событий",
+      "description": "Строит дневные, недельные, месячные и годовые появления календарных дел.",
+      "status": "implemented_in_lab",
+      "entry": "Редактор календарного дела → Повторение",
+      "evidence": {
+        "file": "personal-lab/planning.js",
+        "anchor": "function base(",
+        "line": 8
+      }
+    },
+    {
+      "id": "LG-022",
+      "group": "Действия и календарь",
+      "name": "Перенос событий",
+      "description": "Переносит одно появление или дальнейшую часть серии.",
+      "status": "implemented_in_lab",
+      "entry": "Карточка события → Перенести",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "ACT['cal-move']",
+        "line": 1913
+      }
+    },
+    {
+      "id": "LG-023",
+      "group": "Действия и календарь",
+      "name": "Напоминания",
+      "description": "Показывает напоминания открытого приложения по настройкам события и контекста.",
+      "status": "implemented_in_lab",
+      "entry": "Календарное дело / настройки",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function reminderCandidates",
+        "line": 2955
+      }
+    },
+    {
+      "id": "LG-024",
+      "group": "Действия и календарь",
+      "name": "Невыполненные",
+      "description": "Показывает сохранённые пропуски и действия по их разбору.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Невыполненные",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.missed=",
+        "line": 2197
+      }
+    },
+    {
+      "id": "LG-025",
+      "group": "Действия и календарь",
+      "name": "Решения и цена слова",
+      "description": "Хранит решения и сроки; заданная цена применяется по явному признанию невыполнения.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Принятые решения",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.decisions=",
+        "line": 2118
+      }
+    },
+    {
+      "id": "LG-026",
+      "group": "Геймификация и поддержка",
+      "name": "Монеты, XP и уровень",
+      "description": "Показывает награды, расходы и игровой прогресс.",
+      "status": "implemented_in_lab",
+      "entry": "Баланс в заголовке / Монеты и опыт",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.economy=",
+        "line": 1202
+      }
+    },
+    {
+      "id": "LG-027",
+      "group": "Геймификация и поддержка",
+      "name": "Магазин бонусов",
+      "description": "Создаёт личные бонусы и позволяет покупать их за игровые монеты.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Магазин бонусов",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.shop=",
+        "line": 2257
+      }
+    },
+    {
+      "id": "LG-028",
+      "group": "Геймификация и поддержка",
+      "name": "Мои бонусы",
+      "description": "Показывает полученные, обещанные и использованные экземпляры бонусов.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Мои бонусы",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.mybonuses=",
+        "line": 2308
+      }
+    },
+    {
+      "id": "LG-029",
+      "group": "Геймификация и поддержка",
+      "name": "Ништяки",
+      "description": "Сохраняет личный список приятных занятий и небольших радостей.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Ништяки",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.treats=",
+        "line": 2328
+      }
+    },
+    {
+      "id": "LG-030",
+      "group": "Геймификация и поддержка",
+      "name": "Моя награда",
+      "description": "Выбирает бонус-ориентир и показывает накопление монет на него.",
+      "status": "implemented_in_lab",
+      "entry": "Виджеты → Моя награда",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function myRewardSheet",
+        "line": 2735
+      }
+    },
+    {
+      "id": "LG-031",
+      "group": "Геймификация и поддержка",
+      "name": "Счастливые моменты",
+      "description": "Собирает личную коллекцию приятных моментов.",
+      "status": "implemented_in_lab",
+      "entry": "Виджеты → Счастливые моменты",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function happySheet",
+        "line": 2715
+      }
+    },
+    {
+      "id": "LG-032",
+      "group": "Обзор и организация",
+      "name": "Итоги дня и вечер",
+      "description": "Показывает результаты дня и предлагает необязательное завершение дня.",
+      "status": "implemented_in_lab",
+      "entry": "День → Итоги / Завершить день",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.summary=",
+        "line": 1173
+      }
+    },
+    {
+      "id": "LG-033",
+      "group": "Обзор и организация",
+      "name": "История",
+      "description": "Показывает сохранённые выполнения и события с фильтрами.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → История",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.history=",
+        "line": 2481
+      }
+    },
+    {
+      "id": "LG-034",
+      "group": "Обзор и организация",
+      "name": "Стратегические сессии",
+      "description": "Даёт вопросы для ежедневного, недельного и месячного обзора.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Стратегические сессии",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.sessions=",
+        "line": 2546
+      }
+    },
+    {
+      "id": "LG-035",
+      "group": "Обзор и организация",
+      "name": "Первый шаг",
+      "description": "Помогает начать дело коротким рабочим подходом.",
+      "status": "implemented_in_lab",
+      "entry": "Виджеты → Первый шаг",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function firstStepSheet",
+        "line": 2691
+      }
+    },
+    {
+      "id": "LG-036",
+      "group": "Обзор и организация",
+      "name": "График дня",
+      "description": "Размечает суточный план по блокам для обычных и выходных дней.",
+      "status": "implemented_in_lab",
+      "entry": "Виджеты → График дня",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function graphSheet",
+        "line": 2705
+      }
+    },
+    {
+      "id": "LG-037",
+      "group": "Обзор и организация",
+      "name": "Ритм недели",
+      "description": "Показывает активные дни недели относительно выбранного ориентира.",
+      "status": "implemented_in_lab",
+      "entry": "Виджеты → Ритм недели",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function rhythmSheet",
+        "line": 2726
+      }
+    },
+    {
+      "id": "LG-038",
+      "group": "Обзор и организация",
+      "name": "Каталог виджетов",
+      "description": "Собирает персональный набор доступных инструментов дня.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Виджеты",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.widgets=",
+        "line": 2592
+      }
+    },
+    {
+      "id": "LG-039",
+      "group": "Интерфейс и данные",
+      "name": "LifeGame Lite",
+      "description": "Сокращает набор разделов интерфейса, сохраняя данные.",
+      "status": "implemented_in_lab",
+      "entry": "Настройки → LifeGame Lite",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "S.settings.lite",
+        "line": 983
+      }
+    },
+    {
+      "id": "LG-040",
+      "group": "Интерфейс и данные",
+      "name": "Пошаговые подсказки",
+      "description": "Объясняет основные шаги и показывает расположение нужной функции.",
+      "status": "implemented_in_lab",
+      "entry": "Помощник интерфейса",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function renderHelper",
+        "line": 2820
+      }
+    },
+    {
+      "id": "LG-041",
+      "group": "Интерфейс и данные",
+      "name": "Вымышленный пример",
+      "description": "Позволяет пробовать приложение на отдельных данных и тестовых датах.",
+      "status": "implemented_in_lab",
+      "entry": "Первый вход → Посмотреть пример",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function makeDemo",
+        "line": 2352
+      }
+    },
+    {
+      "id": "LG-042",
+      "group": "Интерфейс и данные",
+      "name": "Оформление",
+      "description": "Переключает существующие стили Quest, Dawn и Pop.",
+      "status": "implemented_in_lab",
+      "entry": "Настройки → Оформление",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "ACT[\"style\"]",
+        "line": 2770
+      }
+    },
+    {
+      "id": "LG-043",
+      "group": "Интерфейс и данные",
+      "name": "Архив",
+      "description": "Позволяет архивировать и восстанавливать предусмотренные типы записей.",
+      "status": "implemented_in_lab",
+      "entry": "Разделы → Архив",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "SCR.archive=",
+        "line": 2500
+      }
+    },
+    {
+      "id": "LG-044",
+      "group": "Интерфейс и данные",
+      "name": "Экспорт и импорт JSON",
+      "description": "Сохраняет внешнюю копию данных и восстанавливает выбранное пространство из файла.",
+      "status": "implemented_in_lab",
+      "entry": "Настройки и сохранение",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function exportFile",
+        "line": 76
+      }
+    },
+    {
+      "id": "LG-045",
+      "group": "Интерфейс и данные",
+      "name": "Локальные резервные копии",
+      "description": "Хранит предыдущую исправную и дневную копии с возможностью восстановления.",
+      "status": "implemented_in_lab",
+      "entry": "Настройки / панель восстановления",
+      "evidence": {
+        "file": "personal-lab/persistence.js",
+        "anchor": "class Repository",
+        "line": 121
+      }
+    },
+    {
+      "id": "LG-046",
+      "group": "Интерфейс и данные",
+      "name": "Контроль сохранения",
+      "description": "Сообщает об ошибках записи и конфликтах вкладок, предлагает восстановление.",
+      "status": "implemented_in_lab",
+      "entry": "Панель проверки сохранения",
+      "evidence": {
+        "file": "personal-lab/app.js",
+        "anchor": "function storagePanel",
+        "line": 51
+      }
+    },
+    {
+      "id": "LG-047",
+      "group": "Интерфейс и данные",
+      "name": "Офлайн и обновление PWA",
+      "description": "Открывает сохранённую оболочку без сети и предлагает обновление приложения.",
+      "status": "implemented_in_lab",
+      "entry": "Установка / уведомление об обновлении",
+      "evidence": {
+        "file": "personal-lab/pwa.js",
+        "anchor": "serviceWorker",
+        "line": 3
+      }
+    },
+    {
+      "id": "LG-048",
+      "group": "Отдельные эксперименты",
+      "name": "Запросы LifeGame AI",
+      "description": "Формирует запрос для ежедневного совета, анализа прогресса или стратегического обзора.",
+      "status": "implemented_experiment",
+      "entry": "AI-копия → Разделы → ИИ-партнёр",
+      "evidence": {
+        "file": "personal-lab/experiments/ai-strategy/ai-ui.js",
+        "anchor": "function render",
+        "line": 11
+      }
+    },
+    {
+      "id": "LG-049",
+      "group": "Отдельные эксперименты",
+      "name": "Выбор и предпросмотр AI-контекста",
+      "description": "Ограничивает передаваемые данные и готовит ручное копирование/скачивание запроса.",
+      "status": "implemented_experiment",
+      "entry": "AI-копия → параметры → предпросмотр",
+      "evidence": {
+        "file": "personal-lab/experiments/ai-strategy/ai-context.js",
+        "anchor": "function build",
+        "line": 19
+      }
+    },
+    {
+      "id": "LG-050",
+      "group": "Отдельные эксперименты",
+      "name": "Базовый ритм",
+      "description": "Показывает выбранные действия и замораживает остальные ожидания с историей по датам.",
+      "status": "implemented_experiment",
+      "entry": "Копия гибкой сложности → Базовый",
+      "evidence": {
+        "file": "personal-lab/experiments/flexible-complexity/flex-ui.js",
+        "anchor": "function basic",
+        "line": 45
+      }
+    },
+    {
+      "id": "LG-051",
+      "group": "Отдельные эксперименты",
+      "name": "Полный редактор при паузе",
+      "description": "Открывает стратегию для редактирования; возобновление всех ожиданий выбирается отдельно.",
+      "status": "implemented_experiment",
+      "entry": "Копия гибкой сложности → Полный",
+      "evidence": {
+        "file": "personal-lab/experiments/flexible-complexity/flex-ui.js",
+        "anchor": "function fullBanner",
+        "line": 61
+      }
+    }
+  ],
+  "not_implemented_here": [
+    "Built-in AI provider calls, voice, automatic application of AI advice",
+    "Strategy version comparison and duplicate merging",
+    "Red Mode: idea reserve"
+  ]
+}

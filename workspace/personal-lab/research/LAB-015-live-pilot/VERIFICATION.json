@@ -1,0 +1,51 @@
+{
+  "task": "LAB-015",
+  "status": "completed_fictional_ai_pilot_human_acceptance_pending",
+  "repository_base": "7deadf11bed026db1cf9cc2d3ff6f948f7133d6f",
+  "runtime_source_commit": "27919b94a7e7bb5f038dbb5235b79ea89b29c916",
+  "counts": {
+    "completed": 16,
+    "no_use": 5
+  },
+  "planned_persona_days": 21,
+  "all_planned_days_closed": true,
+  "actions": 114,
+  "png_observations": 130,
+  "browser_traces": 16,
+  "state_snapshots": 16,
+  "all_captured_states_valid": true,
+  "missing_session_evidence": [],
+  "primary_journal_errors": [],
+  "sealed_primary_files": 301,
+  "sealed_primary_files_unchanged": true,
+  "frozen_kit_manifest_entries_unchanged": 45,
+  "findings": {
+    "total": 5,
+    "observed_ux_friction": 4,
+    "product_limit": 1,
+    "technical_bugs_confirmed": 0
+  },
+  "fresh_ui_reproductions": {
+    "scenarios": 3,
+    "reproduced": 3,
+    "recorded_attempts": 7,
+    "ui_operations_in_all_recorded_attempts": 103,
+    "automation_errors": "retained separately in REPRODUCTION-RESULTS; not product defects",
+    "portable_script_after_recorded_runs": "Only endpoint/output argument handling, overwrite guard and explicit settling of form/clock transitions were improved. R1 was rerun with settled captures; final R2/R3 traces retained without repeating their successful UI scenarios."
+  },
+  "selected_evidence_files": 72,
+  "human_acceptance": "pending",
+  "paid_api_calls": 0,
+  "model_token_usage": null,
+  "model_price": null,
+  "notes": [
+    "All participants selected Basic; broad Full-strategy coverage is limited.",
+    "Same inherited model defaults, exact runtime model identifiers/families unknown.",
+    "Cached offline visit worked; traces contain expected disconnected network requests, not proof of cold offline install.",
+    "Environment starting/ready signal occurred after participant phase; original evidence remained intact.",
+    "Primary world remains predeclared planned_not_executed; actual completion is in run/events/summary."
+  ],
+  "app_or_original_transport_changed": false,
+  "main_or_pages_updated": false,
+  "local_run": "/workspace/life-game/personal-lab/verification/LAB-015-ai-pilot-20261112T193728Z"
+}

@@ -1,0 +1,134 @@
+{
+  "title": "LifeGame Ритм Lab — лаборатория",
+  "url": "http://127.0.0.1:42367/personal-lab/",
+  "virtual_time_observed": "2026-11-16T07:01:37.919Z",
+  "modal": false,
+  "viewport": {
+    "width": 1100,
+    "height": 900
+  },
+  "visible_text": "Мой ритм\n16 ноября, понедельник\nПолный\nСегодня\n+\nПроект: собрать материалы\nразово\nЗаписать время\n+\nПроект: сделать черновик\nразово\nЗаписать время\n+\nОтправить проект — 20 ноября до 20:00\nразово\nЗаписать время\nДобавить в ритм\nНастроить\nБлижайшие события\nВстреча с заказчиком\n19 ноября, четверг 14:00\nСохранено",
+  "elements": [
+    {
+      "element": "e1",
+      "label": "Полный",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 743,
+        "y": 26,
+        "width": 73,
+        "height": 28
+      },
+      "value": ""
+    },
+    {
+      "element": "e2",
+      "label": "Отметить: Проект: собрать материалы",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 284,
+        "y": 174,
+        "width": 38,
+        "height": 38
+      },
+      "value": ""
+    },
+    {
+      "element": "e3",
+      "label": "Записать время",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 336,
+        "y": 205,
+        "width": 125,
+        "height": 28
+      },
+      "value": ""
+    },
+    {
+      "element": "e4",
+      "label": "Отметить: Проект: сделать черновик",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 284,
+        "y": 288,
+        "width": 38,
+        "height": 38
+      },
+      "value": ""
+    },
+    {
+      "element": "e5",
+      "label": "Записать время",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 336,
+        "y": 319,
+        "width": 125,
+        "height": 28
+      },
+      "value": ""
+    },
+    {
+      "element": "e6",
+      "label": "Отметить: Отправить проект — 20 ноября до 20:00",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 284,
+        "y": 402,
+        "width": 38,
+        "height": 38
+      },
+      "value": ""
+    },
+    {
+      "element": "e7",
+      "label": "Записать время",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 336,
+        "y": 434,
+        "width": 125,
+        "height": 28
+      },
+      "value": ""
+    },
+    {
+      "element": "e8",
+      "label": "Добавить в ритм",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 284,
+        "y": 503,
+        "width": 145,
+        "height": 36
+      },
+      "value": ""
+    },
+    {
+      "element": "e9",
+      "label": "Настроить",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 437,
+        "y": 503,
+        "width": 102,
+        "height": 36
+      },
+      "value": ""
+    }
+  ],
+  "observation_id": "P02-d01-o0020",
+  "screenshot": "/workspace/life-game/personal-lab/verification/LAB-015-ai-pilot-20261112T193728Z/P02/day-01/P02-d01-o0020.png",
+  "actions_used": 19,
+  "action_budget": 36
+}

@@ -1,0 +1,14 @@
+{
+  "verified_at_moscow": "2026-11-12T06:31:37+03:00",
+  "branch": "lab/synthetic-users",
+  "verified_implementation_commit": "f2facf0659126806c2894a8bb681d3a794f01acd",
+  "remote_matches": true,
+  "main_unchanged": true,
+  "controller_schema": 2,
+  "native_acceptance_groups_passed": 9,
+  "application_states_valid": 6,
+  "snapshot_checks_passed": 6,
+  "historical_evidence_files_unchanged": 218,
+  "ai_pilot_run": false,
+  "month_run": false
+}

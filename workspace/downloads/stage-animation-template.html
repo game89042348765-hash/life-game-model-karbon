@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LifeGame — шаблон анимаций этапов</title>
+<style>
+/* Самостоятельная схема. Меняйте оформление и анимации здесь, без зависимостей. */
+:root{color-scheme:dark;--bg:#0c0c0c;--surface:#191919;--text:#eee;--muted:#92928a;--accent:#ffd54a;--accent-rgb:255,213,74;
+ /* Формула веерных лучей из текущего оформления LifeGame. */
+ --lg-dawn-rays:repeating-conic-gradient(from 180deg at 50% 112%,rgba(var(--accent-rgb),.20) 0deg 3deg,transparent 6deg 11deg,rgba(var(--accent-rgb),.20) 14deg)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,-apple-system,sans-serif;overflow-x:hidden}button,a,input{font:inherit}button,a{touch-action:manipulation}button{cursor:pointer;color:inherit}button:disabled{cursor:default;opacity:.55}button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}[hidden]{display:none!important}
+.shell{max-width:560px;margin:0 auto;padding:16px 18px 100px}.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:14px;background:#0c0c0cf5;padding:12px 0;border-bottom:1px solid #333}.topbar strong{font-size:13px;letter-spacing:1px}.wallet{border:1px solid #77652b;border-radius:9px;padding:7px 11px;color:var(--accent);font-variant-numeric:tabular-nums}.intro{color:var(--muted);font-size:12px;margin:18px 0}.tabs,.tools{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.tabs button{flex:1;min-width:110px}.tabs button,.tools button,.download{padding:10px 12px;border-radius:8px;border:1px solid #414141;background:#191919;color:var(--text);font-size:12px;text-align:center}.tabs button[aria-selected=true]{border-color:var(--accent);color:var(--accent);background:#ffd54a09}.tools button{flex:1;min-width:90px}.download{display:block;text-decoration:none}.panel-title{font-size:21px;margin:25px 0 5px}.caption{font-size:12px;color:var(--muted)}
+/* Схема линии: опора → текущий → ориентир → свет. Геометрия доступна для частиц. */
+.path{--now-y:300px;--optimal-y:850px;--sun:0;position:relative;isolation:isolate;padding:10px 0 34px 28px;margin-top:20px}
+.path:before{content:'';position:absolute;left:7px;top:28px;bottom:-20px;width:1.5px;background:linear-gradient(#545454 0px,rgba(var(--accent-rgb),.6) var(--now-y),var(--accent) var(--optimal-y),#fff5d7 100%);z-index:-1}
+.path:after{content:'';position:absolute;left:3px;top:var(--optimal-y);bottom:-20px;width:10px;filter:blur(6px);background:linear-gradient(transparent,rgba(var(--accent-rgb),.28) 50%,rgba(var(--accent-rgb),.7));pointer-events:none;z-index:-1}
+/* Общий рассвет — под карточками, начало выше ориентира, усиление при прокрутке. */
+.dawn{position:absolute;left:50%;width:100vw;transform:translateX(-50%);top:calc(var(--optimal-y) - 160px);bottom:-105px;z-index:-1;pointer-events:none;opacity:calc(.2 + var(--sun)*.8);background:var(--lg-dawn-rays),radial-gradient(ellipse 100% 85% at 50% 100%,rgba(255,190,80,.50),rgba(var(--accent-rgb),.23) 52%,transparent 88%);mask-image:linear-gradient(transparent,#000 40%);-webkit-mask-image:linear-gradient(transparent,#000 40%);filter:blur(5px)}
+.node{position:relative;margin:0 0 18px;min-width:0}.marker{position:absolute;left:-21px;top:18px;transform:translate(-50%,-50%);width:18px;height:18px;display:grid;place-items:center;background:var(--bg);border:1px solid #7a7a70;border-radius:50%;font-size:12px;line-height:1;z-index:2;color:#b7b7a8}.is-current>.marker{color:#fff2b0;border-color:var(--accent);background:#6b5b25;box-shadow:0 0 14px #ffd54a50}.is-missed>.marker{color:#ed9090;border-color:#b56d6d}.is-optimal>.marker{border:0;color:var(--accent);font-size:22px}.is-maximum>.marker{border:0;color:#fff3be;font-size:27px;text-shadow:0 0 15px #ffe18e}
+.card{border:1px solid #40403a;border-radius:10px;background:var(--surface);padding:15px}.card h2,.card h3{font-size:16px;line-height:1.4;margin:3px 0 10px}.card p{margin:8px 0}.card small,.label{display:block;color:var(--muted);font-size:10px;letter-spacing:1px}.card.is-active-card{border-color:#93803e}.section{margin:14px 0 0;padding-top:12px;border-top:1px solid #333}.section strong{font-size:12px}.meaning{background:#241c20;border:1px solid #65444b;border-radius:7px;padding:11px;margin-top:10px}.goal{background:#1b2922;border:1px solid #42634f;border-radius:7px;padding:11px;margin-top:8px}.task{padding:11px 0;border-bottom:1px solid #333}.task:last-child{border-bottom:0}.task-name{display:block;margin-bottom:8px;font-size:13px}.task.is-done .task-name{text-decoration:line-through;color:var(--muted)}.task-actions{display:flex;align-items:center;justify-content:space-between;gap:10px}.reward{font-size:11px;color:var(--accent)}.action{border:1px solid #75662f;background:#ffd54a10;color:var(--accent);border-radius:7px;padding:8px 11px;font-size:12px}.stage-complete{display:block;width:100%;margin-top:15px}.empty{font-size:12px;color:var(--muted);padding:8px 0}.section-label{font-size:10px;letter-spacing:1.4px;color:var(--muted);margin:25px 0 15px}.is-horizon .card{border-style:dashed}.inside-heading{margin:10px 0 24px}.inside-heading h2{font-size:24px;margin:5px 0}.footer-glow{position:fixed;bottom:0;left:0;right:0;z-index:8;background:#101010ed;border-top:1px solid #4c4326;padding:12px;text-align:center;font-size:11px;color:var(--muted);box-shadow:0 -12px 35px rgba(var(--accent-rgb),calc(var(--footer-sun,0)*.18))}
+/* Свободный слой для других моделей: частицы, полёты, вспышки можно рисовать здесь. */
+#animation-layer{position:fixed;inset:0;pointer-events:none;z-index:30;overflow:hidden}.status{min-height:36px;font-size:12px;color:var(--muted);margin:14px 0}.notes{font-size:12px;color:var(--muted);margin-top:20px}.notes code{color:#ddd}.notes li{margin:8px 0}
+@media(max-width:350px){.shell{padding-inline:12px}.card{padding:12px}.tabs button{font-size:11px}}
+</style>
+</head>
+<body>
+<main class="shell">
+ <header class="topbar"><strong>СХЕМА · LIFE / GAME</strong><div class="wallet" id="reward-target" aria-label="Тестовая награда"><span id="reward-count">0</span> ●</div></header>
+ <p class="intro">Шаблон для экспериментов с анимациями. Две страницы в одном файле; данные только в памяти, без сохранения.</p>
+ <nav class="tabs" role="tablist" aria-label="Страница шаблона">
+  <button id="tab-levels" role="tab" aria-selected="true" aria-controls="levels" tabindex="0">Этапы</button>
+  <button id="tab-inside" role="tab" aria-selected="false" aria-controls="inside" tabindex="-1">Внутри текущего</button>
+ </nav>
+ <div class="tools"><button id="test-task">Выполнить шаг</button><button id="test-missed">Закрыть невыполненное</button><button id="test-stage">Завершить этап</button><button id="reset">Сброс</button></div>
+ <a class="download" href="stage-animation-template.html" download="stage-animation-template.html">Скачать этот HTML-файл</a>
+ <p id="status" class="status" role="status" aria-live="polite">Выбери событие для проверки анимации.</p>
+
+ <!-- Вкладка 1: общая страница этапов. -->
+ <section id="levels" role="tabpanel" aria-labelledby="tab-levels">
+  <h1 class="panel-title">Этапы блока</h1><p class="caption">Условный блок: физическое состояние</p>
+  <div class="path" id="levels-path"><div class="dawn" aria-hidden="true"></div>
+   <article class="node" data-kind="history"><span class="marker" data-anchor="history">✓</span><div class="card"><small>ИСТОРИЯ</small><h2>Мои достижения</h2><p class="caption">Пройдено этапов: <span data-passed>0</span></p></div></article>
+   <article class="node"><span class="marker">○</span><div class="card"><h2>Фактический</h2><p class="caption">Как у меня сейчас: мало движения в течение дня.</p></div></article>
+   <article class="node is-missed"><span class="marker" data-anchor="missed">!</span><div class="card"><h2>Невыполненное</h2><div data-task-slot="missed"></div></div></article>
+   <article class="node is-current" data-kind="current"><span class="marker" data-anchor="current">●</span><div class="card is-active-card"><small>ЭТАП 01</small><h2>Сейчас</h2><div class="meaning"><small>СМЫСЛ</small>Хочу больше сил в обычной жизни.</div><div class="goal"><small>ЦЕЛЬ</small>Вернуть удобный ритм движения.</div><div class="section"><strong>Задания текущего этапа</strong><div data-task-slot="now"></div></div><button class="action stage-complete" data-complete-stage>Этап выполнен → дальше</button></div></article>
+   <article class="node"><span class="marker">▦</span><div class="card"><h2>Запланированное</h2><p class="empty">Здесь — дела с выбранной датой.</p></div></article>
+   <div class="section-label">ВПЕРЕДИ — ВОЗМОЖНОСТИ</div>
+   <article class="node" data-kind="next"><span class="marker" data-anchor="next">▷</span><div class="card"><small>СЛЕДУЮЩИЙ ЭТАП</small><h2>Планируемый</h2><p class="caption">Привычный недельный ритм.</p></div></article>
+   <article class="node is-optimal" data-kind="optimal"><span class="marker" data-anchor="optimal">☆</span><div class="card"><small>МОЙ ОРИЕНТИР</small><h2>Оптимальный</h2><p class="caption">Движение в удовольствие.</p></div></article>
+   <article class="node is-horizon"><span class="marker">◇</span><div class="card"><small>ЗА ГОРИЗОНТОМ</small><h2>Неизвестный</h2><p class="caption">Здесь откроются новые возможности.</p></div></article>
+   <article class="node is-horizon is-maximum"><span class="marker" data-anchor="maximum">✦</span><div class="card"><small>ЗА ГОРИЗОНТОМ</small><h2>Всегда возможно лучшее</h2><p class="caption">Впереди есть место для большего.</p></div></article>
+  </div>
+ </section>
+
+ <!-- Вкладка 2: внутреннее содержимое текущего этапа, без копии приложения. -->
+ <section id="inside" role="tabpanel" aria-labelledby="tab-inside" hidden>
+  <header class="inside-heading"><span class="label">ТЕКУЩИЙ ЭТАП</span><h2 data-inside-title>Сейчас</h2><p class="caption">Внутренняя страница этапа — схема для другой анимации того же события.</p></header>
+  <div class="path" id="inside-path"><div class="dawn" aria-hidden="true"></div>
+   <section class="node is-current" data-kind="current"><span class="marker" data-anchor="current">●</span><div class="card"><h3>Смысл</h3><div class="meaning">Хочу больше сил в обычной жизни.</div></div></section>
+   <section class="node"><span class="marker">⚑</span><div class="card"><h3>Цели</h3><div class="goal">Вернуть удобный ритм движения.</div></div></section>
+   <section class="node is-missed"><span class="marker" data-anchor="missed">!</span><div class="card"><h3>Невыполненное</h3><div data-task-slot="missed"></div></div></section>
+   <section class="node"><span class="marker">○</span><div class="card"><h3>Задания</h3><div data-task-slot="now"></div></div></section>
+   <section class="node" data-kind="light-start"><span class="marker">▦</span><div class="card"><h3>Запланированное</h3><p class="empty">Здесь — дела с выбранной датой.</p></div></section>
+   <section class="node"><span class="marker" data-anchor="next">↓</span><div class="card"><h3>Завершение этапа</h3><button class="action stage-complete" data-complete-stage>Этап выполнен → дальше</button><p class="caption">Пройдено этапов: <span data-passed>0</span></p></div></section>
+   <section class="node is-maximum"><span class="marker" data-anchor="maximum">✦</span><div class="card"><small>ПРОДОЛЖЕНИЕ ПУТИ</small><p class="caption">Свет обозначает возможности впереди.</p></div></section>
+  </div>
+ </section>
+ <details class="notes"><summary>Для другой модели: точки подключения анимаций</summary>
+  <p>Это схема, не копия настоящего приложения. Линия, веерные лучи и постепенное усиление света перенесены из его визуальной концепции; новая анимация выполнения намеренно не выбрана.</p>
+  <ul><li><code>#animation-layer</code> — общий слой для частиц и летящих объектов.</li><li><code>[data-anchor]</code> — маркеры линии: current, missed, next, optimal, maximum, history.</li><li><code>#reward-target</code> и <code>#reward-count</code> — цель полёта и счётчик.</li><li><code>demo:task-complete</code>, <code>demo:task-undo</code>, <code>demo:stage-complete</code>, <code>demo:reset</code>, <code>demo:tab-change</code> — события на document.</li><li><code>window.StageDemo</code> — completeTask(id), completeStage(), reset(), setTab(name), getState().</li></ul>
+  <p>Поменяй анимации, сохрани две вкладки, тестовые кнопки, сброс и повторный запуск. Внешние библиотеки и сервер не нужны. Прогресс в памяти общий для обеих вкладок.</p>
+ </details>
+</main>
+<footer class="footer-glow">Шаблон · линия пути и свет · никаких реальных начислений</footer>
+<div id="animation-layer" aria-hidden="true"></div>
+<script>
+'use strict';
+// Снимок исходного документа до тестовых изменений; скачивание работает и локально.
+const standaloneSource='<!doctype html>\n'+document.documentElement.outerHTML;
+document.querySelector('.download').addEventListener('click',event=>{event.preventDefault();const url=URL.createObjectURL(new Blob([standaloneSource],{type:'text/html;charset=utf-8'})),link=document.createElement('a');link.href=url;link.download='stage-animation-template.html';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+// Данные и состояние только для воспроизводимых анимационных опытов.
+const tasks=[{id:'missed-1',group:'missed',name:'Дело, оставшееся с прошлого этапа',reward:25},{id:'now-1',group:'now',name:'Первый небольшой шаг',reward:25},{id:'now-2',group:'now',name:'Ещё один шаг к цели',reward:50}];
+let state={tab:'levels',done:[],passed:0,reward:0};
+const clone=x=>JSON.parse(JSON.stringify(x)),activePanel=()=>document.getElementById(state.tab);
+const anchor=name=>activePanel().querySelector('[data-anchor="'+name+'"]');
+const emit=(name,detail={})=>document.dispatchEvent(new CustomEvent('demo:'+name,{detail:{...detail,state:clone(state)}}));
+function taskRow(task){const done=state.done.includes(task.id),row=document.createElement('div');row.className='task'+(done?' is-done':'');row.dataset.taskId=task.id;const title=document.createElement('span');title.className='task-name';title.textContent=task.name;const actions=document.createElement('div');actions.className='task-actions';const reward=document.createElement('span');reward.className='reward';reward.textContent='+'+task.reward+' ●';const button=document.createElement('button');button.className='action';button.textContent=done?'Отменить':'Выполнить';button.setAttribute('aria-pressed',String(done));button.addEventListener('click',()=>completeTask(task.id));actions.append(reward,button);row.append(title,actions);return row;}
+function render(){
+ document.getElementById('reward-count').textContent=state.reward;
+ document.querySelectorAll('[data-task-slot]').forEach(slot=>slot.replaceChildren(...tasks.filter(t=>t.group===slot.dataset.taskSlot).map(taskRow)));
+ document.querySelectorAll('[data-passed]').forEach(n=>n.textContent=state.passed);
+ document.querySelectorAll('[data-complete-stage]').forEach(n=>{n.disabled=state.passed>0;n.textContent=state.passed?'Этап завершён':'Этап выполнен → дальше'});
+ const current=document.querySelector('#levels [data-kind=current]'),next=document.querySelector('#levels [data-kind=next]');current.classList.toggle('is-current',!state.passed);next.classList.toggle('is-current',!!state.passed);current.querySelector('.card').classList.toggle('is-active-card',!state.passed);next.querySelector('.card').classList.toggle('is-active-card',!!state.passed);
+ document.querySelector('[data-inside-title]').textContent=state.passed?'Планируемый':'Сейчас';layout();
+}
+function completeTask(id){const task=tasks.find(t=>t.id===id);if(!task)return false;const undo=state.done.includes(id),source=activePanel().querySelector('[data-task-id="'+id+'"]'),origin=source?.getBoundingClientRect().toJSON();state.done=undo?state.done.filter(x=>x!==id):[...state.done,id];state.reward+=undo?-task.reward:task.reward;render();document.getElementById('status').textContent=undo?'Тестовая отметка отменена.':'Выполнено: '+task.name+' · +'+task.reward+' ●';emit(undo?'task-undo':'task-complete',{task:clone(task),origin,sourceAnchor:anchor(task.group==='missed'?'missed':'current'),rewardTarget:document.getElementById('reward-target'),animationLayer:document.getElementById('animation-layer')});return true;}
+function completeStage(){if(state.passed)return false;const sourceAnchor=anchor('current');state.passed=1;render();document.getElementById('status').textContent='Тест: этап пройден, следующий подсвечен. Награда за этап не начисляется.';emit('stage-complete',{sourceAnchor,nextAnchor:anchor('next'),historyAnchor:anchor('history'),animationLayer:document.getElementById('animation-layer')});return true;}
+function reset(){state={tab:state.tab,done:[],passed:0,reward:0};document.getElementById('animation-layer').replaceChildren();render();document.getElementById('status').textContent='Сброшено. Можно снова запускать анимации.';emit('reset');}
+function setTab(name){if(!['levels','inside'].includes(name))return;state.tab=name;for(const tab of ['levels','inside']){const selected=tab===name;document.getElementById(tab).hidden=!selected;const button=document.getElementById('tab-'+tab);button.setAttribute('aria-selected',String(selected));button.tabIndex=selected?0:-1;}document.getElementById('animation-layer').replaceChildren();layout();emit('tab-change',{tab:name});}
+let frame=0;
+function layout(){cancelAnimationFrame(frame);frame=requestAnimationFrame(()=>{const path=activePanel().querySelector('.path'),r=path.getBoundingClientRect(),current=path.querySelector('.node.is-current')||path.querySelector('[data-kind=current]'),optimal=path.querySelector('[data-kind=optimal],[data-kind=light-start]');path.style.setProperty('--now-y',current.offsetTop+'px');path.style.setProperty('--optimal-y',optimal.offsetTop+'px');const start=r.top+optimal.offsetTop,end=r.bottom,front=innerHeight-45,progress=Math.max(0,Math.min(1,(front-start)/Math.max(1,end-start)));path.style.setProperty('--sun',String(progress));document.body.style.setProperty('--footer-sun',String(progress));});}
+document.getElementById('tab-levels').addEventListener('click',()=>setTab('levels'));document.getElementById('tab-inside').addEventListener('click',()=>setTab('inside'));
+document.querySelector('.tabs').addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();setTab(state.tab==='levels'?'inside':'levels');document.getElementById('tab-'+state.tab).focus();}});
+document.querySelectorAll('[data-complete-stage]').forEach(n=>n.addEventListener('click',completeStage));
+document.getElementById('test-stage').addEventListener('click',completeStage);document.getElementById('test-missed').addEventListener('click',()=>completeTask('missed-1'));document.getElementById('test-task').addEventListener('click',()=>{const next=tasks.find(t=>t.group==='now'&&!state.done.includes(t.id));if(next)completeTask(next.id);else document.getElementById('status').textContent='Оба шага выполнены. Нажми «Сброс» для повтора.';});document.getElementById('reset').addEventListener('click',reset);
+window.addEventListener('resize',layout);window.addEventListener('scroll',layout,{passive:true});
+window.StageDemo=Object.freeze({completeTask,completeStage,reset,setTab,getState:()=>clone(state)});render();
+</script>
+</body>
+</html>

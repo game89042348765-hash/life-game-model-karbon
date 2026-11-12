@@ -1,0 +1,18 @@
+{
+  "template": true,
+  "task_id": "REPLACE_WITH_REAL_ID",
+  "attempt": 1,
+  "stage": null,
+  "status": "incomplete",
+  "input_snapshot": null,
+  "protocol_version": "2.1",
+  "taxonomy_version": "2.1",
+  "rubric_version": "2.1",
+  "read_ids": [],
+  "output_counts": {},
+  "checks_executed": [],
+  "limitations": [
+    "Fill with actual limitations before submission"
+  ],
+  "files": []
+}

@@ -1,0 +1,12 @@
+{
+  "task": "LAB-014",
+  "file": "downloads/lab-packets/LifeGame-LAB-014-Pilot.zip",
+  "bytes": 535607,
+  "sha256": "2ef8f218ac75cf963c6e1f431509f1c75f04f51b6e91dc6dfad4ba9ffe5d727f",
+  "zip_entries": 46,
+  "manifest_entries": 45,
+  "runtime_files": 27,
+  "crc": "passed",
+  "all_manifest_hashes": "passed",
+  "status": "prepared_kit_not_executed_ai_pilot"
+}

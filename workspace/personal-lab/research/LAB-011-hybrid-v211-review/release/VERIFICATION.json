@@ -1,0 +1,210 @@
+{
+  "status": "technical_checks_only_not_research",
+  "version": "2.1.1+lab.1-hybrid",
+  "rubric_version": "2.1",
+  "checks_passed": 27,
+  "checks": [
+    {
+      "check": "01_complete_schema_and_provenance_links",
+      "passed": true,
+      "seconds": 0.0004,
+      "details": {
+        "elements": 12,
+        "ratings": 24
+      }
+    },
+    {
+      "check": "02_real_cli_outputs_hashes_and_incomplete_target",
+      "passed": true,
+      "seconds": 0.0916,
+      "details": {
+        "eligible": 12,
+        "selected": 12,
+        "target_reached": false,
+        "status": "synthetic_demo_not_research"
+      }
+    },
+    {
+      "check": "03_unknown_not_zero_or_imputed",
+      "passed": true,
+      "seconds": 0.0021,
+      "details": "null stays unknown; candidate not promoted"
+    },
+    {
+      "check": "04_critical_invalid_inputs_rejected",
+      "passed": true,
+      "seconds": 0.0037,
+      "details": "missing source, lost disposition, unviewed existence, boolean score rejected"
+    },
+    {
+      "check": "05_review_identity_and_version",
+      "passed": true,
+      "seconds": 0.0027,
+      "details": "duplicate reviewer/context and wrong rubric rejected"
+    },
+    {
+      "check": "06_eligibility_and_quality_floor",
+      "passed": true,
+      "seconds": 0.0013,
+      "details": "composites, reference, unresolved risks and disputed existence blocked; low quality not used as filler"
+    },
+    {
+      "check": "07_disagreement_gate_and_auditable_resolution",
+      "passed": true,
+      "seconds": 0.0021,
+      "details": "resolution required; original range retained"
+    },
+    {
+      "check": "08_deterministic_with_shuffled_input",
+      "passed": true,
+      "seconds": 0.0018,
+      "details": "rank, selection and sensitivity independent of input row order"
+    },
+    {
+      "check": "09_merge_no_silent_overwrite",
+      "passed": true,
+      "seconds": 0.0089,
+      "details": "exact IDs coalesced; conflicting revision stops without output"
+    },
+    {
+      "check": "10_integrity_and_demo_separation",
+      "passed": true,
+      "seconds": 0.0017,
+      "details": "byte change caught; synthetic fixtures and .invalid URLs blocked from research mode"
+    },
+    {
+      "check": "11_partial_blind_disagreement_and_strict_resolution_gate",
+      "passed": true,
+      "seconds": 0.0015,
+      "details": "P0 Fixes #1 & #2 verified: partial blind rating disagreement caught; incomplete resolution rejected"
+    },
+    {
+      "check": "12_protected_rare_gems_lane_and_non_penalizing_gain",
+      "passed": true,
+      "seconds": 0.0012,
+      "details": "P0 Fix #3 & P1 Rare Lane verified: protected rare_lateral_gem tier active and multi-label elements not penalized"
+    },
+    {
+      "check": "13_quarantine_and_composite_contains_enforcement",
+      "passed": true,
+      "seconds": 0.0019,
+      "details": "P0 Fix #4a/4b verified: quarantined non-empty targets and unlinked composite method_systems rejected"
+    },
+    {
+      "check": "14_cross_domain_sharding_and_blind_packet_sterilization",
+      "passed": true,
+      "seconds": 0.0057,
+      "details": "P1 Sharding & Blind Packet preparation verified"
+    },
+    {
+      "check": "15_tolerant_truncated_jsonl_recovery",
+      "passed": true,
+      "seconds": 0.0021,
+      "details": "P1 Tolerant JSONL loader verified: 12 valid rows preserved, 1 truncated line isolated"
+    },
+    {
+      "check": "16_ten_thousand_synthetic_elements_hybrid_v2",
+      "passed": true,
+      "seconds": 9.1482,
+      "details": {
+        "synthetic_elements": 10000,
+        "synthetic_ratings": 20000,
+        "selected": 200,
+        "real_web_sources": 0
+      }
+    },
+    {
+      "check": "17_H1_unpacked_zip_manifest_integrity",
+      "passed": true,
+      "seconds": 0.0036,
+      "details": "H1 fixed: __pycache__ never enters BUNDLE_MANIFEST.json; clean unpacked archive verifies with exit 0"
+    },
+    {
+      "check": "18_H2_aggregation_policy_unity",
+      "passed": true,
+      "seconds": 0.0002,
+      "details": {
+        "Q": 71.25,
+        "known_scores_per_dim": {
+          "value": 3,
+          "burden": 3,
+          "long_term": 3,
+          "adaptability": 3,
+          "agency": 3,
+          "composability": 2
+        }
+      }
+    },
+    {
+      "check": "19_H3_bounded_shards_10k_same_bucket_and_oversized",
+      "passed": true,
+      "seconds": 0.5805,
+      "details": {
+        "total_findings": 10000,
+        "shard_parts": 115,
+        "largest_part_records": 88,
+        "oversized_isolated": 1
+      }
+    },
+    {
+      "check": "20_H4_H5_shard_no_overwrite_and_path_containment",
+      "passed": true,
+      "seconds": 0.0273,
+      "details": "H4 & H5 fixed: existing output refused; path traversal rejected; marker untouched"
+    },
+    {
+      "check": "21_H6_prepare_blind_refuses_overwrite_and_aliasing",
+      "passed": true,
+      "seconds": 0.0004,
+      "details": "H6 fixed: prepare-blind refuses existing files and paths inside input dataset"
+    },
+    {
+      "check": "22_H7_rare_gems_quota_strict_validation",
+      "passed": true,
+      "seconds": 0.0032,
+      "details": "H7 fixed: negative, boolean, float, string, and oversized quotas rejected; 0 quota yields 0 rare seats"
+    },
+    {
+      "check": "23_H8_shared_instructions_and_paste_sync",
+      "passed": true,
+      "seconds": 0.0031,
+      "details": "H8 fixed: PASTE/*.txt, DATA_CONTRACT.md, SCORING.md, and starter_tasks hashes 100% synchronized"
+    },
+    {
+      "check": "24_R01_single_default_quota_in_scoring_and_paste",
+      "passed": true,
+      "seconds": 0.0007,
+      "details": "R01 fixed: single default 0 in SCORING.md, PASTE/*.txt, RUN.json, and configuration()"
+    },
+    {
+      "check": "25_R02_bounded_index_preview_and_oversized_marker",
+      "passed": true,
+      "seconds": 0.008,
+      "details": {
+        "index_part_bytes": 813,
+        "contains_oversized_records": true,
+        "raw_description_chars_preserved": 150000
+      }
+    },
+    {
+      "check": "26_R03_total_packet_budget_including_sources_and_oversized_bundle",
+      "passed": true,
+      "seconds": 0.0213,
+      "details": {
+        "source_heavy_parts": 4,
+        "max_standard_total_bytes": 118752,
+        "oversized_source_bundle_flagged": true
+      }
+    },
+    {
+      "check": "27_R04_atomic_no_overwrite_blind_publication_and_staging_cleanup",
+      "passed": true,
+      "seconds": 0.0037,
+      "details": "R04 fixed: concurrent output preserved; atomic os.link refused overwrite; staging cleaned up"
+    }
+  ],
+  "tool_sha256": "a47e9b5d51db57b5888bb0deee79870b7e2e74e055cff50df5ccf78b39592035",
+  "verifier_sha256": "f706107e95666bd6f84e369f044edd24251357ebfc86f371075313f4aa31fd40",
+  "python": "3.12.14",
+  "network_requests": 0
+}

@@ -1,0 +1,488 @@
+{
+  "schema": 1,
+  "createdAt": "2026-11-11T21:41:36+03:00",
+  "repository": "game89042348765-hash/life-game",
+  "sourceCommit": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "sourceDirectory": "personal",
+  "sourceVersion": "Personal 1.2.0",
+  "labDirectory": "personal-lab",
+  "initialChange": "LAB-000",
+  "htmlBackup": "backups/index-2026-11-11-21-41-36.html",
+  "htmlBackupSHA256": "3d2a346d261eeb6048bdbcaaa9b657f2cf42499bcbb2376e889e67335cae9474",
+  "sourceFiles": {
+    "personal/.gitignore": {
+      "sha256": "32a362e0fd3859476dd86050c3026a974ac0c85dcb5246e12deb62e846a75f76",
+      "bytes": 27,
+      "copied": true
+    },
+    "personal/AGENTS.md": {
+      "sha256": "4c6fa607a89931035c9262bc499a7ce168abca387a57e72de780b9bec15ae0dd",
+      "bytes": 3066,
+      "copied": false
+    },
+    "personal/AUDIT.md": {
+      "sha256": "841876a1a502d14c0256b6b17405ccd6d0fbcd3e6148836a12c35b0c9269967f",
+      "bytes": 6324,
+      "copied": false
+    },
+    "personal/COMPARE-LG110.md": {
+      "sha256": "e5ea21d3da06b643cc093bb3c7aa9a4fe4e9638c57b45f5c1928e8c60b0f94a7",
+      "bytes": 11154,
+      "copied": false
+    },
+    "personal/DECISIONS.md": {
+      "sha256": "d213442e8d958fbbe6f9c1e85ed075aeae5fdb8b955244e47975fd3230f3b43e",
+      "bytes": 22309,
+      "copied": false
+    },
+    "personal/FOUR-DAY-TEST.md": {
+      "sha256": "33546d8b25a290cc71515a217d00f8638c4e94e1a41df25403f56f61011a8fa0",
+      "bytes": 3336,
+      "copied": false
+    },
+    "personal/PROGRESS.md": {
+      "sha256": "b5ad89db7543d34e83018088d8cbf294b274d3acf6a9f51648e051e17a23718a",
+      "bytes": 2226,
+      "copied": false
+    },
+    "personal/PUBLICATION.md": {
+      "sha256": "045dd8d101f08ec5dd9f7fa8333887a25d282cf0a27e05cf9166da0ebd360276",
+      "bytes": 2515,
+      "copied": false
+    },
+    "personal/README.md": {
+      "sha256": "4bd890504009c647f326fb83f8e3c80f3f13784363e3c4bf7ec835f89f866778",
+      "bytes": 10271,
+      "copied": false
+    },
+    "personal/SOURCE.json": {
+      "sha256": "29169d8b2d90dad903a8c4855756d5a0e6b74bb88b88f410fb8957c6b1a2cf53",
+      "bytes": 1867,
+      "copied": false
+    },
+    "personal/TESTING.md": {
+      "sha256": "da0d6d8520471565f927ab5c5995d503b4910df05dee55066c27b858abffd045",
+      "bytes": 11436,
+      "copied": false
+    },
+    "personal/UPGRADE-PLAN.md": {
+      "sha256": "430723afd54cf2fa18ccf76083e6792efdcf5aa3b9b285539c4cd68cc0513e84",
+      "bytes": 1730,
+      "copied": false
+    },
+    "personal/app.js": {
+      "sha256": "115216b996e39ac80f1a8ee236b8e39e77f4e907976e2cadfbf98c76f9fd6150",
+      "bytes": 333661,
+      "copied": true
+    },
+    "personal/audit-manifest.json": {
+      "sha256": "645835b1791bf5a5c7b7b91aaad64196bc9322fbdb924e6c9f06a54354890d0e",
+      "bytes": 7988,
+      "copied": false
+    },
+    "personal/fonts/SOURCES.json": {
+      "sha256": "f7df49c7acdf27ded63c24fa2feaef327e9afcfdcd800f7419499f466d1322b4",
+      "bytes": 3799,
+      "copied": true
+    },
+    "personal/fonts/dela-gothic-one-LICENSE.txt": {
+      "sha256": "216021cbd0bc9b76c023500f64ec2272a157658ba58cbeed49d2518ebe094b89",
+      "bytes": 4390,
+      "copied": true
+    },
+    "personal/fonts/dela-gothic-one-cyrillic-400-normal.woff2": {
+      "sha256": "2b94e6983ad5f7fa24db93768f0335445e89cab703e1c42b4f056911a96c1e9c",
+      "bytes": 7292,
+      "copied": true
+    },
+    "personal/fonts/dela-gothic-one-latin-400-normal.woff2": {
+      "sha256": "00ffa61fea9edb126e8e4fd3cf2b46e96ad158a0c1078b3cd22a3f6964993a88",
+      "bytes": 13804,
+      "copied": true
+    },
+    "personal/fonts/golos-text-LICENSE.txt": {
+      "sha256": "54dcae300688bccf111e43c818a6ee2261d10fc8d7eb5b9c9aa2a1e9b03189c9",
+      "bytes": 4392,
+      "copied": true
+    },
+    "personal/fonts/golos-text-cyrillic-wght-normal.woff2": {
+      "sha256": "17d048ca05cb1218af3c0d6dcdf882989e6d1cc5dcb598ea50eaf54850ff7229",
+      "bytes": 22032,
+      "copied": true
+    },
+    "personal/fonts/golos-text-latin-wght-normal.woff2": {
+      "sha256": "9a69d0aa4734c4022224c002a3d944a702e0204972a49d892789f5668b922c2a",
+      "bytes": 37916,
+      "copied": true
+    },
+    "personal/fonts/jetbrains-mono-LICENSE.txt": {
+      "sha256": "403581b69dac5cff4079205e01c6b467e56af449ecbd7247693ddb1baafa005b",
+      "bytes": 4524,
+      "copied": true
+    },
+    "personal/fonts/jetbrains-mono-cyrillic-wght-normal.woff2": {
+      "sha256": "d274604c40757f98f07df623a8b8fb5194508a6fa4f5413a7a107f09e3b7452a",
+      "bytes": 12108,
+      "copied": true
+    },
+    "personal/fonts/jetbrains-mono-latin-wght-normal.woff2": {
+      "sha256": "18be452724bfdc236c074ca94a249a7f41a86752c7d04ab258ce9ed5651f6a7e",
+      "bytes": 40404,
+      "copied": true
+    },
+    "personal/fonts/nunito-LICENSE.txt": {
+      "sha256": "40991bfa02ac620aae16dc527f3c47765a25e43f270d4c301ee6ab663a8d9015",
+      "bytes": 4491,
+      "copied": true
+    },
+    "personal/fonts/nunito-cyrillic-wght-normal.woff2": {
+      "sha256": "63b14e3ef0966785438b8947380dfbcad178cbd3c6a5ed2172672ca0d8b839ac",
+      "bytes": 20776,
+      "copied": true
+    },
+    "personal/fonts/nunito-latin-wght-normal.woff2": {
+      "sha256": "ba344451eab25b217a165363b1982048a5e5830a0daf36577973955a04cac793",
+      "bytes": 39128,
+      "copied": true
+    },
+    "personal/fonts/rubik-LICENSE.txt": {
+      "sha256": "46a250495a963b0b84f2736c0185d0e3af8df9d23427bd425b92a8ece020283c",
+      "bytes": 4486,
+      "copied": true
+    },
+    "personal/fonts/rubik-cyrillic-wght-normal.woff2": {
+      "sha256": "bdb2b33ab916e9e7b42edb61f8aea5f5dd83ad773d6ee4e9b55665daf8954ce8",
+      "bytes": 15112,
+      "copied": true
+    },
+    "personal/fonts/rubik-latin-wght-normal.woff2": {
+      "sha256": "691cd1d9b4c0cdf31a1dcf04259c86f92c85e69f6622abab7964d81e36890691",
+      "bytes": 35348,
+      "copied": true
+    },
+    "personal/fonts/tektur-LICENSE.txt": {
+      "sha256": "865c2067daf0c957ed41ee040168088a5253be10df167549defcb775d0bbd0c3",
+      "bytes": 4383,
+      "copied": true
+    },
+    "personal/fonts/tektur-cyrillic-wght-normal.woff2": {
+      "sha256": "717684b09fd7c875416b30e168f51256ebc7cf811c908218fae6182069e41f01",
+      "bytes": 8664,
+      "copied": true
+    },
+    "personal/fonts/tektur-latin-wght-normal.woff2": {
+      "sha256": "2c4e3f0723427b12e30b10fd233c362244963124ecbdd3a3cba40dcf78c3f22e",
+      "bytes": 12148,
+      "copied": true
+    },
+    "personal/fonts/unbounded-LICENSE.txt": {
+      "sha256": "48a780bc857729859e54d1e691b05792894a26634edc1c4b5dbeabffe6941758",
+      "bytes": 4390,
+      "copied": true
+    },
+    "personal/fonts/unbounded-cyrillic-wght-normal.woff2": {
+      "sha256": "e30bf6a6063b6a47232bbd657e24c7cf4fdaf76fc2c50d92d9ee63e2ad2087cf",
+      "bytes": 31424,
+      "copied": true
+    },
+    "personal/fonts/unbounded-latin-wght-normal.woff2": {
+      "sha256": "22f9b928aa3928a896340422b54d690fbb5875c30eae4c106f029c61f2289fd6",
+      "bytes": 50904,
+      "copied": true
+    },
+    "personal/icon-192.png": {
+      "sha256": "60184660f855476a6e3146619f4b15d5f6366144d74ba45efc6cd0b3fe842e8e",
+      "bytes": 2044,
+      "copied": true
+    },
+    "personal/icon-512.png": {
+      "sha256": "1816c6b200cfa39198b9011dc6817d4f57dd68589ea20949043e2c4f7ddbaf0d",
+      "bytes": 5693,
+      "copied": true
+    },
+    "personal/icon.svg": {
+      "sha256": "e2df42d0da3fd69710a109ef51cc9c3a6999436f2b22d7bd3b86d4d44d2d57e1",
+      "bytes": 340,
+      "copied": true
+    },
+    "personal/index.html": {
+      "sha256": "3d2a346d261eeb6048bdbcaaa9b657f2cf42499bcbb2376e889e67335cae9474",
+      "bytes": 1135,
+      "copied": true
+    },
+    "personal/manifest.webmanifest": {
+      "sha256": "c2538f6ced37706948f7b6533180a3c0246be5b56d3aa722ab5ef13675a29feb",
+      "bytes": 347,
+      "copied": true
+    },
+    "personal/persistence.js": {
+      "sha256": "93420f1f3537fcdf8ac6f64d8724f71c574841df88a99db15a93ee93cfab0716",
+      "bytes": 22783,
+      "copied": true
+    },
+    "personal/planning.js": {
+      "sha256": "55a0170e210ddcf8b5d767102254208e9df5cbe7a6fd7dd5c0d45bf3a35f1422",
+      "bytes": 5228,
+      "copied": true
+    },
+    "personal/pwa.js": {
+      "sha256": "c83a520c878580afc998ca82db1a3d737d5e606f312c64471bc4d766a54e91ee",
+      "bytes": 1295,
+      "copied": true
+    },
+    "personal/style.css": {
+      "sha256": "96c0ff65319989fe697a3f06c1fbcff02d7d9fe410c4a87d5f526adfb733ba4f",
+      "bytes": 35234,
+      "copied": true
+    },
+    "personal/sw.js": {
+      "sha256": "bfdc1d5403e3c40d5fe2f9607cdd8c1ba5fbd1dffe7d3ddfeb5e54423974b928",
+      "bytes": 2342,
+      "copied": true
+    },
+    "personal/tests/browser.py": {
+      "sha256": "dd68a02a792277df81a02f636f33bc5a05a6232f5c081a4c4624ffe0204f08c8",
+      "bytes": 19371,
+      "copied": true
+    },
+    "personal/tests/location-cases.js": {
+      "sha256": "ce7422896c177b21e557d67c5c3e3a6ecff31f9c257fbfcb48b00678c74eb0b5",
+      "bytes": 6900,
+      "copied": true
+    },
+    "personal/tests/locations-live.py": {
+      "sha256": "b3ce93ead69b265d1e440a16c8297b1d5cabcf23e4d528ad80b0d5e37d0d39b5",
+      "bytes": 3889,
+      "copied": true
+    },
+    "personal/tests/model-cases.js": {
+      "sha256": "99508a44819e161dea9a94db9d5ea3666e2f27dfc09f1d22f1c1f9beed892cb1",
+      "bytes": 15936,
+      "copied": true
+    },
+    "personal/tests/offline.py": {
+      "sha256": "a8f46a94bae4d324e3852a63ddeaaa1c5a1550c9622dcdcf3542ce600fb9e455",
+      "bytes": 5651,
+      "copied": true
+    },
+    "personal/tests/update-live.py": {
+      "sha256": "23d6e631a3ed4ff7354d8a491c3e318fdc88cb857129a96a0029da5d4e718423",
+      "bytes": 11530,
+      "copied": true
+    },
+    "personal/tests/upgrade-cases.js": {
+      "sha256": "af3f1a239394c15bc7c76ee4693b3df925383db4851e5b4073c373cb7680267f",
+      "bytes": 14922,
+      "copied": true
+    }
+  },
+  "initialLabFiles": {
+    ".gitignore": {
+      "sha256": "32a362e0fd3859476dd86050c3026a974ac0c85dcb5246e12deb62e846a75f76",
+      "bytes": 27,
+      "source": "personal/.gitignore"
+    },
+    "app.js": {
+      "sha256": "bf2f0c84240d6a42c30bfd611022ccec3cdf3998948619512e2ba712de513c1e",
+      "bytes": 333681,
+      "source": "personal/app.js"
+    },
+    "fonts/SOURCES.json": {
+      "sha256": "f7df49c7acdf27ded63c24fa2feaef327e9afcfdcd800f7419499f466d1322b4",
+      "bytes": 3799,
+      "source": "personal/fonts/SOURCES.json"
+    },
+    "fonts/dela-gothic-one-LICENSE.txt": {
+      "sha256": "216021cbd0bc9b76c023500f64ec2272a157658ba58cbeed49d2518ebe094b89",
+      "bytes": 4390,
+      "source": "personal/fonts/dela-gothic-one-LICENSE.txt"
+    },
+    "fonts/dela-gothic-one-cyrillic-400-normal.woff2": {
+      "sha256": "2b94e6983ad5f7fa24db93768f0335445e89cab703e1c42b4f056911a96c1e9c",
+      "bytes": 7292,
+      "source": "personal/fonts/dela-gothic-one-cyrillic-400-normal.woff2"
+    },
+    "fonts/dela-gothic-one-latin-400-normal.woff2": {
+      "sha256": "00ffa61fea9edb126e8e4fd3cf2b46e96ad158a0c1078b3cd22a3f6964993a88",
+      "bytes": 13804,
+      "source": "personal/fonts/dela-gothic-one-latin-400-normal.woff2"
+    },
+    "fonts/golos-text-LICENSE.txt": {
+      "sha256": "54dcae300688bccf111e43c818a6ee2261d10fc8d7eb5b9c9aa2a1e9b03189c9",
+      "bytes": 4392,
+      "source": "personal/fonts/golos-text-LICENSE.txt"
+    },
+    "fonts/golos-text-cyrillic-wght-normal.woff2": {
+      "sha256": "17d048ca05cb1218af3c0d6dcdf882989e6d1cc5dcb598ea50eaf54850ff7229",
+      "bytes": 22032,
+      "source": "personal/fonts/golos-text-cyrillic-wght-normal.woff2"
+    },
+    "fonts/golos-text-latin-wght-normal.woff2": {
+      "sha256": "9a69d0aa4734c4022224c002a3d944a702e0204972a49d892789f5668b922c2a",
+      "bytes": 37916,
+      "source": "personal/fonts/golos-text-latin-wght-normal.woff2"
+    },
+    "fonts/jetbrains-mono-LICENSE.txt": {
+      "sha256": "403581b69dac5cff4079205e01c6b467e56af449ecbd7247693ddb1baafa005b",
+      "bytes": 4524,
+      "source": "personal/fonts/jetbrains-mono-LICENSE.txt"
+    },
+    "fonts/jetbrains-mono-cyrillic-wght-normal.woff2": {
+      "sha256": "d274604c40757f98f07df623a8b8fb5194508a6fa4f5413a7a107f09e3b7452a",
+      "bytes": 12108,
+      "source": "personal/fonts/jetbrains-mono-cyrillic-wght-normal.woff2"
+    },
+    "fonts/jetbrains-mono-latin-wght-normal.woff2": {
+      "sha256": "18be452724bfdc236c074ca94a249a7f41a86752c7d04ab258ce9ed5651f6a7e",
+      "bytes": 40404,
+      "source": "personal/fonts/jetbrains-mono-latin-wght-normal.woff2"
+    },
+    "fonts/nunito-LICENSE.txt": {
+      "sha256": "40991bfa02ac620aae16dc527f3c47765a25e43f270d4c301ee6ab663a8d9015",
+      "bytes": 4491,
+      "source": "personal/fonts/nunito-LICENSE.txt"
+    },
+    "fonts/nunito-cyrillic-wght-normal.woff2": {
+      "sha256": "63b14e3ef0966785438b8947380dfbcad178cbd3c6a5ed2172672ca0d8b839ac",
+      "bytes": 20776,
+      "source": "personal/fonts/nunito-cyrillic-wght-normal.woff2"
+    },
+    "fonts/nunito-latin-wght-normal.woff2": {
+      "sha256": "ba344451eab25b217a165363b1982048a5e5830a0daf36577973955a04cac793",
+      "bytes": 39128,
+      "source": "personal/fonts/nunito-latin-wght-normal.woff2"
+    },
+    "fonts/rubik-LICENSE.txt": {
+      "sha256": "46a250495a963b0b84f2736c0185d0e3af8df9d23427bd425b92a8ece020283c",
+      "bytes": 4486,
+      "source": "personal/fonts/rubik-LICENSE.txt"
+    },
+    "fonts/rubik-cyrillic-wght-normal.woff2": {
+      "sha256": "bdb2b33ab916e9e7b42edb61f8aea5f5dd83ad773d6ee4e9b55665daf8954ce8",
+      "bytes": 15112,
+      "source": "personal/fonts/rubik-cyrillic-wght-normal.woff2"
+    },
+    "fonts/rubik-latin-wght-normal.woff2": {
+      "sha256": "691cd1d9b4c0cdf31a1dcf04259c86f92c85e69f6622abab7964d81e36890691",
+      "bytes": 35348,
+      "source": "personal/fonts/rubik-latin-wght-normal.woff2"
+    },
+    "fonts/tektur-LICENSE.txt": {
+      "sha256": "865c2067daf0c957ed41ee040168088a5253be10df167549defcb775d0bbd0c3",
+      "bytes": 4383,
+      "source": "personal/fonts/tektur-LICENSE.txt"
+    },
+    "fonts/tektur-cyrillic-wght-normal.woff2": {
+      "sha256": "717684b09fd7c875416b30e168f51256ebc7cf811c908218fae6182069e41f01",
+      "bytes": 8664,
+      "source": "personal/fonts/tektur-cyrillic-wght-normal.woff2"
+    },
+    "fonts/tektur-latin-wght-normal.woff2": {
+      "sha256": "2c4e3f0723427b12e30b10fd233c362244963124ecbdd3a3cba40dcf78c3f22e",
+      "bytes": 12148,
+      "source": "personal/fonts/tektur-latin-wght-normal.woff2"
+    },
+    "fonts/unbounded-LICENSE.txt": {
+      "sha256": "48a780bc857729859e54d1e691b05792894a26634edc1c4b5dbeabffe6941758",
+      "bytes": 4390,
+      "source": "personal/fonts/unbounded-LICENSE.txt"
+    },
+    "fonts/unbounded-cyrillic-wght-normal.woff2": {
+      "sha256": "e30bf6a6063b6a47232bbd657e24c7cf4fdaf76fc2c50d92d9ee63e2ad2087cf",
+      "bytes": 31424,
+      "source": "personal/fonts/unbounded-cyrillic-wght-normal.woff2"
+    },
+    "fonts/unbounded-latin-wght-normal.woff2": {
+      "sha256": "22f9b928aa3928a896340422b54d690fbb5875c30eae4c106f029c61f2289fd6",
+      "bytes": 50904,
+      "source": "personal/fonts/unbounded-latin-wght-normal.woff2"
+    },
+    "icon-192.png": {
+      "sha256": "60184660f855476a6e3146619f4b15d5f6366144d74ba45efc6cd0b3fe842e8e",
+      "bytes": 2044,
+      "source": "personal/icon-192.png"
+    },
+    "icon-512.png": {
+      "sha256": "1816c6b200cfa39198b9011dc6817d4f57dd68589ea20949043e2c4f7ddbaf0d",
+      "bytes": 5693,
+      "source": "personal/icon-512.png"
+    },
+    "icon.svg": {
+      "sha256": "e2df42d0da3fd69710a109ef51cc9c3a6999436f2b22d7bd3b86d4d44d2d57e1",
+      "bytes": 340,
+      "source": "personal/icon.svg"
+    },
+    "index.html": {
+      "sha256": "2fdf31db54576e0db3cecfe88feddb88a86a64918c2c80f0193945758d5b6f04",
+      "bytes": 1170,
+      "source": "personal/index.html"
+    },
+    "manifest.webmanifest": {
+      "sha256": "1b20db15e1b2c53b52c684172825edaa70d3e0f8c1f699c96cd3f699459a6c7c",
+      "bytes": 382,
+      "source": "personal/manifest.webmanifest"
+    },
+    "persistence.js": {
+      "sha256": "8c7738ac2c7bf741dd835329104c254948721e2f7a8dec74167a4e937b55fbad",
+      "bytes": 22787,
+      "source": "personal/persistence.js"
+    },
+    "planning.js": {
+      "sha256": "55a0170e210ddcf8b5d767102254208e9df5cbe7a6fd7dd5c0d45bf3a35f1422",
+      "bytes": 5228,
+      "source": "personal/planning.js"
+    },
+    "pwa.js": {
+      "sha256": "c83a520c878580afc998ca82db1a3d737d5e606f312c64471bc4d766a54e91ee",
+      "bytes": 1295,
+      "source": "personal/pwa.js"
+    },
+    "style.css": {
+      "sha256": "96c0ff65319989fe697a3f06c1fbcff02d7d9fe410c4a87d5f526adfb733ba4f",
+      "bytes": 35234,
+      "source": "personal/style.css"
+    },
+    "sw.js": {
+      "sha256": "e8d5e0e916aded2a6ba0570b6c7a5a31069069a0e371ec7717ef659b02675048",
+      "bytes": 2350,
+      "source": "personal/sw.js"
+    },
+    "tests/browser.py": {
+      "sha256": "7e7682cdc38dd150bb3b3651d0b45e69105d977f991e2b73d84acaea67460135",
+      "bytes": 19415,
+      "source": "personal/tests/browser.py"
+    },
+    "tests/location-cases.js": {
+      "sha256": "ce7422896c177b21e557d67c5c3e3a6ecff31f9c257fbfcb48b00678c74eb0b5",
+      "bytes": 6900,
+      "source": "personal/tests/location-cases.js"
+    },
+    "tests/locations-live.py": {
+      "sha256": "64937ab56711c3a96488c733d8d6186f2dff7d45d61c236a49616bdcd636dd8d",
+      "bytes": 3897,
+      "source": "personal/tests/locations-live.py"
+    },
+    "tests/model-cases.js": {
+      "sha256": "99508a44819e161dea9a94db9d5ea3666e2f27dfc09f1d22f1c1f9beed892cb1",
+      "bytes": 15936,
+      "source": "personal/tests/model-cases.js"
+    },
+    "tests/offline.py": {
+      "sha256": "be12f85334b7ca013fed7c63b6ed3b18e9bf83da2ed768898d2ff66465dba78a",
+      "bytes": 5675,
+      "source": "personal/tests/offline.py"
+    },
+    "tests/update-live.py": {
+      "sha256": "48978cf8490f08f16fa0a0bb0553061ce887186b1146764c8faad7efd84ff49f",
+      "bytes": 11538,
+      "source": "personal/tests/update-live.py"
+    },
+    "tests/upgrade-cases.js": {
+      "sha256": "af3f1a239394c15bc7c76ee4693b3df925383db4851e5b4073c373cb7680267f",
+      "bytes": 14922,
+      "source": "personal/tests/upgrade-cases.js"
+    }
+  },
+  "documentation": "Original release documents remain under personal/ and in Git at sourceCommit. Lab has its own README, AGENTS, CHANGELOG; original test and publication claims are not inherited.",
+  "data": "No browser profiles, user progress, ignored verification outputs, credentials or chat exports were copied."
+}

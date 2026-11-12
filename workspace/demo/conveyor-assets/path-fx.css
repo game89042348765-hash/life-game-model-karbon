@@ -1,0 +1,30 @@
+/* LifeGame · анимации пути этапов (задание из «Сейчас» и из «Невыполненного»). Подключить ПОСЛЕ assets/path-v2.css. */
+/* ---------- Анимации пути: шаг к цели и закрытое незавершённое ---------- */
+.lg-fx-ring{position:absolute;width:60px;height:60px;transform:translate(-50%,-50%);overflow:visible;z-index:6;pointer-events:none}
+.lg-fx-ring circle{fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;filter:drop-shadow(0 0 4px rgba(var(--accent-rgb),.9))}
+.lg-fx-ring.is-in circle,.lg-fx-ring.is-out circle{stroke:#fff0bd;stroke-width:1.5}
+.lg-fx-ring.is-close circle{stroke-width:2.6}
+.lg-fx-spark{position:absolute;width:12px;height:12px;border-radius:50%;z-index:6;pointer-events:none;background:#fffaf0;
+  box-shadow:0 0 6px 2px rgba(255,240,189,.95),0 0 18px 6px rgba(var(--accent-rgb),.6)}
+.lg-fx-spark::after{content:'';position:absolute;left:50%;bottom:50%;width:3px;height:46px;margin-left:-1.5px;border-radius:3px;background:linear-gradient(transparent,rgba(255,240,189,.9));filter:blur(.5px)}
+.lg-fx-spark.is-drop{width:10px;height:10px;background:#ffe9a8}
+/* «Сейчас» загорается */
+.lg-path-aesthetics>.lg-level.is-current.lg-fx-now:not(.is-optimal):not(.is-horizon)::before{background:#fff6dc!important;border-color:#fff3c4!important;
+  box-shadow:0 0 6px 2px rgba(255,240,189,.85),0 0 18px 5px rgba(var(--accent-rgb),.55)!important;transition:background .2s,box-shadow .2s}
+.lg-path-aesthetics>.lg-level.is-current:not(.is-optimal):not(.is-horizon)::before{transition:background .9s ease,box-shadow .9s ease,border-color .9s ease}
+/* попадание в «Мой ориентир» */
+.lg-path-aesthetics>.lg-level.lg-fx-hit::before{animation:lg-fx-hit 1.2s ease-out!important}
+@keyframes lg-fx-hit{0%{filter:drop-shadow(0 0 2px rgba(var(--accent-rgb),.6))}20%{filter:drop-shadow(0 0 6px #fff3c4) drop-shadow(0 0 18px var(--accent));transform:translate(-50%,-50%) scale(1.45)}100%{filter:drop-shadow(0 0 4px rgba(var(--accent-rgb),.6));transform:translate(-50%,-50%) scale(1)}}
+/* «Невыполненное» закрыто: знак на миг золотой */
+.lg-path-aesthetics>.lg-path-missed.lg-fx-paid{--lg-mk-c:#ffe39a!important;--lg-mk-g:rgba(var(--accent-rgb),.85)!important}
+.lg-path-aesthetics>.lg-path-missed::before{transition:background .5s ease,filter .5s ease}
+@media (prefers-reduced-motion:reduce){.lg-path-aesthetics>.lg-level.lg-fx-hit::before{animation:none!important}}
+
+/* Звезда «Свет сходится» и «Сверхновая» в цели */
+.lg-fx-mote{position:absolute;width:4px;height:4px;border-radius:50%;background:#fff3c4;box-shadow:0 0 6px var(--accent);transform:translate(-50%,-50%);z-index:6;pointer-events:none}
+.lg-fx-ray{position:absolute;width:70px;height:2px;margin-top:-1px;transform-origin:0 50%;z-index:6;pointer-events:none;background:linear-gradient(90deg,#fff6dc,rgba(var(--accent-rgb),.6),transparent)}
+.lg-path-aesthetics>.lg-level>.card{position:relative}
+
+.lg-rail-glow.lg-fx-up{background:linear-gradient(#ffe28c,rgba(255,240,189,.1))!important}
+/* кружки знаков «Сейчас» и «Невыполненное» нажимаются — анимация запускается */
+.lg-path-aesthetics>.lg-level.is-current::before,.lg-path-aesthetics>.lg-path-missed::before{cursor:pointer}

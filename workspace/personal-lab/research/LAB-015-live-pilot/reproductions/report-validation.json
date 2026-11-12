@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-12T20:10:26.252070+00:00",
+  "original_sealed_files": 301,
+  "selected_evidence_files": 72,
+  "finding_categories": {
+    "observed_ux_friction": 4,
+    "product_limit": 1
+  },
+  "reproduction_scenarios": 3,
+  "recorded_attempt_traces": 7,
+  "checks": [
+    "JSON parse",
+    "Python syntax",
+    "relative report and findings evidence links",
+    "evidence size/SHA-256",
+    "original sealed size/SHA-256",
+    "actual Playwright trace structure and SHA-256"
+  ],
+  "errors": []
+}

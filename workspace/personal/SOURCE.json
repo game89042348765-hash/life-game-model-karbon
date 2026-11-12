@@ -1,0 +1,39 @@
+{
+  "source": "Uploaded Claude LifeGame HTML",
+  "sha256": "3a8a6064ccb61186a3934b28f6bcbeb939c3c2a1f2387c577946d4125ae9ef7b",
+  "baselineBackup": "backups/index-2026-11-11-11-35-50.html",
+  "preservedApplications": [
+    "index.html",
+    "next/"
+  ],
+  "purpose": "Personal daily use; Claude interface and product choices with hardened persistence",
+  "selectiveMerge": {
+    "date": "2026-11-11",
+    "releaseArchive": {
+      "name": "LifeGame-lg-1.1.0.zip",
+      "sha256": "9ba882e726fbcbb4729c69be21dac6c0a625d8f2e9e86302797743b0a5ef9f50"
+    },
+    "sourceArchive": {
+      "name": "LifeGame-source-1.1.0.zip",
+      "sha256": "0d83c89ee12fed3ea17f075f73f8917abcd92f541cefc5e1ea17afc0247882d4"
+    },
+    "releaseMatchesSourceDist": true,
+    "imported": [
+      "three style templates, default quest chosen by user",
+      "locations and context profiles",
+      "floating seven-step hints and target highlighting"
+    ],
+    "notImported": "No whole-app replacement and no automatic lg-4 import. Extra mechanics were separately discussed and authorized, implemented with Personal invariants."
+  },
+  "version": "personal-1.2.0",
+  "agreedUpgrade": {
+    "date": "2026-11-11",
+    "baseCommit": "98de9d937e52e04d8343703c3b0a9a182bf770a4",
+    "baseRuntime": "3a362e0f06e867b008e1d5907c33158b1ec823bc",
+    "htmlBackup": "backups/index-2026-11-11-15-36-47.html",
+    "backupSHA256": "3df4272c8083c4ab61342eee48f513e847ae9fd4d047a61e71cb31d443ccca1d",
+    "implementation": "calendar recurrence/exceptions/splits; daily habit targets; atomic goal drafts; quick goals;119 distinct evening texts; reminder lead; post-commit wallet feedback; daily+last-good backups; strict import",
+    "format": "personal-1 / v2 with compatible optional fields",
+    "oldPackageSnapshot": "downloads/*personal-1.1.0.zip remain unchanged; this update is not in those ZIPs"
+  }
+}

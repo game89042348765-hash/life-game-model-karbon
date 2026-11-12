@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>LifeGame · Стратегия</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* LifeGame dark world: один тёмный вид как в приложении. Слой: шаги демо сверху → экран → нижние листы */
+:root{--bg:#090909;--panel:#171717;--panel2:#141414;--surface:linear-gradient(145deg,#1d1d1d,#151515);--edge:#ffffff24;--edge2:#ffffff14;--text:#f1f1f1;--muted:#b0b0b0;--dim:#6c6c6c;--accent:#ffd54a;--input:#0c0c0c;--goal:#8ed6a5;--cause:#f19aaa;--line:#2c2c2c;--shade:#000000aa;--ink:#141414;color-scheme:dark}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+body{overflow:hidden}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#app{max-width:480px;height:100%;margin:auto;display:flex;flex-direction:column}
+.pad{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* demo steps */
+.stepper{flex:none;display:flex;gap:4px;padding-block:10px 8px;border-bottom:1px solid var(--edge2)}
+.stepper button{flex:1;min-width:0;min-height:40px;border:0;background:none;border-radius:10px;padding:4px 2px;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--dim);font-size:11px}
+.stepper button i{font-style:normal;width:20px;height:20px;border-radius:50%;border:1.5px solid #3a3a3a;display:grid;place-items:center;font-size:11px;font-weight:700}
+.stepper button.done i{border-color:#555;background:#2a2a2a;color:var(--muted)}
+.stepper button.on{color:var(--text)}
+.stepper button.on i{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+.view{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;position:relative}
+.view.v-card,.view.v-map{overflow:hidden;display:flex;flex-direction:column}
+.scroll{padding-block:0 40px}
+
+/* shared (из strategy-levels-map) */
+.top{display:flex;align-items:center;gap:10px;padding:14px 0 8px}
+.top h1{font-size:18px;margin:0;flex:1;min-width:0;overflow-wrap:anywhere}
+.top small{display:block;color:var(--muted);font-weight:400;font-size:12px}
+.iconbtn{width:44px;height:44px;border-radius:12px;border:1px solid var(--edge);background:var(--panel);display:grid;place-items:center;flex:none}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;border:1px solid var(--edge);color:var(--muted);white-space:nowrap}
+.tag.acc{border-color:var(--accent);color:var(--accent)}
+.note{color:var(--muted);font-size:13px;margin:4px 0 12px}
+.card{background:var(--surface);border:1px solid var(--edge);border-radius:16px;padding:14px;margin:10px 0}
+.cardbtn{width:100%;text-align:left;display:block}
+.blockrow{display:flex;align-items:center;gap:12px;width:100%;text-align:left;min-height:56px;background:none;border:0;padding:0}
+.bdot{width:12px;height:12px;border-radius:50%;flex:none;display:inline-block}
+.blockrow .t{flex:1;min-width:0}
+.blockrow .t b{display:block;font-weight:600;overflow-wrap:anywhere}
+.blockrow .t>span{color:var(--muted);font-size:12px}
+.mini{display:flex;gap:4px;margin-top:6px;align-items:center}
+.mini i{width:9px;height:9px;border-radius:50%;border:1.5px solid #666;display:block}
+.mini i.past{background:#555;border-color:#555}
+.mini i.cur{width:13px;height:13px}
+.mini i.lock{border-style:dashed;opacity:.5}
+.h2{font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin:20px 0 6px}
+.btn{min-height:44px;border-radius:12px;border:1px solid var(--edge);background:var(--panel);padding:10px 14px}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--ink);font-weight:600}
+.btn.ghost{background:none;border-color:transparent;color:var(--muted)}
+.btn.dash{width:100%;border-style:dashed;background:none;color:var(--muted)}
+.btn.wide{width:100%}
+.row{display:flex;gap:8px;flex-wrap:wrap}.row .btn{flex:1}
+label.f{display:block;font-size:12px;color:var(--muted);margin:12px 0 4px}
+input[type=text],textarea,select{width:100%;background:var(--input);border:1px solid var(--edge);border-radius:12px;color:var(--text);font:inherit;padding:11px 12px;min-height:44px}
+textarea{min-height:80px;resize:vertical}
+.wiz-prog{display:flex;gap:6px;margin:6px 0 14px}
+.wiz-prog i{flex:1;height:4px;border-radius:4px;background:#2a2a2a}
+.wiz-prog i.on{background:var(--accent)}
+.wiz h2{font-size:20px;margin:6px 0 4px;text-wrap:balance}
+.skipall{display:block;width:100%;margin-top:18px;text-align:center;border:1px dashed var(--edge);border-radius:12px;background:none;padding:12px;color:var(--muted);min-height:44px}
+.banner{border:1.5px solid var(--accent);background:linear-gradient(135deg,#2a2410,#151515 75%);border-radius:16px;padding:14px;margin:6px 0 12px}
+.banner b{color:var(--accent);display:block;font-size:16px;margin-bottom:2px}
+.banner p{margin:0 0 10px;color:#d9cfa7;font-size:13px}
+
+/* levels page */
+.lv{display:flex;gap:12px}
+.lv .rail{width:22px;flex:none;display:flex;flex-direction:column;align-items:center}
+.lv .rail .ln{flex:1;width:2px;background:#333}
+.lv .rail .dt{width:16px;height:16px;border-radius:50%;border:2px solid #777;margin:20px 0 6px;flex:none;background:var(--bg)}
+.lvs>.lv:first-child .rail .ln.up,.lvs>.lv:last-child .rail .ln.down{visibility:hidden}
+.ins button{min-height:36px;border:1px dashed #3a3a3a;border-radius:99px;background:#0d0d0d;color:var(--muted);font-size:12px;padding:4px 12px}
+.lv>.card{flex:1;min-width:0;margin:6px 0}
+.lv.past .dt{background:#555;border-color:#555}
+.lv.past .card{opacity:.7}
+.lv.cur .dt{width:20px;height:20px}
+.lv.cur .card{border-color:var(--c)}
+.lv.lock .dt{border-style:dashed;opacity:.6}
+.lv.lock .card{border-style:dashed;background:#111;color:var(--dim)}
+.lvh{display:flex;align-items:center;gap:8px;justify-content:space-between}
+.lvh b{font-size:15px;overflow-wrap:anywhere;min-width:0}
+.lv p,.sheet p.tx{margin:6px 0 0;color:var(--muted);overflow-wrap:anywhere;white-space:pre-wrap}
+.lv p.empty{color:var(--dim);font-style:italic}
+p.cond{font-size:12px;color:var(--accent);font-style:normal}
+p.cond.ok{color:var(--goal)}
+.sec{font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin:12px 0 4px}
+.task{display:flex;align-items:center;gap:10px;min-height:44px;width:100%;text-align:left;background:none;border:0;padding:4px 0}
+.task .cb{width:22px;height:22px;border-radius:7px;border:2px solid #777;flex:none;display:grid;place-items:center;font-size:13px}
+.task.done .cb{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+.task.done span:last-child{text-decoration:line-through;color:var(--dim)}
+.goal{display:flex;gap:8px;align-items:center;margin:4px 0;overflow-wrap:anywhere}
+.goal:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+.addline{display:flex;gap:8px;margin-top:6px}.addline input{flex:1;min-width:0}
+
+/* block-of-time card (из strategy-block-card) */
+.bc-bars{flex:none;display:flex;gap:5px;padding-block:10px 0}
+.bc-bars i{flex:1;height:3px;border-radius:3px;background:#2a2a2a;transition:background .25s}
+.bc-deck{flex:1;min-height:0;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.bc-deck::-webkit-scrollbar{display:none}
+.bc{flex:0 0 100%;scroll-snap-align:start;overflow-y:auto;padding-block:12px calc(18px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column}
+.bc-head{display:flex;align-items:center;gap:10px;min-height:44px}
+.bc-ico{width:30px;height:30px;border-radius:9px;background:var(--c);flex:none;display:grid;place-items:center;color:#0b0b0b;font-weight:800;font-size:14px}
+.bc-head b{flex:1;font-size:15px;min-width:0}
+.bc-head b span{color:var(--muted);font-weight:500}
+.bc-nav{background:none;border:0;color:var(--dim);font-size:13px;min-height:44px;padding:0 4px}
+.bc-here{margin:16px 0 6px;font-size:11px;font-weight:700;letter-spacing:.09em;color:var(--c)}
+.bc h1{font-size:30px;line-height:1.08;margin:0 0 10px;font-weight:800;letter-spacing:-.01em;overflow-wrap:anywhere;text-wrap:balance}
+.bc-why{color:var(--muted);font-size:14px;margin:0 0 14px;overflow-wrap:anywhere}
+.bc-why b{color:var(--text);font-weight:600}
+.bc-goal{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);margin:-4px 0 12px}
+.bc-goal:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
+.bc-task{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;margin:0 0 8px;padding:10px 14px;border-radius:14px;border:1px solid var(--edge);background:var(--panel2);text-align:left}
+.bc-task .cb{width:22px;height:22px;border-radius:6px;border:2px solid var(--c);flex:none;display:grid;place-items:center;font-size:13px;font-weight:800;color:#0b0b0b}
+.bc-task span{flex:1;min-width:0;overflow-wrap:anywhere}
+.bc-task.done .cb{background:var(--c)}
+.bc-task.done span:last-child{color:var(--dim);text-decoration:line-through}
+.bc-prog{font-size:12px;color:var(--dim);margin:2px 0 0;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.bc-prog span{flex:1}
+.bc-link{background:none;border:0;color:var(--muted);font-size:12px;min-height:36px;padding:0 6px;text-decoration:underline;text-decoration-color:#444;text-underline-offset:3px}
+.bc-ahead{margin-top:auto;padding-top:22px}
+.bc-lab{font-size:11px;font-weight:700;letter-spacing:.09em;color:var(--dim);margin:0 0 6px;display:flex;justify-content:space-between}
+.bc-lab span{color:var(--c)}
+.bc-steps{list-style:none;margin:0 0 10px;padding:0}
+.bc-steps li button{display:flex;align-items:flex-start;gap:12px;width:100%;background:none;border:0;padding:7px 0;text-align:left;min-height:40px}
+.bc-steps .rl{width:12px;flex:none;display:flex;flex-direction:column;align-items:center;align-self:stretch;padding-top:5px}
+.bc-steps .rl i{width:10px;height:10px;border-radius:50%;border:2px solid color-mix(in srgb,var(--c) 70%,#555);background:var(--bg);flex:none}
+.bc-steps .rl em{flex:1;width:0;border-left:2px dotted #333;margin-top:3px}
+.bc-steps .t{flex:1;min-width:0}
+.bc-steps .t b{display:block;font-weight:500;color:#d6d6d6;overflow-wrap:anywhere}
+.bc-steps .t small{color:var(--dim);font-size:11px}
+.bc-steps .t small.lk{color:var(--accent)}
+.bc-steps .t p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.bc-opt{display:flex;align-items:center;gap:12px;width:100%;padding:12px 14px;border-radius:14px;border:1.5px solid var(--accent);background:linear-gradient(135deg,#2a2410,#151515 75%);text-align:left;min-height:64px}
+.bc-opt div{flex:1;min-width:0}
+.bc-opt small{display:block;font-size:11px;font-weight:700;letter-spacing:.09em;color:var(--accent)}
+.bc-opt b{display:block;font-size:19px;font-weight:800;color:var(--accent);overflow-wrap:anywhere}
+.bc-opt p{margin:4px 0 0;font-size:13px;color:#d9cfa7}
+.bc-opt.reached{background:linear-gradient(135deg,#3a3010,#1a1a1a);box-shadow:0 0 0 3px #ffd54a22}
+.bc-beyond{display:flex;align-items:center;gap:10px;margin-top:10px;padding:10px 14px;border-radius:14px;border:1px dashed #2f2f2f;background:repeating-linear-gradient(135deg,#111 0 8px,#0d0d0d 8px 16px);color:var(--dim);font-size:13px}
+.bc-beyond b{color:#8a8a8a;font-weight:600}
+.bc-max{display:flex;align-items:center;gap:10px;margin-top:8px;padding:6px 14px;color:var(--dim);font-size:12px;opacity:.8}
+.bc-max span{overflow-wrap:anywhere}
+.empty-state{padding-block:40px;text-align:center;color:var(--muted)}
+
+/* map (механика из lifegame_v3) */
+.mapbox{flex:1;min-height:0;position:relative;background:radial-gradient(ellipse at 30% 20%,#161616,transparent 60%),radial-gradient(#ffffff0c 1px,transparent 1.2px) 0 0/28px 28px,#0b0b0b;overflow:hidden}
+#map{width:100%;height:100%;display:block;touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab}
+#map.grabbing{cursor:grabbing}
+.nd{cursor:pointer}
+.nd text{pointer-events:none;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.nd .kick{font-size:8.5px;font-weight:800;letter-spacing:.06em;text-anchor:middle}
+.nd .nm{font-size:11px;font-weight:600;fill:#ececec;text-anchor:middle}
+.nd.past .nm{fill:#8c8c8c}
+.nd.lock .nm{fill:#7a7a7a}
+.nd.unset{opacity:.55}
+.ebadge rect{fill:#121212;stroke-width:1}
+.ebadge text{font-size:8.5px;font-weight:700;text-anchor:middle;dominant-baseline:central}
+.mctl{position:absolute;right:max(10px,env(safe-area-inset-right,0px));top:10px;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.zoombox{display:flex;flex-direction:column;border:1px solid var(--edge);border-radius:14px;background:#161616ee;overflow:hidden}
+.zoombox button{width:44px;height:44px;border:0;background:none;font-size:18px;border-bottom:1px solid var(--edge2)}
+.zoombox button:last-child{border-bottom:0}
+.zoombox button.on{color:var(--accent)}
+#mini{width:112px;height:80px;border:1px solid var(--edge);border-radius:12px;background:#111e;display:block;cursor:pointer}
+.mbottom{position:absolute;left:0;right:0;bottom:0;display:flex;gap:8px;padding-block:10px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(transparent,#0b0b0bee 40%)}
+.mbottom .btn{background:#161616ee}
+.mhint{position:absolute;left:max(12px,env(safe-area-inset-left,0px));top:12px;right:70px;font-size:11px;color:var(--dim);pointer-events:none}
+.legend{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:4px}
+.legend span{display:inline-flex;align-items:center;gap:4px}
+.lg{width:9px;height:9px;border-radius:50%;border:1.5px solid #888;display:inline-block}
+
+/* sheet + toast */
+.shade{position:fixed;inset:0;background:var(--shade);z-index:20;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:#161616;border:1px solid var(--edge);border-radius:20px 20px 0 0;width:100%;max-width:480px;max-height:86svh;overflow:auto;padding-top:18px;padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}
+.sheet h3{margin:0 0 4px;font-size:18px;overflow-wrap:anywhere;text-wrap:balance}
+.kick2{font-size:11px;font-weight:700;letter-spacing:.09em}
+.swatches{display:flex;gap:8px;flex-wrap:wrap}
+.swatches button{width:44px;height:44px;border-radius:12px;border:2px solid transparent;background:none;display:grid;place-items:center}
+.swatches button span{width:22px;height:22px;border-radius:50%;display:block}
+.swatches button.on{border-color:var(--text)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips button{min-height:40px;border-radius:99px;border:1px solid var(--edge);background:#1d1d1d;padding:6px 14px}
+.toast{position:fixed;left:50%;bottom:calc(76px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#242424;border:1px solid var(--edge);padding:12px 16px;border-radius:14px;z-index:30;max-width:calc(100% - 32px);font-size:14px;width:max-content}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script>
+(function(){
+"use strict";
+/* ================= данные (из strategy-levels-map) ================= */
+const MAIN=[["b0","Душевное состояние","#a78bfa"],["b1","Физическое состояние","#4ade80"],["b2","Знания, навыки, опыт","#60a5fa"],["b3","Ресурсы и материальное","#fbbf24"],["b4","Окружение и отношения","#f472b6"],["b5","Наполнение и организация","#2dd4bf"],["b6","Обстоятельства","#fb923c"],["b7","Исключить","#f87171"]];
+const COLORS=["#38bdf8","#c084fc","#facc15","#34d399","#fb7185","#a3e635","#e879f9","#94a3b8"];
+// [fact,max,optName,opt,preName,pre,nextName,next,curName,meaning,goal,tasks]
+const EX={
+ b0:["Часто тревожно, мало радости","Глубокий покой и радость почти всегда","Спокойный и живой","Тревога редкая, каждый день есть что-то радостное","Опора","Знаю, что меня успокаивает, и делаю это регулярно","Замечать хорошее","Каждый день отмечаю хорошее","Маленькие радости","Вернуть ощущение, что жить приятно","Неделя отметок без пропуска",["Записать одно хорошее за день","10 минут тишины"]],
+ b1:["Болит шея, весь день сижу, сплю 5–6 часов","Отличная спортивная форма: бегаю полумарафон, сильный и гибкий, ничего не болит","Бодрый и сильный","Шея не болит, 3 тренировки в неделю, сон 7–8 часов","Регулярная активность","Двигаюсь каждый день, шея почти не беспокоит","Режим","Ложусь до полуночи, зарядка для шеи каждый день","Начать чувствовать себя хорошо","Хочу просыпаться без боли и с силами","Наладить базовый режим",["Прогулка 15 минут","Лечь до 00:30"]],
+ b2:["Учусь урывками, без системы","Эксперт в своей области, учу других","Уверенный профи","Хорошо знаю своё дело, учусь каждую неделю","Системное обучение","Курс и практика каждую неделю","Выбрать направление","Понимаю, чему учиться в первую очередь","Разобраться, что нужно","Расти в работе","Выбрать один курс",["Список из 3 навыков","Читать 20 минут"]],
+ b3:["Денег до зарплаты не хватает","Финансовая свобода","Запас и выбор","Резерв на 6 месяцев, могу выбирать работу","Предсказуемый доход","Знаю, сколько получу в следующем месяце","Подушка на месяц","Отложены обязательные расходы на месяц","Увидеть расходы","Спокойствие за семью","Месяц учёта трат",["Записывать траты"]],
+ b4:["Мало общаюсь, дома часто ссоры","Тёплая семья и много близких друзей","Тёплые отношения","Дома спокойно, есть 2–3 близких друга","Время вместе","Регулярные вечера с семьёй и встречи с друзьями","Без ссор","Спорим спокойно","Спокойный разговор","Чтобы дома было тепло","Неделя без крика",["Позвонить другу","Вечер без телефона с семьёй"]],
+ b5:["Дни проходят хаотично","Каждый день наполнен любимым","Мой ритм","Есть понятный ритм недели и время на себя","Планирую неделю","В воскресенье составляю план","Утро по плану","Утро проходит одинаково и спокойно","Порядок дня","Меньше суеты","План на день 5 дней подряд",["Вечером план на завтра"]],
+ b6:["Съёмная квартира далеко от работы","Свой дом там, где хочется","Удобная жизнь","Жильё рядом с работой и парком","Переезд","Нашёл подходящий вариант","Понять варианты","Знаю районы и цены","Изучить районы","Тратить меньше времени на дорогу","Список из 3 районов",["Посмотреть 5 объявлений"]],
+ b7:["3 часа в день в соцсетях","Соцсети совсем не нужны","Под контролем","До 30 минут в день, осознанно","Час в день","Не больше часа","Без ленты утром","Утро без соцсетей","Заметить","Вернуть себе время","Знать своё время в соцсетях",["Включить экранное время"]],
+ guitar:["Гитара стоит в углу, знаю 3 аккорда","Играю как профессионал, выступаю на сцене","Играю для себя и друзей","Свободно играю 20 любимых песен","Песни целиком","Играю 5 песен без остановок","Чистые аккорды","Все базовые аккорды звучат чисто","Вернуться к гитаре","Музыка для души","Выучить 8 аккордов",["Играть 20 минут в день"]],
+ kids:["Мало времени с детьми, в основном гаджеты","Дети раскрыли все таланты, мы лучшие друзья","Близкие и любознательные","Каждый день время вместе, у каждого любимое занятие","Своё занятие у каждого","Ходят в кружок, который выбрали сами","Понять интересы","Знаю, что каждому нравится","Время вместе","Чтобы дети росли счастливыми","15 минут в день с каждым",["Почитать вместе перед сном","Спросить, что было интересного"]]};
+const PRESETS=[["guitar","Гитара","#38bdf8"],["kids","Развитие детей","#facc15"]];
+const FULL=[
+ {t:"1. Факт",q:"Где ты сейчас по этому блоку? Коротко, как есть.",f:[["fact","ta","Например: болит шея, весь день сижу"]]},
+ {t:"2. Логически возможный максимум",q:"Какой максимум ты сейчас видишь в этом блоке?",f:[["max","ta","Самое большее, что можешь представить"]]},
+ {t:"3. Оптимальный",q:"Какой уровень для тебя оптимальный? Дай ему название.",f:[["optName","in","Название"],["opt","ta","Как это выглядит"]]},
+ {t:"4. Перед оптимальным",q:"Что будет прямо перед оптимальным? Тоже назови.",f:[["preName","in","Название"],["pre","ta","Как это выглядит"]]},
+ {t:"5. Следующий",q:"Какой этап будет следующим после текущего?",f:[["nextName","in","Название"],["next","ta","Как это выглядит"]]},
+ {t:"6. Смысл, цель, задачи этого этапа",q:"Последний вопрос — это твой первый этап. С него начинается работа.",f:[["curName","in","Название этапа"],["meaning","in","Смысл"],["goal","in","Цель"],["t0","in","Задание 1"],["t1","in","Задание 2"],["t2","in","Задание 3"]]}];
+const SHORT=[
+ {t:"Оптимальный",q:"Описание пропущено. Осталось одно обязательное — название оптимального уровня.",f:[["optName","in","Название (обязательно)"],["opt","ta","Описание (можно позже)"]],req:"optName"},
+ {t:"Сейчас",q:"Можешь сразу добавить смысл, цель и задание текущего этапа — или позже.",f:[["meaning","in","Смысл"],["goal","in","Цель"],["t0","in","Задание"]]}];
+const STEPS=[["home","Блоки"],["wiz","Анкета"],["block","Итог"],["card","Блок"],["map","Карта"]];
+const KEY="lifegame-strategy-concept-v1";
+
+const mk=(id,name,color,custom,ex)=>({id,name,color,custom:!!custom,ex:ex||id,setup:false,mode:null,levels:[],cur:0});
+let S,uid=1;
+function fresh(){return{blocks:MAIN.map(([id,n,c])=>mk(id,n,c)),view:"home",bid:null,wiz:null,justDone:null,map:{k:.5,tx:200,ty:300,init:false,pos:{},unlocked:false,sel:null,focus:null},uid:1}}
+function load(){try{const r=localStorage.getItem(KEY);if(r){const o=JSON.parse(r);if(o&&Array.isArray(o.blocks)){o.map=Object.assign(fresh().map,o.map||{},{init:false,sel:null});return o}}}catch(e){}return fresh()}
+function save(){try{S.uid=uid;localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+S=load();uid=S.uid||1;
+const nid=()=>"x"+(uid++);
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const blk=()=>S.blocks.find(b=>b.id===S.bid);
+const byId=id=>S.blocks.find(b=>b.id===id);
+const exData=key=>{const e=EX[key];if(!e)return null;return{fact:e[0],max:e[1],optName:e[2],opt:e[3],preName:e[4],pre:e[5],nextName:e[6],next:e[7],curName:e[8],meaning:e[9],goal:e[10],t0:e[11][0]||"",t1:e[11][1]||"",t2:""}};
+
+function toast(m){const o=$(".toast");if(o)o.remove();const d=document.createElement("div");d.className="toast";d.setAttribute("role","status");d.textContent=m;document.body.appendChild(d);setTimeout(()=>d.remove(),2800)}
+function lvl(kind,name,text,row,extra){return Object.assign({id:nid(),kind,name,text:text||"",meaning:"",goals:[],tasks:[],req:null},extra||{})}
+function build(b,d,short){
+ const tasks=[d.t0,d.t1,d.t2].filter(Boolean).map(n=>({id:nid(),name:n,done:false}));
+ const cur=lvl("cur",d.curName||"Сейчас","",1,{meaning:d.meaning||"",goals:d.goal?[{id:nid(),name:d.goal}]:[],tasks});
+ if(short){b.mode="short";b.levels=[lvl("fact","Фактический",d.fact||""),cur,lvl("plan","Планируемый",""),lvl("opt",d.optName,d.opt),lvl("unknown","Неизвестный","")]}
+ else{b.mode="full";b.levels=[lvl("fact","Факт",d.fact),cur,lvl("plan",d.nextName||"Следующий",d.next),lvl("pre",d.preName||"Перед оптимальным",d.pre),lvl("opt",d.optName||"Оптимальный",d.opt),lvl("hidden","Скрытые уровни",""),lvl("max","Логически возможный максимум",d.max)]}
+ b.cur=1;b.setup=true;
+}
+const optIdx=b=>b.levels.findIndex(l=>l.kind==="opt");
+function status(b,i){if(i<b.cur)return"past";if(i===b.cur)return"cur";const o=optIdx(b);if(i<=o)return"plan";return b.cur>=o?"plan":"lock"}
+function reqTarget(req){const tb=req&&byId(req.bid);if(!tb||!tb.setup)return null;const i=tb.levels.findIndex(l=>l.id===req.lid);return i<0?null:{b:tb,i,l:tb.levels[i]}}
+function reqMet(req){const t=reqTarget(req);return!t||t.b.cur>=t.i}
+function condLocked(l){return!!(l.req&&!reqMet(l.req))}
+function condText(l){const t=reqTarget(l.req);if(!t)return"";return reqMet(l.req)?`✓ Условие выполнено: «${t.l.name}» в блоке «${t.b.name}»`:`🔒 Откроется, когда в блоке «${t.b.name}» дойдёшь до «${t.l.name}»`}
+function statusTag(b,i){
+ const s=status(b,i),l=b.levels[i];
+ if(s==="past")return l.kind==="fact"?'<span class="tag">Исходный</span>':'<span class="tag">Пройден</span>';
+ if(s==="cur")return'<span class="tag acc">Сейчас</span>';
+ if(s==="lock")return'<span class="tag">🔒 после оптимального</span>';
+ if(l.kind==="opt")return'<span class="tag acc">★ Оптимальный</span>';
+ if(condLocked(l))return'<span class="tag acc">🔒 условие</span>';
+ return'<span class="tag">Только описание</span>';
+}
+function advanceBlock(b){
+ const nx=b.levels[b.cur+1];
+ if(!nx)return"Это последний уровень блока";
+ if(condLocked(nx)){const t=reqTarget(nx.req);return`Сначала дойди до «${t.l.name}» в блоке «${t.b.name}»`}
+ return"";
+}
+function doAdvance(b){
+ b.cur++;const l=b.levels[b.cur];
+ if(l.kind==="opt"){b.levels.forEach(x=>{if(x.kind==="hidden"){x.kind="plan";x.name="Новый уровень"}if(x.kind==="unknown"){x.kind="plan";x.name="Следующий за оптимальным"}});toast("★ Оптимальный достигнут! Скрытые уровни открылись")}
+ else toast("Теперь текущий этап: "+l.name);
+}
+
+/* ================= шаги демо ================= */
+function stepIdx(){return Math.max(0,STEPS.findIndex(s=>s[0]===S.view))}
+function stepperHTML(){const k=stepIdx();return`<nav class="stepper pad" aria-label="Шаги демо">${STEPS.map(([v,n],i)=>`<button data-step="${v}" class="${i===k?"on":i<k?"done":""}" ${i===k?'aria-current="step"':""}><i>${i+1}</i>${n}</button>`).join("")}</nav>`}
+function goStep(v){
+ const setup=S.blocks.filter(b=>b.setup);
+ if(v==="home"){S.view="home"}
+ else if(v==="wiz"){if(S.wiz&&blk()){S.view="wiz"}else{const b=blk()&&!blk().setup?blk():S.blocks.find(x=>!x.setup)||blk()||S.blocks[0];startWiz(b);return}}
+ else if(v==="block"){const b=blk()&&blk().setup?blk():setup[0];if(!b){toast("Сначала ответь на вопросы хотя бы одного блока");return}S.bid=b.id;S.view="block"}
+ else S.view=v;
+ render(true);
+}
+
+/* ================= 1. Блоки ================= */
+function miniDots(b){return`<span class="mini">${b.levels.map((l,i)=>{const s=status(b,i);return`<i class="${s==="past"?"past":s==="cur"?"cur":s==="lock"?"lock":""}" style="${s==="cur"?`background:${b.color};border-color:${b.color}`:l.kind==="opt"?"border-color:var(--accent)":""}"></i>`}).join("")}</span>`}
+function blockCard(b){return`<div class="card"><button class="blockrow" data-open="${b.id}">
+ <span class="bdot" style="background:${b.color}"></span>
+ <span class="t"><b>${esc(b.name)} ${b.custom?'<span class="tag">Свой блок</span>':""}</b>${b.setup?`<span>Сейчас: ${esc(b.levels[b.cur].name)}</span>${miniDots(b)}`:`<span>Не настроен · ответить на вопросы</span>`}</span>
+ <span style="color:var(--dim)" aria-hidden="true">›</span></button></div>`}
+function homeHTML(){
+ const main=S.blocks.filter(b=>!b.custom),own=S.blocks.filter(b=>b.custom);
+ return`<div class="pad scroll"><div class="top"><h1>Стратегия<small>Блоки времени · выбери блок и ответь на вопросы</small></h1><button class="iconbtn" data-act="resetall" aria-label="Сбросить демо">↺</button></div>
+ <p class="note">У каждого блока: факт → сейчас → следующий → перед оптимальным → оптимальный → скрытые уровни → максимум.</p>
+ ${S.blocks.some(b=>!b.setup&&!b.custom)?`<button class="btn dash" data-act="fillall">Заполнить остальные блоки примером (чтобы посмотреть карту)</button>`:""}
+ <div class="h2">Основные блоки</div>${main.map(blockCard).join("")}
+ <div class="h2">Свои блоки</div>${own.length?own.map(blockCard).join(""):`<p class="note">Добавь своё направление — например, Гитара или Развитие детей. Стратегия у него та же.</p>`}
+ <button class="btn dash" data-act="newblock">＋ Новый блок</button></div>`;
+}
+
+/* ================= 2. Анкета ================= */
+function startWiz(b){S.bid=b.id;S.view="wiz";S.wiz={short:false,step:0,d:{}};render(true)}
+function readWiz(){document.querySelectorAll("[data-w]").forEach(e=>S.wiz.d[e.dataset.w]=e.value.trim())}
+function finishWiz(){const b=blk();build(b,S.wiz.d,S.wiz.short);S.view="block";S.wiz=null;S.justDone=b.id;render(true)}
+function wizHTML(){
+ const b=blk(),w=S.wiz,steps=w.short?SHORT:FULL,st=steps[w.step],last=w.step===steps.length-1;
+ const fields=st.f.map(([k,type,ph])=>`<label class="f" for="w_${k}">${esc(ph)}</label>`+(type==="ta"?`<textarea id="w_${k}" data-w="${k}">${esc(w.d[k])}</textarea>`:`<input type="text" id="w_${k}" data-w="${k}" maxlength="120" value="${esc(w.d[k])}">`)).join("");
+ return`<div class="pad scroll"><div class="top"><button class="iconbtn" data-act="home" aria-label="Назад">‹</button><h1><span class="bdot" style="background:${b.color};width:10px;height:10px;margin-right:6px"></span>${esc(b.name)}<small>${w.short?"Короткий вариант":"Вопрос "+(w.step+1)+" из 6"}</small></h1></div>
+ <div class="wiz-prog">${steps.map((_,i)=>`<i class="${i<=w.step?"on":""}"></i>`).join("")}</div>
+ <div class="wiz"><h2>${esc(st.t)}</h2><p class="note">${esc(st.q)}</p>${fields}</div>
+ <div class="row" style="margin-top:18px">${w.step>0?`<button class="btn" data-act="wprev">Назад</button>`:""}${!st.req?`<button class="btn ghost" data-act="wskip">Пропустить</button>`:""}<button class="btn pri" data-act="wnext">${last?"Готово":"Далее"}</button></div>
+ ${!w.short&&EX[b.ex]?`<button class="btn ghost wide" style="margin-top:8px" data-act="wexample">Заполнить примером</button>`:""}
+ ${!w.short&&w.step<5?`<button class="skipall" data-act="wshort">Пропустить описание → короткий вариант из 5 уровней</button>`:""}</div>`;
+}
+
+/* ================= 3. Итог: уровни блока ================= */
+function levelCard(b,l,i){
+ const s=status(b,i);let body="";
+ if(s==="lock")body=l.kind==="max"&&l.text?`<p>${esc(l.text)}</p><p class="empty">Виден, но действия откроются после оптимального.</p>`:`<p class="empty">Скрыто. Откроется, когда достигнешь оптимального.</p>`;
+ else if(s==="cur"){
+  const why=advanceBlock(b);
+  body=`${l.text?`<p>${esc(l.text)}</p>`:""}
+  <div class="sec">Смысл</div>${l.meaning?`<p style="color:var(--text)">${esc(l.meaning)}</p>`:`<div class="addline"><input type="text" maxlength="120" placeholder="Зачем этот этап" aria-label="Смысл"><button class="btn" data-act="addMeaning" aria-label="Добавить смысл">＋</button></div>`}
+  <div class="sec">Цели</div>${l.goals.map(g=>`<div class="goal">${esc(g.name)}</div>`).join("")}
+  <div class="addline"><input type="text" maxlength="120" placeholder="Новая цель" aria-label="Новая цель"><button class="btn" data-act="addGoal" aria-label="Добавить цель">＋</button></div>
+  <div class="sec">Задания</div>${l.tasks.map(t=>`<button class="task ${t.done?"done":""}" data-task="${t.id}" aria-pressed="${t.done}"><span class="cb">${t.done?"✓":""}</span><span>${esc(t.name)}</span></button>`).join("")}
+  <div class="addline"><input type="text" maxlength="120" placeholder="Новое задание" aria-label="Новое задание"><button class="btn" data-act="addTask" aria-label="Добавить задание">＋</button></div>
+  ${i<b.levels.length-1?`<button class="btn wide" style="margin-top:12px;${why?"opacity:.6":""}" data-act="advance">${why?"🔒 ":""}Этап пройден → следующий</button>`:""}`;
+ }else{
+  body=l.text?`<p>${esc(l.text)}</p>`:`<p class="empty">${l.kind==="fact"&&b.mode==="short"?"Не описан":"Не описан · нажми, чтобы описать"}</p>`;
+  if(l.req&&reqTarget(l.req))body+=`<p class="cond ${reqMet(l.req)?"ok":""}">${esc(condText(l))}</p>`;
+  if(s==="plan")body+=`<p class="empty" style="font-size:12px">Здесь можно только описать. Цели и задания — когда этап станет текущим.</p>`;
+ }
+ const tap=s==="plan"||(s==="past"&&l.kind==="fact")||s==="lock";
+ const inner=`<div class="lvh"><b>${esc(l.name)}</b>${statusTag(b,i)}</div>${body}`;
+ return`<div class="lv ${s}" id="lv${i}" style="--c:${b.color}"><div class="rail"><div class="ln up"></div><div class="dt" style="${s==="cur"?`background:${b.color};border-color:${b.color}`:l.kind==="opt"?"border-color:var(--accent)":""}"></div><div class="ln down"></div></div>
+  ${tap?`<button class="card cardbtn" data-lv="${i}">${inner}</button>`:`<div class="card">${inner}</div>`}</div>`;
+}
+function canInsert(b,pos){
+ const o=optIdx(b),prev=b.levels[pos-1],nx=b.levels[pos];if(!prev||!nx||pos<=b.cur)return false;
+ if(b.cur>=o)return pos>o;
+ const pre=b.levels.findIndex(l=>l.kind==="pre");
+ return pos<=(pre>=0?pre:o);
+}
+function insHTML(b,pos){return canInsert(b,pos)?`<div class="ins"><button data-act="ins" data-at="${pos}">＋ этап</button></div>`:""}
+function blockHTML(){
+ const b=blk();
+ return`<div class="pad scroll"><div class="top"><button class="iconbtn" data-act="home" aria-label="К блокам">‹</button><h1>${esc(b.name)}<small>${b.mode==="short"?"Короткий вариант · 5 уровней":"Полный вариант · 7 уровней"}</small></h1><button class="iconbtn" data-act="reset" aria-label="Ответить заново">↺</button></div>
+ ${S.justDone===b.id?`<div class="banner"><b>✓ Готово — вот что получилось</b><p>Ответы превратились в лестницу уровней. Работать можно только в текущем этапе, остальные пока описаны.</p><button class="btn pri wide" data-act="tocard" data-b="${b.id}">Как теперь выглядит блок времени →</button></div>`:`<div class="row" style="margin-bottom:6px"><button class="btn" data-act="tocard" data-b="${b.id}">Блок времени</button><button class="btn" data-act="tomap" data-b="${b.id}">На карте</button></div>`}
+ <p class="note">Сверху — факт, внизу — максимум. Работать можно только в текущем этапе.</p><div class="lvs">${b.levels.map((l,i)=>insHTML(b,i)+levelCard(b,l,i)).join("")}</div></div>`;
+}
+
+/* ================= 4. Блок времени (карточки) ================= */
+const STAR='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffd54a" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>';
+const LOCK='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+const PEAK='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 20l6-10 4 6 3-4 5 8z"/></svg>';
+const openSteps=new Set();
+const setupList=()=>S.blocks.filter(b=>b.setup);
+function stepRow(b,i,label){
+ const a=b.levels[i],id=b.id+"-"+a.id,lk=condLocked(a);
+ return`<li><button data-s="${id}" aria-expanded="${openSteps.has(id)}"><span class="rl"><i></i><em></em></span><span class="t"><b>${esc(a.name)}</b><small>${esc(label)}</small>${lk?` <small class="lk">· 🔒 условие</small>`:""}${openSteps.has(id)?`<p>${esc(a.text||"Пока не описан")}</p>${a.req?`<p style="color:var(--accent)">${esc(condText(a))}</p>`:""}`:""}</span></button></li>`;
+}
+function bcCard(b,k,n){
+ const L=b.levels,l=L[b.cur],o=optIdx(b),fact=L.find(x=>x.kind==="fact"),max=L.find(x=>x.kind==="max");
+ const done=l.tasks.filter(t=>t.done).length,reached=b.cur>=o;
+ const before=[];for(let i=b.cur+1;i<o;i++)before.push(i);
+ const after=[];for(let i=Math.max(b.cur,o)+1;i<L.length;i++)if(L[i].kind!=="max"&&status(b,i)!=="lock")after.push(i);
+ const hidden=L.some((x,i)=>status(b,i)==="lock"&&x.kind!=="max");
+ const optL=L[o],oid=b.id+"-opt";
+ return`<section class="bc pad" style="--c:${b.color}" aria-label="${esc(b.name)}, ${k+1} из ${n}">
+ <div class="bc-head"><span class="bc-ico">${esc(b.name.trim()[0]||"•")}</span><b>${esc(b.name)} <span>· ${k+1} из ${n}${b.custom?" · свой блок":""}</span></b>
+  ${n>1?(k<n-1?`<button class="bc-nav" data-go="${k+1}">листай →</button>`:`<button class="bc-nav" data-go="0">← к началу</button>`):""}</div>
+ <div class="bc-here">ТЫ СЕЙЧАС ЗДЕСЬ</div>
+ <h1>${esc(l.name)}</h1>
+ <p class="bc-why">${l.meaning?`Смысл: ${esc(l.meaning)}. `:""}${fact&&fact.text?`<b>Было:</b> «${esc(fact.text)}».`:""}</p>
+ ${l.goals.map(g=>`<div class="bc-goal">Цель: ${esc(g.name)}</div>`).join("")}
+ ${l.tasks.map(t=>`<button class="bc-task ${t.done?"done":""}" data-bt="${b.id}|${t.id}" aria-pressed="${t.done}"><span class="cb">${t.done?"✓":""}</span><span>${esc(t.name)}</span></button>`).join("")||`<p class="note">Заданий пока нет — добавь их во «Всех уровнях».</p>`}
+ <div class="bc-prog"><span>Сегодня: ${done} из ${l.tasks.length}</span><button class="bc-link" data-act="tolevels" data-b="${b.id}">Все уровни</button><button class="bc-link" data-act="tomap" data-b="${b.id}">На карте</button></div>
+ <div class="bc-ahead">
+  <div class="bc-lab">ВПЕРЕДИ <span>${esc(b.name.toUpperCase())}</span></div>
+  ${before.length?`<ul class="bc-steps">${before.map((i,j)=>stepRow(b,i,j===0?"Следующий":L[i].kind==="pre"?"Перед оптимальным":"Этап")).join("")}</ul>`:""}
+  ${optL?`<button class="bc-opt ${reached?"reached":""}" data-s="${oid}" aria-expanded="${openSteps.has(oid)}"><div><small>ОПТИМАЛЬНЫЙ · ${b.cur===o?"ТЫ ЗДЕСЬ":reached?"ДОСТИГНУТ":"ЧЕРЕЗ "+(o-b.cur)}</small><b>${esc(optL.name)}</b>${openSteps.has(oid)?`<p>${esc(optL.text||"Пока не описан")}</p>`:""}</div>${STAR}</button>`:""}
+  ${after.length?`<ul class="bc-steps" style="margin-top:10px">${after.map(i=>stepRow(b,i,"После оптимального")).join("")}</ul>`:""}
+  ${hidden?`<div class="bc-beyond">${LOCK}<span><b>Скрытые уровни</b> — откроются, когда дойдёшь до оптимального</span></div>`:""}
+  ${max&&max.text?`<div class="bc-max">${PEAK}<span>ЛВМЖ: ${esc(max.text)}</span></div>`:""}
+ </div></section>`;
+}
+function cardHTML(){
+ const list=setupList();
+ if(!list.length)return`<div class="pad empty-state"><p>Блок времени появится после анкеты.</p><button class="btn pri" data-step="wiz">Ответить на вопросы</button></div>`;
+ return`<div class="bc-bars pad" id="bcbars" aria-hidden="true"></div><div class="bc-deck" id="deck" aria-label="Блоки — листай вбок">${list.map((b,k)=>bcCard(b,k,list.length)).join("")}</div>`;
+}
+function deckIdx(){const d=$("#deck");return d?Math.round(d.scrollLeft/Math.max(1,d.clientWidth)):0}
+function bars(){const el=$("#bcbars");if(!el)return;const list=setupList(),k=deckIdx();el.innerHTML=list.map((b,i)=>`<i style="${i===k?`background:${b.color}`:i<k?"background:#555":""}"></i>`).join("");if(list[k])S.bid=list[k].id}
+
+/* ================= 5. Карта (механика lifegame_v3) ================= */
+const KICK={past:"✓ ПРОЙДЕН",cur:"● СЕЙЧАС",plan:"ЭТАП",lock:"🔒 СКРЫТО"};
+function wrap(name,max,limit){
+ const words=String(name).split(/\s+/).filter(Boolean),lines=[];let cur="";
+ for(const w of words){if(!cur)cur=w;else if((cur+" "+w).length<=max)cur+=" "+w;else{lines.push(cur);cur=w}}
+ if(cur)lines.push(cur);
+ const out=lines.slice(0,limit).map(s=>s.length>max+2?s.slice(0,max+1)+"…":s);
+ if(lines.length>limit)out[limit-1]=out[limit-1].replace(/…?$/,"…");
+ return out;
+}
+function graph(){
+ const N=S.blocks.length,nodes=[],edges=[],auras=[];
+ const add=n=>{const o=S.map.pos[n.id];if(o){n.x=o.x;n.y=o.y}nodes.push(n);return n};
+ add({id:"me",type:"moment",x:0,y:0,r:60,name:"Я сейчас",kick:"◎ Я СЕЙЧАС",color:"#ffd54a"});
+ const R0=Math.max(230,N*34),STEP=165;
+ S.blocks.forEach((b,bi)=>{
+  const a=-Math.PI/2+Math.PI/N+2*Math.PI*bi/N,ux=Math.cos(a),uy=Math.sin(a),px=-uy,py=ux;
+  const at=(r,side)=>({x:Math.round(ux*r+px*side),y:Math.round(uy*r+py*side)});
+  const bn=add({id:"b:"+b.id,type:"block",bid:b.id,...at(R0,0),r:52,name:b.name,kick:b.setup?"БЛОК":"НЕ НАСТРОЕН",color:b.color,unset:!b.setup});
+  edges.push({from:"me",to:bn.id,kind:"base"});
+  if(!b.setup)return;
+  auras.push({...at(R0+STEP*2.2,0),r:STEP*2.1,color:b.color});
+  let prev=bn.id,k=0,firstPlan=true;const o=optIdx(b);
+  b.levels.forEach((l,li)=>{
+   const s=status(b,li),id="l:"+l.id;
+   if(l.kind==="fact"){add({id,type:"fact",bid:b.id,li,...at(R0+75,-128),r:40,name:l.text||"Не описан",kick:"ФАКТ",color:"#f19aaa"});edges.push({from:bn.id,to:id,kind:"thin"});return}
+   k++;
+   const lk=condLocked(l);
+   let kick=KICK[s];
+   if(s==="plan"){kick=l.kind==="opt"?"★ ОПТИМАЛЬНЫЙ":lk?"🔒 УСЛОВИЕ":li>o?"НОВЫЙ":firstPlan?"СЛЕДУЮЩИЙ":l.kind==="pre"?"ПЕРЕД ОПТ.":"ЭТАП";firstPlan=false}
+   if(s==="cur"&&l.kind==="opt")kick="★ СЕЙЧАС";
+   if(s==="lock"&&l.kind==="max")kick="ЛВМЖ";
+   const name=s==="lock"&&l.kind!=="max"?"Скрытые уровни":s==="lock"?(l.text||"Максимум"):l.name;
+   add({id,type:"stage",s,bid:b.id,li,...at(R0+STEP*k,0),r:s==="cur"?54:s==="past"?34:46,name,kick,color:b.color,opt:l.kind==="opt",lk});
+   edges.push({from:prev,to:id,kind:s==="past"||s==="cur"?"done":s==="lock"?"lock":l.kind==="opt"?"opt":"next",color:b.color});
+   prev=id;
+   if(s==="cur")l.goals.forEach((g,gi)=>{const side=(gi%2?1:-1)*118,gid="g:"+g.id;add({id:gid,type:"goal",bid:b.id,li,...at(R0+STEP*k+40+Math.floor(gi/2)*80,side),r:34,name:g.name,kick:"ЦЕЛЬ",color:"#8ed6a5"});edges.push({from:id,to:gid,kind:"thin"})});
+  });
+ });
+ S.blocks.forEach(b=>b.setup&&b.levels.forEach(l=>{if(l.req&&reqTarget(l.req)&&status(b,b.levels.indexOf(l))!=="lock")edges.push({from:"l:"+l.req.lid,to:"l:"+l.id,kind:"cond",ok:reqMet(l.req)})}));
+ return{nodes,edges,auras};
+}
+let G=null;
+function mapHTML(){
+ const M=S.map;
+ return`<div class="mapbox" id="mapbox">
+ <svg id="map" role="application" aria-label="Карта стратегии: блоки, этапы и условия"><defs>
+  <marker id="arD" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#777"/></marker>
+  <marker id="arG" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ffd54a"/></marker>
+  <marker id="arOk" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8ed6a5"/></marker>
+ </defs><g id="world"></g></svg>
+ <div class="mhint">Тяни — двигать карту, щипок или колесо — масштаб. Нажми на круг — подробности.
+  <div class="legend"><span><i class="lg" style="background:#4a4a4a;border-color:#4a4a4a"></i>пройден</span><span><i class="lg" style="background:#ffd54a;border-color:#ffd54a"></i>сейчас</span><span><i class="lg" style="border-color:#8ed6a5"></i>цель</span><span><i class="lg" style="border-style:dashed"></i>скрыт</span></div></div>
+ <div class="mctl"><div class="zoombox"><button data-act="zin" aria-label="Приблизить">+</button><button data-act="zout" aria-label="Отдалить">−</button><button data-act="drag" class="${M.unlocked?"on":""}" aria-pressed="${M.unlocked}" aria-label="${M.unlocked?"Круги можно двигать":"Круги закреплены"}">${M.unlocked?"🔓":"🔒"}</button><button data-act="tidy" aria-label="Вернуть круги на места">✥</button></div><svg id="mini" aria-label="Мини-карта, нажми чтобы перейти"></svg></div>
+ <div class="mbottom pad"><button class="btn" data-act="me">◎ Я сейчас</button><button class="btn" data-act="overview">Обзор всей карты</button></div>
+ </div>`;
+}
+const SVGNS="http://www.w3.org/2000/svg";
+function bounds(){let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;G.nodes.forEach(n=>{x0=Math.min(x0,n.x-n.r);y0=Math.min(y0,n.y-n.r);x1=Math.max(x1,n.x+n.r);y1=Math.max(y1,n.y+n.r)});return{x0,y0,x1,y1}}
+function edgePath(e,a,b){
+ const dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy)||1,ux=dx/d,uy=dy/d,arrow=e.kind==="next"||e.kind==="opt"||e.kind==="cond";
+ if(e.kind==="cond"){
+  const mx=(a.x+b.x)/2,my=(a.y+b.y)/2,ml=Math.hypot(mx,my)||1,push=Math.min(160,d*.35),cx=mx+mx/ml*push,cy=my+my/ml*push;
+  const s1=Math.hypot(cx-a.x,cy-a.y),s2=Math.hypot(b.x-cx,b.y-cy);
+  const sx=a.x+(cx-a.x)/s1*(a.r+3),sy=a.y+(cy-a.y)/s1*(a.r+3),ex=b.x-(b.x-cx)/s2*(b.r+8),ey=b.y-(b.y-cy)/s2*(b.r+8);
+  return{d:`M${sx} ${sy}Q${cx} ${cy} ${ex} ${ey}`,mx:.25*sx+.5*cx+.25*ex,my:.25*sy+.5*cy+.25*ey};
+ }
+ const sx=a.x+ux*(a.r+2),sy=a.y+uy*(a.r+2),ex=b.x-ux*(b.r+(arrow?7:2)),ey=b.y-uy*(b.r+(arrow?7:2));
+ return{d:`M${sx} ${sy}L${ex} ${ey}`,mx:(sx+ex)/2,my:(sy+ey)/2};
+}
+function drawMap(){
+ const svg=$("#map");if(!svg)return;
+ G=graph();const M=S.map,byN=Object.fromEntries(G.nodes.map(n=>[n.id,n]));
+ let h="";
+ G.auras.forEach(a=>h+=`<circle cx="${a.x}" cy="${a.y}" r="${a.r}" fill="${a.color}" opacity=".045"/>`);
+ let badges="";
+ G.edges.forEach(e=>{
+  const a=byN[e.from],b=byN[e.to];if(!a||!b)return;const g=edgePath(e,a,b);
+  const st={base:'stroke="#7a7a7a" stroke-opacity=".55" stroke-width="2.6"',thin:'stroke="#ffffff" stroke-opacity=".22" stroke-width="1.6"',done:`stroke="${e.color}" stroke-opacity=".75" stroke-width="3"`,next:'stroke="#8a8a8a" stroke-opacity=".7" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arD)"',opt:'stroke="#ffd54a" stroke-opacity=".8" stroke-width="2.2" stroke-dasharray="7 6" marker-end="url(#arD)"',lock:'stroke="#555" stroke-width="2" stroke-dasharray="3 7"',cond:e.ok?'stroke="#8ed6a5" stroke-width="2.4" stroke-dasharray="10 6" marker-end="url(#arOk)"':'stroke="#ffd54a" stroke-width="2.6" stroke-dasharray="10 7" marker-end="url(#arG)"'}[e.kind];
+  h+=`<path d="${g.d}" fill="none" ${st} stroke-linecap="round"/>`;
+  if(e.kind==="cond"){const t=e.ok?"✓ условие":"🔒 условие",c=e.ok?"#8ed6a5":"#ffd54a";badges+=`<g class="ebadge" transform="translate(${g.mx} ${g.my})"><rect x="-34" y="-9" width="68" height="18" rx="9" stroke="${c}"/><text fill="${c}">${t}</text></g>`}
+ });
+ h+=badges;
+ G.nodes.forEach(n=>{
+  let col=n.color,cls="nd "+n.type+(n.s?" "+n.s:"")+(n.unset?" unset":"");
+  if(n.s==="past"||n.s==="lock")col="#5a5a5a";
+  if(n.opt&&n.s!=="past")col="#ffd54a";
+  const dash=n.s==="lock"||n.unset||(n.s==="plan"&&n.lk)?'stroke-dasharray="5 5"':"";
+  const lines=wrap(n.name,Math.max(8,Math.floor(n.r/3.7)),n.type==="moment"?1:3);
+  const fs=n.type==="moment"?14:n.s==="cur"?12:n.r<36?9.5:11,lh=fs*1.18,tot=10+lines.length*lh,y0=-tot/2+7;
+  const kc=n.s==="lock"?"#7a7a7a":n.type==="stage"&&n.s!=="past"&&!n.opt?n.color:col;
+  h+=`<g class="${cls}" data-node="${esc(n.id)}" transform="translate(${n.x} ${n.y})" tabindex="0" role="button" aria-label="${esc(n.kick+": "+n.name)}">
+   ${M.sel===n.id?`<circle r="${n.r+9}" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2"/>`:""}
+   ${n.s==="cur"||n.type==="moment"?`<circle r="${n.r+10}" fill="${n.color}" opacity=".13"/>`:`<circle r="${n.r+7}" fill="${col}" opacity=".06"/>`}
+   <circle r="${n.r}" fill="#141414" stroke="${col}" stroke-width="${n.s==="cur"||n.type==="moment"?3:2}" ${dash}/>
+   <circle r="${n.r-6}" fill="${n.s==="cur"?n.color:col}" opacity="${n.s==="cur"?.2:.07}"/>
+   <text class="kick" y="${y0}" fill="${kc}">${esc(n.kick)}</text>
+   ${lines.map((s,i)=>`<text class="nm" y="${y0+12+i*lh+fs*.35}" font-size="${fs}">${esc(s)}</text>`).join("")}
+  </g>`;
+ });
+ $("#world").innerHTML=h;
+ if(!M.init){M.init=true;requestAnimationFrame(()=>{if(M.focus){focusNode(M.focus);M.focus=null}else overview(true)})}
+ else if(M.focus){focusNode(M.focus);M.focus=null}
+ applyT();drawMini();
+}
+function applyT(){const w=$("#world");if(w)w.setAttribute("transform",`translate(${S.map.tx} ${S.map.ty}) scale(${S.map.k})`);updMiniView()}
+function size(){const s=$("#map");return s?{W:s.clientWidth,H:s.clientHeight}:{W:400,H:600}}
+function overview(first){
+ const{W,H}=size(),b=bounds(),w=b.x1-b.x0+80,hh=b.y1-b.y0+80;let k=Math.min(W/w,H/hh);
+ const M=S.map;
+ if(first&&k<.42){M.k=.42;M.tx=W/2;M.ty=H/2-10}
+ else{M.k=Math.max(.15,Math.min(1.2,k));M.tx=W/2-(b.x0+b.x1)/2*M.k;M.ty=H/2-(b.y0+b.y1)/2*M.k-10}
+ applyT();
+}
+function focusNode(id,k){const n=G.nodes.find(x=>x.id===id);if(!n)return;const{W,H}=size(),M=S.map;M.k=k||Math.max(M.k,.8);M.tx=W/2-n.x*M.k;M.ty=H/2-n.y*M.k;applyT()}
+function zoomAt(k2,cx,cy){const M=S.map;k2=Math.max(.15,Math.min(2.2,k2));const wx=(cx-M.tx)/M.k,wy=(cy-M.ty)/M.k;M.k=k2;M.tx=cx-wx*k2;M.ty=cy-wy*k2;applyT()}
+let MB=null;
+function drawMini(){
+ const m=$("#mini");if(!m||!G)return;const b=bounds(),pad=60;
+ MB={x:b.x0-pad,y:b.y0-pad,w:b.x1-b.x0+pad*2,h:b.y1-b.y0+pad*2};
+ m.setAttribute("viewBox",`${MB.x} ${MB.y} ${MB.w} ${MB.h}`);
+ const sw=MB.w/112;
+ m.innerHTML=G.nodes.map(n=>`<circle cx="${n.x}" cy="${n.y}" r="${n.s==="cur"||n.type==="moment"?sw*3.4:sw*2.2}" fill="${n.s==="past"||n.s==="lock"?"#555":n.type==="goal"?"#8ed6a5":n.color}"/>`).join("")+`<rect id="miniv" fill="#ffffff10" stroke="#ffd54a" stroke-width="${sw}"/>`;
+ updMiniView();
+}
+function updMiniView(){const r=$("#miniv");if(!r||!S.map.k)return;const{W,H}=size(),M=S.map;r.setAttribute("x",-M.tx/M.k);r.setAttribute("y",-M.ty/M.k);r.setAttribute("width",W/M.k);r.setAttribute("height",H/M.k)}
+function bindMap(){
+ const svg=$("#map");if(!svg)return;const P=new Map();let drag=null,pinch=null;
+ const rel=e=>{const r=svg.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}};
+ svg.addEventListener("pointerdown",e=>{
+  P.set(e.pointerId,rel(e));try{svg.setPointerCapture(e.pointerId)}catch(_){}
+  if(P.size===1){const nd=e.target.closest(".nd"),id=nd&&nd.dataset.node,n=id&&G.nodes.find(x=>x.id===id),p=rel(e);
+   drag={sx:p.x,sy:p.y,tx:S.map.tx,ty:S.map.ty,id,move:S.map.unlocked&&n&&n.id!=="me"?n:null,nx:n&&n.x,ny:n&&n.y,moved:false}}
+  else if(P.size===2){const[a,b]=[...P.values()];pinch={d:Math.hypot(a.x-b.x,a.y-b.y),k:S.map.k};drag=null}
+ });
+ svg.addEventListener("pointermove",e=>{
+  if(!P.has(e.pointerId))return;P.set(e.pointerId,rel(e));
+  if(pinch&&P.size===2){const[a,b]=[...P.values()];zoomAt(pinch.k*Math.hypot(a.x-b.x,a.y-b.y)/pinch.d,(a.x+b.x)/2,(a.y+b.y)/2);return}
+  if(!drag)return;const p=rel(e),dx=p.x-drag.sx,dy=p.y-drag.sy;
+  if(!drag.moved&&Math.hypot(dx,dy)>6){drag.moved=true;svg.classList.add("grabbing")}
+  if(!drag.moved)return;
+  if(drag.move){S.map.pos[drag.move.id]={x:Math.round(drag.nx+dx/S.map.k),y:Math.round(drag.ny+dy/S.map.k)};drawMap()}
+  else{S.map.tx=drag.tx+dx;S.map.ty=drag.ty+dy;applyT()}
+ });
+ const up=e=>{
+  P.delete(e.pointerId);svg.classList.remove("grabbing");
+  if(drag&&!drag.moved&&drag.id)nodeSheet(drag.id);
+  if(drag&&drag.moved)save();
+  drag=null;if(P.size<2)pinch=null;
+ };
+ svg.addEventListener("pointerup",up);svg.addEventListener("pointercancel",up);
+ svg.addEventListener("wheel",e=>{e.preventDefault();const p=rel(e);zoomAt(S.map.k*Math.exp(-e.deltaY*.0015),p.x,p.y)},{passive:false});
+ svg.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target.closest(".nd"))nodeSheet(e.target.closest(".nd").dataset.node)});
+ const mini=$("#mini");mini.addEventListener("click",e=>{if(!MB)return;const r=mini.getBoundingClientRect(),sc=Math.max(MB.w/r.width,MB.h/r.height),ox=MB.x+(MB.w-r.width*sc)/2,oy=MB.y+(MB.h-r.height*sc)/2,wx=ox+(e.clientX-r.left)*sc,wy=oy+(e.clientY-r.top)*sc,{W,H}=size();S.map.tx=W/2-wx*S.map.k;S.map.ty=H/2-wy*S.map.k;applyT()});
+}
+function taskBtns(b,l,nodeId){return l.tasks.map(t=>`<button class="task ${t.done?"done":""}" data-act="mtask" data-b="${b.id}" data-t="${t.id}" data-n="${esc(nodeId)}" aria-pressed="${t.done}"><span class="cb">${t.done?"✓":""}</span><span>${esc(t.name)}</span></button>`).join("")}
+function nodeSheet(id){
+ const n=G.nodes.find(x=>x.id===id);if(!n)return;S.map.sel=id;drawMap();
+ const b=n.bid&&byId(n.bid),head=`<div class="kick2" style="color:${n.s==="past"||n.s==="lock"?"var(--dim)":n.opt?"var(--accent)":n.color}">${esc(n.kick)}</div>`;
+ let h="";
+ if(n.type==="moment"){
+  const list=setupList();
+  h=`${head}<h3>Что делать сейчас</h3><p class="note">${list.length?`Настроено блоков: ${list.length} из ${S.blocks.length}. Ниже — задания всех текущих этапов.`:"Пока ни один блок не настроен."}</p>
+  ${list.map(x=>{const l=x.levels[x.cur];return`<div class="sec" style="color:${x.color}">${esc(x.name)} · ${esc(l.name)}</div>${taskBtns(x,l,id)||'<p class="note" style="margin:0">Заданий нет</p>'}`}).join("")}
+  ${list.length<S.blocks.length?`<button class="btn dash" style="margin-top:12px" data-act="sclose" data-step="home">Настроить остальные блоки</button>`:""}`;
+ }else if(n.type==="block"){
+  if(!b.setup)h=`${head}<h3>${esc(b.name)}</h3><p class="note">Блок ещё не настроен. Ответь на вопросы — и на карте появится его путь от факта до максимума.</p><button class="btn pri wide" data-act="wizfor" data-b="${b.id}">Ответить на вопросы</button>`;
+  else{const l=b.levels[b.cur];h=`${head}<h3>${esc(b.name)}</h3><p class="note">Сейчас: <b style="color:var(--text)">${esc(l.name)}</b> · этап ${b.cur} из ${b.levels.length-1}</p>${l.meaning?`<p class="tx">Смысл: ${esc(l.meaning)}</p>`:""}
+  <div class="row" style="margin-top:14px"><button class="btn" data-act="tolevels" data-b="${b.id}">Все уровни</button><button class="btn pri" data-act="tocard" data-b="${b.id}">Блок времени</button></div>`}
+ }else if(n.type==="fact"){const l=b.levels[n.li];h=`${head}<h3>Исходная точка</h3><p class="note">${esc(b.name)}</p><p class="tx">${esc(l.text||"Не описан")}</p>`}
+ else if(n.type==="goal"){const l=b.levels[n.li];h=`${head}<h3>${esc(n.name)}</h3><p class="note">Цель текущего этапа «${esc(l.name)}» · ${esc(b.name)}</p><div class="sec">Задания этапа</div>${taskBtns(b,l,id)||'<p class="note">Заданий нет</p>'}`}
+ else{
+  const l=b.levels[n.li],s=n.s;
+  h=`${head}<h3>${esc(s==="lock"&&l.kind!=="max"?"Скрытые уровни":l.name)}</h3><p class="note"><span class="bdot" style="width:8px;height:8px;background:${b.color}"></span> ${esc(b.name)}</p>`;
+  if(s==="lock")h+=`<p class="tx">${l.kind==="max"&&l.text?esc(l.text)+"\n\n":""}Откроется, когда достигнешь оптимального.</p>`;
+  else if(s==="cur"){const why=advanceBlock(b);h+=`${l.meaning?`<div class="sec">Смысл</div><p class="tx" style="color:var(--text)">${esc(l.meaning)}</p>`:""}${l.goals.length?`<div class="sec">Цели</div>${l.goals.map(g=>`<div class="goal">${esc(g.name)}</div>`).join("")}`:""}<div class="sec">Задания</div>${taskBtns(b,l,id)||'<p class="note">Заданий нет</p>'}
+   ${b.cur<b.levels.length-1?`<button class="btn wide" style="margin-top:12px;${why?"opacity:.6":""}" data-act="madv" data-b="${b.id}">${why?"🔒 ":""}Этап пройден → следующий</button>`:""}`}
+  else{h+=`<p class="tx">${esc(l.text||(s==="past"?"Этап пройден.":"Пока не описан."))}</p>`;if(l.req&&reqTarget(l.req))h+=`<p class="cond ${reqMet(l.req)?"ok":""}" style="margin-top:10px">${esc(condText(l))}</p>`;if(s==="plan")h+=`<p class="note" style="margin-top:10px">Пока только описание. Цели и задания появятся, когда этап станет текущим.</p>`}
+  h+=`<div class="row" style="margin-top:14px"><button class="btn" data-act="sclose">Закрыть</button><button class="btn pri" data-act="goto" data-b="${b.id}" data-i="${n.li}">Открыть в блоке</button></div>`;
+ }
+ openSheet(h);
+}
+
+/* ================= рендер ================= */
+function render(nav){
+ const a=$("#app"),pv=S._rv,v=$(".view");
+ const keepY=!nav&&v&&pv===S.view?v.scrollTop:0;
+ let deck=null;if(S.view==="card"&&pv==="card"&&!nav){const d=$("#deck");if(d)deck={x:d.scrollLeft,y:[...d.children].map(c=>c.scrollTop)}}
+ if(S.view!=="block"&&S.view!=="card")S.justDone=null;
+ const body=S.view==="home"?homeHTML():S.view==="wiz"?wizHTML():S.view==="block"?blockHTML():S.view==="card"?cardHTML():mapHTML();
+ a.innerHTML=stepperHTML()+`<main class="view v-${S.view}">${body}</main>`;
+ const nv=$(".view");if(nv)nv.scrollTop=keepY;
+ if(S.view==="card"){const d=$("#deck");if(d){if(deck){d.scrollLeft=deck.x;[...d.children].forEach((c,i)=>c.scrollTop=deck.y[i]||0)}else{const i=Math.max(0,setupList().findIndex(b=>b.id===S.bid));d.scrollLeft=i*d.clientWidth}d.addEventListener("scroll",()=>requestAnimationFrame(bars),{passive:true});bars()}}
+ if(S.view==="map"){drawMap();bindMap()}
+ S._rv=S.view;save();
+}
+function openSheet(html){const o=$(".shade");if(o)o.remove();const sh=document.createElement("div");sh.className="shade";sh.innerHTML=`<div class="sheet pad" role="dialog" aria-modal="true">${html}</div>`;sh.addEventListener("click",e=>{if(e.target===sh)closeSheet()});document.body.appendChild(sh);const f=sh.querySelector("input[type=text],textarea");if(f)f.focus()}
+function closeSheet(){const s=$(".shade");if(s)s.remove();if(S.map.sel){S.map.sel=null;if(S.view==="map")drawMap()}}
+function openBlock(id){const b=byId(id);if(b.setup){S.bid=b.id;S.view="block";render(true)}else startWiz(b)}
+let newColor=COLORS[0],newEx=null;
+function newBlockSheet(){
+ openSheet(`<h3>Новый блок</h3><p class="note">Своё направление времени. Стратегия у него та же: факт → … → максимум.</p>
+ <div class="sec">Быстрый пример</div><div class="chips">${PRESETS.map(([k,n])=>`<button data-preset="${k}">${esc(n)}</button>`).join("")}</div>
+ <label class="f" for="nb_n">Название</label><input type="text" id="nb_n" maxlength="120" placeholder="Например: Гитара">
+ <div class="sec">Цвет</div><div class="swatches">${COLORS.map(c=>`<button data-color="${c}" class="${c===newColor?"on":""}" aria-label="Цвет ${c}"><span style="background:${c}"></span></button>`).join("")}</div>
+ <div class="row" style="margin-top:16px"><button class="btn" data-act="sclose">Отмена</button><button class="btn pri" data-act="nbsave">Создать и ответить на вопросы</button></div>`);
+}
+function reqOptions(b,l){
+ const cur=l.req?l.req.bid+"|"+l.req.lid:"";
+ let o=`<option value="">Без условия</option>`;
+ setupList().filter(x=>x.id!==b.id).forEach(x=>{o+=`<optgroup label="${esc(x.name)}">`+x.levels.filter(y=>y.kind!=="fact"&&y.kind!=="hidden"&&y.kind!=="unknown"&&y.kind!=="max").map(y=>`<option value="${x.id}|${y.id}" ${cur===x.id+"|"+y.id?"selected":""}>${esc(y.name)}</option>`).join("")+`</optgroup>`});
+ return o;
+}
+
+/* ================= события ================= */
+document.addEventListener("click",e=>{
+ const t=e.target.closest("[data-step],[data-open],[data-act],[data-lv],[data-task],[data-preset],[data-color],[data-go],[data-bt],[data-s]");if(!t)return;
+ const b=blk();
+ if(t.dataset.act==="sclose"){closeSheet();if(t.dataset.step)goStep(t.dataset.step);return}
+ if(t.dataset.step){closeSheet();goStep(t.dataset.step);return}
+ if(t.dataset.open){closeSheet();openBlock(t.dataset.open);return}
+ if(t.dataset.preset){const p=PRESETS.find(x=>x[0]===t.dataset.preset);$("#nb_n").value=p[1];newEx=p[0];newColor=p[2];document.querySelectorAll("[data-color]").forEach(x=>x.classList.toggle("on",x.dataset.color===newColor));return}
+ if(t.dataset.color){newColor=t.dataset.color;document.querySelectorAll("[data-color]").forEach(x=>x.classList.toggle("on",x===t));return}
+ if(t.dataset.go!==undefined){const d=$("#deck");d.scrollTo({left:+t.dataset.go*d.clientWidth,behavior:"smooth"});return}
+ if(t.dataset.bt){const[bid,tid]=t.dataset.bt.split("|"),x=byId(bid),tk=x.levels[x.cur].tasks.find(q=>q.id===tid);tk.done=!tk.done;render();return}
+ if(t.dataset.s){const id=t.dataset.s;openSteps.has(id)?openSteps.delete(id):openSteps.add(id);render();return}
+ if(t.dataset.task){const l=b.levels[b.cur],tk=l.tasks.find(x=>x.id===t.dataset.task);tk.done=!tk.done;render();return}
+ if(t.dataset.lv!==undefined){
+  const i=+t.dataset.lv,l=b.levels[i],s=status(b,i);
+  if(s==="lock"){toast("Этот уровень откроется, когда достигнешь оптимального");return}
+  const canReq=s==="plan"&&l.kind!=="opt"&&setupList().length>1;
+  openSheet(`<h3>${esc(l.name)}</h3><p class="note">${l.kind==="fact"?"Исходная точка. Можно только описать.":"Только описание. Действия появятся, когда этап станет текущим."}</p>
+   ${l.kind!=="fact"?`<label class="f" for="s_n">Название${l.kind==="opt"?" (обязательно)":""}</label><input type="text" id="s_n" maxlength="120" value="${esc(l.name)}">`:""}
+   <label class="f" for="s_t">Описание</label><textarea id="s_t">${esc(l.text)}</textarea>
+   ${canReq?`<label class="f" for="s_req">Закрыть условием: сначала дойти до этапа в другом блоке</label><select id="s_req">${reqOptions(b,l)}</select>`:""}
+   <div class="row" style="margin-top:14px">${l.added?`<button class="btn ghost" data-act="sdel" data-i="${i}">Убрать</button>`:""}<button class="btn" data-act="sclose">Отмена</button><button class="btn pri" data-act="ssave" data-i="${i}">Сохранить</button></div>`);
+  return;
+ }
+ const act=t.dataset.act;
+ if(act==="home"){S.view="home";S.wiz=null;render(true)}
+ else if(act==="tocard"){closeSheet();S.bid=t.dataset.b;S.view="card";render(true)}
+ else if(act==="tolevels"){closeSheet();S.bid=t.dataset.b;S.view="block";render(true)}
+ else if(act==="tomap"){closeSheet();S.map.focus="b:"+t.dataset.b;S.view="map";render(true)}
+ else if(act==="wizfor"){closeSheet();startWiz(byId(t.dataset.b))}
+ else if(act==="goto"){closeSheet();S.bid=t.dataset.b;S.view="block";render(true);const el=document.getElementById("lv"+t.dataset.i);if(el)el.scrollIntoView({block:"center"})}
+ else if(act==="ins"){const pos=+t.dataset.at,after=b.cur>=optIdx(b);openSheet(`<h3>Новый этап</h3><p class="note">Встанет между «${esc(b.levels[pos-1].name)}» и «${esc(b.levels[pos].name)}». ${after?"Это уровень после оптимального.":"Пока можно только описать — действия появятся, когда этап станет текущим."}</p><label class="f" for="s_n">Название</label><input type="text" id="s_n" maxlength="120"><label class="f" for="s_t">Как это выглядит (по желанию)</label><textarea id="s_t"></textarea><div class="row" style="margin-top:14px"><button class="btn" data-act="sclose">Отмена</button><button class="btn pri" data-act="insgo" data-at="${pos}">Добавить</button></div>`)}
+ else if(act==="insgo"){const n=$("#s_n").value.trim();if(!n){toast("Назови этап");return}b.levels.splice(+t.dataset.at,0,lvl("plan",n,$("#s_t").value.trim(),0,{added:true}));closeSheet();render();toast("Этап добавлен")}
+ else if(act==="sdel"){b.levels.splice(+t.dataset.i,1);closeSheet();render()}
+ else if(act==="ssave"){const l=b.levels[+t.dataset.i],n=$("#s_n");if(n){const v=n.value.trim();if(!v&&l.kind==="opt"){toast("У оптимального уровня нужно название");return}if(v)l.name=v}l.text=$("#s_t").value.trim();const r=$("#s_req");if(r){const[bid,lid]=r.value.split("|");l.req=r.value?{bid,lid}:null}closeSheet();render()}
+ else if(act==="zin"||act==="zout"){const{W,H}=size();zoomAt(S.map.k*(act==="zin"?1.25:.8),W/2,H/2)}
+ else if(act==="drag"){S.map.unlocked=!S.map.unlocked;render();toast(S.map.unlocked?"Круги можно перетаскивать":"Круги закреплены — палец двигает карту")}
+ else if(act==="tidy"){S.map.pos={};render();toast("Круги вернулись на места")}
+ else if(act==="me"){focusNode("me",.85)}
+ else if(act==="overview"){overview(false)}
+ else if(act==="mtask"){const x=byId(t.dataset.b),tk=x.levels[x.cur].tasks.find(q=>q.id===t.dataset.t);tk.done=!tk.done;save();nodeSheet(t.dataset.n)}
+ else if(act==="madv"){const x=byId(t.dataset.b),why=advanceBlock(x);if(why){toast(why);return}closeSheet();doAdvance(x);render()}
+ else if(act==="fillall"){
+  S.blocks.filter(x=>!x.custom&&!x.setup).forEach(x=>build(x,exData(x.ex),false));
+  [["b3",2],["b5",2],["b7",3]].forEach(([id,c])=>{const x=byId(id);if(x.mode==="full"&&x.cur<c&&x.cur===1){x.levels[c].tasks=x.levels[1].tasks.map(q=>({...q,id:nid(),done:false}));x.levels[c].meaning=x.levels[1].meaning;x.levels[c].goals=x.levels[1].goals.map(g=>({...g,id:nid()}));x.levels[1].goals=[];x.cur=c}});
+  const link=(fb,fk,tb,ti)=>{const f=byId(fb),tt=byId(tb);if(!f.setup||!tt.setup||f.mode!=="full"||tt.mode!=="full")return;const l=f.levels.find(q=>q.kind===fk);if(l&&!l.req)l.req={bid:tb,lid:tt.levels[ti].id}};
+  link("b1","pre","b3",2);link("b4","pre","b5",3);
+  render();toast("Блоки заполнены примером — загляни на Карту")}
+ else if(act==="newblock"){newColor=COLORS[0];newEx=null;newBlockSheet()}
+ else if(act==="nbsave"){const n=$("#nb_n").value.trim();if(!n){toast("Назови блок");return}const nb=mk(nid(),n,newColor,true,newEx&&PRESETS.find(p=>p[0]===newEx)[1]===n?newEx:null);S.blocks.push(nb);closeSheet();startWiz(nb)}
+ else if(act==="wnext"){readWiz();const steps=S.wiz.short?SHORT:FULL,st=steps[S.wiz.step];if(st.req&&!S.wiz.d[st.req]){toast("Нужно название оптимального уровня");return}if(S.wiz.step===steps.length-1)finishWiz();else{S.wiz.step++;render(true)}}
+ else if(act==="wskip"){readWiz();const steps=S.wiz.short?SHORT:FULL;steps[S.wiz.step].f.forEach(([k])=>S.wiz.d[k]="");if(S.wiz.step===steps.length-1)finishWiz();else{S.wiz.step++;render(true)}}
+ else if(act==="wprev"){readWiz();S.wiz.step--;render(true)}
+ else if(act==="wshort"){readWiz();S.wiz.short=true;S.wiz.step=0;render(true)}
+ else if(act==="wexample"){Object.assign(S.wiz.d,exData(b.ex));render(true)}
+ else if(act==="reset"){openSheet(`<h3>Ответить заново?</h3><p class="note">Уровни, цели и задания блока «${esc(b.name)}» заменятся новыми ответами.</p><div class="row"><button class="btn" data-act="sclose">Отмена</button><button class="btn pri" data-act="resetgo">Начать заново</button></div>`)}
+ else if(act==="resetgo"){closeSheet();b.setup=false;b.levels=[];startWiz(b)}
+ else if(act==="resetall"){openSheet(`<h3>Сбросить демо?</h3><p class="note">Все блоки вернутся в состояние «не настроен».</p><div class="row"><button class="btn" data-act="sclose">Отмена</button><button class="btn pri" data-act="resetallgo">Сбросить</button></div>`)}
+ else if(act==="resetallgo"){closeSheet();S=fresh();uid=1;render(true)}
+ else if(["addMeaning","addGoal","addTask"].includes(act)){const v=t.parentElement.querySelector("input").value.trim();if(!v)return;const l=b.levels[b.cur];if(act==="addMeaning")l.meaning=v;else if(act==="addGoal")l.goals.push({id:nid(),name:v});else l.tasks.push({id:nid(),name:v,done:false});render()}
+ else if(act==="advance"){const why=advanceBlock(b);if(why){toast(why);return}const next=b.levels[b.cur+1];openSheet(`<h3>Этап пройден?</h3><p class="note">Текущий этап станет пройденным. «${esc(next.name)}» станет текущим — в нём можно будет добавлять смысл, цели и задания.</p><div class="row"><button class="btn" data-act="sclose">Отмена</button><button class="btn pri" data-act="advgo">Перейти</button></div>`)}
+ else if(act==="advgo"){closeSheet();doAdvance(b);render()}
+});
+document.addEventListener("keydown",e=>{
+ if(e.key==="Escape")closeSheet();
+ if(e.key==="Enter"&&e.target.matches(".addline input")){e.preventDefault();e.target.parentElement.querySelector("button").click()}
+ if(S.view==="card"&&!$(".shade")){const d=$("#deck");if(d&&e.key==="ArrowRight")d.scrollBy({left:d.clientWidth,behavior:"smooth"});if(d&&e.key==="ArrowLeft")d.scrollBy({left:-d.clientWidth,behavior:"smooth"})}
+});
+window.addEventListener("resize",()=>{if(S.view==="map")applyT()});
+render(true);
+})();
+</script>
+</body>
+</html>

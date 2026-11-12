@@ -1,0 +1,2645 @@
+{
+  "source_commit": "89112c29dacea254cd8f50c4197a8ee77e764917",
+  "excluded_tracked_files": [
+    {
+      "path": "LOCAL_RESTORE.md",
+      "reason": "superseded handoff or local recovery note"
+    },
+    {
+      "path": "LifeGame_CHAT_HANDOFF_2026-11-06.md",
+      "reason": "superseded handoff or local recovery note"
+    },
+    {
+      "path": "backups/index-2026-11-06-01-56-18.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-02-15-08.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-02-25-06.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-02-46-25.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-02-57-25.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-03-07-19.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-03-24-42.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-03-37-59.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-03-42-29.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-04-00-16.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-09-08-29.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-09-51-55.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-13-42-08.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-16-55-40.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-17-11-47.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-18-22-27.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-21-07-35.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-21-30-54.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-21-47-34.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-22-03-47.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-22-40-43.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-06-23-36-50.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-01-08-40.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-01-24-05.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-01-37-28.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-01-49-21.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-02-00-41.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-10-16-08.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-11-07-52.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-11-47-22.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-12-11-18.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-12-52-14.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-13-12-49.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-15-52-19.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-16-38-39.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-07-19-31-45.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-10-53-59.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-12-47-01.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-14-14-01.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-14-42-17.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-14-59-36.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-15-19-35.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-15-23-21.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-15-50-06.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-16-31-29.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-16-56-28.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-18-46-09.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-18-48-24.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-19-16-41.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-20-29-23.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-21-22-14.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-23-21-43.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-08-23-42-09.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-00-01-43.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-00-27-01.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-02-37-53.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-02-49-48.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-03-12-10.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-03-23-32.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-03-33-45.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-03-43-49.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-03-48-38.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-03-51-13.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-03-59-51.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-04-25-59.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-04-47-59.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-04-58-46.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-05-20-52.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-05-36-32.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-05-56-30.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-08-21-40.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-09-46-40.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-10-21-28.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-11-01-12.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-11-07-15.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-11-16-41.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-11-30-51.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-11-36-23.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-11-54-41.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-12-34-17.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-13-39-06.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-13-54-38.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-17-01-13.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-18-25-11.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-22-38-00.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-22-41-03.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-23-21-52.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-09-23-29-40.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-11-11-35-50.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-11-15-36-47.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/index-2026-11-11-21-41-36.html",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/path-v2-2026-11-09-05-36-32.js",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/splash-2026-11-09-04-58-46/MANIFEST.json",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/splash-2026-11-09-04-58-46/RESTORE.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/splash-2026-11-09-04-58-46/assets/images/sunrise-splash.jpg",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/splash-2026-11-09-04-58-46/assets/splash-sunrise.css",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/splash-2026-11-09-04-58-46/assets/splash-sunrise.js",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/sunrise-2026-11-06-03-18-38/splash-sunrise.css",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "backups/sunrise-2026-11-06-03-18-38/splash-sunrise.js",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "demo/card-layout-before/bonus.png",
+      "reason": "superseded before-layout copy"
+    },
+    {
+      "path": "demo/card-layout-before/quest.png",
+      "reason": "superseded before-layout copy"
+    },
+    {
+      "path": "demo/card-layout-before/task.png",
+      "reason": "superseded before-layout copy"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-compact-widget-demo/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-compact-widgets/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-compact-widgets/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-day-balance-apply/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-day-balance-apply/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-day-balance-apply/day-balance-demo.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-day-balance-demo/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-first-reward/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-first-reward/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-goal-rhythm-apply/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-goal-rhythm-apply/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-goal-rhythm-apply/goal-rhythm-demo.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-goal-rhythm-demo/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-stage-3/LifeGame_CHAT_HANDOFF_2026-11-06.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-stage-3/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-stage-3/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-stage-4/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-stage-4/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-stage-5/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-stage-5/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-stage-6/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-before-stage-6/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-inbox-stage-1/LifeGame_CHAT_HANDOFF_2026-11-06.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-revision-12/.clinerules.txt",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-revision-12/LifeGame_CHAT_HANDOFF_2026-11-06.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-revision-12/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-revision-12/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-revision-12/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-06-revision-12/manifest.json",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-appearance-settings/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-appearance-settings/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-appearance-settings/graphite-widgets.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-block-stages/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-block-stages/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-block-stages/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-colorful-icons/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-colorful-icons/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-colorful-icons/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-colorful-icons/appearance-settings.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-compact-all-widgets/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-compact-all-widgets/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-compact-all-widgets/graphite-widgets.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-five-strategy-demos/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-five-strategy-demos/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-form-usability/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-cards/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-cards/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-cards/graphite-widgets.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-details/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-details/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-details/graphite-widgets.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-dialogs/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-dialogs/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-dialogs/graphite-widgets.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-widgets/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-graphite-widgets/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-meaning-background/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-meaning-background/appearance-settings.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-meaning-theme-fix/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-meaning-theme-fix/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-meaning-theme-fix/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-meaning-theme-fix/appearance-settings.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-mobile-strategy-demos/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-mobile-strategy-demos/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-mobile-strategy-demos/strategy-applied.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-neutral-graphite-apply/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-neutral-graphite-apply/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-neutral-graphite-apply/graphite-widgets.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-neutral-graphite-apply/neutral-palette-concept.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-neutral-palette-concept/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-stage-map-demo/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-stage-map-demo/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-strategy-analysis/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-strategy-implementation/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-strategy-implementation/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-strategy-implementation/strategy-analysis-2026-11-07.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-weekly-review-and-dialogs/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-weekly-review-and-dialogs/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-07-before-widget-design-v2/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-app-navigation/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-app-navigation/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-app-navigation/navigation-back-forward.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-block-levels/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-block-levels/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-calendar-links/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-calendar-links/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-calendar-links/calendar-block-link-plan.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-calendar-links/navigation-back-forward.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-capture-reset-feedback/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-capture-reset-feedback/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-centered-path/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-centered-path/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-centered-path/calendar-block-link-plan.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-everyday-demo/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-everyday-demo/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-final-concept-app-design/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-navigation-carousel/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-navigation-carousel/navigation-back-forward.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-navigation-demo/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-optimized-strategy-demo/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-ordinary-capture-cards/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-ordinary-capture-cards/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-ordinary-capture-cards/calendar-block-link-plan.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-path-aesthetics-integration/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-path-aesthetics-integration/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-path-aesthetics-integration/centered-block-path.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-path-compact-rows/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-path-compact-rows/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-path-compact-rows/centered-block-path.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-quick-capture/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-quick-capture/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-quick-date-label/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-quick-date-label/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-quick-mini-calendar/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-quick-mini-calendar/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-quick-ui/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-quick-ui/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-remove-save-toasts/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-remove-save-toasts/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-single-back/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-single-back/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-single-back/navigation-back-forward.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-stage-insert-visibility/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-08-before-stage-spacing/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-05-56-30-before-block-refresh/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-05-56-30-before-block-refresh/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-05-56-30-before-block-refresh/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-08-21-40-before-requested-rollback/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-08-21-40-before-requested-rollback/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-09-46-40-before-wallet-counter/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-09-46-40-before-wallet-counter/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-10-21-28-before-global-coin-counter/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-10-21-28-before-global-coin-counter/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-01-12-before-stage-navigation/AGENTS.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-01-12-before-stage-navigation/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-01-12-before-stage-navigation/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-07-15-before-work-path/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-07-15-before-work-path/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-16-41-before-task-polish/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-16-41-before-task-polish/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-30-51-before-compact-path/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-30-51-before-compact-path/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-36-23-before-proportions-wallet/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-36-23-before-proportions-wallet/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-54-41-before-uniform-stages/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-11-54-41-before-uniform-stages/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-13-48-01-stage-preparation/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-13-48-01-stage-preparation/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-13-56-01-stage-style-trial/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-13-56-01-stage-style-trial/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-light-pulses-2026-11-09-04-25-59/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-light-pulses-2026-11-09-04-25-59/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-path-horizon-contract/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-path-horizon-contract/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-path-horizon-contract/centered-block-path.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-splash-replacement-2026-11-09-04-58-46/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-splash-replacement-2026-11-09-04-58-46/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-splash-start-fix-2026-11-09-05-20-52/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-splash-start-fix-2026-11-09-05-20-52/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-star-dawn-restore-2026-11-09-04-47-59/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-star-dawn-restore-2026-11-09-04-47-59/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-symbolic-markers/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-before-symbolic-markers/centered-block-path.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-mobile-form-reverted-2026-11-09-03-23-32/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-path-v2-before/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-path-v2-before/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-task-form-2026-11-09-02-37-53/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-task-form-2026-11-09-02-37-53/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-task-form-targeted-2026-11-09-03-33-45/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-09-task-form-targeted-2026-11-09-03-33-45/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/downloads/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/personal/AGENTS.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/personal/AUDIT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/personal/COMPARE-LG110.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/personal/DECISIONS.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/personal/PROGRESS.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/personal/PUBLICATION.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/personal/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/personal/SOURCE.json",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/personal/TESTING.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-personal-1.2.0/personal/audit-manifest.json",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-before-rest-rule/LifeGame-stage-2-comparison-and-foundation.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-personal-before-lg110/LifeGame_CURRENT_WORK.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-personal-before-lg110/LifeGame_PROJECT_CONTEXT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-personal-before-lg110/personal/AUDIT.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-personal-before-lg110/personal/DECISIONS.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-personal-before-lg110/personal/PROGRESS.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-personal-before-lg110/personal/PUBLICATION.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-personal-before-lg110/personal/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-11-personal-before-lg110/personal/TESTING.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-12-before-LAB-013/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-12-before-LAB-013/ai-VERIFICATION.json",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/history/2026-11-12-before-LAB-013/flex-VERIFICATION.json",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "docs/rebuild-baseline/2026-11-10/01-CURRENT-SYSTEM.md",
+      "reason": "historical rebuild snapshots"
+    },
+    {
+      "path": "docs/rebuild-baseline/2026-11-10/02-REFERENCE-PASSPORT.md",
+      "reason": "historical rebuild snapshots"
+    },
+    {
+      "path": "docs/rebuild-baseline/2026-11-10/03-DIFFERENCES-AND-QUESTIONS.md",
+      "reason": "historical rebuild snapshots"
+    },
+    {
+      "path": "docs/rebuild-baseline/2026-11-10/04-COMPARISON.md",
+      "reason": "historical rebuild snapshots"
+    },
+    {
+      "path": "docs/rebuild-baseline/2026-11-10/05-USER-FLOWS.md",
+      "reason": "historical rebuild snapshots"
+    },
+    {
+      "path": "docs/rebuild-baseline/2026-11-10/FUNCTIONS.md",
+      "reason": "historical rebuild snapshots"
+    },
+    {
+      "path": "docs/rebuild-baseline/2026-11-10/README.md",
+      "reason": "historical rebuild snapshots"
+    },
+    {
+      "path": "docs/rebuild-baseline/2026-11-10/function-index.json",
+      "reason": "historical rebuild snapshots"
+    },
+    {
+      "path": "docs/rebuild-baseline/2026-11-10/runtime-schema.json",
+      "reason": "historical rebuild snapshots"
+    },
+    {
+      "path": "docs/rebuild-baseline/2026-11-10/source-manifest.json",
+      "reason": "historical rebuild snapshots"
+    },
+    {
+      "path": "downloads/LifeGame-before-widget-redesign-2026-11-06.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-current-2026-11-10-3bf9c76.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-documents-2026-11-11.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-full-8ebd076-2026-11-08.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-lg-personal-1.1.0.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-minimal-31f8140-2026-11-09-08-21-40.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-minimal-67d2e19-2026-11-09.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-minimal-8ebd076-2026-11-08.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-next-complete-2026-11-11.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-personal-packages-1.1.0.json",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "downloads/LifeGame-rebuild-baseline-2026-11-10.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-runtime-a80bd17-2026-11-08.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-source-personal-1.1.0.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/LifeGame-strategy-conveyor-demo-2026-11-09.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LAB-004A-R2.json",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "downloads/lab-packets/LAB-006.json",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "downloads/lab-packets/LAB-008.json",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "downloads/lab-packets/LAB-010.json",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "downloads/lab-packets/LAB-011.json",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-Atlas-Hybrid-v2.1.1-LAB1.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-004A-R2-native-45d6c0a.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-004A-resume-032c757.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-004B-arena-032c757.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-006-atlas-v1.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-006-created-system.md",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-006-independent-brief.md",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-008-hybrid-revision.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-010-HYDRA-v2.1-R2.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-014-Pilot.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-015-P01-evidence.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-015-P02-evidence.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-015-P03-evidence.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/LifeGame-LAB-015-results.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "downloads/lab-packets/PACKAGES.json",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "downloads/lab-packets/README.md",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "downloads/lab-packets/SHA256SUMS.txt",
+      "reason": "old package indexes and distributions"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/INDEX.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/MANIFEST.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0001.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0002.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0003.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0004.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0005.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0006.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0006.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0007.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0008.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0008.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0009.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/P01-d01-o0010.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-01/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-02/P01-d02-o0011.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-02/P01-d02-o0012.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-02/P01-d02-o0012.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-02/P01-d02-o0013.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-02/P01-d02-o0013.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-02/P01-d02-o0014.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-02/P01-d02-o0014.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-02/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-03/P01-d03-o0015.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-03/P01-d03-o0016.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-03/P01-d03-o0017.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-03/P01-d03-o0017.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-03/P01-d03-o0018.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-03/P01-d03-o0018.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-03/P01-d03-o0019.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-03/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-06/P01-d06-o0020.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-06/P01-d06-o0021.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-06/P01-d06-o0022.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-06/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-07/P01-d07-o0023.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-07/P01-d07-o0024.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-07/P01-d07-o0024.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-07/P01-d07-o0025.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P01/day-07/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0001.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0002.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0003.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0004.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0005.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0006.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0007.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0008.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0008.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0009.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0010.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0011.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0012.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0013.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0014.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0015.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0016.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0017.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0018.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0019.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0020.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0021.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0022.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0023.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0024.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0025.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0026.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0027.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/P02-d01-o0028.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-01/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-02/P02-d02-o0029.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-02/P02-d02-o0030.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-02/P02-d02-o0031.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-02/P02-d02-o0032.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-02/P02-d02-o0033.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-02/P02-d02-o0034.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-02/P02-d02-o0035.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-02/P02-d02-o0036.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-02/P02-d02-o0037.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-02/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0038.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0039.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0040.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0041.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0042.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0043.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0044.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0045.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0046.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0047.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0048.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0049.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/P02-d04-o0050.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-04/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0051.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0052.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0053.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0054.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0055.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0056.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0056.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0057.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0058.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0059.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/P02-d05-o0060.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-05/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-06/P02-d06-o0061.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-06/P02-d06-o0062.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-06/P02-d06-o0063.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-06/P02-d06-o0064.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-06/P02-d06-o0065.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-06/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/P02-d07-o0066.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/P02-d07-o0067.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/P02-d07-o0068.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/P02-d07-o0069.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/P02-d07-o0070.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/P02-d07-o0071.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/P02-d07-o0072.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/P02-d07-o0073.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/P02-d07-o0074.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/P02-d07-o0075.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P02/day-07/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/P03-d01-o0001.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/P03-d01-o0002.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/P03-d01-o0003.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/P03-d01-o0004.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/P03-d01-o0005.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/P03-d01-o0006.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/P03-d01-o0007.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/P03-d01-o0008.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/P03-d01-o0009.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/P03-d01-o0010.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-01/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-03/P03-d03-o0011.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-03/P03-d03-o0012.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-03/P03-d03-o0013.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-03/P03-d03-o0013.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-03/P03-d03-o0014.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-03/P03-d03-o0015.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-03/P03-d03-o0016.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-03/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0017.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0018.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0019.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0019.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0020.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0021.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0022.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0023.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0024.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0025.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/P03-d04-o0026.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-04/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-06/P03-d06-o0027.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-06/P03-d06-o0028.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-06/P03-d06-o0029.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-06/P03-d06-o0030.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-06/P03-d06-o0031.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-06/P03-d06-o0032.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-06/P03-d06-o0033.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-06/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-07/P03-d07-o0034.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-07/P03-d07-o0035.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-07/P03-d07-o0035.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-07/P03-d07-o0036.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-07/P03-d07-o0036.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/P03/day-07/observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/REVIEW.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/engine-snapshot/PROMPT-USER.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/engine-snapshot/driver.py",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/engine-snapshot/make_world.py",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/engine-snapshot/world.month.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/engine-snapshot/world.pilot.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/environment.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/events.jsonl",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/facts-report-first-validator-missing-dependency.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/facts-report.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/01-new-habit-top.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/01-new-habit-top.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/02-new-habit-bottom.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/02-new-habit-bottom.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/03-before-observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/03-planned-before-mark.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/03-planned-before-mark.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/04-immediate-day-result.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/04-immediate-day-result.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/05-after-observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/05-outside-plan-row.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/05-outside-plan-row.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/06-history.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/06-history.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/07-history-completions.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/07-history-completions.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/result.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R1-planned-habit-labelled-outside-plan/trace.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/01-new-habit-top.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/01-new-habit-top.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/02-new-habit-bottom.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/02-new-habit-bottom.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/03-day-before-partial-attempt.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/03-day-before-partial-attempt.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/04-more-menu.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/04-more-menu.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/05-habit-detail.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/05-habit-detail.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/06-after-partial-attempt-observer-state.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/result.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/R2-partial-reading-default-one-approach/trace.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/reproduction/20261111T192552711764Z/manifest.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/run.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/source-manifest.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/summary.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/technical-checks/live-smoke/home.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/technical-checks/live-smoke/report.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/technical-checks/live-smoke/trace.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/technical-checks/live-smoke/welcome.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/technical-checks/observation/fixture.png",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/technical-checks/observation/observation.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/technical-checks/observation/report.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/month-pilot-001/world.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/evidence/verify.py",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/ADDITIONAL-PROBE-RESULTS.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/COORDINATOR-REVIEW.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/LOCAL-PROBE-RESULTS.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/METHOD-DECISIONS.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/REVISION-TASK.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/incoming/README.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/incoming/SOURCES.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/incoming/driver.py.txt",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/incoming/executor-README.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/incoming/executor-REPORT.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/incoming/methodology-B1.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/incoming/methodology-B2.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/incoming/verify_resume.py.txt",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-004-review/review_probes.py",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-005-resume/history/README-DRIVER.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "personal-lab/research/LAB-005-resume/history/README.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "personal-lab/research/LAB-005-resume/history/SCALE.md",
+      "reason": "backups, history, generated output, profiles or dependencies"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/BUNDLE_MANIFEST.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/CREATED_SYSTEM.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/DATA_CONTRACT.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/FIRST_RUN.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/IMPLEMENTATION.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/INDEPENDENT_REVIEW_BRIEF.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PASTE/01-SEARCH.txt",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PASTE/02-ANALYZE.txt",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PASTE/03-SELECT.txt",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PASTE/05-COORDINATE.txt",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PROMPTS/00-META.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PROMPTS/01-SEARCH.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PROMPTS/02-ANALYZE.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PROMPTS/03-SELECT.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PROMPTS/04-AUDIT.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PROMPTS/05-COORDINATE.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/PROMPTS/06-APP-MAP.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/SCORING.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/SOURCE.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/START_HERE.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/SYSTEM.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/TAXONOMY.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/VERIFICATION.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/examples/README.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/examples/RUN.demo.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/examples/demo/decisions.jsonl",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/examples/demo/elements.jsonl",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/examples/demo/findings.jsonl",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/examples/demo/merge_map.jsonl",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/examples/demo/ratings.jsonl",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/examples/demo/relations.jsonl",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/examples/demo/sources.jsonl",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/starter_tasks/CAL-SEARCH-01.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/starter_tasks/CAL-SEARCH-02.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/starter_tasks/CAL-SEARCH-03.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/starter_tasks/CAL-SEARCH-04.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/taxonomy.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/templates/NEXT.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/templates/REPORT.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/templates/RESULT_MANIFEST.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/templates/RUN.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/templates/TASK.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/templates/search_log.example.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/templates/tasks.csv",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/tools/README.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/tools/atlas.py",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-006-atlas/tools/verify_tools.py",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-008-hybrid-review/CANDIDATE-TESTS.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-008-hybrid-review/COORDINATOR-REVIEW.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-008-hybrid-review/PROBE-RESULTS.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-008-hybrid-review/README.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-008-hybrid-review/REVISION-TASK.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-008-hybrid-review/incoming/LifeGame-Atlas-Hybrid-v2.0.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "personal-lab/research/LAB-008-hybrid-review/incoming/SOURCE.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-008-hybrid-review/review_probes.py",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/CANDIDATE-TESTS.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/COORDINATOR-REVIEW.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/DELIVERY.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/IMPLEMENTATION.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/PROBE-RESULTS.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/README.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/REVISION-TASK.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/VERIFICATION.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/acceptance_probes.py",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/incoming/LifeGame-Atlas-Hybrid-v2.1.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "personal-lab/research/LAB-010-hybrid-v21-review/incoming/SOURCE.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-011-hybrid-v211-review/CANDIDATE-ACCEPTANCE.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-011-hybrid-v211-review/CANDIDATE-TESTS.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-011-hybrid-v211-review/acceptance.py",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-011-hybrid-v211-review/coordinator.patch",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/research/LAB-011-hybrid-v211-review/incoming/LifeGame-Atlas-Hybrid-v2.1.1.zip",
+      "reason": "packed archives or heavy browser traces"
+    },
+    {
+      "path": "personal-lab/research/LAB-011-hybrid-v211-review/incoming/SOURCE.json",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/tasks/LAB-004A-resume.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    },
+    {
+      "path": "personal-lab/tasks/LAB-004B-arena.md",
+      "reason": "superseded lab inputs, original pilot bulk evidence or obsolete assignments"
+    }
+  ],
+  "also_not_included": [
+    "Git object database/all-ref backup",
+    "ignored local verification data/profiles/dependencies"
+  ]
+}

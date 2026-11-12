@@ -1,0 +1,42 @@
+{
+  "task": "LAB-011",
+  "package_version": "2.1.1+lab.1",
+  "rubric_version": "2.1",
+  "taxonomy_version": "2.1",
+  "created_date": "2026-11-12",
+  "timezone": "Europe/Moscow",
+  "upstream_artifact": {
+    "task": "LAB-011",
+    "received_at": "2026-11-12T16:18:51.661197+00:00",
+    "base_commit": "6832e08a8c0680a79da090bcd0abb25ef69c08ad",
+    "artifact": "LifeGame-Atlas-Hybrid-v2.1.1.zip",
+    "bytes": 244469,
+    "sha256": "b62283ea6288ec5cddf0605324552e6ff8f2759eb47749037b5a12163f9c6d0b",
+    "tool_sha256": "42acd749576d5d264307a2f6eea7a57194ae3f89f3636e58ccb281a88b1d92e2",
+    "verifier_sha256": "b13e5f5896c9f2a9b4eb6cf305a3d97fa74eb3ea9f1b75a39e4ff81b63d7df97",
+    "previous_review": "LAB-010-hybrid-v21-review",
+    "purpose": "Review returned LAB-010-R2 revision; preserve original unchanged"
+  },
+  "upstream_source_record": {
+    "task": "LAB-006",
+    "created_date": "2026-11-12",
+    "timezone": "Europe/Moscow",
+    "repository": "game89042348765-hash/life-game",
+    "branch_at_start": "lab/synthetic-users",
+    "base_commit": "8b18123c5224f3a522923f9bcee40f424c344a25",
+    "scope": "Research pipeline, documents, prompts and local calculation only",
+    "research_executed": false,
+    "application_inventory_executed": false,
+    "external_models_invoked": false,
+    "paid_api_calls": 0,
+    "app_files_changed": false
+  },
+  "changes": "Strict single-entry index budget; fail safely without hardlink support instead of direct final-file fallback",
+  "research_executed": false,
+  "external_models_invoked_by_coordinator": false,
+  "paid_api_calls": 0,
+  "app_files_changed": false,
+  "tool_sha256": "a47e9b5d51db57b5888bb0deee79870b7e2e74e055cff50df5ccf78b39592035",
+  "verifier_sha256": "f706107e95666bd6f84e369f044edd24251357ebfc86f371075313f4aa31fd40",
+  "acceptance_sha256": "7ec144535464c6f52473ce2fd1d64ee519e5caccf699104a5a0cc857d47fdf6f"
+}

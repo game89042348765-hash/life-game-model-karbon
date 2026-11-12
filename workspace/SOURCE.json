@@ -1,0 +1,20 @@
+{
+  "task": "LAB-016",
+  "client_date": "2026-11-13",
+  "client_timezone": "Europe/Moscow",
+  "source_repository": "game89042348765-hash/life-game",
+  "source_branch": "lab/synthetic-users",
+  "source_commit": "89112c29dacea254cd8f50c4197a8ee77e764917",
+  "main_ref_at_selection": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "source_scope": "Selected working tree of this commit, not all refs/history; current main is included in its ancestry.",
+  "repository_files_byte_identical": true,
+  "runtime_changed_for_packaging": false,
+  "purpose": "Code, context, current experiments, tests and concise evidence for an external developer model",
+  "git_history_included": false,
+  "browser_profiles_or_real_user_data_included": false,
+  "history_dependent_tests": [
+    "personal-lab/tests/daily-ux.py",
+    "past packet builders using git show"
+  ],
+  "omissions": "OMITTED.json; existing historical documents can refer to intentionally excluded files."
+}

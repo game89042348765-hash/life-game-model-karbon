@@ -1,0 +1,97 @@
+{
+  "title": "LifeGame Ритм Lab — лаборатория",
+  "url": "http://127.0.0.1:42367/personal-lab/",
+  "virtual_time_observed": "2026-11-16T07:01:05.727Z",
+  "modal": true,
+  "viewport": {
+    "width": 1100,
+    "height": 900
+  },
+  "visible_text": "Добавить в ритм\n✕\nЧто хотите сделать\nЧто это\nЭто действие сразу войдёт в ваш базовый ритм. Периодичность, дневную норму и связи можно изменить в Полном.\nДобавить в ритм\nОтмена",
+  "elements": [
+    {
+      "element": "e1",
+      "label": "Закрыть",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 781,
+        "y": 617,
+        "width": 32,
+        "height": 32
+      },
+      "value": ""
+    },
+    {
+      "element": "e2",
+      "label": "Что хотите сделать",
+      "type": "text",
+      "disabled": false,
+      "rect": {
+        "x": 287,
+        "y": 683,
+        "width": 526,
+        "height": 43
+      },
+      "value": "Отправить проект — 20 ноября до 20:00",
+      "checked": false
+    },
+    {
+      "element": "e3",
+      "label": "Что это",
+      "type": "select",
+      "disabled": false,
+      "rect": {
+        "x": 287,
+        "y": 760,
+        "width": 526,
+        "height": 42
+      },
+      "value": "Разовое задание",
+      "options": [
+        {
+          "label": "Разовое задание",
+          "disabled": false
+        },
+        {
+          "label": "Ежедневная привычка",
+          "disabled": false
+        },
+        {
+          "label": "Событие календаря",
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "element": "e4",
+      "label": "Добавить в ритм",
+      "type": "submit",
+      "disabled": false,
+      "rect": {
+        "x": 287,
+        "y": 845,
+        "width": 145,
+        "height": 36
+      },
+      "value": ""
+    },
+    {
+      "element": "e5",
+      "label": "Отмена",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 440,
+        "y": 845,
+        "width": 81,
+        "height": 36
+      },
+      "value": ""
+    }
+  ],
+  "observation_id": "P02-d01-o0013",
+  "screenshot": "/workspace/life-game/personal-lab/verification/LAB-015-ai-pilot-20261112T193728Z/P02/day-01/P02-d01-o0013.png",
+  "actions_used": 12,
+  "action_budget": 36
+}

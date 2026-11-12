@@ -1,0 +1,18 @@
+{
+  "task": "LAB-015",
+  "run_id": "LAB-015-ai-pilot-20261112T193728Z",
+  "repository_head": "7deadf11bed026db1cf9cc2d3ff6f948f7133d6f",
+  "app_source_commit": "27919b94a7e7bb5f038dbb5235b79ea89b29c916",
+  "source_kit_sha256": "2ef8f218ac75cf963c6e1f431509f1c75f04f51b6e91dc6dfad4ba9ffe5d727f",
+  "world_source": "LAB-014 world.pilot.json",
+  "world_execution_changes": {
+    "app_url": {
+      "old": "http://127.0.0.1:8041/personal-lab/",
+      "new": "http://127.0.0.1:42367/personal-lab/",
+      "reason": "Default ports already occupied; existing processes left running."
+    }
+  },
+  "recorded_at": "2026-11-12T19:40:00.632240+00:00",
+  "app_or_transport_changed": false,
+  "profiles": "fresh persistent profile per actor, no real user data"
+}

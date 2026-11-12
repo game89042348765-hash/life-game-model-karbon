@@ -1,0 +1,100 @@
+{
+  "task": "LAB-007",
+  "status": "technical_fictional_checks_not_ai_user_study",
+  "checks": [
+    {
+      "name": "empty Personal and real navigation into AI",
+      "passed": true,
+      "details": {
+        "blank_actions": 0,
+        "cross_app_reads": 0
+      }
+    },
+    {
+      "name": "explicit export consent and read-only download",
+      "passed": true,
+      "details": "native clipboard and download match preview; save bytes unchanged; parameter change invalidates consent"
+    },
+    {
+      "name": "thirty dates with real UI marks, skips and undo",
+      "passed": true,
+      "details": {
+        "dates": 30,
+        "active_task_marks": 26,
+        "successful_habit_days": 1,
+        "recorded_minutes": 30,
+        "fixture_setup": "model factories in injected test hook; task and habit marks via real UI"
+      }
+    },
+    {
+      "name": "correct facts and unchanged state in all three modes",
+      "passed": true,
+      "details": "all three modes match source; partial approaches are not successful days; cancelled marks excluded"
+    },
+    {
+      "name": "scope privacy across linked and unscoped records",
+      "passed": true,
+      "details": "excluded direction, history, free answers and global economy do not leak; calendar repeat retained"
+    },
+    {
+      "name": "opt-in real Personal reflections and economy",
+      "passed": true,
+      "details": "explicit opt-in includes actual Personal sessions, not invented days.note/good"
+    },
+    {
+      "name": "bounded valid JSON, transparent truncation and bad dates",
+      "passed": true,
+      "details": {
+        "size": 18733,
+        "available": 1600,
+        "included": 25,
+        "aggregate": 1600,
+        "unchanged": true,
+        "rejected": true,
+        "staleDateRejected": true
+      }
+    },
+    {
+      "name": "empty scope and inert text preview",
+      "passed": true,
+      "details": "empty selection remains empty; preview is text, not executable markup"
+    },
+    {
+      "name": "mobile and desktop layout",
+      "passed": true,
+      "details": {
+        "widths": [
+          375,
+          390,
+          1280
+        ],
+        "horizontal_overflow": false
+      }
+    },
+    {
+      "name": "stale snapshot is refused",
+      "passed": true,
+      "details": "stale external storage refused before exporting"
+    },
+    {
+      "name": "own service-worker scope and offline export preview",
+      "passed": true,
+      "details": {
+        "service_worker": "http://127.0.0.1:35623/personal-lab/experiments/ai-strategy/sw.js",
+        "offline_context_preview": true
+      }
+    }
+  ],
+  "passed": 11,
+  "page_errors": [],
+  "external_requests": [],
+  "artifacts": "/workspace/life-game/personal-lab/verification/LAB-013-ai-20261112T180815Z",
+  "source_product": "Personal 1.2.0",
+  "hashes": {
+    "app.js": "fbf8742a7a6c8e4708dc0685f75463a242f83c2b50d7a54001393f8514841bf8",
+    "ai-context.js": "c8cd247cbdb46a5934ba3533ea0a3b3040fb340f9a5a3e25f9d2fdff5f026d22",
+    "ai-ui.js": "d8e8bf23fb795bee1ba998ca7e5b14c0d7f04067d821b4e1838421faa54ca0fb",
+    "persistence.js": "bddd28d953dba2aaf2e415d9fd751793725a171901921f751a66b14b6a835f36",
+    "sw.js": "b75497ececd1da507926475cce620e7d6b79884a523186a1a0c261ad96f39fff"
+  }
+}

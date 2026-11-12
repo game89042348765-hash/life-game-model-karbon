@@ -1,0 +1,137 @@
+/* ================================================================
+   LifeGame · Путь блока v2 — знаки на линии, «Рассвет», летящая звезда.
+   Логика и классы этапов прежние; меняется только вид.
+   ================================================================ */
+:root{--lg-spark:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C12.8 6.6 17.4 11.2 24 12 17.4 12.8 12.8 17.4 12 24 11.2 17.4 6.6 12.8 0 12 6.6 11.2 11.2 6.6 12 0Z'/%3E%3C/svg%3E")}
+
+:root{--lg-i-target:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9.5'/%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3Ccircle cx='12' cy='12' r='1.6' fill='white' stroke='none'/%3E%3C/svg%3E");--lg-i-moon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 3a9 9 0 0 0 0 18a4.6 9 0 0 1 0-18Z' fill='white' stroke='none'/%3E%3C/svg%3E");--lg-i-done:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M8 12.4l2.8 2.8L16.2 9.6'/%3E%3C/svg%3E");--lg-i-anchor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Ccircle cx='12' cy='12' r='2.6' fill='white' stroke='none'/%3E%3C/svg%3E");--lg-i-missed:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7.6v5'/%3E%3Ccircle cx='12' cy='16.3' r='.7' fill='white'/%3E%3C/svg%3E");--lg-i-clock:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7.5V12l3 2'/%3E%3C/svg%3E");--lg-i-next:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M8.2 10.5l3.8 3.8 3.8-3.8'/%3E%3C/svg%3E");--lg-i-horizon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 16.5h18'/%3E%3Cpath d='M7 16.5a5 5 0 0 1 10 0'/%3E%3Cpath d='M12 6.5v2M6.3 9l1.3 1.3M17.7 9l-1.3 1.3'/%3E%3C/svg%3E")}
+
+/* Знаки по смыслу названий: тонкие линии, свечение, общий размер 15px.
+   :before — сам знак (маска), :after — подложка цвета фона, прячет линию под знаком. */
+.lg-path-aesthetics>.lg-level{--lg-mk:var(--lg-i-next);--lg-mk-c:rgba(var(--accent-rgb),.7);--lg-mk-g:rgba(var(--accent-rgb),.25)}
+.lg-path-aesthetics>.lg-level::before{content:''!important;display:block!important;width:19px!important;height:19px!important;border:0!important;border-radius:0!important;
+  background:var(--lg-mk-c)!important;-webkit-mask:var(--lg-mk) center/contain no-repeat!important;mask:var(--lg-mk) center/contain no-repeat!important;clip-path:none!important;
+  box-shadow:none!important;filter:drop-shadow(0 0 4px var(--lg-mk-g))!important;transform:translate(-50%,-50%)!important}
+.lg-path-aesthetics>.lg-level::after{width:14px!important;height:14px!important;border-radius:50%!important;background:var(--bg)!important;
+  transform:translate(-50%,-50%)!important;filter:none!important;box-shadow:none!important;opacity:1!important}
+/* Мои достижения — выполнено: галочка в кольце */
+.lg-path-aesthetics>.lg-path-history-node{--lg-mk:var(--lg-i-done);--lg-mk-c:#cdbf8f;--lg-mk-g:rgba(205,191,143,.35)}
+/* Фактический — точка опоры */
+.lg-path-aesthetics>.lg-level-fact{--lg-mk:var(--lg-i-anchor);--lg-mk-c:#a9a8a0;--lg-mk-g:transparent}
+/* Невыполненное — красное кольцо с «!» */
+.lg-path-aesthetics>.lg-path-missed{--lg-mk:var(--lg-i-missed);--lg-mk-c:#ef6b74;--lg-mk-g:rgba(239,107,116,.35)}
+/* Запланированное — по дате: часы */
+.lg-path-aesthetics>.lg-path-planned{--lg-mk:var(--lg-i-clock);--lg-mk-c:rgba(var(--accent-rgb),.8)}
+/* В карточке «Запланированное» иконку календаря убираем — знак часов уже на линии */
+.lg-path-aesthetics>.lg-path-planned .lg-path-summary-icon{display:none!important}
+
+/* Следующий этап — шаг вниз по пути */
+.lg-path-aesthetics>.lg-level[data-stage-id]{--lg-mk:var(--lg-i-next)}
+/* За горизонтом / Неизвестный — луна, освещённая наполовину: путь ещё не проявился целиком; закрытый — тусклее */
+.lg-path-aesthetics>.lg-level.is-horizon:not(.is-maximum){--lg-mk:var(--lg-i-moon);--lg-mk-c:#d8cda8;--lg-mk-g:rgba(var(--accent-rgb),.25)}
+.lg-path-aesthetics>.lg-level.is-horizon.is-locked:not(.is-maximum){--lg-mk-c:#a39b80;--lg-mk-g:transparent}
+.lg-path-aesthetics>.lg-level.is-horizon:not(.is-maximum)::before{width:19px!important;height:19px!important}
+.lg-path-aesthetics>.lg-level.is-horizon:not(.is-maximum)::after{width:14px!important;height:14px!important}
+
+/* Сейчас (любой текущий этап, как бы он ни назывался): пустой потухший кружок, как «Без награды» в модуле.
+   Свет появляется только при нажатии — вспышка и звезда. Размер кольца совпадает с кольцами других знаков. */
+.lg-path-aesthetics>.lg-level.is-current:not(.is-optimal):not(.is-horizon)::before{width:14px!important;height:14px!important;border:1.5px solid #6b695f!important;border-radius:50%!important;
+  -webkit-mask:none!important;mask:none!important;filter:none!important;background:#121211!important;box-shadow:none!important;animation:none!important}
+.lg-path-aesthetics>.lg-level.is-current:not(.is-optimal):not(.is-horizon)::after{width:12px!important;height:12px!important}
+.lg-path-aesthetics>.lg-level.is-current{cursor:pointer}
+
+/* Мой ориентир — мишень-маяк: к ней ведёт путь */
+.lg-path-aesthetics>.lg-level.is-optimal{--lg-mk:var(--lg-i-target);--lg-mk-c:var(--accent);--lg-mk-g:rgba(var(--accent-rgb),.6)}
+.lg-path-aesthetics>.lg-level.is-optimal::before{width:19px!important;height:19px!important;animation:lg-opt-beacon 3.2s ease-in-out infinite}
+.lg-path-aesthetics>.lg-level.is-optimal::after{width:15px!important;height:15px!important}
+@keyframes lg-opt-beacon{50%{filter:drop-shadow(0 0 8px rgba(var(--accent-rgb),.85))}}
+
+/* Всегда возможно лучшее — звезда A с лучами; разгорается вместе с «Рассветом» */
+.lg-path-aesthetics>.lg-level.is-maximum::before{width:19px!important;height:19px!important;border:0!important;border-radius:0!important;background:#fff3c4!important;
+  -webkit-mask:var(--lg-spark) center/contain no-repeat!important;mask:var(--lg-spark) center/contain no-repeat!important;z-index:2;
+  filter:drop-shadow(0 0 calc(4px + var(--lg-sunlight,0)*8px) rgba(var(--accent-rgb),.9))!important}
+.lg-path-aesthetics>.lg-level.is-maximum::after{width:84px!important;height:84px!important;border-radius:0!important;z-index:1;
+  background:linear-gradient(90deg,transparent,rgba(255,240,189,.9),transparent) center/100% 2px no-repeat,
+             linear-gradient(transparent,rgba(255,240,189,.85),transparent) center/2px 70% no-repeat,
+             radial-gradient(circle,rgba(var(--accent-rgb),.28),transparent 45%)!important;
+  opacity:calc(.25 + var(--lg-sunlight,0)*.75)!important;animation:lg-max-twinkle 2.4s ease-in-out infinite}
+@keyframes lg-max-twinkle{0%,100%{transform:translate(-50%,-50%) scale(1) rotate(0)}50%{transform:translate(-50%,-50%) scale(.82) rotate(8deg)}}
+.lg-path-aesthetics>.lg-level.is-maximum.lg-star-arrived::before{animation:lg-max-ignite .7s ease-out}
+@keyframes lg-max-ignite{45%{transform:translate(-50%,-50%) scale(2) rotate(25deg)}}
+
+/* «Рассвет»: один общий свет от нижнего меню до «Моего ориентира».
+   Лежит над линией (луч чуть тонет в нём), но ПОД карточками — карточки остаются как были.
+   На всю ширину экрана и с мягким верхним краем, чтобы не было видимых границ. */
+body:has(.lg-path-aesthetics){overflow-x:clip}
+.lg-dawn-back{position:absolute;left:50%;width:100vw;transform:translateX(-50%);top:calc(var(--lg-path-opt-y) - 160px);bottom:-110px;z-index:0;pointer-events:none;
+  opacity:calc(.2 + var(--lg-sunlight,0)*.8);
+  -webkit-mask-image:linear-gradient(transparent,#000 30%);mask-image:linear-gradient(transparent,#000 30%);
+  background:radial-gradient(ellipse 85% 75% at 50% 100%,rgba(255,190,80,.42),rgba(var(--accent-rgb),.16) 45%,transparent 80%),
+             radial-gradient(ellipse 45% 35% at 50% 100%,rgba(255,240,200,.3),transparent 75%)}
+
+/* Линия уходит дальше последнего этапа и растворяется в «Рассвете» — заканчивается над нижним меню, не под ним */
+.lg-path-aesthetics::before,.lg-path-aesthetics::after{bottom:-70px!important;
+  -webkit-mask-image:linear-gradient(#000 calc(100% - 140px),transparent);mask-image:linear-gradient(#000 calc(100% - 140px),transparent)}
+/* Собственная подсветка блока пути давала прямоугольник по его краям — её заменяет «Рассвет» */
+.lg-path-aesthetics{background:none!important}
+
+/* Летящая звезда: от «Сейчас» вниз по линии */
+.lg-flying-star{position:absolute;width:0;height:0;z-index:5;pointer-events:none}
+.lg-flying-star b{position:absolute;left:0;top:0;width:18px;height:18px;transform:translate(-50%,-50%);background:#fff7dc;
+  -webkit-mask:var(--lg-spark) center/contain no-repeat;mask:var(--lg-spark) center/contain no-repeat;
+  filter:drop-shadow(0 0 6px var(--accent)) drop-shadow(0 0 14px rgba(var(--accent-rgb),.8))}
+.lg-flying-star i{position:absolute;left:0;top:0;width:2px;height:2px;transform:translate(-50%,-50%);animation:lg-max-twinkle 2.4s ease-in-out infinite}
+.lg-flying-star i::before,.lg-flying-star i::after{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+.lg-flying-star i::before{width:70px;height:2px;background:linear-gradient(90deg,transparent,rgba(255,240,189,.95),transparent)}
+.lg-flying-star i::after{width:2px;height:40px;background:linear-gradient(transparent,rgba(255,240,189,.9),transparent)}
+.lg-flying-star s{position:absolute;left:0;bottom:0;width:3px;height:90px;transform:translateX(-50%);border-radius:3px;
+  background:linear-gradient(transparent,rgba(var(--accent-rgb),.55),#fff3c4);filter:blur(.6px)}
+
+/* === Вариант C · лучи, контур звезды === */
+:root{--lg-i-spark-o:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3c.6 4.7 3.6 7.6 8.5 8.5-4.9.9-7.9 3.8-8.5 8.5-.6-4.7-3.6-7.6-8.5-8.5C8.4 10.6 11.4 7.7 12 3Z'/%3E%3C/svg%3E")}
+/* Неизвестный — контур ещё не зажжённой звезды */
+.lg-path-aesthetics>.lg-level.is-horizon:not(.is-maximum){--lg-mk:var(--lg-i-spark-o)}
+/* Рассвет: из-под меню веером поднимаются лучи света */
+.lg-dawn-back{background:
+  repeating-conic-gradient(from 180deg at 50% 112%,rgba(255,214,120,.10) 0deg 3deg,transparent 6deg 11deg,rgba(255,214,120,.10) 14deg),
+  radial-gradient(ellipse 95% 80% at 50% 100%,rgba(255,190,80,.34),rgba(var(--accent-rgb),.12) 50%,transparent 82%)!important;
+  -webkit-mask-image:linear-gradient(transparent,#000 40%)!important;mask-image:linear-gradient(transparent,#000 40%)!important;filter:blur(5px)}
+/* Звезда: восемь тонких лучей, медленно вращаются */
+.lg-path-aesthetics>.lg-level.is-maximum::after{width:90px!important;height:90px!important;
+  background:repeating-conic-gradient(rgba(255,240,189,.8) 0deg 1.3deg,transparent 1.3deg 45deg),radial-gradient(circle,rgba(var(--accent-rgb),.32),transparent 42%)!important;
+  -webkit-mask-image:radial-gradient(circle,#000 18%,transparent 70%);mask-image:radial-gradient(circle,#000 18%,transparent 70%);
+  animation:lg-rays-spin 14s linear infinite!important}
+@keyframes lg-rays-spin{from{transform:translate(-50%,-50%) rotate(0)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+
+/* ===== Летящая звезда ===== */
+.lg-charge{position:absolute;width:0;height:0;z-index:5;pointer-events:none}
+.lg-charge::before{content:'';position:absolute;left:0;top:0;width:70px;height:70px;border-radius:50%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(255,246,220,.85),rgba(var(--accent-rgb),.38) 32%,rgba(var(--accent-rgb),.1) 55%,transparent 70%)}
+
+.lg-path-aesthetics>.lg-level.is-current:not(.is-optimal):not(.is-horizon)::before{transition:background 1s ease,box-shadow 1s ease,border-color 1s ease}
+
+/* «Сейчас» — яркая звезда */
+.lg-bright b{width:20px;height:20px;background:#fffbea}
+.lg-bright i::before{width:96px;height:2px}
+.lg-bright i::after{height:56px}
+.lg-bright s{width:4px;background:linear-gradient(transparent,rgba(var(--accent-rgb),.7) 45%,#fffbea);filter:blur(.8px);box-shadow:0 0 12px rgba(var(--accent-rgb),.6)}
+/* Свет бежит по линии за звездой, пройденные знаки вспыхивают */
+.lg-rail-glow{position:absolute;width:3px;margin-left:-1.5px;height:0;border-radius:3px;z-index:4;pointer-events:none;
+  background:linear-gradient(rgba(255,240,189,0),rgba(255,226,140,.9));box-shadow:0 0 10px 2px rgba(var(--accent-rgb),.55)}
+.lg-path-aesthetics>.lg-level.lg-pass::before{filter:drop-shadow(0 0 4px #fff3c4) drop-shadow(0 0 12px var(--accent))!important}
+.lg-path-aesthetics>.lg-level::before{transition:filter .4s}
+
+/* Accepted form/work rays and triangle/star markers are retained. */
+:root{--lg-dawn-rays:repeating-conic-gradient(from 180deg at 50% 112%,rgba(var(--accent-rgb),.20) 0deg 3deg,transparent 6deg 11deg,rgba(var(--accent-rgb),.20) 14deg)}
+/* Match the compact block's triangle/star; keep the unknown marker untouched. */
+.lg-path-aesthetics>.lg-level[data-stage-id]:not(.is-current):not(.is-horizon):not(.is-optimal),
+.lg-path-aesthetics>.lg-level.is-outlook:not(.is-horizon):not(.is-optimal){--lg-mk:var(--lg-path-next)}
+.lg-path-aesthetics>.lg-level.is-optimal{--lg-mk:var(--lg-path-star)}
+body:has(.lg-work-outlook){overflow-x:clip}
+.lg-work-dawn{
+  position:absolute;left:50%;width:100vw;top:-80px;bottom:-70px;transform:translateX(-50%);z-index:-2;pointer-events:none;
+  opacity:calc(.38 + var(--lg-sunlight,0)*.62);
+  background:var(--lg-dawn-rays),radial-gradient(ellipse 100% 85% at 50% 100%,rgba(255,190,80,.50),rgba(var(--accent-rgb),.23) 52%,transparent 88%);
+  -webkit-mask-image:linear-gradient(transparent,rgba(0,0,0,.25) 8%,#000 22%);mask-image:linear-gradient(transparent,rgba(0,0,0,.25) 8%,#000 22%);
+  filter:blur(3px);
+}

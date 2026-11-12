@@ -1,0 +1,356 @@
+{
+  "title": "LifeGame Ритм Lab — лаборатория",
+  "url": "http://127.0.0.1:42367/personal-lab/",
+  "virtual_time_observed": "2026-11-21T18:00:46.148Z",
+  "modal": true,
+  "viewport": {
+    "width": 375,
+    "height": 844
+  },
+  "visible_text": "Задание\n✕\nНазвание\nОписание\nБлок\nЭтап\nЦель этапа\nРасписание\nРазово\nКаждый день\nРаз в неделю\nПо дням\nПн\nВт\nСр\nЧт\nПт\nСб\nВс\nДобавить в Конструктор дня\nПо расписанию. Без галочки запись остаётся в этапе и своём разделе как подготовленное действие.\nКлючевое действие\nВключает Конструктор автоматически, затем Конструктор можно снять отдельно.\nПодходит темпу дня\nОтдыхаю\nОбычный\nФигачу\nВ дни с другим темпом запись уходит в «Скрыто",
+  "elements": [
+    {
+      "element": "e1",
+      "label": "Закрыть",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 326,
+        "y": 103,
+        "width": 32,
+        "height": 32
+      },
+      "value": ""
+    },
+    {
+      "element": "e2",
+      "label": "Название",
+      "type": "text",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 170,
+        "width": 341,
+        "height": 43
+      },
+      "value": "Порисовать немного",
+      "checked": false
+    },
+    {
+      "element": "e3",
+      "label": "Описание",
+      "type": "textarea",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 247,
+        "width": 341,
+        "height": 66
+      },
+      "value": ""
+    },
+    {
+      "element": "e4",
+      "label": "Блок",
+      "type": "select",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 353,
+        "width": 166,
+        "height": 42
+      },
+      "value": "Без блока",
+      "options": [
+        {
+          "label": "Без блока",
+          "disabled": false
+        },
+        {
+          "label": "🌿 Душевное состояние",
+          "disabled": false
+        },
+        {
+          "label": "💪 Физическое состояние",
+          "disabled": false
+        },
+        {
+          "label": "📚 Знания, навыки, опыт",
+          "disabled": false
+        },
+        {
+          "label": "💰 Ресурсы и материальное",
+          "disabled": false
+        },
+        {
+          "label": "🤝 Окружение и отношения",
+          "disabled": false
+        },
+        {
+          "label": "🗂 Наполнение и организация",
+          "disabled": false
+        },
+        {
+          "label": "🌦 Обстоятельства",
+          "disabled": false
+        },
+        {
+          "label": "🚫 Исключить",
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "element": "e5",
+      "label": "Этап",
+      "type": "select",
+      "disabled": false,
+      "rect": {
+        "x": 193,
+        "y": 353,
+        "width": 166,
+        "height": 42
+      },
+      "value": "Без этапа",
+      "options": [
+        {
+          "label": "Без этапа",
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "element": "e6",
+      "label": "Цель этапа",
+      "type": "select",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 429,
+        "width": 341,
+        "height": 42
+      },
+      "value": "Не ведёт к цели",
+      "options": [
+        {
+          "label": "Не ведёт к цели",
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "element": "e7",
+      "label": "Разово",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 20,
+        "y": 508,
+        "width": 82,
+        "height": 55
+      },
+      "value": ""
+    },
+    {
+      "element": "e8",
+      "label": "Каждый день",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 105,
+        "y": 508,
+        "width": 82,
+        "height": 55
+      },
+      "value": ""
+    },
+    {
+      "element": "e9",
+      "label": "Раз в неделю",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 189,
+        "y": 508,
+        "width": 82,
+        "height": 55
+      },
+      "value": ""
+    },
+    {
+      "element": "e10",
+      "label": "По дням",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 274,
+        "y": 508,
+        "width": 82,
+        "height": 55
+      },
+      "value": ""
+    },
+    {
+      "element": "e11",
+      "label": "Пн",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 572,
+        "width": 38,
+        "height": 34
+      },
+      "value": ""
+    },
+    {
+      "element": "e12",
+      "label": "Вт",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 60,
+        "y": 572,
+        "width": 38,
+        "height": 34
+      },
+      "value": ""
+    },
+    {
+      "element": "e13",
+      "label": "Ср",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 103,
+        "y": 572,
+        "width": 38,
+        "height": 34
+      },
+      "value": ""
+    },
+    {
+      "element": "e14",
+      "label": "Чт",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 146,
+        "y": 572,
+        "width": 38,
+        "height": 34
+      },
+      "value": ""
+    },
+    {
+      "element": "e15",
+      "label": "Пт",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 189,
+        "y": 572,
+        "width": 38,
+        "height": 34
+      },
+      "value": ""
+    },
+    {
+      "element": "e16",
+      "label": "Сб",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 232,
+        "y": 572,
+        "width": 38,
+        "height": 34
+      },
+      "value": ""
+    },
+    {
+      "element": "e17",
+      "label": "Вс",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 275,
+        "y": 572,
+        "width": 38,
+        "height": 34
+      },
+      "value": ""
+    },
+    {
+      "element": "e18",
+      "label": "Добавить в Конструктор дня\nПо расписанию. Без галочки запись остаётся в этапе и своём разделе как подготовленное действие.",
+      "type": "checkbox",
+      "disabled": false,
+      "rect": {
+        "x": 21,
+        "y": 618,
+        "width": 18,
+        "height": 18
+      },
+      "value": "on",
+      "checked": true
+    },
+    {
+      "element": "e19",
+      "label": "Ключевое действие\nВключает Конструктор автоматически, затем Конструктор можно снять отдельно.",
+      "type": "checkbox",
+      "disabled": false,
+      "rect": {
+        "x": 21,
+        "y": 701,
+        "width": 18,
+        "height": 18
+      },
+      "value": "on",
+      "checked": false
+    },
+    {
+      "element": "e20",
+      "label": "Отдыхаю",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 788,
+        "width": 82,
+        "height": 31
+      },
+      "value": ""
+    },
+    {
+      "element": "e21",
+      "label": "Обычный",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 105,
+        "y": 788,
+        "width": 85,
+        "height": 31
+      },
+      "value": ""
+    },
+    {
+      "element": "e22",
+      "label": "Фигачу",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 196,
+        "y": 788,
+        "width": 73,
+        "height": 31
+      },
+      "value": ""
+    }
+  ],
+  "observation_id": "P03-d06-o0031",
+  "screenshot": "/workspace/life-game/personal-lab/verification/LAB-015-ai-pilot-20261112T193728Z/P03/day-06/P03-d06-o0031.png",
+  "actions_used": 7,
+  "action_budget": 18
+}

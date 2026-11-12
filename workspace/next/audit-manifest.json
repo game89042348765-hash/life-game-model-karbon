@@ -1,0 +1,967 @@
+{
+  "auditDate": "2026-11-11",
+  "scope": "next/ only; no personal data or source transcripts published",
+  "sources": [
+    {
+      "name": "LifeGame_STRATEGY_CONCEPT_v2.md",
+      "role": "historical-only",
+      "bytes": 111340,
+      "sha256": "3359cc8d13fc86090fe16f72c1bd8df42c3fa556417f1f5611bc0ae6c79b3669",
+      "published": false
+    },
+    {
+      "name": "LifeGame_STRATEGY_CONCEPT_v3.md",
+      "role": "historical-only",
+      "bytes": 128810,
+      "sha256": "d41d130896afe4aecac3da7d7b1a230ac9dff63ce25b683c172c3c1e16ed4bd6",
+      "published": false
+    },
+    {
+      "name": "ИСЛЕДОВАНИЕ СРАВНЕНИЕ С ДРУГИМИ СИСТЕМАМИ.md",
+      "role": "reference",
+      "bytes": 70458,
+      "sha256": "5ee686abeccb41a282e76c232ac57c02e70eb794cd87de65ced40d13a175408f",
+      "published": false
+    },
+    {
+      "name": "LifeGame_STRATEGY_CONCEPT.md",
+      "role": "historical-only",
+      "bytes": 73528,
+      "sha256": "c5497e74aef62f6cc051f74f2f67b82ac6280aa0253208c27495a17bd36e4070",
+      "published": false
+    },
+    {
+      "name": "LifeGame_STRATEGY_QA_2026-11-07.md",
+      "role": "historical-only",
+      "bytes": 18152,
+      "sha256": "30af7445582a9ea581be5fe5f0cef29de6568249f5819df83b38dbd67d88247a",
+      "published": false
+    },
+    {
+      "name": "LifeGame_FULL_CHAT_AVAILABLE_2026-11-07.md",
+      "role": "historical-only",
+      "bytes": 62166,
+      "sha256": "0f1d80afb0d626ebce77617d53bc3e03a8ab98cec9df1509d6ddf969c8b484fa",
+      "published": false
+    },
+    {
+      "name": "LifeGame_CHAT_HANDOFF_2026-11-07.md",
+      "role": "historical-only",
+      "bytes": 35745,
+      "sha256": "ca96c9f7ce72ca792edd770cd5488395089dbfccafd9f80112575f313a66540e",
+      "published": false
+    },
+    {
+      "name": "LifeGame_МОДЕЛЬ ВЫДАЛА ПО ЧАТУ НОВОЙ КОНЦЕПЦИИ.md",
+      "role": "reference",
+      "bytes": 153885,
+      "sha256": "0a8f8e1cfb7875eca8ffa7781c7c8dce0de70a689a8bfcbafe14a2f914cc4308",
+      "published": false
+    },
+    {
+      "name": "ИСЛЕДОВАНИЕ СРАВНЕНИЕ С ДРУГИМИ СИСТЕМАМИ УЖЕ МОЕЙ СИСТЕМЫ LIFEGAME.md",
+      "role": "reference",
+      "bytes": 44053,
+      "sha256": "bccdaec4bcd43169ab450d222423e77be595bb90e1dbdcbc6fb09a4264b70ffa",
+      "published": false
+    },
+    {
+      "name": "ВЕСЬ ЧАТ НОВОЙ КОНЦЕПЦИИ.md",
+      "role": "primary",
+      "bytes": 543834,
+      "sha256": "ab99d4e7d07c6dc36b15e625272ca36d1d1e966111ce77464b893506185bfa8f",
+      "published": false
+    },
+    {
+      "name": "downloads/LifeGame-new-concept-stage-1-2026-11-11.md",
+      "role": "derived",
+      "bytes": 102480,
+      "sha256": "c12cbdc379ab7bb5a786d3607bb6c0f9e3af18b68f8641c4fe1997bdcd594bfb",
+      "published": true
+    },
+    {
+      "name": "downloads/LifeGame-stage-2-comparison-and-foundation.md",
+      "role": "derived",
+      "bytes": 94081,
+      "sha256": "e47b8d823f89c015349265b94a2fef2393a1d4930486bec61954e19b5c86b21c",
+      "published": true
+    },
+    {
+      "name": "downloads/LifeGame-user-workflow-for-research-2026-11-11.md",
+      "role": "derived",
+      "bytes": 22202,
+      "sha256": "2aeed870dc068c028da4b8c66c394f876de5b82b701904b535da4fa6de78c44f",
+      "published": true
+    }
+  ],
+  "baseline": [
+    {
+      "name": "docs/rebuild-baseline/2026-11-10/01-CURRENT-SYSTEM.md",
+      "sha256": "dcb5eaae13ddef88150e8b8b7a8c0dc891bcd0297340ad233f087e05dd8f54bd"
+    },
+    {
+      "name": "docs/rebuild-baseline/2026-11-10/02-REFERENCE-PASSPORT.md",
+      "sha256": "869c91e57940a2172db2a6554ba980891786bc0099869fd936a252f967d31ac3"
+    },
+    {
+      "name": "docs/rebuild-baseline/2026-11-10/03-DIFFERENCES-AND-QUESTIONS.md",
+      "sha256": "cd54ea62757cb1c7ede1fbebacb41e1a78c74c1928f3805086ff0ec9831eb224"
+    },
+    {
+      "name": "docs/rebuild-baseline/2026-11-10/04-COMPARISON.md",
+      "sha256": "06a250f2b9d71089ba843ebbbb2dff52ea9b121a0f673f82e2a7e02fe9d0089a"
+    },
+    {
+      "name": "docs/rebuild-baseline/2026-11-10/05-USER-FLOWS.md",
+      "sha256": "f02e30b1464da360237b7e2bad88b8a956dff4ee3b02347bc8c4a5846ae692d6"
+    },
+    {
+      "name": "docs/rebuild-baseline/2026-11-10/FUNCTIONS.md",
+      "sha256": "bfeaf072cfe8d59ac69c282e9c108f980d799f9e430d4bde5826a74505d31521"
+    },
+    {
+      "name": "docs/rebuild-baseline/2026-11-10/README.md",
+      "sha256": "0fe5e2fae5d83e14627e8d5f78bb410ea8d3dcb1583833e9e2511b2d0f04e146"
+    },
+    {
+      "name": "docs/rebuild-baseline/2026-11-10/function-index.json",
+      "sha256": "8d56c3f1176cf150479084bae2b1eb8d14f3b02c7e81179be2ad81a7197a1408"
+    },
+    {
+      "name": "docs/rebuild-baseline/2026-11-10/runtime-schema.json",
+      "sha256": "98ac38518075e0220ec46d449caa4c5aedb9a0b46aa26636911536a72a8b681b"
+    },
+    {
+      "name": "docs/rebuild-baseline/2026-11-10/source-manifest.json",
+      "sha256": "c45a9779b024d2450c66f585cf7f4c7cbf930c28d388092c823f433b9a623a17"
+    }
+  ],
+  "applicationFiles": [
+    {
+      "name": "next/app.js",
+      "bytes": 123360,
+      "sha256": "c8d107594d37b49089c6b2fdc0467dd98ac2f3d1155a5b37aa102622e6f0d089"
+    },
+    {
+      "name": "next/store.js",
+      "bytes": 4180,
+      "sha256": "dae665608c1108548af864636725bc70aece465ee0d5cfb066f80c586feb3eda"
+    },
+    {
+      "name": "next/domain.js",
+      "bytes": 46200,
+      "sha256": "776c45aaf96ec330fa0dd3294fb10230a8f7c3ab7f143cdac0c827d243c67c30"
+    },
+    {
+      "name": "next/messages.js",
+      "bytes": 9532,
+      "sha256": "b1614ceae46dbb98d3dec0d40841ef42980020613860d9f78d3c1e45a7f6419c"
+    },
+    {
+      "name": "next/index.html",
+      "bytes": 750,
+      "sha256": "ae91b9d21703ed2c88462d05c81a8ffe0cc156d363f7220b0e729aa4ec071676"
+    },
+    {
+      "name": "next/style.css",
+      "bytes": 22864,
+      "sha256": "f7aac9a25c19ebe4237ab1a3cc2b35e4e8c6beaa480c780394436ffd872fdc51"
+    },
+    {
+      "name": "next/package.json",
+      "bytes": 127,
+      "sha256": "9d3dafc9d41be2d20b8071ae889a4eaa30231a93a087767f20598c5817829e06"
+    },
+    {
+      "name": "next/tests/domain.test.js",
+      "bytes": 23298,
+      "sha256": "ef35193a500c121229149be68e155ebbf856f796c258f20ef6ff7d7fb350bbef"
+    },
+    {
+      "name": "next/tests/edges.browser.py",
+      "bytes": 14174,
+      "sha256": "06afa513a968b5f9f10b10047049565dcd42949cf54ca8f97e50e64b89c69101"
+    },
+    {
+      "name": "next/tests/week.browser.py",
+      "bytes": 17067,
+      "sha256": "d13bfa686b2c89f5733ee93588e4cae8ac4ced78231ea5211a9e4f76c26ecaf8"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "A01",
+      "status": "Р",
+      "result": "Отдельные ES-модули и локальная система, без изменения старого runtime.",
+      "evidence": "domain.js, store.js, index.html; T «empty installation»",
+      "name": "Техническая основа"
+    },
+    {
+      "id": "A02",
+      "status": "Р",
+      "result": "Полный JSON состояния и подтверждаемая замена; отдельная предыдущая исправная копия.",
+      "evidence": "store.js: export/replace/backup; W7, E10",
+      "name": "Прогресс"
+    },
+    {
+      "id": "A03",
+      "status": "Р",
+      "result": "Очередь, Web Locks, снимок и revision; отказ без награды при ошибке записи.",
+      "evidence": "store.js: dispatch; E9–10, T «store failed write»",
+      "name": "Конфликты и ошибки записи"
+    },
+    {
+      "id": "A04",
+      "status": "Д",
+      "result": "Локальные даты устройства, ISO-моменты отдельно; понедельник/календарный месяц. Старые факты при смене пояса не переписываются.",
+      "evidence": "domain.js: dayKey/dayAdd/periodStart; W1–7, E12, T «local calendar arithmetic»",
+      "name": "Локальные даты"
+    },
+    {
+      "id": "B01",
+      "status": "Р",
+      "result": "Восемь пустых базовых блоков с одинаковыми возможностями настройки.",
+      "evidence": "domain.js: BASE_BLOCKS/createState; W1, T «empty installation»",
+      "name": "Исходные направления"
+    },
+    {
+      "id": "B02",
+      "status": "Р",
+      "result": "Свой блок равноправен; имя, значок, факт, нагрузка и структура. Скрытые старые подписи не перенесены.",
+      "evidence": "app.js: formPage; domain.js: block.save; W1, E4",
+      "name": "Созданные блоки"
+    },
+    {
+      "id": "B03",
+      "status": "Р",
+      "result": "Пресеты выставляют произвольные галочки; снятие галочки не удаляет записи.",
+      "evidence": "domain.js: sections/block.save; T «rest removes expectation but collapsing/structure hiding does not»",
+      "name": "Стратегия"
+    },
+    {
+      "id": "B04",
+      "status": "Р",
+      "result": "Факт хранится описанием блока, не оплачиваемой активностью.",
+      "evidence": "app.js: blockPage; domain.js: block.save; W1",
+      "name": "Фактическое состояние"
+    },
+    {
+      "id": "B05",
+      "status": "Р",
+      "result": "Один текущий этап, доступ к действиям любого открытого этапа.",
+      "evidence": "domain.js: stage.current/usable; T «actions in a future unfinished stage»",
+      "name": "Текущий этап"
+    },
+    {
+      "id": "B06",
+      "status": "Р",
+      "result": "Создание, вставка после, перестановка, редактирование и архив этапов.",
+      "evidence": "domain.js: stage.save/stage.move/archive; T «inserting after a stage»; статическая сверка меню",
+      "name": "Будущие этапы"
+    },
+    {
+      "id": "B07",
+      "status": "Р",
+      "result": "Незавершённые рабочие этапы не блокируются из-за положения на пути.",
+      "evidence": "domain.js: checkedStage; W1, W5",
+      "name": "Доступ к этапам"
+    },
+    {
+      "id": "B08",
+      "status": "Д",
+      "result": "Оптимальный — редактируемый рабочий ориентир, допускает цели и действия; без отдельного старого reached-замка.",
+      "evidence": "domain.js: checkedStage; app.js: stageBody; решение 4, сверка кода",
+      "name": "Оптимальный"
+    },
+    {
+      "id": "B09",
+      "status": "Р",
+      "result": "Неизвестное и LVMG независимо скрываются и возвращаются, остаются описательными.",
+      "evidence": "domain.js: sections/checkedStage; app.js: stageBody; сверка кода",
+      "name": "Неизвестное и максимум"
+    },
+    {
+      "id": "B10",
+      "status": "Д",
+      "result": "Переход не выполняет дела. Ручное завершение выбирает судьбу каждой активности и выдаёт заданную награду; переоткрытие отменяет её.",
+      "evidence": "domain.js: stage.complete/stage.reopen; W5, T «stage closure chooses each activity»",
+      "name": "Переходы"
+    },
+    {
+      "id": "B11",
+      "status": "Р",
+      "result": "Четыре типа датированных пропусков вместо старого backlog этапа.",
+      "evidence": "domain.js: advance; app.js: missedPage; W3, W7",
+      "name": "Невыполненное"
+    },
+    {
+      "id": "C01",
+      "status": "Р",
+      "result": "Цель с ID принадлежит этапу; сохраняет связь с действиями.",
+      "evidence": "domain.js: goal.save/saveItem; E1–2",
+      "name": "Цели"
+    },
+    {
+      "id": "C02",
+      "status": "Д",
+      "result": "Ручное достижение, отдельный отказ и возврат. Нет автоматического достижения по заданиям.",
+      "evidence": "domain.js: goal.status; T «goal abandonment»; решения 7–9",
+      "name": "Достижение цели"
+    },
+    {
+      "id": "C03",
+      "status": "Р",
+      "result": "В модели, журнале и магазине отсутствуют алмазы.",
+      "evidence": "domain.js: money/reward; проверка схемы, W1–7",
+      "name": "Скрытые алмазы"
+    },
+    {
+      "id": "C04",
+      "status": "Р",
+      "result": "Переключатель ведёт к выбору конкретной цели, можно создать её в форме.",
+      "evidence": "app.js: saveForm; domain.js: saveItem; E1",
+      "name": "Тег цели"
+    },
+    {
+      "id": "C05",
+      "status": "Р",
+      "result": "Цель и действие одного этапа; перенос с явной судьбой связи.",
+      "evidence": "domain.js: item.move/goal.save; E2, T «moving a goal»",
+      "name": "Настоящая привязка"
+    },
+    {
+      "id": "D01",
+      "status": "Р",
+      "result": "Общий полноэкранный редактор создания и правки; точная сумма; черновик при выборе наград и конфликте вкладок.",
+      "evidence": "app.js: formPage/saveForm; E1, E9, E11",
+      "name": "Создание/правка заданий"
+    },
+    {
+      "id": "D02",
+      "status": "Д",
+      "result": "Разово/ежедневно/еженедельно/дни/когда хочется; еженедельно — один день. Циклы разового и повторного выполнения разделены.",
+      "evidence": "domain.js: schedule/scheduleMatches; T «changing repeat mode», «single calendar obligation»; решение 22",
+      "name": "Расписание"
+    },
+    {
+      "id": "D03",
+      "status": "Р",
+      "result": "Один флаг Конструктора плюс расписание и разовые включения/исключения.",
+      "evidence": "domain.js: todayItems/day.include/day.exclude; W1–7, T «explicitly removing just today»",
+      "name": "Включение в день"
+    },
+    {
+      "id": "D04",
+      "status": "Д",
+      "result": "Избранное оставлено необязательной настройкой общего списка, сортирует записи. Не равно ключевому действию.",
+      "evidence": "app.js: itemsPage/formPage; domain.js: saveItem; сверка кода",
+      "name": "Избранное"
+    },
+    {
+      "id": "D05",
+      "status": "Р",
+      "result": "Одна запись выполнения и её выплаты; точная отмена с защитой потраченного/использованного.",
+      "evidence": "domain.js: completeItem/undoItem/reverseEvent; W5, T «one shared record», «normal undo»",
+      "name": "Выполнение/отмена"
+    },
+    {
+      "id": "D06",
+      "status": "Р",
+      "result": "Перенос сохраняет ID/прогресс, копия начинает независимо и без наградных назначений.",
+      "evidence": "domain.js: item.move/item.copy; W5, W7",
+      "name": "Перенос"
+    },
+    {
+      "id": "D07",
+      "status": "Р",
+      "result": "Универсальная запись мыслей и типов; сложные типы продолжаются в соответствующей форме.",
+      "evidence": "app.js: captureDialog/saveCapture; domain.js: note.save/note.convert; W2, E9",
+      "name": "Быстрое добавление"
+    },
+    {
+      "id": "D08",
+      "status": "Д",
+      "result": "Самостоятельный календарь, связи, расписания, время и foreground-напоминания. Редактирование отдельного появления серии не реализовано.",
+      "evidence": "app.js: itemsPage/schedulingFields; domain.js: schedule; W2, E12; решения 13,22",
+      "name": "Календарь"
+    },
+    {
+      "id": "D09",
+      "status": "Д",
+      "result": "Недавние типизированные записи доступны 15 минут от создания, затем исчезает только ссылка. Мысли и непривязанные решения остаются.",
+      "evidence": "app.js: inboxPage; W6; решение 29",
+      "name": "Недавние добавления"
+    },
+    {
+      "id": "E01",
+      "status": "Р",
+      "result": "Список дня объединяет четыре типа, ключевые задания, нагрузку, фокус и инструменты.",
+      "evidence": "app.js: dayPage; domain.js: todayItems; W1–7",
+      "name": "Конструктор"
+    },
+    {
+      "id": "E02",
+      "status": "Д",
+      "result": "Секции сворачиваются; состояние раскрытия в памяти текущей страницы. Это не снятие с плана.",
+      "evidence": "app.js: fold/toggle; T «rest removes expectation but collapsing/structure hiding does not»",
+      "name": "Открытие секций"
+    },
+    {
+      "id": "E03",
+      "status": "Р",
+      "result": "Несколько ключевых существующих заданий вместо отдельного единственного mainDayTasks.",
+      "evidence": "app.js: dayPage; domain.js: item.key; W1",
+      "name": "Главное дело"
+    },
+    {
+      "id": "E04",
+      "status": "Р",
+      "result": "Ключевой флаг включает Конструктор один раз; его можно отключить независимо.",
+      "evidence": "domain.js: item.key/item.plan; T «key enables Constructor once»",
+      "name": "Фокус как флажок задачи"
+    },
+    {
+      "id": "E05",
+      "status": "Р",
+      "result": "Остатки — датированные пропуски, выполнение сегодня не стирает старую дату.",
+      "evidence": "domain.js: advance/completeItem; W3, W7",
+      "name": "Со вчера"
+    },
+    {
+      "id": "E06",
+      "status": "Д",
+      "result": "Добровольный бюджет минут и явное снятие выбранных дел на сегодня. Без автоматического урезания ключевых.",
+      "evidence": "app.js: budgetBody/lighten; domain.js: day.budget/day.excludeMany; E6",
+      "name": "Посильный план"
+    },
+    {
+      "id": "E07",
+      "status": "Р",
+      "result": "Добровольное завершение, 100 текстов, итоги обновляются после новых действий, выплаты за ритуал нет.",
+      "evidence": "app.js: closeDayDialog; messages.js; W1, T «ritual remains optional»",
+      "name": "Закрыть день"
+    },
+    {
+      "id": "E08",
+      "status": "Д",
+      "result": "Первый шаг — двухминутный подход к выбранному действию. Семидневное сопровождение пока отложено пользователем.",
+      "evidence": "app.js: firstStepDialog; domain.js: timer.start; W1 (таймер); сверка кода, решение 32",
+      "name": "Первый шаг"
+    },
+    {
+      "id": "F01",
+      "status": "Р",
+      "result": "Ключевой флаг той же записи, без второй идентичности и выплаты.",
+      "evidence": "domain.js: item.key; W1, T «key enables Constructor once»",
+      "name": "Ключевые действия"
+    },
+    {
+      "id": "F02",
+      "status": "Д",
+      "result": "Постоянный таймер с паузой/возвратом; сам не платит и не выполняет задачу.",
+      "evidence": "domain.js: timer.*; app.js: timerBody; W1",
+      "name": "Таймер"
+    },
+    {
+      "id": "F03",
+      "status": "Д",
+      "result": "После подхода явная запись фактических минут или пропуск. Временные сессии отдельны от действий.",
+      "evidence": "domain.js: timer.record; W1",
+      "name": "Запись времени"
+    },
+    {
+      "id": "F04",
+      "status": "Р",
+      "result": "Итоги по типам действий, шагам квестов, минутам, заработку/расходу/XP и уровню.",
+      "evidence": "domain.js: stats; app.js: summaryPage; W7, визуальная сверка",
+      "name": "Итоги дня"
+    },
+    {
+      "id": "F05",
+      "status": "Д",
+      "result": "Ритм — факты последних семи дней без нормы «три дня» и штрафов. Отдых задаётся темпом.",
+      "evidence": "app.js: weekRhythm; W3–7",
+      "name": "Ритм/отдых"
+    },
+    {
+      "id": "F06",
+      "status": "Р",
+      "result": "Разные вопросы дня/недели/месяца, сохранение и правка своей даты, отключаемые приглашения.",
+      "evidence": "app.js: reviewInvites/reviewDialog; domain.js: review.*; W7, E7, E12",
+      "name": "Недельный обзор"
+    },
+    {
+      "id": "F07",
+      "status": "Д",
+      "result": "Два шаблона 24 часов с базовыми и собственными блоками; не факт времени и не выплата.",
+      "evidence": "app.js: graphDialog; domain.js: settings; E6",
+      "name": "График24 часов"
+    },
+    {
+      "id": "G01",
+      "status": "Р",
+      "result": "Квест-счётчик с заданным шагом, промежуточной и автоматической финальной наградой.",
+      "evidence": "domain.js: completeItem; W5, T «counter quest»",
+      "name": "Квест-счётчик"
+    },
+    {
+      "id": "G02",
+      "status": "Д",
+      "result": "Старый квест-этапы представлен новым чек-листом; выполненные пункты защищены, невыполненные редактируются.",
+      "evidence": "domain.js: saveItem/completeItem; W2, T «checklist steps keep IDs»",
+      "name": "Квест с этапами"
+    },
+    {
+      "id": "G03",
+      "status": "Р",
+      "result": "Чек-лист с постоянными ID, любой доступный пункт, автоматический финал и отмена.",
+      "evidence": "domain.js: completeItem/undoItem; W2",
+      "name": "Квест-чек-лист"
+    },
+    {
+      "id": "G04",
+      "status": "Р",
+      "result": "Квест связан с этапом либо самостоятельный; тот же ID в разделе/этапе/дне.",
+      "evidence": "domain.js: saveItem/item.move; W1, W5",
+      "name": "Квест ↔ этап блока"
+    },
+    {
+      "id": "G05",
+      "status": "Д",
+      "result": "Полноценные привычки: норма/лимит суток, накопление/период, два вида наград, следующий порог без потери истории.",
+      "evidence": "domain.js: saveItem/completeItem; W1–7, T «habit»; решения 18–19",
+      "name": "Привычки"
+    },
+    {
+      "id": "H01",
+      "status": "Р",
+      "result": "Одна расходуемая валюта, отдельный XP; алмазных операций нет.",
+      "evidence": "domain.js: ledger/money; W5–7",
+      "name": "Монеты/алмазы"
+    },
+    {
+      "id": "H02",
+      "status": "Р",
+      "result": "XP 1:1 заработку, магазин его не тратит, уровень с шагом 1000 и минимумом 1; долг допустим только через Цену слова.",
+      "evidence": "domain.js: hero/reward/decision.status; W6",
+      "name": "Уровень"
+    },
+    {
+      "id": "H03",
+      "status": "Н",
+      "result": "Старый бонус +100 за три дела не перенесён: нового согласования нет; награда за вечерний ритуал исключена.",
+      "evidence": "domain.js: day.close; решение 24",
+      "name": "Бонус дня"
+    },
+    {
+      "id": "H04",
+      "status": "Р",
+      "result": "Обычная отмена защищает от минуса; ручная Цена слова может сделать отрицательными оба баланса.",
+      "evidence": "domain.js: reverseEvent/decision.status; W5–6, T «normal undo»",
+      "name": "Отмена после траты"
+    },
+    {
+      "id": "H05",
+      "status": "Р",
+      "result": "Каталог и отдельные экземпляры: разовый/безлимитный/лимитный; повторные покупки; возврат по снимку цены до использования.",
+      "evidence": "domain.js: bonus.buy/instance.*; W5, T «shop purchase»",
+      "name": "Магазин"
+    },
+    {
+      "id": "H06",
+      "status": "Д",
+      "result": "Несколько предметных наград за действие, порог привычки, шаг/финал квеста, этап; резерв разового, выдача на событии, целостная отмена.",
+      "evidence": "domain.js: bindBonuses/reward/reverseEvent; W1, W5; решения 25–27",
+      "name": "Бонус ↔ достижение"
+    },
+    {
+      "id": "H07",
+      "status": "Д",
+      "result": "Необязательный инструмент накопления на выбранный товар. Не покупает автоматически и не меняет наградные назначения.",
+      "evidence": "app.js: rewardBody; E6; решение 32",
+      "name": "Моя награда"
+    },
+    {
+      "id": "H08",
+      "status": "Р",
+      "result": "Ништяки — категории, поиск, редактирование, архив/восстановление/удаление. Без счётчика, автомата выбора и выплат.",
+      "evidence": "app.js: treatsPage; domain.js: treat.save; E11, сверка кода",
+      "name": "Ништяки"
+    },
+    {
+      "id": "I01",
+      "status": "Д",
+      "result": "Архив отдельно от скрытия/завершения; восстановление и удаление с условиями для связей. Действия восстановлены вне дня до явного включения.",
+      "evidence": "domain.js: archive/restore/delete; W7, E4; решение 33",
+      "name": "Архив/восстановление"
+    },
+    {
+      "id": "I02",
+      "status": "Р",
+      "result": "Галочки и все видимые по фильтру; массовый архив, восстановление, подтверждаемое удаление из архива.",
+      "evidence": "app.js: missedPage/archivePage; domain.js: archive/restore/delete; W7",
+      "name": "Массовые операции"
+    },
+    {
+      "id": "I03",
+      "status": "Д",
+      "result": "Исторические финансовые события живут независимо от источника; удалённый использованный экземпляр сохраняет защитную запись.",
+      "evidence": "domain.js: delete/reverseEvent; T «deleting a used earned instance», «deleting a block»",
+      "name": "Исторические исключения"
+    },
+    {
+      "id": "J01",
+      "status": "Р",
+      "result": "Каталог / Мои / размещение в дне; удаление размещения не удаляет данные инструмента.",
+      "evidence": "app.js: toolsPage/dayTools; domain.js: settings; E6–7",
+      "name": "Виджеты"
+    },
+    {
+      "id": "J02",
+      "status": "Н",
+      "result": "Прежний отдельный «Вызов себе» не включён. Новые решения с Ценой слова реализованы отдельно.",
+      "evidence": "app.js: decisionsPage; сопоставление источников",
+      "name": "Вызов себе"
+    },
+    {
+      "id": "J03",
+      "status": "Ч",
+      "result": "Личная коллекция хороших моментов работает. Прежняя игра с персонажами и их репликами не перенесена; новый подробный контракт не был согласован.",
+      "evidence": "app.js: happyBody; domain.js: moment.save; E6–7; решение 32",
+      "name": "Счастье"
+    },
+    {
+      "id": "J04",
+      "status": "Ч",
+      "result": "Четыре акцента, звук, цветные значки блоков. Редактор собственного стиля и старый личный мотивационный текст не перенесены.",
+      "evidence": "app.js: settingsPage; style.css; решение 3, сверка кода",
+      "name": "Мотивация/оформление"
+    },
+    {
+      "id": "J05",
+      "status": "Ч",
+      "result": "Звезда к балансу и плавное начисление после сохранения, reduced motion. Новая заставка и отдельная хореография каждого стратегического события не создавались.",
+      "evidence": "app.js: rewardEffect; style.css; сверка кода/мобильных снимков; звук на iPhone не проверен",
+      "name": "Заставка/эффекты"
+    },
+    {
+      "id": "J06",
+      "status": "О",
+      "result": "Отдельный экран-заглушка ИИ, без API/голоса; это принято для первой версии.",
+      "evidence": "app.js: render, route ai; НК §25",
+      "name": "AI"
+    },
+    {
+      "id": "J07",
+      "status": "Н",
+      "result": "Старый JSON не импортируется; новый экспорт/восстановление работает. Выбрана чистая новая система.",
+      "evidence": "domain.js: importState; E10; решение 1",
+      "name": "Импорт старой версии"
+    },
+    {
+      "id": "J08",
+      "status": "О",
+      "result": "Аккаунты/серверная синхронизация — будущий этап, сейчас локальное сохранение.",
+      "evidence": "store.js; НК §25",
+      "name": "Аккаунты/синхронизация"
+    },
+    {
+      "id": "J09",
+      "status": "О",
+      "result": "Полное демонстрационное наполнение отложено последним прямым поручением «пока без примеров».",
+      "evidence": "createState; T «empty installation»; решение 2",
+      "name": "Демо и откаты"
+    },
+    {
+      "id": "NEW-01",
+      "status": "Р",
+      "result": "Произвольная структура для всех блоков, скрытие сохраняет действия.",
+      "evidence": "B01–03"
+    },
+    {
+      "id": "NEW-02",
+      "status": "Р",
+      "result": "Ручное прошлое достижение с датой и описанием, без выплаты.",
+      "evidence": "domain.js: stage.past; app.js: past-stage-form; сверка кода"
+    },
+    {
+      "id": "NEW-03",
+      "status": "Д",
+      "result": "Необязательные смысл и отдельная причина в этапе, без трёх обязательных похожих полей.",
+      "evidence": "app.js: stageBody/formPage; решение 9"
+    },
+    {
+      "id": "NEW-04",
+      "status": "Д",
+      "result": "Приоритет сортирует; интенсивность задаёт допустимую нагрузку вместе с темпом дня.",
+      "evidence": "domain.js: loadLimit/todayItems; T «block intensity»; решение 10"
+    },
+    {
+      "id": "NEW-05",
+      "status": "Д",
+      "result": "Три темпа, три уровня нагрузки и список скрытого с причинами/явным возвратом.",
+      "evidence": "app.js: dayPage; domain.js: relieved/todayItems; W3, решение 10"
+    },
+    {
+      "id": "NEW-06",
+      "status": "Д",
+      "result": "Фокус направлений, самостоятельные записи видны, календарь настраивается отдельно; не снимает ожиданий.",
+      "evidence": "domain.js: focus.set/todayItems; E5; решение 12"
+    },
+    {
+      "id": "NEW-07",
+      "status": "Д",
+      "result": "Пауза без пропусков исключённых обычных действий, в том числе квестов; календарь сохраняется, mute отдельно.",
+      "evidence": "domain.js: pause/relieved; W4; решения 14–15"
+    },
+    {
+      "id": "NEW-08",
+      "status": "Р",
+      "result": "Самостоятельные разделы и необязательная стратегическая связь одной записи.",
+      "evidence": "items/stageId; W1–7"
+    },
+    {
+      "id": "NEW-09",
+      "status": "Д",
+      "result": "Награда за отметку и отдельный порог; период и уровень, точная отмена.",
+      "evidence": "domain.js: completeItem/undoItem; T «habit»; решения 18–19"
+    },
+    {
+      "id": "NEW-10",
+      "status": "Р",
+      "result": "Дата/источник/недостающая норма каждого пропуска, поздний факт не задним числом.",
+      "evidence": "domain.js: advance; W3, W7"
+    },
+    {
+      "id": "NEW-11",
+      "status": "Д",
+      "result": "Неразобранное постоянно, недавняя ссылка 15 минут, непривязанные решения до разбора.",
+      "evidence": "app.js: inboxPage; W6; решение 29"
+    },
+    {
+      "id": "NEW-12",
+      "status": "Р",
+      "result": "Поиск и выполнение существующей записи вне дневного списка, добавление при отсутствии.",
+      "evidence": "app.js: searchDialog/searchResults; domain.js: completeItem; W1; сверка кода"
+    },
+    {
+      "id": "NEW-13",
+      "status": "Р",
+      "result": "Категории, теги, текстовый поиск и явный фильтр категорий общих списков/магазина/ништяков.",
+      "evidence": "app.js: listFilters/itemsPage/shopPage/treatsPage; E8"
+    },
+    {
+      "id": "NEW-14",
+      "status": "Р",
+      "result": "Решения со связью или во входящих, перенос через редактор, четыре состояния, история.",
+      "evidence": "domain.js: decision.*; W3, W6"
+    },
+    {
+      "id": "NEW-15",
+      "status": "Р",
+      "result": "Дедлайн до секунд, жёлтый за три дня, красный после; ручной штраф/долг и точная отмена.",
+      "evidence": "app.js: decisionCard/updateClocks; domain.js: decision.*; W3, W6"
+    },
+    {
+      "id": "NEW-16",
+      "status": "Д",
+      "result": "Снимок назначения, резерв, собственные экземпляры и история; использованная награда блокирует отмену источника.",
+      "evidence": "domain.js: bindBonuses/reward/instance.*; W5; решения 25–27"
+    },
+    {
+      "id": "NEW-17",
+      "status": "Р",
+      "result": "Три масштаба сессий, отдельные приглашения/настройки, пропуск периода и свободный вход в стратегию.",
+      "evidence": "app.js: reviewInvites/reviewsPage; E7, E12"
+    },
+    {
+      "id": "NEW-18",
+      "status": "Д",
+      "result": "100 текстов, 5 статистических групп по 20; ритуал без выплаты и блокировки.",
+      "evidence": "messages.js: dayMessage; W1; решение 31"
+    },
+    {
+      "id": "NEW-19",
+      "status": "Д",
+      "result": "Если — то в целях и действиях, только подсказка, без автоматического распознавания обстоятельств.",
+      "evidence": "app.js: goalCard/itemCard/formPage; решение 9"
+    },
+    {
+      "id": "NEW-20",
+      "status": "Д",
+      "result": "Отказ от цели с причиной и историей, без удаления заданий или штрафа.",
+      "evidence": "domain.js: goal.status; T «goal abandonment»; решение 7"
+    },
+    {
+      "id": "NEW-21",
+      "status": "О",
+      "result": "Сценарий полного демо отложен пользователем до готовности основы; тестовые примеры только в проверках.",
+      "evidence": "T «empty installation»; последнее поручение"
+    },
+    {
+      "id": "NEW-22",
+      "status": "О",
+      "result": "Lite и пользовательский ввод отложены вместе с обучением; отдельной несовместимой базы нет.",
+      "evidence": "createState; последнее поручение"
+    },
+    {
+      "id": "NEW-23",
+      "status": "О",
+      "result": "Добровольные семь шагов обучения будут отдельной работой после приёмки основы.",
+      "evidence": "последнее поручение"
+    }
+  ],
+  "statusLegend": {
+    "Р": "implemented",
+    "Д": "implemented-with-agent-decision",
+    "Ч": "optional-candidate-partial",
+    "О": "deferred",
+    "Н": "not-transferred-by-decision"
+  },
+  "statusCounts": {
+    "Р": 48,
+    "Д": 32,
+    "Ч": 3,
+    "О": 6,
+    "Н": 3
+  },
+  "verification": {
+    "model": {
+      "command": "npm test --prefix next",
+      "passed": 53,
+      "failed": 0
+    },
+    "week": {
+      "days": [
+        {
+          "day": 1,
+          "checks": [
+            "пустая установка",
+            "свой блок и цель",
+            "четыре типа действий",
+            "резерв бонуса",
+            "таймер отдельно от выполнения",
+            "ритуал не закрывает день"
+          ],
+          "events": 5,
+          "missed": 0,
+          "coins": 35,
+          "xp": 35
+        },
+        {
+          "day": 2,
+          "checks": [
+            "повторения на новую дату",
+            "календарное выполнение",
+            "автоматический финал чек-листа",
+            "превращение мысли в задание"
+          ],
+          "events": 10,
+          "missed": 0,
+          "coins": 90,
+          "xp": 90
+        },
+        {
+          "day": 3,
+          "checks": [
+            "два отдельных пропуска",
+            "отдых снимает ожидание",
+            "прошлый пропуск архивируется отдельно",
+            "просроченное решение не штрафуется"
+          ],
+          "events": 11,
+          "missed": 2,
+          "coins": 90,
+          "xp": 90
+        },
+        {
+          "day": 4,
+          "checks": [
+            "пауза без потери расписаний",
+            "календарь остаётся обязательством"
+          ],
+          "events": 11,
+          "missed": 2,
+          "coins": 90,
+          "xp": 90
+        },
+        {
+          "day": 5,
+          "checks": [
+            "возврат после паузы",
+            "цель привычки",
+            "финал счётчика и выдача бонуса",
+            "закрытие и переоткрытие этапа",
+            "перенос сохраняет ID",
+            "использованный бонус блокирует отмену",
+            "возврат покупки"
+          ],
+          "events": 19,
+          "missed": 3,
+          "coins": 275,
+          "xp": 275
+        },
+        {
+          "day": 6,
+          "checks": [
+            "Цена слова допускает долг",
+            "ошибочный штраф возвращается точно",
+            "отмена решения без штрафа",
+            "неразобранная мысль переживает 15 минут"
+          ],
+          "events": 21,
+          "missed": 3,
+          "coins": 275,
+          "xp": 275
+        },
+        {
+          "day": 7,
+          "checks": [
+            "массовый архив и восстановление пропусков",
+            "источники действий сохранены",
+            "независимая копия",
+            "недельный пересмотр",
+            "экспорт и импорт всей жизни"
+          ],
+          "events": 21,
+          "missed": 5,
+          "coins": 275,
+          "xp": 275
+        }
+      ],
+      "jsErrors": [],
+      "responsiveWidths": [
+        320,
+        375,
+        390,
+        768,
+        1100
+      ]
+    },
+    "edges": {
+      "checks": [
+        "атомарная цель из редактора; точная историческая награда на карточке",
+        "перенос цели вместе с заданием; редактирование завершённого этапа без переписывания денег",
+        "обычное создание, завершение и возобновление привычки",
+        "блок архивируется и восстанавливается через интерфейс",
+        "фокус скрывает остальные направления; все направления доступны явно",
+        "каталог инструментов, бюджет, график и коллекция хорошего сохраняются",
+        "инструменты сохраняют данные без размещения; приглашения и запись пересмотра; история бонусов",
+        "категория и поиск тега фильтруют реальные общие записи",
+        "реальные две вкладки: черновик сохранён, устаревшая правка отклонена",
+        "неверный импорт и отказ записи не меняют прогресс; старое хранилище нетронуто",
+        "буквальный пользовательский текст и восемь редакторов на320/375/900 без горизонтального переполнения",
+        "разовый календарь остаётся выполненным завтра; правка старого обзора сохраняет его дату; новое приглашение на новый день",
+        "запрещённое хранилище показывает ошибку вместо пустого неработающего экрана"
+      ],
+      "jsErrors": []
+    },
+    "physicalSafari": "not-tested",
+    "userAcceptance": "pending"
+  },
+  "oldApplication": {
+    "commit": "1d16c2d6ce37431d9374d6744a4acdedb58a7a56",
+    "indexSHA256": "e2dc9f9e05cb8887db8456a8cfbf5da9b1b9995701853567d205d890961179a3",
+    "unchanged": true
+  }
+}

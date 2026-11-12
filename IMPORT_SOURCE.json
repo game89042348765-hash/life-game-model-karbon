@@ -1,0 +1,14 @@
+{
+  "source_repository": "game89042348765-hash/life-game",
+  "source_branch": "lab/synthetic-users",
+  "source_commit": "89112c29dacea254cd8f50c4197a8ee77e764917",
+  "source_package_payload_commit": "4a17c303a7b53c9956d72b0ec8b25f98435203d5",
+  "archive": "packages/LifeGame-Developer-Pack-2026-11-13.zip",
+  "archive_bytes": 15835996,
+  "archive_sha256": "545dde467fa7a00c07aa6ad6e3337d37c0137ddc6297dbddf625c16afeab9c64",
+  "workspace": "workspace/",
+  "workspace_manifest_entries_verified": 577,
+  "source_runtime_modified": false,
+  "source_repository_visibility_changed": false,
+  "notes": "User-authorized initial sandbox delivery; original archive is immutable, editable files are in workspace."
+}

@@ -1,0 +1,126 @@
+{
+  "title": "LifeGame Ритм Lab — лаборатория",
+  "url": "http://127.0.0.1:42367/personal-lab/",
+  "virtual_time_observed": "2026-11-19T18:00:18.527Z",
+  "modal": true,
+  "viewport": {
+    "width": 375,
+    "height": 844
+  },
+  "visible_text": "сохранятся на паузе, когда активен Базовый.\nМожно не выбирать ничего дополнительного и оставаться в этом режиме сколько угодно.\nПо желанию\nКалендарь: только выбранные события\nНапоминания о выбранных событиях\nСпокойная статистика за неделю\nНапоминания работают в открытом приложении. Системные зависят от разрешения браузера; включить его можно в Полном. Встречи во внешнем мире не отменяются.\nПредложить небольшой набор\nПредложение по признакам «главное» и «в дне» — это черновой выбор. Проверьте его перед сохранением.\nНайти своё действие\nЗадания\nПорисовать немного\nразово\nСохранить ритм\nОтмена",
+  "elements": [
+    {
+      "element": "e1",
+      "label": "Календарь: только выбранные события",
+      "type": "checkbox",
+      "disabled": false,
+      "rect": {
+        "x": 34,
+        "y": 210,
+        "width": 20,
+        "height": 20
+      },
+      "value": "on",
+      "checked": false
+    },
+    {
+      "element": "e2",
+      "label": "Напоминания о выбранных событиях",
+      "type": "checkbox",
+      "disabled": false,
+      "rect": {
+        "x": 34,
+        "y": 273,
+        "width": 20,
+        "height": 20
+      },
+      "value": "on",
+      "checked": false
+    },
+    {
+      "element": "e3",
+      "label": "Спокойная статистика за неделю",
+      "type": "checkbox",
+      "disabled": false,
+      "rect": {
+        "x": 34,
+        "y": 337,
+        "width": 20,
+        "height": 20
+      },
+      "value": "on",
+      "checked": true
+    },
+    {
+      "element": "e4",
+      "label": "Предложить небольшой набор",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 477,
+        "width": 242,
+        "height": 36
+      },
+      "value": ""
+    },
+    {
+      "element": "e5",
+      "label": "Найти своё действие",
+      "type": "search",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 583,
+        "width": 341,
+        "height": 43
+      },
+      "value": "",
+      "checked": false
+    },
+    {
+      "element": "e6",
+      "label": "Порисовать немного\nразово",
+      "type": "checkbox",
+      "disabled": false,
+      "rect": {
+        "x": 21,
+        "y": 692,
+        "width": 20,
+        "height": 20
+      },
+      "value": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+      "checked": true
+    },
+    {
+      "element": "e7",
+      "label": "Сохранить ритм",
+      "type": "submit",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 773,
+        "width": 141,
+        "height": 36
+      },
+      "value": ""
+    },
+    {
+      "element": "e8",
+      "label": "Отмена",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 166,
+        "y": 773,
+        "width": 81,
+        "height": 36
+      },
+      "value": ""
+    }
+  ],
+  "observation_id": "P03-d04-o0015",
+  "screenshot": "/workspace/life-game/personal-lab/verification/LAB-015-ai-pilot-20261112T193728Z/P03/day-04/P03-d04-o0015.png",
+  "actions_used": 2,
+  "action_budget": 18
+}

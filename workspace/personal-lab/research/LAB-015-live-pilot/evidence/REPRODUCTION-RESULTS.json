@@ -1,0 +1,228 @@
+{
+  "status": "completed",
+  "scenario_count": 3,
+  "reproduced": 3,
+  "technical_bugs_confirmed": 0,
+  "application_source_commit": "27919b94a7e7bb5f038dbb5235b79ea89b29c916",
+  "scope": "Three substantial UX/product suspicions, not three proven technical defects.",
+  "rules": {
+    "fresh_context_per_attempt": true,
+    "participant_profiles_used": false,
+    "state_writes": "ordinary UI only",
+    "evaluate": "read-only DOM/state observer",
+    "external_requests": "all except configured server origin blocked",
+    "service_workers": "blocked in reproductions; primary cached offline entry not repeated",
+    "clock": "installed before navigation; completion settled before moving date in final R3"
+  },
+  "cases": [
+    {
+      "status": "reproduced",
+      "claim": "В Базовом прошлые частичные минуты не представлены недельным счётчиком отметок; сохранение минут исправно.",
+      "technical_bug": false,
+      "retained_minutes": 13,
+      "marks": 0,
+      "limits": "Проверен текущий Базовый экран, отсутствие истории во всём продукте не утверждается.",
+      "case_id": "R1",
+      "observations": [
+        {
+          "observation_id": "R1-day1-five-minutes",
+          "png": "reproductions/R1/R1-day1-five-minutes.png",
+          "json": "reproductions/R1/R1-day1-five-minutes.json"
+        },
+        {
+          "observation_id": "R1-day2-thirteen-retained",
+          "png": "reproductions/R1/R1-day2-thirteen-retained.png",
+          "json": "reproductions/R1/R1-day2-thirteen-retained.json"
+        }
+      ],
+      "actions_file": "reproductions/R1/actions.json",
+      "trace": "reproductions/R1/trace.zip",
+      "external_requests_blocked": [],
+      "fresh_context": true,
+      "participant_profiles_used": false,
+      "state_mutation": "UI only",
+      "service_workers": "blocked for isolated reproduction; offline not retested"
+    },
+    {
+      "status": "reproduced",
+      "claim": "В простом добавлении разового задания нет поля срока. Дата в названии сохраняется текстом, структурная дата не устанавливается.",
+      "technical_bug": false,
+      "saved_schedule": {
+        "type": "once",
+        "days": [],
+        "date": null
+      },
+      "limits": "Форма события календаря и возможности Полного не считаются отсутствующими.",
+      "case_id": "R2",
+      "observations": [
+        {
+          "observation_id": "R2-one-off-form",
+          "png": "reproductions/R2/R2-one-off-form.png",
+          "json": "reproductions/R2/R2-one-off-form.json"
+        },
+        {
+          "observation_id": "R2-deadline-title-only",
+          "png": "reproductions/R2/R2-deadline-title-only.png",
+          "json": "reproductions/R2/R2-deadline-title-only.json"
+        }
+      ],
+      "actions_file": "reproductions/R2/actions.json",
+      "trace": "reproductions/R2/trace.zip",
+      "external_requests_blocked": [],
+      "fresh_context": true,
+      "participant_profiles_used": false,
+      "state_mutation": "UI only",
+      "service_workers": "blocked for isolated reproduction; offline not retested"
+    },
+    {
+      "status": "reproduced",
+      "claim": "Повторяемость доступна через Полный и длинную форму; сохранение ниже начального мобильного экрана. История и новое выполнение сохраняются.",
+      "technical_bug": false,
+      "save_below_viewport": true,
+      "save_rect_before_scroll": {
+        "x": 17,
+        "y": 912.140625,
+        "width": 102.984375,
+        "height": 35.5,
+        "top": 912.140625,
+        "right": 119.984375,
+        "bottom": 947.640625,
+        "left": 17
+      },
+      "retained_minutes": 7,
+      "completion_cycles": [
+        0,
+        1
+      ],
+      "case_id": "R3",
+      "observations": [
+        {
+          "observation_id": "R3-day1-completion-settled",
+          "png": "reproductions/R3/R3-day1-completion-settled.png",
+          "json": "reproductions/R3/R3-day1-completion-settled.json"
+        },
+        {
+          "observation_id": "R3-completed-not-in-today",
+          "png": "reproductions/R3/R3-completed-not-in-today.png",
+          "json": "reproductions/R3/R3-completed-not-in-today.json"
+        },
+        {
+          "observation_id": "R3-past-fact-found",
+          "png": "reproductions/R3/R3-past-fact-found.png",
+          "json": "reproductions/R3/R3-past-fact-found.json"
+        },
+        {
+          "observation_id": "R3-recurrence-form-top",
+          "png": "reproductions/R3/R3-recurrence-form-top.png",
+          "json": "reproductions/R3/R3-recurrence-form-top.json"
+        },
+        {
+          "observation_id": "R3-recurrence-form-middle",
+          "png": "reproductions/R3/R3-recurrence-form-middle.png",
+          "json": "reproductions/R3/R3-recurrence-form-middle.json"
+        },
+        {
+          "observation_id": "R3-recurrence-form-bottom",
+          "png": "reproductions/R3/R3-recurrence-form-bottom.png",
+          "json": "reproductions/R3/R3-recurrence-form-bottom.json"
+        },
+        {
+          "observation_id": "R3-weekly-result-persisted",
+          "png": "reproductions/R3/R3-weekly-result-persisted.png",
+          "json": "reproductions/R3/R3-weekly-result-persisted.json"
+        }
+      ],
+      "actions_file": "reproductions/R3/actions.json",
+      "trace": "reproductions/R3/trace.zip",
+      "external_requests_blocked": [],
+      "fresh_context": true,
+      "participant_profiles_used": false,
+      "state_mutation": "UI only",
+      "service_workers": "blocked for isolated reproduction; offline not retested"
+    }
+  ],
+  "attempt_history": {
+    "cases": 3,
+    "initial_selector_failures": [
+      "R1",
+      "R3"
+    ],
+    "cause": "Playwright get_by_label did not match the visually labelled minute input; no product defect inferred from automation timeout. Rerun uses ordinary input[type=number] DOM selector.",
+    "initial_evidence": [
+      "R1-attempt1/trace.zip",
+      "R3-attempt1/trace.zip",
+      "R3-attempt2/trace.zip",
+      "R1-attempt2/trace.zip"
+    ],
+    "successful_R2_repeated": false,
+    "second_R3_attempt": "Virtual date advanced immediately after click before completion UI settled; first fact consequently received 21 November. Reproduction timing issue, not classified as a product defect. Rerun waits for visible completion and captures durable first-day state before advancing clock.",
+    "second_R1_attempt": "Semantic assertions passed, but screenshot caught the closing minute dialog before the later observer read. Kept as a capture-timing artifact; rerun explicitly waits for the dialog to be hidden before screenshot and state read.",
+    "browser_contexts_in_case_attempts": 7,
+    "read_only_initial_ui_probe_contexts": 1
+  },
+  "attempt_context_count": 7,
+  "untraced_initial_read_only_ui_probe_contexts": 1,
+  "attempted_ui_operations_in_all_recorded_attempts": 103,
+  "recorded_attempts": [
+    {
+      "directory": "reproductions/R1",
+      "status": "reproduced",
+      "trace": "reproductions/R1/trace.zip",
+      "trace_sha256": "02661e89b375a0b6536d800182eebf5108badc6d2b9b0036c39f3344a61789d7",
+      "trace_bytes": 2035819
+    },
+    {
+      "directory": "reproductions/R1-attempt1",
+      "status": "not_reproduced",
+      "trace": "reproductions/R1-attempt1/trace.zip",
+      "trace_sha256": "87f1c325fcad2372bfb420fd9fc4614f09431abb33a69e55218e07a481249d66",
+      "trace_bytes": 1615102
+    },
+    {
+      "directory": "reproductions/R1-attempt2",
+      "status": "reproduced",
+      "trace": "reproductions/R1-attempt2/trace.zip",
+      "trace_sha256": "1073e2fbd7e43f399873ad75fdad579d0853195a1ce86ebf1c27e12d594297fa",
+      "trace_bytes": 2032147
+    },
+    {
+      "directory": "reproductions/R2",
+      "status": "reproduced",
+      "trace": "reproductions/R2/trace.zip",
+      "trace_sha256": "d3f8b5447868a8c6866d2cdb72799cc001108b5aa458b3a95aff1197a44554b2",
+      "trace_bytes": 962468
+    },
+    {
+      "directory": "reproductions/R3",
+      "status": "reproduced",
+      "trace": "reproductions/R3/trace.zip",
+      "trace_sha256": "15cb2a8e66aa6b30de16f782062c882d390672fa62eb04f95ad5e07548f2fc46",
+      "trace_bytes": 4143091
+    },
+    {
+      "directory": "reproductions/R3-attempt1",
+      "status": "not_reproduced",
+      "trace": "reproductions/R3-attempt1/trace.zip",
+      "trace_sha256": "cbc1436493cf3a69e08a42c14ce1978fd7396ffbf930dcae0ec2fc61b791f70e",
+      "trace_bytes": 1624499
+    },
+    {
+      "directory": "reproductions/R3-attempt2",
+      "status": "not_reproduced",
+      "trace": "reproductions/R3-attempt2/trace.zip",
+      "trace_sha256": "516c82b3fa5183f3de13ba964ccf6eb04b01bbd87aa1667537ce72075723a7e5",
+      "trace_bytes": 4109503
+    }
+  ],
+  "instructions": "reproductions/README.md",
+  "script": "reproductions/reproduce.py",
+  "script_sha256": "6f808e49528971fac09c66861351e2d7dc1212fc2cc60bf0068286e7f1e840f8",
+  "script_portability": "--url and --output-dir; default creates a fresh timestamped directory. Refuses to overwrite case evidence.",
+  "code_changed_after_recorded_runs": "Only endpoint/output argument handling, overwrite guard and explicit settling of form/clock transitions were improved. R1 was rerun with settled captures; final R2/R3 traces retained without repeating their successful UI scenarios.",
+  "limits": [
+    "The two initial minute-label selector timeouts are automation failures.",
+    "R3 attempt 2 advanced virtual time before completion settled; excluded from product conclusions.",
+    "R1 attempt 2 passed semantic assertions but PNG caught closing modal; final R1 capture is settled.",
+    "No extra defect, human-frequency estimate or retention result is inferred from the attempt errors."
+  ]
+}

@@ -1,0 +1,9 @@
+/* Reward ends in the balance, never in a fake stored zero. */
+#wallet>span:first-child{position:relative;font-variant-numeric:tabular-nums}
+#wallet .lg-wallet-gain{position:absolute;bottom:-14px;right:0;display:block;white-space:nowrap;font-size:9px;font-weight:600;color:#eddfa5;pointer-events:none;animation:lg-wallet-gain-in .25s ease-out}
+#wallet .lg-wallet-counting{border-color:rgba(var(--accent-rgb),.7);box-shadow:0 0 17px rgba(var(--accent-rgb),.17);color:#fff1bb}
+#wallet .lg-wallet-landed{animation:lg-wallet-paid .8s ease-out}
+@keyframes lg-wallet-gain-in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@keyframes lg-wallet-paid{30%{box-shadow:0 0 0 4px rgba(var(--accent-rgb),.08),0 0 24px rgba(var(--accent-rgb),.25);color:#fff6d9}100%{box-shadow:none}}
+
+@media(prefers-reduced-motion:reduce){#wallet .lg-wallet-landed,#wallet .lg-wallet-gain{animation:none}}

@@ -1,0 +1,452 @@
+/* Layout, thread and sunrise from the supplied task-form-final.html; scoped to this dialog. */
+#editor.lg-task-create { --lt:0; --text:#f2f2f2; --danger:#ff6b6b; width:min(400px,calc(100vw - 24px)); max-width:400px; max-height:calc(100dvh - 32px); margin:auto; color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;line-height:normal;transition:--lt .6s ease;}
+#editor.lg-task-create *,#editor.lg-task-create *::before,#editor.lg-task-create *::after {box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+#editor.lg-task-create form {display:block;margin:0;padding:0;}
+#editor.lg-task-create label {margin:0;padding:0;font-size:inherit;color:inherit;}
+#editor.lg-task-create button,#editor.lg-task-create input {font:inherit;color:inherit;letter-spacing:normal;}
+#editor.lg-task-create button {cursor:pointer;width:auto;margin:0;min-width:0;box-shadow:none;}
+#editor.lg-task-create input {margin:0;box-shadow:none;}
+#editor.lg-task-create input[type=checkbox] {min-height:0;padding:0;max-width:none;}
+#editor.lg-task-create .ui-required-note,#editor.lg-task-create .ui-required-mark {display:none;}
+#editor.lg-task-create .lg-actions {position:static;bottom:auto;padding:0;box-shadow:none;background:none;}
+#editor.lg-task-create{
+    width: 100%;
+    background: #121212;
+    border: 1px solid #262624;
+    border-radius: 22px;
+    padding: 20px 18px 18px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.85);
+  }
+#editor.lg-task-create .lg-modal-title{
+    margin: 0 0 16px;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: #ffffff;
+  }
+#editor.lg-task-create .lg-field{
+    margin-bottom: 16px;
+  }
+#editor.lg-task-create .lg-label{
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #9e9e98;
+    margin-bottom: 8px;
+  }
+#editor.lg-task-create .lg-req{
+    color: var(--accent);
+    font-weight: 700;
+  }
+#editor.lg-task-create .lg-input,
+#editor.lg-task-create .lg-select{
+    width: 100%;
+    min-height: 46px;
+    padding: 11px 14px;
+    border-radius: 12px;
+    border: 1px solid #2a2a28;
+    background: #151515;
+    color: var(--text);
+    font-size: 15px;
+    transition: border-color 0.16s ease, box-shadow 0.16s ease;
+  }
+#editor.lg-task-create .lg-input::placeholder{
+    color: #6e6e68;
+  }
+#editor.lg-task-create .lg-input:focus,
+#editor.lg-task-create .lg-select:focus{
+    outline: none;
+    border-color: rgba(var(--accent-rgb), 0.65);
+    box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.1);
+  }
+#editor.lg-task-create .lg-repeat-bar{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+    padding: 4px;
+    border-radius: 14px;
+    border: 1px solid #262624;
+    background: #0d0d0d;
+    align-items: stretch;
+  }
+#editor.lg-task-create .lg-repeat-preset{
+    min-height: 44px;
+    padding: 6px 6px;
+    border-radius: 10px;
+    border: 1.5px solid transparent;
+    background: transparent;
+    color: #e8e8e3;
+    font-size: 12.5px;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.15s ease;
+  }
+#editor.lg-task-create .lg-repeat-preset[aria-pressed="true"]{
+    background: #2b2614;
+    border-color: #e5ded0;
+    color: var(--accent);
+    font-weight: 600;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+  }
+#editor.lg-task-create .lg-weekdays-circles{
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 7px;
+    margin-top: 12px;
+  }
+#editor.lg-task-create .lg-day-circle{
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    aspect-ratio: 1 / 1;
+  }
+#editor.lg-task-create .lg-day-circle input{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+#editor.lg-task-create .lg-day-circle span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #262624;
+    background: #141414;
+    color: #e0e0da;
+    font-size: 12.5px;
+    font-weight: 500;
+    transition: all 0.15s ease;
+  }
+#editor.lg-task-create .lg-day-circle input:checked + span{
+    background: #2b2614;
+    border-color: var(--accent);
+    color: var(--accent);
+    font-weight: 700;
+    box-shadow: 0 0 12px rgba(var(--accent-rgb), 0.22);
+  }
+#editor.lg-task-create .lg-day-circle input:focus-visible + span{
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+#editor.lg-task-create .lg-repeat-caption{
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: #8a8a84;
+  }
+#editor.lg-task-create .lg-path-section{
+    border-radius: 16px;
+    border: 1px solid #262723;
+    background: #141513;
+    padding: 13px 12px 12px;
+    margin-bottom: 16px;
+  }
+#editor.lg-task-create .lg-path-kicker{
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: #8f9185;
+    margin: 0 2px 10px;
+  }
+#editor.lg-task-create .lg-toggle-stack{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+#editor.lg-task-create .lg-toggle-card{
+    border-radius: 13px;
+    border: 1px solid #2a2c28;
+    background: #181a17;
+    padding: 11px 12px;
+    transition: all 0.18s ease;
+  }
+#editor.lg-task-create .lg-toggle-card.is-active-goal{
+    border-color: rgba(108, 158, 128, 0.42);
+    background: #19261f;
+  }
+#editor.lg-task-create .lg-toggle-card.is-active-day{
+    border-color: rgba(var(--accent-rgb), 0.38);
+    background: radial-gradient(ellipse at 100% 0%, rgba(var(--accent-rgb), 0.06), transparent 70%), #1a1b16;
+  }
+#editor.lg-task-create .lg-toggle-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+  }
+#editor.lg-task-create .lg-toggle-copy{
+    min-width: 0;
+    flex: 1;
+  }
+#editor.lg-task-create .lg-toggle-title{
+    display: block;
+    font-size: 13.5px;
+    font-weight: 650;
+    color: #f0f2ee;
+    line-height: 1.3;
+  }
+#editor.lg-task-create .lg-toggle-sub{
+    display: block;
+    font-size: 11.5px;
+    color: #8e948e;
+    margin-top: 3px;
+    line-height: 1.35;
+  }
+#editor.lg-task-create .lg-switch{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 42px;
+    height: 24px;
+    min-width: 42px;
+    border-radius: 99px;
+    border: 1px solid #3e423e;
+    background: #111311;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    transition: all 0.18s ease;
+  }
+#editor.lg-task-create .lg-switch::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    background: #9ca29c;
+    transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+  }
+#editor.lg-task-create .lg-switch:checked{
+    background: rgba(var(--accent-rgb), 0.16);
+    border-color: var(--accent);
+  }
+#editor.lg-task-create .lg-switch:checked::before{
+    transform: translateX(18px);
+    background: var(--accent);
+    box-shadow: 0 0 8px rgba(var(--accent-rgb), 0.45);
+  }
+#editor.lg-task-create .lg-actions{
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 10px;
+    margin-top: 4px;
+  }
+#editor.lg-task-create .lg-btn{
+    min-height: 46px;
+    padding: 10px 14px;
+    border-radius: 13px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #2e2e2b;
+    background: #1a1a18;
+    color: var(--text);
+    transition: transform 0.1s ease, background 0.15s ease;
+  }
+#editor.lg-task-create .lg-btn:active{
+    transform: scale(0.99);
+  }
+#editor.lg-task-create .lg-btn-primary{
+    background: var(--accent-fill);
+    border-color: var(--accent);
+    color: var(--on-accent);
+    font-weight: 700;
+  }
+#editor.lg-task-create .lg-error-note{
+    font-size: 12px;
+    color: var(--danger);
+    margin: 0 0 12px;
+  }
+#editor.lg-task-create .lg-toast{
+    margin-bottom: 12px;
+    padding: 11px 13px;
+    border-radius: 13px;
+    border: 1px solid rgba(var(--accent-rgb), 0.35);
+    background: rgba(var(--accent-rgb), 0.08);
+    color: #f3e6b3;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+#editor.lg-task-create{background:linear-gradient(180deg,#151515,#101010);border-color:#2a2925;padding:22px 18px 18px}
+#editor.lg-task-create .lg-modal-title{font-size:22px;margin-bottom:18px}
+#editor.lg-task-create .lg-repeat-preset[aria-pressed="true"]{border-color:rgba(var(--accent-rgb),.85);background:linear-gradient(180deg,#30291a,#221d10);box-shadow:0 0 14px rgba(var(--accent-rgb),.14)}
+#editor.lg-task-create .lg-day-circle span{background:#121212}
+#editor.lg-task-create .lg-path-section{background:#131311;border-color:#24241f;padding:12px 14px 4px;border-radius:18px}
+#editor.lg-task-create .lg-path-kicker{margin:2px 0 4px}
+#editor.lg-task-create .lg-toggle-stack{gap:0}
+#editor.lg-task-create .lg-toggle-card,
+#editor.lg-task-create .lg-toggle-card.is-active-goal,
+#editor.lg-task-create .lg-toggle-card.is-active-day{border:0;border-top:1px solid #ffffff0f;border-radius:0;background:none;padding:13px 0}
+#editor.lg-task-create .lg-toggle-card:first-child{border-top:0}
+#editor.lg-task-create .lg-toggle-title{font-size:14px;font-weight:600}
+#editor.lg-task-create .lg-toggle-sub{font-size:12px}
+#editor.lg-task-create .lg-toggle-card.is-active-goal .lg-switch:checked{background:rgba(108,190,140,.18);border-color:#6cbe8c}
+#editor.lg-task-create .lg-toggle-card.is-active-goal .lg-switch:checked::before{background:#7fd6a0;box-shadow:0 0 8px rgba(108,190,140,.5)}
+#editor.lg-task-create .lg-switch{width:46px;min-width:46px;height:26px}
+#editor.lg-task-create .lg-switch::before{width:18px;height:18px}
+#editor.lg-task-create .lg-switch:checked::before{transform:translateX(20px)}
+#editor.lg-task-create .lg-btn{min-height:50px;border-radius:14px;font-size:15px}
+#editor.lg-task-create .lg-btn-primary{box-shadow:0 6px 22px rgba(var(--accent-rgb),.22)}
+#editor.lg-task-create .lg-light-thread{
+  --t:0;--p:0;
+  --lt-pale:color-mix(in srgb,var(--accent) 42%,#fff);
+  --lt-glow:rgba(var(--accent-rgb),1);
+  position:relative;border-radius:18px;padding:16px 16px 6px;margin:4px 0 16px;
+  background:#131312;border:1px solid #262622;overflow:hidden;
+  box-shadow:0 0 calc(var(--t)*24px) rgba(var(--accent-rgb),calc(var(--t)*.12));transition:box-shadow .4s
+}
+#editor.lg-task-create .lg-light-thread::before{content:"";position:absolute;right:-60px;top:-50px;width:200px;height:200px;border-radius:50%;pointer-events:none;
+  opacity:0;transition:opacity .5s;background:radial-gradient(circle,rgba(var(--accent-rgb),.16),transparent 65%)}
+#editor.lg-task-create .lg-light-thread.is-max::before{opacity:1}
+#editor.lg-task-create .lg-light-thread-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;min-height:20px}
+#editor.lg-task-create .lg-light-thread label.lg-light-thread-title{display:block;padding:0;margin:0;font-size:15px;font-weight:600;color:var(--text,#f2f2f2)}
+#editor.lg-task-create .lg-light-thread-name{font-size:12.5px;text-align:right;
+  color:color-mix(in srgb,var(--lt-pale) calc(42% + var(--t)*58%),transparent);
+  text-shadow:0 0 calc(var(--t)*12px) rgba(var(--accent-rgb),calc(var(--t)*.85));transition:color .3s,text-shadow .3s}
+#editor.lg-task-create .lg-light-thread.is-zero .lg-light-thread-name{color:#46443d;text-shadow:none}
+#editor.lg-task-create .lg-light-thread.is-max .lg-light-thread-name{color:color-mix(in srgb,var(--accent) 25%,#fff);
+  text-shadow:0 0 8px rgba(var(--accent-rgb),.9),0 0 22px rgba(var(--accent-rgb),.6)}
+#editor.lg-task-create .lg-light-thread-track{position:relative;height:56px;margin:6px 10px 0}
+#editor.lg-task-create .lg-light-thread-hair{position:absolute;left:0;right:0;top:28px;height:1px;background:linear-gradient(90deg,#2e2d29,#3d3b33)}
+#editor.lg-task-create .lg-light-thread-lit{position:absolute;left:0;top:28px;height:1px;width:calc(var(--p)*100%);
+  background:linear-gradient(90deg,rgba(var(--accent-rgb),.12),var(--lt-pale));
+  filter:drop-shadow(0 0 calc(2px + var(--t)*5px) rgba(var(--accent-rgb),.8));transition:opacity .3s}
+#editor.lg-task-create .lg-light-thread-dot{position:absolute;top:28px;left:calc(var(--x)*100%);width:3px;height:3px;border-radius:50%;background:#55534a;transform:translate(-50%,-50%);transition:.25s}
+#editor.lg-task-create .lg-light-thread-dot.is-on{background:var(--lt-pale);box-shadow:0 0 6px var(--lt-glow)}
+#editor.lg-task-create .lg-light-thread-flare{position:absolute;top:28px;left:calc(var(--p)*100%);transform:translate(-50%,-50%);pointer-events:none;z-index:3;transition:opacity .3s}
+#editor.lg-task-create .lg-light-thread-flare::before{content:"";position:absolute;left:50%;top:50%;width:calc(70px + var(--t)*110px);height:2px;transform:translate(-50%,-50%);
+  background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--lt-pale) calc(50% + var(--t)*50%),transparent),transparent);filter:blur(.4px);transition:opacity .3s}
+#editor.lg-task-create .lg-light-thread-flare::after{content:"";position:absolute;left:50%;top:50%;width:2px;height:calc(16px + var(--t)*26px);transform:translate(-50%,-50%);
+  background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--lt-pale) calc(40% + var(--t)*50%),transparent),transparent);transition:opacity .3s}
+#editor.lg-task-create .lg-light-thread-core{position:absolute;left:50%;top:50%;width:10px;height:10px;border-radius:50%;transform:translate(-50%,-50%);
+  background:#fffaf0;border:1.5px solid transparent;transition:background .3s,box-shadow .3s,border-color .3s;
+  box-shadow:0 0 6px 2px color-mix(in srgb,var(--lt-pale) 90%,transparent),0 0 calc(14px + var(--t)*26px) calc(2px + var(--t)*6px) rgba(var(--accent-rgb),calc(.45 + var(--t)*.45))}
+#editor.lg-task-create .lg-light-thread.is-snap .lg-light-thread-flare,
+#editor.lg-task-create .lg-light-thread.is-snap .lg-light-thread-lit{
+  transition:left .35s cubic-bezier(.2,.8,.2,1),width .35s cubic-bezier(.2,.8,.2,1),opacity .3s}
+#editor.lg-task-create .lg-light-thread.is-zero .lg-light-thread-core{background:#121211;border-color:#5b594f;box-shadow:none}
+#editor.lg-task-create .lg-light-thread.is-zero .lg-light-thread-flare::before,
+#editor.lg-task-create .lg-light-thread.is-zero .lg-light-thread-flare::after,
+#editor.lg-task-create .lg-light-thread.is-zero .lg-light-thread-lit{opacity:0}
+#editor.lg-task-create .lg-light-thread-star{position:absolute;top:28px;left:100%;width:0;height:0;z-index:2;pointer-events:none}
+#editor.lg-task-create .lg-light-thread-star b{position:absolute;left:0;top:0;transform:translate(-50%,-52%) scale(.75);font-size:14px;line-height:1;color:#5e5b4f;font-weight:400;
+  transition:transform .45s cubic-bezier(.2,1.6,.4,1),color .3s,text-shadow .3s}
+#editor.lg-task-create .lg-light-thread-star b::before{content:"✦"}
+#editor.lg-task-create .lg-light-thread-star i{position:absolute;left:0;top:0;width:2px;height:2px;transform:translate(-50%,-50%);opacity:0;transition:opacity .3s}
+#editor.lg-task-create .lg-light-thread-star i::before,
+#editor.lg-task-create .lg-light-thread-star i::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+#editor.lg-task-create .lg-light-thread-star i::before{width:120px;height:2px;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--lt-pale) 95%,transparent),transparent)}
+#editor.lg-task-create .lg-light-thread-star i::after{width:2px;height:52px;background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--lt-pale) 90%,transparent),transparent)}
+#editor.lg-task-create .lg-light-thread.is-max .lg-light-thread-star b{color:color-mix(in srgb,var(--accent) 20%,#fff);transform:translate(-50%,-52%) scale(1.7);
+  text-shadow:0 0 8px var(--lt-glow),0 0 20px var(--lt-glow),0 0 40px rgba(var(--accent-rgb),.8)}
+#editor.lg-task-create .lg-light-thread.is-max .lg-light-thread-star i{opacity:1;animation:lg-light-thread-twinkle 2.4s ease-in-out infinite}
+#editor.lg-task-create .lg-light-thread.is-max .lg-light-thread-flare{opacity:0}
+#editor.lg-task-create .lg-light-thread.is-ignite .lg-light-thread-star b{animation:lg-light-thread-ignite .7s ease-out}
+@keyframes lg-light-thread-ignite{0%{transform:translate(-50%,-52%) scale(.6)}45%{transform:translate(-50%,-52%) scale(2.3) rotate(25deg)}100%{transform:translate(-50%,-52%) scale(1.7)}}
+@keyframes lg-light-thread-twinkle{0%,100%{transform:translate(-50%,-50%) scale(1) rotate(0)}50%{transform:translate(-50%,-50%) scale(.82) rotate(8deg)}}
+#editor.lg-task-create .lg-light-thread input.lg-light-thread-range{min-height:0;border:0;box-shadow:none;appearance:auto;position:absolute;left:-10px;top:6px;width:calc(100% + 20px);height:44px;margin:0;padding:0;opacity:0;cursor:pointer;z-index:9;touch-action:none}
+#editor.lg-task-create .lg-light-thread:has(.lg-light-thread-range:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+#editor.lg-task-create .lg-toggle-copy{display:flex;flex-direction:column}
+#editor.lg-task-create .lg-toggle-copy .lg-toggle-sub{min-height:32px;margin-top:3px;cursor:pointer}
+#editor.lg-task-create .lg-toggle-title{cursor:pointer}
+@property --lt{syntax:"<number>";inherits:true;initial-value:0}
+#editor.lg-task-create{transition:border-color .5s}
+#editor.lg-task-create{
+    background:radial-gradient(ellipse 130% calc(8% + var(--lt)*70%) at 50% 104%,rgba(255,200,90,calc(var(--lt)*.30)),rgba(var(--accent-rgb),calc(var(--lt)*.08)) 55%,transparent 80%),linear-gradient(180deg,#151515,#101010);
+    border-color:#2a2925;border-bottom-color:rgba(var(--accent-rgb),calc(.05 + var(--lt)*.6));
+    box-shadow:0 24px 60px rgba(0,0,0,.85),0 calc(var(--lt)*24px) calc(var(--lt)*70px) rgba(var(--accent-rgb),calc(var(--lt)*.24))}
+#editor.lg-task-create .lg-path-section,
+#editor.lg-task-create .lg-light-thread{background:rgba(20,20,18,.62);backdrop-filter:blur(2px)}
+#editor.lg-task-create .lg-input,
+#editor.lg-task-create .lg-repeat-bar{background:rgba(13,13,13,.7)}
+#editor.lg-task-create .lg-goal-slot{position:relative;height:34px;margin-top:3px;overflow:hidden}
+#editor.lg-task-create .lg-goal-slot>.lg-toggle-sub{position:absolute;inset:0;margin:0;transition:opacity .28s ease,transform .32s cubic-bezier(.2,.8,.2,1)}
+#editor.lg-task-create .lg-goal-slot>.lg-toggle-sub{min-height:0}
+#editor.lg-task-create .lg-goal-slot>.lg-goal-on{opacity:0;transform:translateY(10px);pointer-events:none;color:#9fe0b6}
+#editor.lg-task-create .lg-goal-slot.is-open>.lg-goal-off{opacity:0;transform:translateY(-10px);pointer-events:none}
+#editor.lg-task-create .lg-goal-slot.is-open>.lg-goal-on{opacity:1;transform:none;pointer-events:auto}
+#editor.lg-task-create .lg-switch:focus{outline:none}
+#editor.lg-task-create .lg-switch:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(var(--accent-rgb),.25)}
+#editor.lg-task-create .lg-toggle-card.is-active-goal .lg-switch:focus-visible{box-shadow:0 0 0 3px rgba(127,214,160,.25)}
+#editor.lg-task-create .lg-toggle-card{transition:background .3s}
+@media (prefers-reduced-motion:reduce){#editor.lg-task-create .lg-goal-slot *{transition-duration:.01ms!important;transition-delay:0s!important}
+}
+
+#editor.lg-task-create::backdrop {background:radial-gradient(ellipse 140% calc(10% + var(--lt)*55%) at 50% 100%,rgba(var(--accent-rgb),calc(var(--lt)*.22)),transparent 80%),#080808dc;transition:--lt .6s ease;}
+#editor.lg-task-create .lg-switch:disabled {opacity:.4;cursor:default;}
+#editor.lg-task-create .lg-error-note[hidden] {display:none;}
+@media(prefers-reduced-motion:reduce) {#editor.lg-task-create,#editor.lg-task-create *,#editor.lg-task-create *::before,#editor.lg-task-create *::after{animation:none!important;transition:none!important;}}
+/* The demo's 12px screen gutters and native dialog viewport limits. */
+#editor.lg-task-create {width:min(400px,calc(100vw - 24px));max-height:calc(var(--lg-dialog-height,100dvh) - 24px);scroll-padding:12px 0 24px;}
+#editor.lg-task-create {font-size:16px;}
+#editor.lg-task-create .lg-modal-title,#editor.lg-task-create .lg-repeat-caption {line-height:normal;}
+
+#editor.lg-task-create .lg-path-kicker {line-height:normal;}
+#editor.lg-task-create {transition:--lt .6s ease,border-color .5s;}
+
+/* Stable labels: same line and alignment at every repeat/reward value. */
+#editor.lg-task-create .lg-repeat-preset {
+  padding-inline:2px;font-size:clamp(11px,3.1vw,12px);
+  white-space:nowrap;overflow-wrap:normal;word-break:normal;
+}
+#editor.lg-task-create .lg-day-circle span {white-space:nowrap;overflow-wrap:normal;}
+#editor.lg-task-create .lg-light-thread-head {
+  display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:center;
+}
+#editor.lg-task-create .lg-light-thread-title,
+#editor.lg-task-create .lg-light-thread-name {white-space:nowrap;overflow-wrap:normal;min-width:0;}
+.lg-c-context.lg-task-goal-tag {color:var(--green);font-size:11px;}
+
+/* The same rays as the path; only light intensity changes with the reward thread. */
+#editor.lg-task-create{isolation:isolate;background:linear-gradient(180deg,#151515,#101010)}
+#editor.lg-task-create::before{
+  content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;pointer-events:none;
+  background:var(--lg-dawn-rays),radial-gradient(ellipse 110% 85% at 50% 110%,rgba(255,190,80,.48),rgba(var(--accent-rgb),.16) 55%,transparent 90%);
+  -webkit-mask-image:linear-gradient(transparent 8%,#000 65%);mask-image:linear-gradient(transparent 8%,#000 65%);
+  opacity:var(--lt);
+}
+/* Shared constructor emblem, quiet when off and golden when enabled. */
+.lg-c-day:has(input:checked){color:var(--accent)}
+#editor.lg-task-create .lg-constructor-title{display:flex;align-items:center;gap:7px}
+#editor.lg-task-create .lg-task-edit-advanced{margin:14px 0;border:1px solid #ffffff17;border-radius:13px;padding:0 12px;background:#ffffff02}
+#editor.lg-task-create .lg-task-edit-advanced>summary{font-size:11px;color:#aaa;min-height:44px;display:flex;align-items:center;cursor:pointer;line-height:1.5}
+#editor.lg-task-create .lg-task-edit-advanced[open]{padding-bottom:13px}
+#editor.lg-task-create .lg-task-edit-advanced :is(label,legend){font-size:12px;color:#aaa;line-height:1.5;margin:10px 0 7px}
+#editor.lg-task-create .lg-task-edit-advanced :is(select){font-size:16px;width:100%;min-width:0;max-width:100%;padding:10px;background:#101010;border:1px solid #ffffff20;border-radius:10px;color:#eee}
+#editor.lg-task-create .lg-task-edit-advanced .task-goal-link{padding:0;border:0;margin:16px 0 0}
+#editor.lg-task-create .lg-task-edit-advanced input[type=checkbox]{width:19px;height:19px;flex:none;accent-color:var(--accent)}
+#editor.lg-task-create .lg-task-edit-advanced [hidden]{display:none!important}
+#editor.lg-task-create .lg-task-edit-advanced .meta{font-size:11px;line-height:1.5}
+/* Reward tiers are static light: no per-card running animation. */
+#screen[data-page=blocks] .lg-task-reward-glow{background:radial-gradient(ellipse at 100% 0,rgba(var(--accent-rgb),calc(var(--task-glow)*.13)),transparent 75%),var(--graphite-surface);border-color:rgba(var(--accent-rgb),calc(.10 + var(--task-glow)*.36));box-shadow:0 0 calc(var(--task-glow)*22px) rgba(var(--accent-rgb),calc(var(--task-glow)*.15))}
+#screen[data-page=blocks] .lg-task-reward-glow.lg-path-task-row{background:radial-gradient(ellipse at 100% 50%,rgba(var(--accent-rgb),calc(var(--task-glow)*.09)),transparent 80%);border-bottom-color:rgba(var(--accent-rgb),calc(.05 + var(--task-glow)*.20))}
+#screen[data-page=blocks] .lg-task-reward-glow.done{box-shadow:none}
+#screen .lg-c-day:has(input:checked){color:var(--accent)}
+
+/* Separate goal and Constructor panels, matching the approved demo. */
+#editor.lg-task-create .lg-light-thread{min-height:114px}
+#editor.lg-task-create .lg-task-option,#editor.lg-task-create .lg-task-option:is(.is-active-goal,.is-active-day){min-height:114px;margin:4px 0 16px;padding:16px;border:1px solid #262622;border-radius:18px;background:#131312;box-shadow:none}
+#editor.lg-task-create .lg-task-option .lg-toggle-row{min-height:72px;padding:0;gap:12px}
+#editor.lg-task-create .lg-task-option .lg-toggle-title{font-size:15px;font-weight:600;line-height:1.4}
+#editor.lg-task-create .lg-task-option .lg-toggle-sub{font-size:12px;line-height:1.5;margin-top:5px}
+#editor.lg-task-create .lg-task-option.is-active-goal{border-color:#6cbe8c40;box-shadow:0 0 20px #6cbe8c0b}
+#editor.lg-task-create .lg-task-option.is-active-day{border-color:rgba(var(--accent-rgb),.3);box-shadow:0 0 20px rgba(var(--accent-rgb),.06)}
+
+/* Center both lines between the card edge and switch, using their real text height. */
+#editor.lg-task-create .lg-task-option,#editor.lg-task-create .lg-task-option:is(.is-active-goal,.is-active-day){display:flex;align-items:center;padding:0 16px 0 0}
+#editor.lg-task-create .lg-task-option .lg-toggle-row{width:100%;min-height:0;align-items:center;gap:0}
+#editor.lg-task-create .lg-task-option .lg-toggle-copy{display:block;flex:1;min-width:0;padding:10px 6px;text-align:center}
+#editor.lg-task-create .lg-task-option .lg-toggle-title{display:block;text-align:center;font-size:14px}
+#editor.lg-task-create .lg-task-option .lg-toggle-sub{min-height:0;text-align:center}
+#editor.lg-task-create .lg-task-option .lg-goal-slot{display:grid;height:auto;min-height:18px;margin-top:5px;overflow:visible}
+#editor.lg-task-create .lg-task-option .lg-goal-slot>.lg-toggle-sub{position:static;inset:auto;margin:0;transform:none;grid-area:1/1;align-self:center}

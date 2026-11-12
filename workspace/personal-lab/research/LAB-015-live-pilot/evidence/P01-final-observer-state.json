@@ -1,0 +1,2388 @@
+{
+  "lifegame-flex-lab-meta-v1": {
+    "space": "my",
+    "offset": 0
+  },
+  "lifegame-flex-lab-my-v1": {
+    "v": 2,
+    "space": "my",
+    "created": "2026-11-16",
+    "lastProcessed": "2026-11-22",
+    "flex": {
+      "v": 1,
+      "view": "basic",
+      "introduced": true,
+      "members": [
+        "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+      ],
+      "options": {
+        "calendar": false,
+        "notifications": false,
+        "stats": true
+      },
+      "sequence": 3,
+      "changes": [
+        {
+          "seq": 1,
+          "from": "2026-11-16",
+          "at": 1794852008848,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": false
+          }
+        },
+        {
+          "seq": 2,
+          "from": "2026-11-16",
+          "at": 1794852034381,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [
+            "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+          ],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": false
+          }
+        },
+        {
+          "seq": 3,
+          "from": "2026-11-20",
+          "at": 1795197637591,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [
+            "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+          ],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": true
+          }
+        }
+      ]
+    },
+    "settings": {
+      "lite": false,
+      "style": "quest",
+      "accent": "blue",
+      "motivation": "",
+      "reminders": true,
+      "sessions": {
+        "all": true,
+        "daily": true,
+        "weekly": true,
+        "monthly": true
+      },
+      "onboarding": {
+        "on": false,
+        "start": "2026-11-16",
+        "done": {},
+        "skipped": {}
+      }
+    },
+    "blocks": [
+      {
+        "id": "b0",
+        "name": "Душевное состояние",
+        "icon": "🌿",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 0,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b1",
+        "name": "Физическое состояние",
+        "icon": "💪",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 1,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b2",
+        "name": "Знания, навыки, опыт",
+        "icon": "📚",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 2,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b3",
+        "name": "Ресурсы и материальное",
+        "icon": "💰",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 3,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b4",
+        "name": "Окружение и отношения",
+        "icon": "🤝",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 4,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b5",
+        "name": "Наполнение и организация",
+        "icon": "🗂",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 5,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b6",
+        "name": "Обстоятельства",
+        "icon": "🌦",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 6,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b7",
+        "name": "Исключить",
+        "icon": "🚫",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 7,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      }
+    ],
+    "locations": [
+      {
+        "id": "home",
+        "name": "Дом",
+        "icon": "🏠",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      },
+      {
+        "id": "work",
+        "name": "Работа",
+        "icon": "💼",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      },
+      {
+        "id": "road",
+        "name": "В дороге",
+        "icon": "🚗",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      }
+    ],
+    "loc": {
+      "schedule": [],
+      "fallback": null,
+      "manual": null,
+      "otherNoMiss": false,
+      "tagNew": true,
+      "lastSeen": null
+    },
+    "achievements": [],
+    "stages": [],
+    "goals": [],
+    "tasks": [],
+    "habits": [
+      {
+        "id": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "title": "Вечернее чтение 10 минут",
+        "locs": [],
+        "desc": "",
+        "reward": 5,
+        "dailyTarget": 1,
+        "norms": [],
+        "sched": {
+          "type": "daily",
+          "days": []
+        },
+        "goal": {
+          "mode": "total",
+          "period": "month",
+          "target": 30,
+          "reward": 50,
+          "bonus": [],
+          "bonusTerms": {}
+        },
+        "level": 1,
+        "levelLog": [],
+        "blockId": null,
+        "stageId": null,
+        "goalId": null,
+        "inDay": true,
+        "fit": [
+          "rest",
+          "normal",
+          "hard"
+        ],
+        "cat": "",
+        "tags": [],
+        "ifThen": "",
+        "status": "active",
+        "created": "2026-11-16"
+      }
+    ],
+    "quests": [],
+    "cal": [],
+    "decisions": [],
+    "inbox": [],
+    "recent": [],
+    "facts": [
+      {
+        "id": "677114ca-e680-4721-975c-955273fd7e17",
+        "kind": "habitStep",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-16",
+        "ts": 1794852053179,
+        "coins": 0,
+        "xp": 0,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Вечернее чтение 10 минут — подход",
+        "target": 1,
+        "dayReward": 5,
+        "loc": null,
+        "locationTitle": "Без локации",
+        "habitFact": "198dd195-5eca-4124-8624-bb0ccdacda07"
+      },
+      {
+        "id": "198dd195-5eca-4124-8624-bb0ccdacda07",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-16",
+        "ts": 1794852053179,
+        "coins": 5,
+        "xp": 5,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Вечернее чтение 10 минут",
+        "parentStep": "677114ca-e680-4721-975c-955273fd7e17",
+        "target": 1,
+        "ledger": "445c888e-066e-4962-9e56-9b993b3dd6af",
+        "loc": null,
+        "locationTitle": "Без локации"
+      },
+      {
+        "id": "439ee230-b086-4f26-a611-af3183e43203",
+        "kind": "habitStep",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-20",
+        "ts": 1795197625040,
+        "coins": 0,
+        "xp": 0,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Вечернее чтение 10 минут — подход",
+        "target": 1,
+        "dayReward": 5,
+        "loc": null,
+        "locationTitle": "Без локации",
+        "habitFact": "36b96e7b-e0ae-4676-9cbb-92050d0ee804"
+      },
+      {
+        "id": "36b96e7b-e0ae-4676-9cbb-92050d0ee804",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-20",
+        "ts": 1795197625040,
+        "coins": 5,
+        "xp": 5,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Вечернее чтение 10 минут",
+        "parentStep": "439ee230-b086-4f26-a611-af3183e43203",
+        "target": 1,
+        "ledger": "4c570ac6-5e0d-4829-940d-e0a3001feb78",
+        "loc": null,
+        "locationTitle": "Без локации"
+      },
+      {
+        "id": "c3c2c96a-644c-4080-8886-b44c9df760ed",
+        "kind": "habitStep",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-22",
+        "ts": 1795366821111,
+        "coins": 0,
+        "xp": 0,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Вечернее чтение 10 минут — подход",
+        "target": 1,
+        "dayReward": 5,
+        "loc": null,
+        "locationTitle": "Без локации",
+        "habitFact": "6bb7f12e-60aa-4b27-8114-732945aa0e60"
+      },
+      {
+        "id": "6bb7f12e-60aa-4b27-8114-732945aa0e60",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-22",
+        "ts": 1795366821111,
+        "coins": 5,
+        "xp": 5,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Вечернее чтение 10 минут",
+        "parentStep": "c3c2c96a-644c-4080-8886-b44c9df760ed",
+        "target": 1,
+        "ledger": "2e86e8c0-563e-4c5e-9e1d-8d9d678cc523",
+        "loc": null,
+        "locationTitle": "Без локации"
+      }
+    ],
+    "ledger": [
+      {
+        "id": "445c888e-066e-4962-9e56-9b993b3dd6af",
+        "type": "earn",
+        "coins": 5,
+        "xp": 5,
+        "note": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-16",
+        "ts": 1794852053179
+      },
+      {
+        "id": "4c570ac6-5e0d-4829-940d-e0a3001feb78",
+        "type": "earn",
+        "coins": 5,
+        "xp": 5,
+        "note": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-20",
+        "ts": 1795197625040
+      },
+      {
+        "id": "2e86e8c0-563e-4c5e-9e1d-8d9d678cc523",
+        "type": "earn",
+        "coins": 5,
+        "xp": 5,
+        "note": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-22",
+        "ts": 1795366821111
+      }
+    ],
+    "offers": [],
+    "insts": [],
+    "treats": [],
+    "misses": [
+      {
+        "id": "c2bef64c-c29a-4da1-95f0-e598f6668e10",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-17",
+        "title": "Вечернее чтение 10 минут",
+        "status": "active",
+        "note": "",
+        "created": 1795111200205
+      },
+      {
+        "id": "0868ea5b-d220-484c-b295-b7eb1f2d1732",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-18",
+        "title": "Вечернее чтение 10 минут",
+        "status": "active",
+        "note": "",
+        "created": 1795111200206
+      },
+      {
+        "id": "150791f1-140a-4b42-b4cc-83c6740c8cd3",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-19",
+        "title": "Вечернее чтение 10 минут",
+        "status": "active",
+        "note": "",
+        "created": 1795197600140
+      },
+      {
+        "id": "9a5a4d26-1642-4da5-8d5e-a01d0288b4ab",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-21",
+        "title": "Вечернее чтение 10 минут",
+        "status": "active",
+        "note": "",
+        "created": 1795366800193
+      }
+    ],
+    "days": {
+      "2026-11-16": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-17": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-18": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-19": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-20": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-21": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-22": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ]
+      }
+    },
+    "focus": {
+      "on": false,
+      "blocks": [],
+      "calOther": true,
+      "calUnlinked": true
+    },
+    "creative": {
+      "on": false,
+      "since": null,
+      "mute": false
+    },
+    "sessions": [],
+    "widgets": {
+      "mine": [
+        "timer",
+        "firststep",
+        "graph",
+        "happiness",
+        "rhythm",
+        "myreward"
+      ],
+      "inDay": {
+        "timer": true,
+        "firststep": true
+      }
+    },
+    "timer": {
+      "state": "ready",
+      "minutes": 15,
+      "remaining": 900,
+      "endsAt": null,
+      "label": "",
+      "ref": null,
+      "startedAt": null
+    },
+    "timeLog": [
+      {
+        "id": "8b42ab75-5a27-4d38-9166-b622bba5b350",
+        "date": "2026-11-16",
+        "minutes": 10,
+        "label": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "ts": 1794852048647
+      },
+      {
+        "id": "3e4fd784-56d7-45bd-833a-cf1a44d33499",
+        "date": "2026-11-17",
+        "minutes": 5,
+        "label": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "ts": 1794938417442
+      },
+      {
+        "id": "d1830288-12b7-4454-850c-d5d83a05661e",
+        "date": "2026-11-19",
+        "minutes": 8,
+        "label": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "ts": 1795111218360
+      },
+      {
+        "id": "3ce314b4-56b8-46b6-8a74-540bec785dfc",
+        "date": "2026-11-20",
+        "minutes": 10,
+        "label": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "ts": 1795197619158
+      },
+      {
+        "id": "9dfb8898-2959-4583-b194-39333506b71c",
+        "date": "2026-11-22",
+        "minutes": 12,
+        "label": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "ts": 1795366816678
+      }
+    ],
+    "graph": {
+      "weekday": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "weekend": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "happy": [],
+    "myReward": null,
+    "rhythm": {
+      "target": 3,
+      "rest": [
+        6,
+        7
+      ]
+    },
+    "ui": {},
+    "revision": 16
+  },
+  "lifegame-flex-lab-my-v1-daily": {
+    "day": "2026-11-22",
+    "savedAt": "2026-11-22T17:00:00.195Z",
+    "data": {
+      "v": 2,
+      "space": "my",
+      "created": "2026-11-16",
+      "lastProcessed": "2026-11-20",
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": true
+        },
+        "sequence": 3,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794852008848,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794852034381,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-20",
+            "at": 1795197637591,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          }
+        ]
+      },
+      "settings": {
+        "lite": false,
+        "style": "quest",
+        "accent": "blue",
+        "motivation": "",
+        "reminders": true,
+        "sessions": {
+          "all": true,
+          "daily": true,
+          "weekly": true,
+          "monthly": true
+        },
+        "onboarding": {
+          "on": false,
+          "start": "2026-11-16",
+          "done": {},
+          "skipped": {}
+        }
+      },
+      "blocks": [
+        {
+          "id": "b0",
+          "name": "Душевное состояние",
+          "icon": "🌿",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 0,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b1",
+          "name": "Физическое состояние",
+          "icon": "💪",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 1,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b2",
+          "name": "Знания, навыки, опыт",
+          "icon": "📚",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 2,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b3",
+          "name": "Ресурсы и материальное",
+          "icon": "💰",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 3,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b4",
+          "name": "Окружение и отношения",
+          "icon": "🤝",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 4,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b5",
+          "name": "Наполнение и организация",
+          "icon": "🗂",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 5,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b6",
+          "name": "Обстоятельства",
+          "icon": "🌦",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 6,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b7",
+          "name": "Исключить",
+          "icon": "🚫",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 7,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        }
+      ],
+      "locations": [
+        {
+          "id": "home",
+          "name": "Дом",
+          "icon": "🏠",
+          "blocks": [],
+          "homeHide": [],
+          "dayHide": [],
+          "widgets": null,
+          "muteOther": false,
+          "tempo": null,
+          "style": null
+        },
+        {
+          "id": "work",
+          "name": "Работа",
+          "icon": "💼",
+          "blocks": [],
+          "homeHide": [],
+          "dayHide": [],
+          "widgets": null,
+          "muteOther": false,
+          "tempo": null,
+          "style": null
+        },
+        {
+          "id": "road",
+          "name": "В дороге",
+          "icon": "🚗",
+          "blocks": [],
+          "homeHide": [],
+          "dayHide": [],
+          "widgets": null,
+          "muteOther": false,
+          "tempo": null,
+          "style": null
+        }
+      ],
+      "loc": {
+        "schedule": [],
+        "fallback": null,
+        "manual": null,
+        "otherNoMiss": false,
+        "tagNew": true,
+        "lastSeen": null
+      },
+      "achievements": [],
+      "stages": [],
+      "goals": [],
+      "tasks": [],
+      "habits": [
+        {
+          "id": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "title": "Вечернее чтение 10 минут",
+          "locs": [],
+          "desc": "",
+          "reward": 5,
+          "dailyTarget": 1,
+          "norms": [],
+          "sched": {
+            "type": "daily",
+            "days": []
+          },
+          "goal": {
+            "mode": "total",
+            "period": "month",
+            "target": 30,
+            "reward": 50,
+            "bonus": [],
+            "bonusTerms": {}
+          },
+          "level": 1,
+          "levelLog": [],
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "fit": [
+            "rest",
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "quests": [],
+      "cal": [],
+      "decisions": [],
+      "inbox": [],
+      "recent": [],
+      "facts": [
+        {
+          "id": "677114ca-e680-4721-975c-955273fd7e17",
+          "kind": "habitStep",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 0,
+          "xp": 0,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут — подход",
+          "target": 1,
+          "dayReward": 5,
+          "loc": null,
+          "locationTitle": "Без локации",
+          "habitFact": "198dd195-5eca-4124-8624-bb0ccdacda07"
+        },
+        {
+          "id": "198dd195-5eca-4124-8624-bb0ccdacda07",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут",
+          "parentStep": "677114ca-e680-4721-975c-955273fd7e17",
+          "target": 1,
+          "ledger": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "439ee230-b086-4f26-a611-af3183e43203",
+          "kind": "habitStep",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-20",
+          "ts": 1795197625040,
+          "coins": 0,
+          "xp": 0,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут — подход",
+          "target": 1,
+          "dayReward": 5,
+          "loc": null,
+          "locationTitle": "Без локации",
+          "habitFact": "36b96e7b-e0ae-4676-9cbb-92050d0ee804"
+        },
+        {
+          "id": "36b96e7b-e0ae-4676-9cbb-92050d0ee804",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-20",
+          "ts": 1795197625040,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут",
+          "parentStep": "439ee230-b086-4f26-a611-af3183e43203",
+          "target": 1,
+          "ledger": "4c570ac6-5e0d-4829-940d-e0a3001feb78",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179
+        },
+        {
+          "id": "4c570ac6-5e0d-4829-940d-e0a3001feb78",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-20",
+          "ts": 1795197625040
+        }
+      ],
+      "offers": [],
+      "insts": [],
+      "treats": [],
+      "misses": [
+        {
+          "id": "c2bef64c-c29a-4da1-95f0-e598f6668e10",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-17",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795111200205
+        },
+        {
+          "id": "0868ea5b-d220-484c-b295-b7eb1f2d1732",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-18",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795111200206
+        },
+        {
+          "id": "150791f1-140a-4b42-b4cc-83c6740c8cd3",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-19",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795197600140
+        }
+      ],
+      "days": {
+        "2026-11-16": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "locProfileSeen": null,
+          "locOtherNoMiss": false,
+          "locsSeen": [
+            "*"
+          ],
+          "creative": false,
+          "focus": null
+        },
+        "2026-11-17": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "locProfileSeen": null,
+          "locOtherNoMiss": false,
+          "locsSeen": [
+            "*"
+          ],
+          "creative": false,
+          "focus": null
+        },
+        "2026-11-18": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "creative": false,
+          "focus": null
+        },
+        "2026-11-19": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "locProfileSeen": null,
+          "locOtherNoMiss": false,
+          "locsSeen": [
+            "*"
+          ],
+          "creative": false,
+          "focus": null
+        },
+        "2026-11-20": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "locProfileSeen": null,
+          "locOtherNoMiss": false,
+          "locsSeen": [
+            "*"
+          ]
+        }
+      },
+      "focus": {
+        "on": false,
+        "blocks": [],
+        "calOther": true,
+        "calUnlinked": true
+      },
+      "creative": {
+        "on": false,
+        "since": null,
+        "mute": false
+      },
+      "sessions": [],
+      "widgets": {
+        "mine": [
+          "timer",
+          "firststep",
+          "graph",
+          "happiness",
+          "rhythm",
+          "myreward"
+        ],
+        "inDay": {
+          "timer": true,
+          "firststep": true
+        }
+      },
+      "timer": {
+        "state": "ready",
+        "minutes": 15,
+        "remaining": 900,
+        "endsAt": null,
+        "label": "",
+        "ref": null,
+        "startedAt": null
+      },
+      "timeLog": [
+        {
+          "id": "8b42ab75-5a27-4d38-9166-b622bba5b350",
+          "date": "2026-11-16",
+          "minutes": 10,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794852048647
+        },
+        {
+          "id": "3e4fd784-56d7-45bd-833a-cf1a44d33499",
+          "date": "2026-11-17",
+          "minutes": 5,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794938417442
+        },
+        {
+          "id": "d1830288-12b7-4454-850c-d5d83a05661e",
+          "date": "2026-11-19",
+          "minutes": 8,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1795111218360
+        },
+        {
+          "id": "3ce314b4-56b8-46b6-8a74-540bec785dfc",
+          "date": "2026-11-20",
+          "minutes": 10,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1795197619158
+        }
+      ],
+      "graph": {
+        "weekday": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "weekend": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "happy": [],
+      "myReward": null,
+      "rhythm": {
+        "target": 3,
+        "rest": [
+          6,
+          7
+        ]
+      },
+      "ui": {},
+      "revision": 13
+    }
+  },
+  "lifegame-flex-lab-my-v1-last-good": {
+    "v": 2,
+    "space": "my",
+    "created": "2026-11-16",
+    "lastProcessed": "2026-11-22",
+    "flex": {
+      "v": 1,
+      "view": "basic",
+      "introduced": true,
+      "members": [
+        "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+      ],
+      "options": {
+        "calendar": false,
+        "notifications": false,
+        "stats": true
+      },
+      "sequence": 3,
+      "changes": [
+        {
+          "seq": 1,
+          "from": "2026-11-16",
+          "at": 1794852008848,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": false
+          }
+        },
+        {
+          "seq": 2,
+          "from": "2026-11-16",
+          "at": 1794852034381,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [
+            "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+          ],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": false
+          }
+        },
+        {
+          "seq": 3,
+          "from": "2026-11-20",
+          "at": 1795197637591,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [
+            "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+          ],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": true
+          }
+        }
+      ]
+    },
+    "settings": {
+      "lite": false,
+      "style": "quest",
+      "accent": "blue",
+      "motivation": "",
+      "reminders": true,
+      "sessions": {
+        "all": true,
+        "daily": true,
+        "weekly": true,
+        "monthly": true
+      },
+      "onboarding": {
+        "on": false,
+        "start": "2026-11-16",
+        "done": {},
+        "skipped": {}
+      }
+    },
+    "blocks": [
+      {
+        "id": "b0",
+        "name": "Душевное состояние",
+        "icon": "🌿",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 0,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b1",
+        "name": "Физическое состояние",
+        "icon": "💪",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 1,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b2",
+        "name": "Знания, навыки, опыт",
+        "icon": "📚",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 2,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b3",
+        "name": "Ресурсы и материальное",
+        "icon": "💰",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 3,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b4",
+        "name": "Окружение и отношения",
+        "icon": "🤝",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 4,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b5",
+        "name": "Наполнение и организация",
+        "icon": "🗂",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 5,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b6",
+        "name": "Обстоятельства",
+        "icon": "🌦",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 6,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b7",
+        "name": "Исключить",
+        "icon": "🚫",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 7,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      }
+    ],
+    "locations": [
+      {
+        "id": "home",
+        "name": "Дом",
+        "icon": "🏠",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      },
+      {
+        "id": "work",
+        "name": "Работа",
+        "icon": "💼",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      },
+      {
+        "id": "road",
+        "name": "В дороге",
+        "icon": "🚗",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      }
+    ],
+    "loc": {
+      "schedule": [],
+      "fallback": null,
+      "manual": null,
+      "otherNoMiss": false,
+      "tagNew": true,
+      "lastSeen": null
+    },
+    "achievements": [],
+    "stages": [],
+    "goals": [],
+    "tasks": [],
+    "habits": [
+      {
+        "id": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "title": "Вечернее чтение 10 минут",
+        "locs": [],
+        "desc": "",
+        "reward": 5,
+        "dailyTarget": 1,
+        "norms": [],
+        "sched": {
+          "type": "daily",
+          "days": []
+        },
+        "goal": {
+          "mode": "total",
+          "period": "month",
+          "target": 30,
+          "reward": 50,
+          "bonus": [],
+          "bonusTerms": {}
+        },
+        "level": 1,
+        "levelLog": [],
+        "blockId": null,
+        "stageId": null,
+        "goalId": null,
+        "inDay": true,
+        "fit": [
+          "rest",
+          "normal",
+          "hard"
+        ],
+        "cat": "",
+        "tags": [],
+        "ifThen": "",
+        "status": "active",
+        "created": "2026-11-16"
+      }
+    ],
+    "quests": [],
+    "cal": [],
+    "decisions": [],
+    "inbox": [],
+    "recent": [],
+    "facts": [
+      {
+        "id": "677114ca-e680-4721-975c-955273fd7e17",
+        "kind": "habitStep",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-16",
+        "ts": 1794852053179,
+        "coins": 0,
+        "xp": 0,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Вечернее чтение 10 минут — подход",
+        "target": 1,
+        "dayReward": 5,
+        "loc": null,
+        "locationTitle": "Без локации",
+        "habitFact": "198dd195-5eca-4124-8624-bb0ccdacda07"
+      },
+      {
+        "id": "198dd195-5eca-4124-8624-bb0ccdacda07",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-16",
+        "ts": 1794852053179,
+        "coins": 5,
+        "xp": 5,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Вечернее чтение 10 минут",
+        "parentStep": "677114ca-e680-4721-975c-955273fd7e17",
+        "target": 1,
+        "ledger": "445c888e-066e-4962-9e56-9b993b3dd6af",
+        "loc": null,
+        "locationTitle": "Без локации"
+      },
+      {
+        "id": "439ee230-b086-4f26-a611-af3183e43203",
+        "kind": "habitStep",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-20",
+        "ts": 1795197625040,
+        "coins": 0,
+        "xp": 0,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Вечернее чтение 10 минут — подход",
+        "target": 1,
+        "dayReward": 5,
+        "loc": null,
+        "locationTitle": "Без локации",
+        "habitFact": "36b96e7b-e0ae-4676-9cbb-92050d0ee804"
+      },
+      {
+        "id": "36b96e7b-e0ae-4676-9cbb-92050d0ee804",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-20",
+        "ts": 1795197625040,
+        "coins": 5,
+        "xp": 5,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Вечернее чтение 10 минут",
+        "parentStep": "439ee230-b086-4f26-a611-af3183e43203",
+        "target": 1,
+        "ledger": "4c570ac6-5e0d-4829-940d-e0a3001feb78",
+        "loc": null,
+        "locationTitle": "Без локации"
+      }
+    ],
+    "ledger": [
+      {
+        "id": "445c888e-066e-4962-9e56-9b993b3dd6af",
+        "type": "earn",
+        "coins": 5,
+        "xp": 5,
+        "note": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-16",
+        "ts": 1794852053179
+      },
+      {
+        "id": "4c570ac6-5e0d-4829-940d-e0a3001feb78",
+        "type": "earn",
+        "coins": 5,
+        "xp": 5,
+        "note": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-20",
+        "ts": 1795197625040
+      }
+    ],
+    "offers": [],
+    "insts": [],
+    "treats": [],
+    "misses": [
+      {
+        "id": "c2bef64c-c29a-4da1-95f0-e598f6668e10",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-17",
+        "title": "Вечернее чтение 10 минут",
+        "status": "active",
+        "note": "",
+        "created": 1795111200205
+      },
+      {
+        "id": "0868ea5b-d220-484c-b295-b7eb1f2d1732",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-18",
+        "title": "Вечернее чтение 10 минут",
+        "status": "active",
+        "note": "",
+        "created": 1795111200206
+      },
+      {
+        "id": "150791f1-140a-4b42-b4cc-83c6740c8cd3",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-19",
+        "title": "Вечернее чтение 10 минут",
+        "status": "active",
+        "note": "",
+        "created": 1795197600140
+      },
+      {
+        "id": "9a5a4d26-1642-4da5-8d5e-a01d0288b4ab",
+        "kind": "habit",
+        "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "date": "2026-11-21",
+        "title": "Вечернее чтение 10 минут",
+        "status": "active",
+        "note": "",
+        "created": 1795366800193
+      }
+    ],
+    "days": {
+      "2026-11-16": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-17": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-18": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-19": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-20": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-21": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-22": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ]
+      }
+    },
+    "focus": {
+      "on": false,
+      "blocks": [],
+      "calOther": true,
+      "calUnlinked": true
+    },
+    "creative": {
+      "on": false,
+      "since": null,
+      "mute": false
+    },
+    "sessions": [],
+    "widgets": {
+      "mine": [
+        "timer",
+        "firststep",
+        "graph",
+        "happiness",
+        "rhythm",
+        "myreward"
+      ],
+      "inDay": {
+        "timer": true,
+        "firststep": true
+      }
+    },
+    "timer": {
+      "state": "ready",
+      "minutes": 15,
+      "remaining": 900,
+      "endsAt": null,
+      "label": "",
+      "ref": null,
+      "startedAt": null
+    },
+    "timeLog": [
+      {
+        "id": "8b42ab75-5a27-4d38-9166-b622bba5b350",
+        "date": "2026-11-16",
+        "minutes": 10,
+        "label": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "ts": 1794852048647
+      },
+      {
+        "id": "3e4fd784-56d7-45bd-833a-cf1a44d33499",
+        "date": "2026-11-17",
+        "minutes": 5,
+        "label": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "ts": 1794938417442
+      },
+      {
+        "id": "d1830288-12b7-4454-850c-d5d83a05661e",
+        "date": "2026-11-19",
+        "minutes": 8,
+        "label": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "ts": 1795111218360
+      },
+      {
+        "id": "3ce314b4-56b8-46b6-8a74-540bec785dfc",
+        "date": "2026-11-20",
+        "minutes": 10,
+        "label": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "ts": 1795197619158
+      },
+      {
+        "id": "9dfb8898-2959-4583-b194-39333506b71c",
+        "date": "2026-11-22",
+        "minutes": 12,
+        "label": "Вечернее чтение 10 минут",
+        "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+        "ts": 1795366816678
+      }
+    ],
+    "graph": {
+      "weekday": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "weekend": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "happy": [],
+    "myReward": null,
+    "rhythm": {
+      "target": 3,
+      "rest": [
+        6,
+        7
+      ]
+    },
+    "ui": {},
+    "revision": 15
+  }
+}

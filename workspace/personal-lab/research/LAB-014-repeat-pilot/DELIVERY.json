@@ -1,0 +1,39 @@
+{
+  "task": "LAB-014",
+  "payload_commit": "8373f1579901606e4c542fe35eb68ca5fec51054",
+  "branch": "lab/synthetic-users",
+  "remote_ref_verified": "8373f1579901606e4c542fe35eb68ca5fec51054",
+  "main_ref_verified": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "verified_at": "2026-11-12T19:31:51.545023+00:00",
+  "pinned_raw_verified_files": [
+    {
+      "file": "downloads/lab-packets/LifeGame-LAB-014-Pilot.zip",
+      "sha256": "2ef8f218ac75cf963c6e1f431509f1c75f04f51b6e91dc6dfad4ba9ffe5d727f",
+      "bytes": 535607,
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-014-repeat-pilot/START_HERE.md",
+      "sha256": "13a5c3ca8fda84a4ba57f5bb68cea9b94da561b5351b9082d5a5df3ff3c7ab8b",
+      "bytes": 6823,
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-014-repeat-pilot/PROMPT-RUNNER.md",
+      "sha256": "1ceb03d5874e393f86f2447bed50423a06a6ffa8ab025f0a978f5af328e7b856",
+      "bytes": 3768,
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-014-repeat-pilot/VERIFICATION.json",
+      "sha256": "a25797259d3b025c793977cb3d863c586b3b2ea588541c2f279b98c4e86569c4",
+      "bytes": 2821,
+      "match": true
+    }
+  ],
+  "downloaded_zip_crc": "passed",
+  "downloaded_zip_manifest_entries_verified": 45,
+  "main_or_pages_updated": false,
+  "independent_ai_pilot_executed": false,
+  "receipt_note": "Following documentation commit records delivery; kit source and ZIP stay unchanged."
+}

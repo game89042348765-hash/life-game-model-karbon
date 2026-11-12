@@ -1,0 +1,46 @@
+{
+  "task": "LAB-011",
+  "recorded_at": "2026-11-12T16:32:58.910792+00:00",
+  "payload_commit": "d297ca8f7e70114ff8578300b6e48e6fc209ed64",
+  "branch": "lab/synthetic-users",
+  "remote_ref_verified": true,
+  "working_version": "2.1.1+lab.1",
+  "decision": "technically_accepted_for_calibration_after_local_patch",
+  "original_archive_preserved": true,
+  "native_checks": 27,
+  "independent_checks": 9,
+  "fresh_final_zip_without_git": true,
+  "raw_verified": [
+    {
+      "path": "downloads/lab-packets/LifeGame-Atlas-Hybrid-v2.1.1-LAB1.zip",
+      "url": "https://raw.githubusercontent.com/game89042348765-hash/life-game/d297ca8f7e70114ff8578300b6e48e6fc209ed64/downloads/lab-packets/LifeGame-Atlas-Hybrid-v2.1.1-LAB1.zip",
+      "bytes": 254491,
+      "sha256": "eab29ac790864561e5e9e0def5ea5d63172d4c57d2107758a843eb2b6707cd2e"
+    },
+    {
+      "path": "personal-lab/research/ATLAS_CURRENT.md",
+      "url": "https://raw.githubusercontent.com/game89042348765-hash/life-game/d297ca8f7e70114ff8578300b6e48e6fc209ed64/personal-lab/research/ATLAS_CURRENT.md",
+      "bytes": 2215,
+      "sha256": "c33bdc5692008ddc5a269efdaca15b4274efcd3209e850b4195c7a7e9e298cae"
+    },
+    {
+      "path": "personal-lab/research/LAB-011-hybrid-v211-review/COORDINATOR-REVIEW.md",
+      "url": "https://raw.githubusercontent.com/game89042348765-hash/life-game/d297ca8f7e70114ff8578300b6e48e6fc209ed64/personal-lab/research/LAB-011-hybrid-v211-review/COORDINATOR-REVIEW.md",
+      "bytes": 7093,
+      "sha256": "20e3b37d5766cb664629f2e32186644d4b33891e4b2d5d85f1ec273b29eda143"
+    },
+    {
+      "path": "personal-lab/research/LAB-011-hybrid-v211-review/release/tools/atlas.py",
+      "url": "https://raw.githubusercontent.com/game89042348765-hash/life-game/d297ca8f7e70114ff8578300b6e48e6fc209ed64/personal-lab/research/LAB-011-hybrid-v211-review/release/tools/atlas.py",
+      "bytes": 64666,
+      "sha256": "a47e9b5d51db57b5888bb0deee79870b7e2e74e055cff50df5ccf78b39592035"
+    }
+  ],
+  "downloaded_zip_crc_and_all_53_manifest_entries_verified": true,
+  "main_unchanged": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "pages_deployed": false,
+  "app_changed": false,
+  "real_research_started": false,
+  "external_model_run": false,
+  "note": "Receipt and additive status follow the payload; source release and archive bytes remain unchanged."
+}

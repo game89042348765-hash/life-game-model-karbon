@@ -1,0 +1,93 @@
+{
+  "task": "LAB-013",
+  "payload_commit": "83f0a4471b9742ab4d04721add25722ae6dee9c5",
+  "verified_at": "2026-11-12T18:30:25.646993+00:00",
+  "branch": "lab/synthetic-users",
+  "pinned_raw_verified_files": [
+    {
+      "file": "personal-lab/app.js",
+      "bytes": 339654,
+      "sha256": "31d39c49ae44826b78a4fd000a6f9961546d3a5f72361a90b1cb9700135cd627",
+      "match": true
+    },
+    {
+      "file": "personal-lab/sw.js",
+      "bytes": 2350,
+      "sha256": "cb5126b197d47d2512b22e0097da4e86a6e5da81b51b69567b5bcbd1408ac308",
+      "match": true
+    },
+    {
+      "file": "personal-lab/experiments/ai-strategy/app.js",
+      "bytes": 339260,
+      "sha256": "fbf8742a7a6c8e4708dc0685f75463a242f83c2b50d7a54001393f8514841bf8",
+      "match": true
+    },
+    {
+      "file": "personal-lab/experiments/ai-strategy/sw.js",
+      "bytes": 2387,
+      "sha256": "b75497ececd1da507926475cce620e7d6b79884a523186a1a0c261ad96f39fff",
+      "match": true
+    },
+    {
+      "file": "personal-lab/experiments/flexible-complexity/app.js",
+      "bytes": 340624,
+      "sha256": "0b9c0230ca3f2e2a7ac433fd6cbc8f886a40e9601b52cf4dc5e6c0d029ad117b",
+      "match": true
+    },
+    {
+      "file": "personal-lab/experiments/flexible-complexity/sw.js",
+      "bytes": 2375,
+      "sha256": "b0689b97a9e878a8e34530112c710a3cd7eb9924d43f83b10a10ad42b5877b6f",
+      "match": true
+    },
+    {
+      "file": "personal-lab/experiments/flexible-complexity/flex-ui.js",
+      "bytes": 15647,
+      "sha256": "1a9585a8728912ce5715e0388823633e595c85e38279e349a0c3231f329e2cb0",
+      "match": true
+    },
+    {
+      "file": "personal-lab/APP-TOOLS.json",
+      "bytes": 28374,
+      "sha256": "112455a0eda3b471523817bd10cf4400052f6e5e4ac2df010b562cc710a1a2f5",
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-013-daily-ux/README.md",
+      "bytes": 4290,
+      "sha256": "6f5d7047297437a9f60967f16904f0e59c83c34c80a50e12c191f330ad0987cc",
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-013-daily-ux/VERIFICATION.json",
+      "bytes": 2161,
+      "sha256": "c4dc7a2468638d212312b71d3b375ac42a1d2c6f98e0b1927b1b7c1e220a02cc",
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-013-daily-ux/BROWSER-TESTS.json",
+      "bytes": 9004,
+      "sha256": "f89dbee9263c5553c59bb087fbf0fe44b4d82a6c841f75d1230ccea7a3886ad1",
+      "match": true
+    },
+    {
+      "file": "personal-lab/tests/daily-ux.py",
+      "bytes": 24737,
+      "sha256": "fb6f1a0d87c0f6488df5f7db0d8bfd6e730c9efa5f34e0502daf88c634f161ab",
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-013-daily-ux/evidence/basic-five-minutes.png",
+      "bytes": 22218,
+      "sha256": "b8bda23c927d83a16f1052a6805958774e3582507863b77d087e5d8d296f79eb",
+      "match": true
+    }
+  ],
+  "main_expected": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "main_or_pages_updated": false,
+  "human_acceptance": "pending",
+  "note": "Delivery verifies Git content only; no main/Pages deployment or transfer of user data.",
+  "remote_ref_verified": "83f0a4471b9742ab4d04721add25722ae6dee9c5",
+  "main_ref_verified": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "receipt_commit_note": "This receipt is recorded in a following documentation commit; payload source and test reports are unchanged."
+}

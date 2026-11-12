@@ -1,0 +1,40 @@
+{
+  "task": "LAB-015",
+  "packages": [
+    {
+      "file": "downloads/lab-packets/LifeGame-LAB-015-P01-evidence.zip",
+      "actor": "P01",
+      "bytes": 7889032,
+      "sha256": "a10169e394444edd679f9307d2a72f41ce1fcf23712688a32aaab3d88f00e56d",
+      "original_files": 77,
+      "crc": "passed",
+      "covers": "All original day observations/PNGs/states/traces and actor FINAL; no browser profiles"
+    },
+    {
+      "file": "downloads/lab-packets/LifeGame-LAB-015-P02-evidence.zip",
+      "actor": "P02",
+      "bytes": 12573961,
+      "sha256": "0ba875e60dfcc568fa0a9a96f545226a1059281754d2c9f12c1f76b0203aa1e5",
+      "original_files": 127,
+      "crc": "passed",
+      "covers": "All original day observations/PNGs/states/traces and actor FINAL; no browser profiles"
+    },
+    {
+      "file": "downloads/lab-packets/LifeGame-LAB-015-P03-evidence.zip",
+      "actor": "P03",
+      "bytes": 10711643,
+      "sha256": "9b2bd8022355369bc56708670006fc85650f596f52718c895af7c2aa71186364",
+      "original_files": 91,
+      "crc": "passed",
+      "covers": "All original day observations/PNGs/states/traces and actor FINAL; no browser profiles"
+    }
+  ],
+  "core_results_package": {
+    "file": "downloads/lab-packets/LifeGame-LAB-015-results.zip",
+    "bytes": 19715348,
+    "sha256": "8d3d8e3e4cb77d6f55142e90b0cf9fe26e650e1511ed7470341a0bd3464006eb",
+    "manifest_entries": 319,
+    "crc": "passed",
+    "scope": "All raw observation JSON/states and logs, reports, selected images, all analyst reproductions and source-kit; full original PNG/traces are in the three actor evidence archives."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "task": "LAB-007",
+  "date": "2026-11-12",
+  "timezone": "Europe/Moscow",
+  "branch": "lab/synthetic-users",
+  "implementation_commit": "318b2037dc82796dfff0c41fec85954d520ee267",
+  "remote_ref_verified": true,
+  "main_before": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "main_after": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "experiment": "personal-lab/experiments/ai-strategy",
+  "source_product": "Personal 1.2.0",
+  "verification_groups_passed": 11,
+  "technical_dates": 30,
+  "independent_ai_users_run": false,
+  "paid_api_calls": 0,
+  "user_acceptance": "pending",
+  "main_app_publication": "not_requested",
+  "transfer_to_personal": "not_done",
+  "documentation_commit_follows_implementation": true
+}

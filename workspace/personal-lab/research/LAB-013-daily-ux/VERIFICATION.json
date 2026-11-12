@@ -1,0 +1,51 @@
+{
+  "task": "LAB-013",
+  "recorded_at": "2026-11-12T18:26:55.209747+00:00",
+  "status": "technical_fictional_checks_passed_human_acceptance_pending",
+  "targeted_browser_checks": {
+    "passed": 31,
+    "total": 31,
+    "report": "BROWSER-TESTS.json"
+  },
+  "ai_regression": {
+    "passed": 11,
+    "total": 11,
+    "report": "AI-REGRESSION.json"
+  },
+  "flex_regression": {
+    "passed": 16,
+    "total": 16,
+    "report": "FLEX-REGRESSION.json"
+  },
+  "actual_pwa_upgrade_tested": "Pinned original v1 assets -> current v2 assets; saved draft and existing data preserved; new time recorded offline",
+  "tested_widths": [
+    375,
+    390,
+    1280
+  ],
+  "platform": "Chromium/Linux, Playwright",
+  "page_errors": 0,
+  "external_requests": 0,
+  "independent_ai_user_pilot_executed": false,
+  "human_acceptance": "pending",
+  "app_tools_code_backed_entries": 51,
+  "runtime_sha256": {
+    "personal-lab/app.js": "31d39c49ae44826b78a4fd000a6f9961546d3a5f72361a90b1cb9700135cd627",
+    "personal-lab/sw.js": "cb5126b197d47d2512b22e0097da4e86a6e5da81b51b69567b5bcbd1408ac308",
+    "personal-lab/experiments/ai-strategy/app.js": "fbf8742a7a6c8e4708dc0685f75463a242f83c2b50d7a54001393f8514841bf8",
+    "personal-lab/experiments/ai-strategy/sw.js": "b75497ececd1da507926475cce620e7d6b79884a523186a1a0c261ad96f39fff",
+    "personal-lab/experiments/flexible-complexity/app.js": "0b9c0230ca3f2e2a7ac433fd6cbc8f886a40e9601b52cf4dc5e6c0d029ad117b",
+    "personal-lab/experiments/flexible-complexity/sw.js": "b0689b97a9e878a8e34530112c710a3cd7eb9924d43f83b10a10ad42b5877b6f",
+    "personal-lab/experiments/flexible-complexity/flex-ui.js": "1a9585a8728912ce5715e0388823633e595c85e38279e349a0c3231f329e2cb0"
+  },
+  "test_sha256": {
+    "personal-lab/tests/daily-ux.py": "fb6f1a0d87c0f6488df5f7db0d8bfd6e730c9efa5f34e0502daf88c634f161ab"
+  },
+  "local_artifacts": [
+    "personal-lab/verification/LAB-013-20261112T182357Z",
+    "/workspace/life-game/personal-lab/verification/LAB-013-ai-20261112T180815Z",
+    "/workspace/life-game/personal-lab/verification/LAB-013-flex-20261112T180815Z"
+  ],
+  "main_or_pages_changed": false,
+  "lite_manual_time_roundtrip_verified": true
+}

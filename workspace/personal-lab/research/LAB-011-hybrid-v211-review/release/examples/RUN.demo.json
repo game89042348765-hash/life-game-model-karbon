@@ -1,0 +1,20 @@
+{
+  "rubric_version": "2.1",
+  "taxonomy_version": "2.1",
+  "synthetic": true,
+  "selection": {
+    "mode": "synthetic_demo",
+    "target": 100,
+    "core": 3,
+    "quality_floor": 60,
+    "weights": {
+      "value": 0.3,
+      "burden": 0.15,
+      "long_term": 0.2,
+      "adaptability": 0.1,
+      "agency": 0.15,
+      "composability": 0.1
+    },
+    "rare_gems_quota": 0
+  }
+}

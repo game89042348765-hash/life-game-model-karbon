@@ -1,0 +1,53 @@
+{
+  "template": true,
+  "run_id": "REPLACE_WITH_REAL_RUN_ID",
+  "created_at": null,
+  "protocol_version": "2.1",
+  "taxonomy_version": "2.1",
+  "rubric_version": "2.1",
+  "status": "not_started",
+  "purpose": "Справочный атлас возможностей; не обязательный план разработки",
+  "application_context_policy": "No LifeGame feature list in search, analysis or general selection; separate mapping after release",
+  "tools_observed": {
+    "web_search": null,
+    "open_pages": null,
+    "read_files": null,
+    "execute_python": null
+  },
+  "participants": [],
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "research_bounds": {
+    "raw_findings_orientation": "1000–2000 planning/organization plus about 1000 game-related; may grow beyond 10000; no padding",
+    "source_classes": [
+      "official_documentation",
+      "source_code",
+      "research",
+      "practice_manual",
+      "first_person_report",
+      "review",
+      "other"
+    ],
+    "stop_rule": "coverage and two comparable targeted waves with less than 10 percent new canonical elements; remaining gaps documented",
+    "budget": null
+  },
+  "selection": {
+    "target": 200,
+    "core": 100,
+    "quality_floor": 60,
+    "mode": "research",
+    "weights": {
+      "value": 0.3,
+      "burden": 0.15,
+      "long_term": 0.2,
+      "adaptability": 0.1,
+      "agency": 0.15,
+      "composability": 0.1
+    },
+    "rare_gems_quota": 0
+  },
+  "approved_snapshot": null,
+  "known_limits": []
+}

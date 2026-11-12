@@ -1,0 +1,19 @@
+{
+  "task": "LAB-007",
+  "source_run": "personal-lab/verification/LAB-007-20261112T080001Z",
+  "files": [
+    {
+      "path": "empty-personal-ai.png",
+      "bytes": 125442,
+      "sha256": "a7fa4b7b6074229dd8e464393ada3660e87e2348939677a0d6129f1b4a79cd7d",
+      "synthetic_data": true
+    },
+    {
+      "path": "scoped-personal-ai.png",
+      "bytes": 201236,
+      "sha256": "ccd9e513a815901b81b6a4889d748edc8c8411a798e3dc09430e8b1b09710c3d",
+      "synthetic_data": true
+    }
+  ],
+  "full_trace": "Full native browser trace remains in the ignored verification directory; not included here."
+}

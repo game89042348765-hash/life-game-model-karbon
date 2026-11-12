@@ -1,0 +1,56 @@
+{
+  "status": "not_started",
+  "runner": {
+    "model": "unknown",
+    "runtime": "unknown",
+    "settings": "unknown"
+  },
+  "capabilities": {
+    "code_execution": null,
+    "browser_execution": null,
+    "image_viewing": null,
+    "three_clean_participant_contexts": null,
+    "separate_analyst_context": null
+  },
+  "participants": [
+    {
+      "actor": "P01",
+      "model": "unknown",
+      "family": "unknown",
+      "context_id": "unknown",
+      "clean_context_confirmed": false,
+      "context_reused_across_days": null,
+      "decision_log": "not_created"
+    },
+    {
+      "actor": "P02",
+      "model": "unknown",
+      "family": "unknown",
+      "context_id": "unknown",
+      "clean_context_confirmed": false,
+      "context_reused_across_days": null,
+      "decision_log": "not_created"
+    },
+    {
+      "actor": "P03",
+      "model": "unknown",
+      "family": "unknown",
+      "context_id": "unknown",
+      "clean_context_confirmed": false,
+      "context_reused_across_days": null,
+      "decision_log": "not_created"
+    }
+  ],
+  "analyst": {
+    "model": "unknown",
+    "context_id": "unknown",
+    "independent_from_runner_and_participants": false
+  },
+  "usage": {
+    "paid_api_calls": 0,
+    "model_tokens": null,
+    "model_price": null,
+    "human_relay_minutes": null
+  },
+  "limitations": []
+}

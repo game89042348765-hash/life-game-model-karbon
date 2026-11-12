@@ -1,0 +1,18 @@
+{
+  "runtime_sha256": "20bea2eedd8255a5c05b787bb133c119b9865413462cd39eb5e98d637fc45ced",
+  "assets": {
+    "block-path-aesthetics.css": "f03077e58ea6865d0e8bcef648ccb9684e5f764b7dd1d50af4eec227ba5bddc1",
+    "block-stages.css": "de5931376379dbbe17e076d897bf48d757e58a7f6d0aa7229d1a6167f4913eed",
+    "block-stages.js": "5579fc5d98604e519c30949d6e775b045d6fa510344a7b573f77db2135f84f3b",
+    "calendar-links.js": "22e01beb00726528aa611ba0e76b3e3baa2ecfc189e6ae2dcda92e549f5e4d89",
+    "legacy-data.js": "6dd8aa9460635bc6bb0c457c13d9fcb2f9057e3cac962812afea2b925789799e",
+    "light-thread.js": "354667b2a90a77e1495a32ecdbb84c94518ed73cabe1a5a09c6c884240dcf92b",
+    "path-fx.css": "d1737e37e1685d62a4f5e001f5465c1404a7a1eb73657ea00b377b672833f3b2",
+    "path-v2.css": "b0e2365cb74e271bdaab6d615c826b1c4f535f8e990a7999b387f08c4c076046",
+    "path-v2.js": "c6fd63bcc9398bd8b1e1e79d729729a66cb84566aa195bf5af538e5644e1da26",
+    "splash-sunrise.css": "731320a8ff8db3894414a6c45c306ae4f2c6aa6c2c012967b281b0bc0080349b",
+    "task-form.css": "569d104b68ffdd9f08bcc047dff94fdab60f4cfd3be2c29cb0be2afe3a978926",
+    "task-form.js": "b9a7e9155a5458a67fccc72d6c901c990efc8fce3f5f2b2bdad975484328e237",
+    "wallet-counter.css": "0b8534203866a3afd8cd7c8585455a5bf6ab8e7db8861e6bdcaa8a0d9e8debe6"
+  }
+}

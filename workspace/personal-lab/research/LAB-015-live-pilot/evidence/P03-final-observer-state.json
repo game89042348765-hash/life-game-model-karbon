@@ -1,0 +1,2262 @@
+{
+  "lifegame-flex-lab-meta-v1": {
+    "space": "my",
+    "offset": 0
+  },
+  "lifegame-flex-lab-my-v1": {
+    "v": 2,
+    "space": "my",
+    "created": "2026-11-16",
+    "lastProcessed": "2026-11-22",
+    "flex": {
+      "v": 1,
+      "view": "basic",
+      "introduced": true,
+      "members": [
+        "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+      ],
+      "options": {
+        "calendar": false,
+        "notifications": false,
+        "stats": true
+      },
+      "sequence": 4,
+      "changes": [
+        {
+          "seq": 1,
+          "from": "2026-11-16",
+          "at": 1794848408170,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": false
+          }
+        },
+        {
+          "seq": 2,
+          "from": "2026-11-16",
+          "at": 1794848417703,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": true
+          }
+        },
+        {
+          "seq": 3,
+          "from": "2026-11-16",
+          "at": 1794848435902,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [
+            "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+          ],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": true
+          }
+        },
+        {
+          "seq": 4,
+          "from": "2026-11-19",
+          "at": 1795111243217,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [
+            "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+            "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+          ],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": true
+          }
+        }
+      ]
+    },
+    "settings": {
+      "lite": false,
+      "style": "quest",
+      "accent": "blue",
+      "motivation": "",
+      "reminders": true,
+      "sessions": {
+        "all": true,
+        "daily": true,
+        "weekly": true,
+        "monthly": true
+      },
+      "onboarding": {
+        "on": false,
+        "start": "2026-11-16",
+        "done": {},
+        "skipped": {}
+      }
+    },
+    "blocks": [
+      {
+        "id": "b0",
+        "name": "Душевное состояние",
+        "icon": "🌿",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 0,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b1",
+        "name": "Физическое состояние",
+        "icon": "💪",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 1,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b2",
+        "name": "Знания, навыки, опыт",
+        "icon": "📚",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 2,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b3",
+        "name": "Ресурсы и материальное",
+        "icon": "💰",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 3,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b4",
+        "name": "Окружение и отношения",
+        "icon": "🤝",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 4,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b5",
+        "name": "Наполнение и организация",
+        "icon": "🗂",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 5,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b6",
+        "name": "Обстоятельства",
+        "icon": "🌦",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 6,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b7",
+        "name": "Исключить",
+        "icon": "🚫",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 7,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      }
+    ],
+    "locations": [
+      {
+        "id": "home",
+        "name": "Дом",
+        "icon": "🏠",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      },
+      {
+        "id": "work",
+        "name": "Работа",
+        "icon": "💼",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      },
+      {
+        "id": "road",
+        "name": "В дороге",
+        "icon": "🚗",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      }
+    ],
+    "loc": {
+      "schedule": [],
+      "fallback": null,
+      "manual": null,
+      "otherNoMiss": false,
+      "tagNew": true,
+      "lastSeen": null
+    },
+    "achievements": [],
+    "stages": [],
+    "goals": [],
+    "tasks": [
+      {
+        "id": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "title": "Порисовать немного",
+        "locs": [],
+        "desc": "",
+        "reward": 10,
+        "sched": {
+          "type": "weekly",
+          "days": [
+            6
+          ],
+          "date": null
+        },
+        "blockId": null,
+        "stageId": null,
+        "goalId": null,
+        "inDay": true,
+        "key": false,
+        "fit": [
+          "normal",
+          "hard"
+        ],
+        "cat": "",
+        "tags": [],
+        "ifThen": "",
+        "bonus": [],
+        "status": "active",
+        "created": "2026-11-16",
+        "bonusTerms": {},
+        "cycle": 1
+      },
+      {
+        "id": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+        "title": "Рисование 19 ноября",
+        "locs": [],
+        "desc": "",
+        "reward": 10,
+        "sched": {
+          "type": "once",
+          "days": [],
+          "date": null
+        },
+        "blockId": null,
+        "stageId": null,
+        "goalId": null,
+        "inDay": true,
+        "key": false,
+        "fit": [
+          "normal",
+          "hard"
+        ],
+        "cat": "",
+        "tags": [],
+        "ifThen": "",
+        "bonus": [],
+        "status": "active",
+        "created": "2026-11-19",
+        "bonusTerms": {}
+      }
+    ],
+    "habits": [],
+    "quests": [],
+    "cal": [],
+    "decisions": [],
+    "inbox": [],
+    "recent": [],
+    "facts": [
+      {
+        "id": "71094990-85d2-470e-8343-754bf7ae93de",
+        "kind": "task",
+        "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "date": "2026-11-16",
+        "ts": 1794848455217,
+        "coins": 10,
+        "xp": 10,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Порисовать немного",
+        "cycle": 0,
+        "ledger": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+        "loc": null,
+        "locationTitle": "Без локации"
+      },
+      {
+        "id": "6ebf02ff-508a-499a-ac70-3ab37cb34c8a",
+        "kind": "task",
+        "ref": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+        "date": "2026-11-19",
+        "ts": 1795111262116,
+        "coins": 10,
+        "xp": 10,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Рисование 19 ноября",
+        "cycle": 0,
+        "ledger": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+        "loc": null,
+        "locationTitle": "Без локации"
+      },
+      {
+        "id": "24a33a71-e7ca-42d4-8bbe-20995dc4fb18",
+        "kind": "task",
+        "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "date": "2026-11-21",
+        "ts": 1795284088479,
+        "coins": 10,
+        "xp": 10,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Порисовать немного",
+        "cycle": 1,
+        "ledger": "4f45f36f-9cf4-4c07-b90d-eb5479208b83",
+        "loc": null,
+        "locationTitle": "Без локации"
+      }
+    ],
+    "ledger": [
+      {
+        "id": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+        "type": "earn",
+        "coins": 10,
+        "xp": 10,
+        "note": "Порисовать немного",
+        "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "date": "2026-11-16",
+        "ts": 1794848455217
+      },
+      {
+        "id": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+        "type": "earn",
+        "coins": 10,
+        "xp": 10,
+        "note": "Рисование 19 ноября",
+        "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+        "date": "2026-11-19",
+        "ts": 1795111262116
+      },
+      {
+        "id": "4f45f36f-9cf4-4c07-b90d-eb5479208b83",
+        "type": "earn",
+        "coins": 10,
+        "xp": 10,
+        "note": "Порисовать немного",
+        "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "date": "2026-11-21",
+        "ts": 1795284088479
+      }
+    ],
+    "offers": [],
+    "insts": [],
+    "treats": [],
+    "misses": [],
+    "days": {
+      "2026-11-16": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-17": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-18": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-19": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-20": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-21": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-22": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ]
+      }
+    },
+    "focus": {
+      "on": false,
+      "blocks": [],
+      "calOther": true,
+      "calUnlinked": true
+    },
+    "creative": {
+      "on": false,
+      "since": null,
+      "mute": false
+    },
+    "sessions": [],
+    "widgets": {
+      "mine": [
+        "timer",
+        "firststep",
+        "graph",
+        "happiness",
+        "rhythm",
+        "myreward"
+      ],
+      "inDay": {
+        "timer": true,
+        "firststep": true
+      }
+    },
+    "timer": {
+      "state": "ready",
+      "minutes": 15,
+      "remaining": 900,
+      "endsAt": null,
+      "label": "",
+      "ref": null,
+      "startedAt": null
+    },
+    "timeLog": [
+      {
+        "id": "5277e4ad-5a15-4924-98f7-15c1910bab46",
+        "date": "2026-11-16",
+        "minutes": 3,
+        "label": "Порисовать немного",
+        "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "ts": 1794848450385
+      },
+      {
+        "id": "0c2c4d24-d07e-4043-9cd0-5f71f187a1ba",
+        "date": "2026-11-19",
+        "minutes": 6,
+        "label": "Рисование 19 ноября",
+        "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+        "ts": 1795111257833
+      },
+      {
+        "id": "3a53ea58-f7b3-4b18-9e62-28b75e4c8be1",
+        "date": "2026-11-21",
+        "minutes": 4,
+        "label": "Порисовать немного",
+        "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "ts": 1795284083364
+      }
+    ],
+    "graph": {
+      "weekday": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "weekend": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "happy": [],
+    "myReward": null,
+    "rhythm": {
+      "target": 3,
+      "rest": [
+        6,
+        7
+      ]
+    },
+    "ui": {},
+    "revision": 17
+  },
+  "lifegame-flex-lab-my-v1-daily": {
+    "day": "2026-11-22",
+    "savedAt": "2026-11-22T17:00:00.188Z",
+    "data": {
+      "v": 2,
+      "space": "my",
+      "created": "2026-11-16",
+      "lastProcessed": "2026-11-21",
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": true
+        },
+        "sequence": 4,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794848408170,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794848417703,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794848435902,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          },
+          {
+            "seq": 4,
+            "from": "2026-11-19",
+            "at": 1795111243217,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+              "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          }
+        ]
+      },
+      "settings": {
+        "lite": false,
+        "style": "quest",
+        "accent": "blue",
+        "motivation": "",
+        "reminders": true,
+        "sessions": {
+          "all": true,
+          "daily": true,
+          "weekly": true,
+          "monthly": true
+        },
+        "onboarding": {
+          "on": false,
+          "start": "2026-11-16",
+          "done": {},
+          "skipped": {}
+        }
+      },
+      "blocks": [
+        {
+          "id": "b0",
+          "name": "Душевное состояние",
+          "icon": "🌿",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 0,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b1",
+          "name": "Физическое состояние",
+          "icon": "💪",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 1,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b2",
+          "name": "Знания, навыки, опыт",
+          "icon": "📚",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 2,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b3",
+          "name": "Ресурсы и материальное",
+          "icon": "💰",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 3,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b4",
+          "name": "Окружение и отношения",
+          "icon": "🤝",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 4,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b5",
+          "name": "Наполнение и организация",
+          "icon": "🗂",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 5,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b6",
+          "name": "Обстоятельства",
+          "icon": "🌦",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 6,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        },
+        {
+          "id": "b7",
+          "name": "Исключить",
+          "icon": "🚫",
+          "meaning": "",
+          "priority": "mid",
+          "intensity": "bal",
+          "secs": {
+            "ach": true,
+            "fact": true,
+            "cur": true,
+            "plan": true,
+            "opt": true,
+            "unk": true,
+            "lvmg": true,
+            "dec": true,
+            "missed": true,
+            "sched": true
+          },
+          "preset": "full",
+          "base": true,
+          "status": "active",
+          "order": 7,
+          "currentStageId": null,
+          "fact": "",
+          "optimal": "",
+          "unknown": "",
+          "lvmg": "",
+          "loc": null
+        }
+      ],
+      "locations": [
+        {
+          "id": "home",
+          "name": "Дом",
+          "icon": "🏠",
+          "blocks": [],
+          "homeHide": [],
+          "dayHide": [],
+          "widgets": null,
+          "muteOther": false,
+          "tempo": null,
+          "style": null
+        },
+        {
+          "id": "work",
+          "name": "Работа",
+          "icon": "💼",
+          "blocks": [],
+          "homeHide": [],
+          "dayHide": [],
+          "widgets": null,
+          "muteOther": false,
+          "tempo": null,
+          "style": null
+        },
+        {
+          "id": "road",
+          "name": "В дороге",
+          "icon": "🚗",
+          "blocks": [],
+          "homeHide": [],
+          "dayHide": [],
+          "widgets": null,
+          "muteOther": false,
+          "tempo": null,
+          "style": null
+        }
+      ],
+      "loc": {
+        "schedule": [],
+        "fallback": null,
+        "manual": null,
+        "otherNoMiss": false,
+        "tagNew": true,
+        "lastSeen": null
+      },
+      "achievements": [],
+      "stages": [],
+      "goals": [],
+      "tasks": [
+        {
+          "id": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "title": "Порисовать немного",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "weekly",
+            "days": [
+              6
+            ],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {},
+          "cycle": 1
+        },
+        {
+          "id": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "title": "Рисование 19 ноября",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-19",
+          "bonusTerms": {}
+        }
+      ],
+      "habits": [],
+      "quests": [],
+      "cal": [],
+      "decisions": [],
+      "inbox": [],
+      "recent": [],
+      "facts": [
+        {
+          "id": "71094990-85d2-470e-8343-754bf7ae93de",
+          "kind": "task",
+          "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Порисовать немного",
+          "cycle": 0,
+          "ledger": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "6ebf02ff-508a-499a-ac70-3ab37cb34c8a",
+          "kind": "task",
+          "ref": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "date": "2026-11-19",
+          "ts": 1795111262116,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Рисование 19 ноября",
+          "cycle": 0,
+          "ledger": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "24a33a71-e7ca-42d4-8bbe-20995dc4fb18",
+          "kind": "task",
+          "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-21",
+          "ts": 1795284088479,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Порисовать немного",
+          "cycle": 1,
+          "ledger": "4f45f36f-9cf4-4c07-b90d-eb5479208b83",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217
+        },
+        {
+          "id": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Рисование 19 ноября",
+          "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "date": "2026-11-19",
+          "ts": 1795111262116
+        },
+        {
+          "id": "4f45f36f-9cf4-4c07-b90d-eb5479208b83",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-21",
+          "ts": 1795284088479
+        }
+      ],
+      "offers": [],
+      "insts": [],
+      "treats": [],
+      "misses": [],
+      "days": {
+        "2026-11-16": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "locProfileSeen": null,
+          "locOtherNoMiss": false,
+          "locsSeen": [
+            "*"
+          ],
+          "creative": false,
+          "focus": null
+        },
+        "2026-11-17": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "creative": false,
+          "focus": null
+        },
+        "2026-11-18": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "locProfileSeen": null,
+          "locOtherNoMiss": false,
+          "locsSeen": [
+            "*"
+          ],
+          "creative": false,
+          "focus": null
+        },
+        "2026-11-19": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "locProfileSeen": null,
+          "locOtherNoMiss": false,
+          "locsSeen": [
+            "*"
+          ],
+          "creative": false,
+          "focus": null
+        },
+        "2026-11-20": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "creative": false,
+          "focus": null
+        },
+        "2026-11-21": {
+          "tempo": "normal",
+          "added": [],
+          "removed": [],
+          "forced": [],
+          "ritual": false,
+          "locProfileSeen": null,
+          "locOtherNoMiss": false,
+          "locsSeen": [
+            "*"
+          ]
+        }
+      },
+      "focus": {
+        "on": false,
+        "blocks": [],
+        "calOther": true,
+        "calUnlinked": true
+      },
+      "creative": {
+        "on": false,
+        "since": null,
+        "mute": false
+      },
+      "sessions": [],
+      "widgets": {
+        "mine": [
+          "timer",
+          "firststep",
+          "graph",
+          "happiness",
+          "rhythm",
+          "myreward"
+        ],
+        "inDay": {
+          "timer": true,
+          "firststep": true
+        }
+      },
+      "timer": {
+        "state": "ready",
+        "minutes": 15,
+        "remaining": 900,
+        "endsAt": null,
+        "label": "",
+        "ref": null,
+        "startedAt": null
+      },
+      "timeLog": [
+        {
+          "id": "5277e4ad-5a15-4924-98f7-15c1910bab46",
+          "date": "2026-11-16",
+          "minutes": 3,
+          "label": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "ts": 1794848450385
+        },
+        {
+          "id": "0c2c4d24-d07e-4043-9cd0-5f71f187a1ba",
+          "date": "2026-11-19",
+          "minutes": 6,
+          "label": "Рисование 19 ноября",
+          "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "ts": 1795111257833
+        },
+        {
+          "id": "3a53ea58-f7b3-4b18-9e62-28b75e4c8be1",
+          "date": "2026-11-21",
+          "minutes": 4,
+          "label": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "ts": 1795284083364
+        }
+      ],
+      "graph": {
+        "weekday": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "weekend": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "happy": [],
+      "myReward": null,
+      "rhythm": {
+        "target": 3,
+        "rest": [
+          6,
+          7
+        ]
+      },
+      "ui": {},
+      "revision": 16
+    }
+  },
+  "lifegame-flex-lab-my-v1-last-good": {
+    "v": 2,
+    "space": "my",
+    "created": "2026-11-16",
+    "lastProcessed": "2026-11-21",
+    "flex": {
+      "v": 1,
+      "view": "basic",
+      "introduced": true,
+      "members": [
+        "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+      ],
+      "options": {
+        "calendar": false,
+        "notifications": false,
+        "stats": true
+      },
+      "sequence": 4,
+      "changes": [
+        {
+          "seq": 1,
+          "from": "2026-11-16",
+          "at": 1794848408170,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": false
+          }
+        },
+        {
+          "seq": 2,
+          "from": "2026-11-16",
+          "at": 1794848417703,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": true
+          }
+        },
+        {
+          "seq": 3,
+          "from": "2026-11-16",
+          "at": 1794848435902,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [
+            "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+          ],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": true
+          }
+        },
+        {
+          "seq": 4,
+          "from": "2026-11-19",
+          "at": 1795111243217,
+          "zone": "Europe/Moscow",
+          "policy": "basic",
+          "refs": [
+            "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+            "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+          ],
+          "options": {
+            "calendar": false,
+            "notifications": false,
+            "stats": true
+          }
+        }
+      ]
+    },
+    "settings": {
+      "lite": false,
+      "style": "quest",
+      "accent": "blue",
+      "motivation": "",
+      "reminders": true,
+      "sessions": {
+        "all": true,
+        "daily": true,
+        "weekly": true,
+        "monthly": true
+      },
+      "onboarding": {
+        "on": false,
+        "start": "2026-11-16",
+        "done": {},
+        "skipped": {}
+      }
+    },
+    "blocks": [
+      {
+        "id": "b0",
+        "name": "Душевное состояние",
+        "icon": "🌿",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 0,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b1",
+        "name": "Физическое состояние",
+        "icon": "💪",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 1,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b2",
+        "name": "Знания, навыки, опыт",
+        "icon": "📚",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 2,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b3",
+        "name": "Ресурсы и материальное",
+        "icon": "💰",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 3,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b4",
+        "name": "Окружение и отношения",
+        "icon": "🤝",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 4,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b5",
+        "name": "Наполнение и организация",
+        "icon": "🗂",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 5,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b6",
+        "name": "Обстоятельства",
+        "icon": "🌦",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 6,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      },
+      {
+        "id": "b7",
+        "name": "Исключить",
+        "icon": "🚫",
+        "meaning": "",
+        "priority": "mid",
+        "intensity": "bal",
+        "secs": {
+          "ach": true,
+          "fact": true,
+          "cur": true,
+          "plan": true,
+          "opt": true,
+          "unk": true,
+          "lvmg": true,
+          "dec": true,
+          "missed": true,
+          "sched": true
+        },
+        "preset": "full",
+        "base": true,
+        "status": "active",
+        "order": 7,
+        "currentStageId": null,
+        "fact": "",
+        "optimal": "",
+        "unknown": "",
+        "lvmg": "",
+        "loc": null
+      }
+    ],
+    "locations": [
+      {
+        "id": "home",
+        "name": "Дом",
+        "icon": "🏠",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      },
+      {
+        "id": "work",
+        "name": "Работа",
+        "icon": "💼",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      },
+      {
+        "id": "road",
+        "name": "В дороге",
+        "icon": "🚗",
+        "blocks": [],
+        "homeHide": [],
+        "dayHide": [],
+        "widgets": null,
+        "muteOther": false,
+        "tempo": null,
+        "style": null
+      }
+    ],
+    "loc": {
+      "schedule": [],
+      "fallback": null,
+      "manual": null,
+      "otherNoMiss": false,
+      "tagNew": true,
+      "lastSeen": null
+    },
+    "achievements": [],
+    "stages": [],
+    "goals": [],
+    "tasks": [
+      {
+        "id": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "title": "Порисовать немного",
+        "locs": [],
+        "desc": "",
+        "reward": 10,
+        "sched": {
+          "type": "weekly",
+          "days": [
+            6
+          ],
+          "date": null
+        },
+        "blockId": null,
+        "stageId": null,
+        "goalId": null,
+        "inDay": true,
+        "key": false,
+        "fit": [
+          "normal",
+          "hard"
+        ],
+        "cat": "",
+        "tags": [],
+        "ifThen": "",
+        "bonus": [],
+        "status": "active",
+        "created": "2026-11-16",
+        "bonusTerms": {},
+        "cycle": 1
+      },
+      {
+        "id": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+        "title": "Рисование 19 ноября",
+        "locs": [],
+        "desc": "",
+        "reward": 10,
+        "sched": {
+          "type": "once",
+          "days": [],
+          "date": null
+        },
+        "blockId": null,
+        "stageId": null,
+        "goalId": null,
+        "inDay": true,
+        "key": false,
+        "fit": [
+          "normal",
+          "hard"
+        ],
+        "cat": "",
+        "tags": [],
+        "ifThen": "",
+        "bonus": [],
+        "status": "active",
+        "created": "2026-11-19",
+        "bonusTerms": {}
+      }
+    ],
+    "habits": [],
+    "quests": [],
+    "cal": [],
+    "decisions": [],
+    "inbox": [],
+    "recent": [],
+    "facts": [
+      {
+        "id": "71094990-85d2-470e-8343-754bf7ae93de",
+        "kind": "task",
+        "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "date": "2026-11-16",
+        "ts": 1794848455217,
+        "coins": 10,
+        "xp": 10,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Порисовать немного",
+        "cycle": 0,
+        "ledger": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+        "loc": null,
+        "locationTitle": "Без локации"
+      },
+      {
+        "id": "6ebf02ff-508a-499a-ac70-3ab37cb34c8a",
+        "kind": "task",
+        "ref": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+        "date": "2026-11-19",
+        "ts": 1795111262116,
+        "coins": 10,
+        "xp": 10,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Рисование 19 ноября",
+        "cycle": 0,
+        "ledger": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+        "loc": null,
+        "locationTitle": "Без локации"
+      },
+      {
+        "id": "24a33a71-e7ca-42d4-8bbe-20995dc4fb18",
+        "kind": "task",
+        "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "date": "2026-11-21",
+        "ts": 1795284088479,
+        "coins": 10,
+        "xp": 10,
+        "insts": [],
+        "consumed": [],
+        "cancelled": false,
+        "title": "Порисовать немного",
+        "cycle": 1,
+        "ledger": "4f45f36f-9cf4-4c07-b90d-eb5479208b83",
+        "loc": null,
+        "locationTitle": "Без локации"
+      }
+    ],
+    "ledger": [
+      {
+        "id": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+        "type": "earn",
+        "coins": 10,
+        "xp": 10,
+        "note": "Порисовать немного",
+        "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "date": "2026-11-16",
+        "ts": 1794848455217
+      },
+      {
+        "id": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+        "type": "earn",
+        "coins": 10,
+        "xp": 10,
+        "note": "Рисование 19 ноября",
+        "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+        "date": "2026-11-19",
+        "ts": 1795111262116
+      },
+      {
+        "id": "4f45f36f-9cf4-4c07-b90d-eb5479208b83",
+        "type": "earn",
+        "coins": 10,
+        "xp": 10,
+        "note": "Порисовать немного",
+        "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "date": "2026-11-21",
+        "ts": 1795284088479
+      }
+    ],
+    "offers": [],
+    "insts": [],
+    "treats": [],
+    "misses": [],
+    "days": {
+      "2026-11-16": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-17": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-18": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-19": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ],
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-20": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "creative": false,
+        "focus": null
+      },
+      "2026-11-21": {
+        "tempo": "normal",
+        "added": [],
+        "removed": [],
+        "forced": [],
+        "ritual": false,
+        "locProfileSeen": null,
+        "locOtherNoMiss": false,
+        "locsSeen": [
+          "*"
+        ]
+      }
+    },
+    "focus": {
+      "on": false,
+      "blocks": [],
+      "calOther": true,
+      "calUnlinked": true
+    },
+    "creative": {
+      "on": false,
+      "since": null,
+      "mute": false
+    },
+    "sessions": [],
+    "widgets": {
+      "mine": [
+        "timer",
+        "firststep",
+        "graph",
+        "happiness",
+        "rhythm",
+        "myreward"
+      ],
+      "inDay": {
+        "timer": true,
+        "firststep": true
+      }
+    },
+    "timer": {
+      "state": "ready",
+      "minutes": 15,
+      "remaining": 900,
+      "endsAt": null,
+      "label": "",
+      "ref": null,
+      "startedAt": null
+    },
+    "timeLog": [
+      {
+        "id": "5277e4ad-5a15-4924-98f7-15c1910bab46",
+        "date": "2026-11-16",
+        "minutes": 3,
+        "label": "Порисовать немного",
+        "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "ts": 1794848450385
+      },
+      {
+        "id": "0c2c4d24-d07e-4043-9cd0-5f71f187a1ba",
+        "date": "2026-11-19",
+        "minutes": 6,
+        "label": "Рисование 19 ноября",
+        "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+        "ts": 1795111257833
+      },
+      {
+        "id": "3a53ea58-f7b3-4b18-9e62-28b75e4c8be1",
+        "date": "2026-11-21",
+        "minutes": 4,
+        "label": "Порисовать немного",
+        "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+        "ts": 1795284083364
+      }
+    ],
+    "graph": {
+      "weekday": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "weekend": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "happy": [],
+    "myReward": null,
+    "rhythm": {
+      "target": 3,
+      "rest": [
+        6,
+        7
+      ]
+    },
+    "ui": {},
+    "revision": 16
+  }
+}

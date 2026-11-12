@@ -1,0 +1,696 @@
+{
+  "status": "technical_artifact_analysis_not_ux_findings",
+  "planned_persona_days": 21,
+  "days": [
+    {
+      "actor": "P01",
+      "day": 1,
+      "status": "completed",
+      "reason": null,
+      "actions": 10,
+      "screenshots": 11,
+      "traces": 1
+    },
+    {
+      "actor": "P01",
+      "day": 2,
+      "status": "completed",
+      "reason": null,
+      "actions": 3,
+      "screenshots": 4,
+      "traces": 1
+    },
+    {
+      "actor": "P01",
+      "day": 3,
+      "status": "no_use",
+      "reason": "unavailable",
+      "actions": 0,
+      "screenshots": 0,
+      "traces": 0
+    },
+    {
+      "actor": "P01",
+      "day": 4,
+      "status": "completed",
+      "reason": null,
+      "actions": 3,
+      "screenshots": 4,
+      "traces": 1
+    },
+    {
+      "actor": "P01",
+      "day": 5,
+      "status": "completed",
+      "reason": null,
+      "actions": 8,
+      "screenshots": 9,
+      "traces": 1
+    },
+    {
+      "actor": "P01",
+      "day": 6,
+      "status": "no_use",
+      "reason": "actor_choice",
+      "actions": 0,
+      "screenshots": 0,
+      "traces": 0
+    },
+    {
+      "actor": "P01",
+      "day": 7,
+      "status": "completed",
+      "reason": null,
+      "actions": 4,
+      "screenshots": 5,
+      "traces": 1
+    },
+    {
+      "actor": "P02",
+      "day": 1,
+      "status": "completed",
+      "reason": null,
+      "actions": 19,
+      "screenshots": 20,
+      "traces": 1
+    },
+    {
+      "actor": "P02",
+      "day": 2,
+      "status": "completed",
+      "reason": null,
+      "actions": 4,
+      "screenshots": 5,
+      "traces": 1
+    },
+    {
+      "actor": "P02",
+      "day": 3,
+      "status": "no_use",
+      "reason": "unavailable",
+      "actions": 0,
+      "screenshots": 0,
+      "traces": 0
+    },
+    {
+      "actor": "P02",
+      "day": 4,
+      "status": "completed",
+      "reason": null,
+      "actions": 11,
+      "screenshots": 12,
+      "traces": 1
+    },
+    {
+      "actor": "P02",
+      "day": 5,
+      "status": "completed",
+      "reason": null,
+      "actions": 6,
+      "screenshots": 7,
+      "traces": 1
+    },
+    {
+      "actor": "P02",
+      "day": 6,
+      "status": "completed",
+      "reason": null,
+      "actions": 6,
+      "screenshots": 7,
+      "traces": 1
+    },
+    {
+      "actor": "P02",
+      "day": 7,
+      "status": "completed",
+      "reason": null,
+      "actions": 5,
+      "screenshots": 6,
+      "traces": 1
+    },
+    {
+      "actor": "P03",
+      "day": 1,
+      "status": "completed",
+      "reason": null,
+      "actions": 10,
+      "screenshots": 11,
+      "traces": 1
+    },
+    {
+      "actor": "P03",
+      "day": 2,
+      "status": "no_use",
+      "reason": "unavailable",
+      "actions": 0,
+      "screenshots": 0,
+      "traces": 0
+    },
+    {
+      "actor": "P03",
+      "day": 3,
+      "status": "completed",
+      "reason": null,
+      "actions": 0,
+      "screenshots": 1,
+      "traces": 1
+    },
+    {
+      "actor": "P03",
+      "day": 4,
+      "status": "completed",
+      "reason": null,
+      "actions": 10,
+      "screenshots": 11,
+      "traces": 1
+    },
+    {
+      "actor": "P03",
+      "day": 5,
+      "status": "no_use",
+      "reason": "unavailable",
+      "actions": 0,
+      "screenshots": 0,
+      "traces": 0
+    },
+    {
+      "actor": "P03",
+      "day": 6,
+      "status": "completed",
+      "reason": null,
+      "actions": 15,
+      "screenshots": 16,
+      "traces": 1
+    },
+    {
+      "actor": "P03",
+      "day": 7,
+      "status": "completed",
+      "reason": null,
+      "actions": 0,
+      "screenshots": 1,
+      "traces": 1
+    }
+  ],
+  "counts": {
+    "completed": 16,
+    "no_use": 5
+  },
+  "closed_days": 21,
+  "finished_flag": true,
+  "all_planned_days_closed": true,
+  "actions": 114,
+  "event_kinds": {
+    "run_started": 1,
+    "session_opened": 16,
+    "observation": 130,
+    "action_started": 114,
+    "action": 114,
+    "session_ended": 16,
+    "no_use": 5,
+    "run_finished": 1
+  },
+  "missing_session_evidence": [],
+  "state_snapshots": [
+    {
+      "actor": "P01",
+      "day": 1,
+      "path": "P01/day-01/observer-state.json",
+      "sha256": "03a962669d85079109ad7d8c085787d3804a1ec7c414241c234b2534c022efe6",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [],
+        "habits": [
+          "4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "cal": [],
+        "facts": [
+          "677114ca-e680-4721-975c-955273fd7e17",
+          "198dd195-5eca-4124-8624-bb0ccdacda07"
+        ],
+        "timeLog": [
+          "8b42ab75-5a27-4d38-9166-b622bba5b350"
+        ]
+      }
+    },
+    {
+      "actor": "P01",
+      "day": 2,
+      "path": "P01/day-02/observer-state.json",
+      "sha256": "057217eb5a3021159ec5db7edd95bc725df6326b264ee4f59097bb1049ea0d2c",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [],
+        "habits": [
+          "4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "cal": [],
+        "facts": [
+          "677114ca-e680-4721-975c-955273fd7e17",
+          "198dd195-5eca-4124-8624-bb0ccdacda07"
+        ],
+        "timeLog": [
+          "8b42ab75-5a27-4d38-9166-b622bba5b350",
+          "3e4fd784-56d7-45bd-833a-cf1a44d33499"
+        ]
+      }
+    },
+    {
+      "actor": "P01",
+      "day": 4,
+      "path": "P01/day-04/observer-state.json",
+      "sha256": "aa716385067e22de6882fe6a89b5f198e29ba22281a5dc3a1592817cd85ae2e3",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [],
+        "habits": [
+          "4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "cal": [],
+        "facts": [
+          "677114ca-e680-4721-975c-955273fd7e17",
+          "198dd195-5eca-4124-8624-bb0ccdacda07"
+        ],
+        "timeLog": [
+          "8b42ab75-5a27-4d38-9166-b622bba5b350",
+          "3e4fd784-56d7-45bd-833a-cf1a44d33499",
+          "d1830288-12b7-4454-850c-d5d83a05661e"
+        ]
+      }
+    },
+    {
+      "actor": "P01",
+      "day": 5,
+      "path": "P01/day-05/observer-state.json",
+      "sha256": "f2b278851a8e6279e7199e5df0a4d3c6f513dd77109518d743775d9a34079732",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [],
+        "habits": [
+          "4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "cal": [],
+        "facts": [
+          "677114ca-e680-4721-975c-955273fd7e17",
+          "198dd195-5eca-4124-8624-bb0ccdacda07",
+          "439ee230-b086-4f26-a611-af3183e43203",
+          "36b96e7b-e0ae-4676-9cbb-92050d0ee804"
+        ],
+        "timeLog": [
+          "8b42ab75-5a27-4d38-9166-b622bba5b350",
+          "3e4fd784-56d7-45bd-833a-cf1a44d33499",
+          "d1830288-12b7-4454-850c-d5d83a05661e",
+          "3ce314b4-56b8-46b6-8a74-540bec785dfc"
+        ]
+      }
+    },
+    {
+      "actor": "P01",
+      "day": 7,
+      "path": "P01/day-07/observer-state.json",
+      "sha256": "8d9e6329c9b632436d9ca96e10c98a260862f36aaf6fc31bd30c232b42cbdcbb",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [],
+        "habits": [
+          "4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "cal": [],
+        "facts": [
+          "677114ca-e680-4721-975c-955273fd7e17",
+          "198dd195-5eca-4124-8624-bb0ccdacda07",
+          "439ee230-b086-4f26-a611-af3183e43203",
+          "36b96e7b-e0ae-4676-9cbb-92050d0ee804",
+          "c3c2c96a-644c-4080-8886-b44c9df760ed",
+          "6bb7f12e-60aa-4b27-8114-732945aa0e60"
+        ],
+        "timeLog": [
+          "8b42ab75-5a27-4d38-9166-b622bba5b350",
+          "3e4fd784-56d7-45bd-833a-cf1a44d33499",
+          "d1830288-12b7-4454-850c-d5d83a05661e",
+          "3ce314b4-56b8-46b6-8a74-540bec785dfc",
+          "9dfb8898-2959-4583-b194-39333506b71c"
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 1,
+      "path": "P02/day-01/observer-state.json",
+      "sha256": "5d33504bdbd88db6bfcaaa52bfc491c1820c76e66b89581f591beadce15ca771",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+        ],
+        "habits": [],
+        "cal": [
+          "4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+        ],
+        "facts": [],
+        "timeLog": []
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 2,
+      "path": "P02/day-02/observer-state.json",
+      "sha256": "3a77f2a365e0992ba8aa40d805bf8d78547abf6210a5b153a78ec4c43cd943cf",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+        ],
+        "habits": [],
+        "cal": [
+          "4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+        ],
+        "facts": [
+          "5e0c911f-c1cc-42aa-aef7-292e5d40fec7"
+        ],
+        "timeLog": [
+          "8b874da8-35b6-44f4-8a48-187f853a751a"
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 4,
+      "path": "P02/day-04/observer-state.json",
+      "sha256": "ee3773c240000685dfd2178212ae5b30e831c069b0743d0f9597ce68e246fb0f",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+        ],
+        "habits": [],
+        "cal": [
+          "4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+        ],
+        "facts": [
+          "5e0c911f-c1cc-42aa-aef7-292e5d40fec7"
+        ],
+        "timeLog": [
+          "8b874da8-35b6-44f4-8a48-187f853a751a",
+          "8a92e137-7542-413e-ba63-bf4b14cfd4e2"
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 5,
+      "path": "P02/day-05/observer-state.json",
+      "sha256": "288ff87213dbf7764d0df1e2b8f582997173e5ac501ea8e45b16782357ab4f4b",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+        ],
+        "habits": [],
+        "cal": [
+          "4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+        ],
+        "facts": [
+          "5e0c911f-c1cc-42aa-aef7-292e5d40fec7",
+          "2bf50c43-9d8f-441d-a535-58883e34e426",
+          "942ee992-6085-48b1-b5ce-5f348b346ed7",
+          "46059726-03ad-468c-95d8-6596bf34d051"
+        ],
+        "timeLog": [
+          "8b874da8-35b6-44f4-8a48-187f853a751a",
+          "8a92e137-7542-413e-ba63-bf4b14cfd4e2",
+          "18e4e6d7-8c32-4f2d-8cbf-060775f84e2c"
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 6,
+      "path": "P02/day-06/observer-state.json",
+      "sha256": "70c6690cf70f55c3db5d7d92b2c520e6c3d3827c573ce87949cc4c4daf299f11",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+        ],
+        "habits": [],
+        "cal": [
+          "4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+        ],
+        "facts": [
+          "5e0c911f-c1cc-42aa-aef7-292e5d40fec7",
+          "2bf50c43-9d8f-441d-a535-58883e34e426",
+          "942ee992-6085-48b1-b5ce-5f348b346ed7",
+          "46059726-03ad-468c-95d8-6596bf34d051"
+        ],
+        "timeLog": [
+          "8b874da8-35b6-44f4-8a48-187f853a751a",
+          "8a92e137-7542-413e-ba63-bf4b14cfd4e2",
+          "18e4e6d7-8c32-4f2d-8cbf-060775f84e2c"
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 7,
+      "path": "P02/day-07/observer-state.json",
+      "sha256": "ab63e3720f4332985ad22a4f4fcf6ae8d7669bf5d84957ea0ffbc6f8861942c0",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+        ],
+        "habits": [],
+        "cal": [
+          "4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "928a4538-05d3-4665-a23c-a643458a8992"
+        ],
+        "facts": [
+          "5e0c911f-c1cc-42aa-aef7-292e5d40fec7",
+          "2bf50c43-9d8f-441d-a535-58883e34e426",
+          "942ee992-6085-48b1-b5ce-5f348b346ed7",
+          "46059726-03ad-468c-95d8-6596bf34d051"
+        ],
+        "timeLog": [
+          "8b874da8-35b6-44f4-8a48-187f853a751a",
+          "8a92e137-7542-413e-ba63-bf4b14cfd4e2",
+          "18e4e6d7-8c32-4f2d-8cbf-060775f84e2c"
+        ]
+      }
+    },
+    {
+      "actor": "P03",
+      "day": 1,
+      "path": "P03/day-01/observer-state.json",
+      "sha256": "4006ff2115d412cc2289a5673af280cdfb84ee19f7707d15fb95d2eb2e2c9068",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+        ],
+        "habits": [],
+        "cal": [],
+        "facts": [
+          "71094990-85d2-470e-8343-754bf7ae93de"
+        ],
+        "timeLog": [
+          "5277e4ad-5a15-4924-98f7-15c1910bab46"
+        ]
+      }
+    },
+    {
+      "actor": "P03",
+      "day": 3,
+      "path": "P03/day-03/observer-state.json",
+      "sha256": "ba442125aa4f02ad67caad187ae921446414a5fa14472b428cf770b2f842b141",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+        ],
+        "habits": [],
+        "cal": [],
+        "facts": [
+          "71094990-85d2-470e-8343-754bf7ae93de"
+        ],
+        "timeLog": [
+          "5277e4ad-5a15-4924-98f7-15c1910bab46"
+        ]
+      }
+    },
+    {
+      "actor": "P03",
+      "day": 4,
+      "path": "P03/day-04/observer-state.json",
+      "sha256": "5b81d2f54a9c90db3e99fd6ea6e1fa2b9f116f61880d65f3b4451cdfec020814",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "d25353bd-7c65-40c7-a193-eb0d7be301fd"
+        ],
+        "habits": [],
+        "cal": [],
+        "facts": [
+          "71094990-85d2-470e-8343-754bf7ae93de",
+          "6ebf02ff-508a-499a-ac70-3ab37cb34c8a"
+        ],
+        "timeLog": [
+          "5277e4ad-5a15-4924-98f7-15c1910bab46",
+          "0c2c4d24-d07e-4043-9cd0-5f71f187a1ba"
+        ]
+      }
+    },
+    {
+      "actor": "P03",
+      "day": 6,
+      "path": "P03/day-06/observer-state.json",
+      "sha256": "332afeb035d2fb252bf370a57a33afd0891c7cc4d2dc3ba71e608aed7c43c9f2",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "d25353bd-7c65-40c7-a193-eb0d7be301fd"
+        ],
+        "habits": [],
+        "cal": [],
+        "facts": [
+          "71094990-85d2-470e-8343-754bf7ae93de",
+          "6ebf02ff-508a-499a-ac70-3ab37cb34c8a",
+          "24a33a71-e7ca-42d4-8bbe-20995dc4fb18"
+        ],
+        "timeLog": [
+          "5277e4ad-5a15-4924-98f7-15c1910bab46",
+          "0c2c4d24-d07e-4043-9cd0-5f71f187a1ba",
+          "3a53ea58-f7b3-4b18-9e62-28b75e4c8be1"
+        ]
+      }
+    },
+    {
+      "actor": "P03",
+      "day": 7,
+      "path": "P03/day-07/observer-state.json",
+      "sha256": "34ad92c6c0908f394d082b71366a948dbc4fc54434a52f0da04279881a83e17f",
+      "namespace_isolated": true,
+      "primary_present": true,
+      "ids": {
+        "tasks": [
+          "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "d25353bd-7c65-40c7-a193-eb0d7be301fd"
+        ],
+        "habits": [],
+        "cal": [],
+        "facts": [
+          "71094990-85d2-470e-8343-754bf7ae93de",
+          "6ebf02ff-508a-499a-ac70-3ab37cb34c8a",
+          "24a33a71-e7ca-42d4-8bbe-20995dc4fb18"
+        ],
+        "timeLog": [
+          "5277e4ad-5a15-4924-98f7-15c1910bab46",
+          "0c2c4d24-d07e-4043-9cd0-5f71f187a1ba",
+          "3a53ea58-f7b3-4b18-9e62-28b75e4c8be1"
+        ]
+      }
+    }
+  ],
+  "schema_validation": [
+    {
+      "id": "P01/day-01/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P01/day-02/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P01/day-04/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P01/day-05/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P01/day-07/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P02/day-01/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P02/day-02/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P02/day-04/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P02/day-05/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P02/day-06/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P02/day-07/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P03/day-01/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P03/day-03/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P03/day-04/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P03/day-06/observer-state.json",
+      "valid": true
+    },
+    {
+      "id": "P03/day-07/observer-state.json",
+      "valid": true
+    }
+  ],
+  "all_captured_states_valid": true,
+  "errors": [],
+  "limitations": [
+    "completed means session closed, not goal achieved",
+    "actor choices are not human retention estimates",
+    "artifact checks do not verify independence of model contexts or semantic correctness of actions"
+  ]
+}

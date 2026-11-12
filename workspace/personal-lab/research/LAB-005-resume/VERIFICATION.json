@@ -1,0 +1,76 @@
+{
+  "checks": [
+    {
+      "name": "R1: stable inode blocks competing process after owner releases",
+      "pass": true
+    },
+    {
+      "name": "R2: real process cut after no_use recovers record and memory idempotently",
+      "pass": true
+    },
+    {
+      "name": "native UI: task persists across dates and another actor stays isolated",
+      "pass": true
+    },
+    {
+      "name": "active interruption retains date, budget and fresh-observation requirement",
+      "pass": true
+    },
+    {
+      "name": "finished run rejects mutations; readonly leaves evidence byte-for-byte unchanged",
+      "pass": true
+    },
+    {
+      "name": "world/app mismatch and corrupt journal fail safely without rewriting evidence",
+      "pass": true
+    },
+    {
+      "name": "real UI cut before confirmation: ambiguity explicit, no replay or duplicate task",
+      "pass": true
+    },
+    {
+      "name": "capture failure after UI commit also blocks retry until explicit reconciliation",
+      "pass": true
+    },
+    {
+      "name": "native Playwright traces and interrupted continuations exist and validate",
+      "pass": true
+    }
+  ],
+  "passed": 9,
+  "scope": "Technical acceptance, not AI-user or month experiment",
+  "driver_sha256": "ccd010e1e23ac88b6802629372a13f983064b6e153da159269f5d5350c83d331",
+  "state_validation": [
+    {
+      "path": "personal-lab/verification/LAB-005-acceptance-20261112T031518Z/capture-error/P01/day-01/observer-state.json",
+      "valid": true
+    },
+    {
+      "path": "personal-lab/verification/LAB-005-acceptance-20261112T031518Z/normal/P01/day-01/observer-state.json",
+      "valid": true
+    },
+    {
+      "path": "personal-lab/verification/LAB-005-acceptance-20261112T031518Z/normal/P01/day-02/observer-state.json",
+      "valid": true
+    },
+    {
+      "path": "personal-lab/verification/LAB-005-acceptance-20261112T031518Z/normal/P01/day-03/observer-state.json",
+      "valid": true
+    },
+    {
+      "path": "personal-lab/verification/LAB-005-acceptance-20261112T031518Z/normal/P02/day-01/observer-state.json",
+      "valid": true
+    },
+    {
+      "path": "personal-lab/verification/LAB-005-acceptance-20261112T031518Z/ui-commit-cut/P01/day-01/observer-state.json",
+      "valid": true
+    }
+  ],
+  "python": "3.12.14",
+  "playwright": "1.62.0",
+  "chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 13 (trixie)",
+  "source_run": "personal-lab/verification/LAB-005-acceptance-20261112T031518Z",
+  "no_app_changes": true,
+  "ai_user_pilot": false,
+  "month_run": false
+}

@@ -1,0 +1,204 @@
+{
+  "title": "LifeGame Ритм Lab — лаборатория",
+  "url": "http://127.0.0.1:42367/personal-lab/",
+  "virtual_time_observed": "2026-11-21T18:00:58.549Z",
+  "modal": true,
+  "viewport": {
+    "width": 375,
+    "height": 844
+  },
+  "visible_text": "По расписанию. Без галочки запись остаётся в этапе и своём разделе как подготовленное действие.\nКлючевое действие\nВключает Конструктор автоматически, затем Конструктор можно снять отдельно.\nПодходит темпу дня\nОтдыхаю\nОбычный\nФигачу\nВ дни с другим темпом запись уходит в «Скрыто сегодня» и не становится пропуском.\nНаграда, монет (XP столько же)\nБонус за выполнение\nне назначен\nВыбрать в магазине\nОдноразовый бонус резервируется сразу при назначении.\nЕсли — то (необязательно)\nКатегория\nТеги через запятую\nГде\n🏠 Дом\n💼 Работа\n🚗 В дороге\nНичего не выбрано — видно в любой локации.\nНовая награда действует на будущие выполнения. Прошлые начисления не меняются.\nСохранить\nОтмена",
+  "elements": [
+    {
+      "element": "e1",
+      "label": "Ключевое действие\nВключает Конструктор автоматически, затем Конструктор можно снять отдельно.",
+      "type": "checkbox",
+      "disabled": false,
+      "rect": {
+        "x": 21,
+        "y": 155,
+        "width": 18,
+        "height": 18
+      },
+      "value": "on",
+      "checked": false
+    },
+    {
+      "element": "e2",
+      "label": "Отдыхаю",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 242,
+        "width": 82,
+        "height": 31
+      },
+      "value": ""
+    },
+    {
+      "element": "e3",
+      "label": "Обычный",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 105,
+        "y": 242,
+        "width": 85,
+        "height": 31
+      },
+      "value": ""
+    },
+    {
+      "element": "e4",
+      "label": "Фигачу",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 196,
+        "y": 242,
+        "width": 73,
+        "height": 31
+      },
+      "value": ""
+    },
+    {
+      "element": "e5",
+      "label": "Награда, монет (XP столько же)",
+      "type": "number",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 347,
+        "width": 140,
+        "height": 43
+      },
+      "value": "10",
+      "checked": false
+    },
+    {
+      "element": "e6",
+      "label": "Выбрать в магазине",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 206,
+        "y": 425,
+        "width": 152,
+        "height": 28
+      },
+      "value": ""
+    },
+    {
+      "element": "e7",
+      "label": "Если — то (необязательно)",
+      "type": "text",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 523,
+        "width": 341,
+        "height": 43
+      },
+      "value": "",
+      "checked": false
+    },
+    {
+      "element": "e8",
+      "label": "Категория",
+      "type": "text",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 601,
+        "width": 166,
+        "height": 43
+      },
+      "value": "",
+      "checked": false
+    },
+    {
+      "element": "e9",
+      "label": "Теги через запятую",
+      "type": "text",
+      "disabled": false,
+      "rect": {
+        "x": 193,
+        "y": 601,
+        "width": 166,
+        "height": 43
+      },
+      "value": "",
+      "checked": false
+    },
+    {
+      "element": "e10",
+      "label": "🏠 Дом",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 678,
+        "width": 70,
+        "height": 31
+      },
+      "value": ""
+    },
+    {
+      "element": "e11",
+      "label": "💼 Работа",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 93,
+        "y": 678,
+        "width": 88,
+        "height": 31
+      },
+      "value": ""
+    },
+    {
+      "element": "e12",
+      "label": "🚗 В дороге",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 187,
+        "y": 678,
+        "width": 100,
+        "height": 31
+      },
+      "value": ""
+    },
+    {
+      "element": "e13",
+      "label": "Сохранить",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 17,
+        "y": 789,
+        "width": 103,
+        "height": 36
+      },
+      "value": ""
+    },
+    {
+      "element": "e14",
+      "label": "Отмена",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 128,
+        "y": 789,
+        "width": 81,
+        "height": 36
+      },
+      "value": ""
+    }
+  ],
+  "observation_id": "P03-d06-o0033",
+  "screenshot": "/workspace/life-game/personal-lab/verification/LAB-015-ai-pilot-20261112T193728Z/P03/day-06/P03-d06-o0033.png",
+  "actions_used": 9,
+  "action_budget": 18
+}

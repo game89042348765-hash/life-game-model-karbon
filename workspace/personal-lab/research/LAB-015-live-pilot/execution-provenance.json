@@ -1,0 +1,77 @@
+{
+  "status": "completed",
+  "runner": {
+    "model": "unknown exact runtime identifier",
+    "runtime": "OpenAI Codex Cloud",
+    "settings": "inherited defaults; exact values not exposed",
+    "context_id": "/root",
+    "knows_code_and_prior_findings": true
+  },
+  "capabilities": {
+    "code_execution": true,
+    "browser_execution": true,
+    "image_viewing": true,
+    "three_clean_participant_contexts": true,
+    "separate_analyst_context": true
+  },
+  "participants": [
+    {
+      "actor": "P01",
+      "model": "unknown exact runtime identifier",
+      "family": "unknown; inherited parent defaults",
+      "context_id": "/root/lab015_user_p01",
+      "clean_context_confirmed": true,
+      "context_reused_across_days": true,
+      "decision_log": "P01/FINAL.md",
+      "fork_turns": "none"
+    },
+    {
+      "actor": "P02",
+      "model": "unknown exact runtime identifier",
+      "family": "unknown; inherited parent defaults",
+      "context_id": "/root/lab015_user_p02",
+      "clean_context_confirmed": true,
+      "context_reused_across_days": true,
+      "decision_log": "P02/FINAL.md",
+      "fork_turns": "none"
+    },
+    {
+      "actor": "P03",
+      "model": "unknown exact runtime identifier",
+      "family": "unknown; inherited parent defaults",
+      "context_id": "/root/lab015_user_p03",
+      "clean_context_confirmed": true,
+      "context_reused_across_days": true,
+      "decision_log": "P03/FINAL.md",
+      "fork_turns": "none"
+    }
+  ],
+  "analyst": {
+    "model": "unknown exact runtime identifier",
+    "context_id": "/root/lab015_independent_analyst",
+    "fork_turns": "none",
+    "independent_from_runner_and_participants": true,
+    "continuation": "same clean analyst context resumed via followup after environment starting/ready signal",
+    "completed": true
+  },
+  "usage": {
+    "paid_api_calls": 0,
+    "model_tokens": null,
+    "model_price": null,
+    "human_relay_minutes": 0,
+    "uses_current_account_limit": true
+  },
+  "limitations": [
+    "All model contexts inherit the parent defaults; no claim of model-family diversity.",
+    "Filesystem and transport access is separated by role instructions, not by security ACLs.",
+    "Coordinator knows code/prior findings; participant contexts receive no parent history or findings.",
+    "DOM-assisted Chromium viewports are not physical mobile devices or human retention.",
+    "Environment emitted starting/ready during report preparation; sealed original files were checked unchanged and successful reproductions were not repeated.",
+    "evidence/execution-provenance.json is an immutable analysis-time snapshot; this root file records final completion."
+  ],
+  "tooling": {
+    "participant_cli_output_budget_recommended_tokens": 2600,
+    "full_observations_persisted": true,
+    "filesystem_authorization": "organizational separation only"
+  }
+}

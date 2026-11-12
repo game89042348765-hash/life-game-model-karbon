@@ -1,0 +1,71 @@
+{
+  "task": "LAB-011",
+  "candidate_directory": "/workspace/life-game/personal-lab/research/LAB-011-hybrid-v211-review/release",
+  "tool_sha256": "a47e9b5d51db57b5888bb0deee79870b7e2e74e055cff50df5ccf78b39592035",
+  "checks": [
+    {
+      "check": "01_current_default_and_paste",
+      "passed": true,
+      "default": 0,
+      "scoring_copied_to_three_prompts": true
+    },
+    {
+      "check": "02_oversized_body_preserved_and_index_bounded",
+      "passed": true,
+      "index_bytes": 813,
+      "original_description_bytes": 300000,
+      "oversized_status": "oversized_single_bundle"
+    },
+    {
+      "check": "03_total_budget_reserve_and_source_dedup",
+      "passed": true,
+      "packets": 5,
+      "largest_total_bytes": 114877,
+      "prompt_reserve_bytes": 20000,
+      "sources_complete_and_deduplicated": true
+    },
+    {
+      "check": "04_single_oversized_source_bundle",
+      "passed": true,
+      "total_bytes": 151047,
+      "source_preserved": true
+    },
+    {
+      "check": "05_late_publisher_and_staging_cleanup",
+      "passed": true,
+      "winner_preserved": true,
+      "error": "Blind packet output appeared concurrently during execution; refusing to overwrite"
+    },
+    {
+      "check": "06_two_real_processes_one_publication",
+      "passed": true,
+      "successful_writers": 1,
+      "writers": 2,
+      "final_jsonl_records": 1
+    },
+    {
+      "check": "07_unsupported_links_write_failure_leaves_no_final_output",
+      "passed": true,
+      "final_output_exists_after_failure": false,
+      "final_output_bytes": 0,
+      "error": "Atomic no-overwrite publication requires hardlink support and write permission on this filesystem; no output was published. Use a supported local directory. [Errno 95] Injected unsupported hardlinks"
+    },
+    {
+      "check": "08_staging_sync_failure_is_clean",
+      "passed": true,
+      "error": "[Errno 28] Injected staging sync failure"
+    },
+    {
+      "check": "09_single_index_line_respects_declared_byte_limit",
+      "passed": true,
+      "outcome": "explicit clean refusal of insufficient index budget",
+      "error": "A single index entry (F-DEMO-00000) needs 702 bytes, exceeding index_max_bytes=512; increase the index budget or shorten preview_chars. No shard output was published."
+    }
+  ],
+  "passed": 9,
+  "total": 9,
+  "accepted": true,
+  "scope": "technical fictional acceptance, no source research or app changes",
+  "python": "3.12.14",
+  "network_requests": 0
+}

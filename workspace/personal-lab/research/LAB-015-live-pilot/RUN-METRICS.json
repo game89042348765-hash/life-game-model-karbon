@@ -1,0 +1,25 @@
+{
+  "participant_phases_real_seconds": 535.68,
+  "planned_persona_days": 21,
+  "completed_sessions": 16,
+  "no_use": {
+    "unavailable": 4,
+    "actor_choice": 1
+  },
+  "actions": 114,
+  "operations": {
+    "click": 77,
+    "fill": 26,
+    "select": 3,
+    "check": 4,
+    "scroll": 4
+  },
+  "observations": 130,
+  "traces": 16,
+  "sealed_original_files": 301,
+  "original_evidence_bytes": 36631147,
+  "original_evidence_unchanged": true,
+  "model_token_usage": null,
+  "model_price": null,
+  "note": "Real transport/model phase duration is not measured human task time."
+}

@@ -1,0 +1,339 @@
+{
+  "trace_entry": "trace.trace",
+  "trace_events": [
+    {
+      "version": 8,
+      "type": "context-options",
+      "origin": "library",
+      "browserName": "chromium",
+      "playwrightVersion": "1.62.0",
+      "options": {
+        "executablePath": "/usr/bin/chromium",
+        "args": [
+          "--no-sandbox"
+        ],
+        "headless": true,
+        "viewport": {
+          "width": 1100,
+          "height": 900
+        },
+        "locale": "ru-RU",
+        "timezoneId": "Europe/Moscow",
+        "acceptDownloads": "accept",
+        "selectorEngines": [],
+        "userDataDir": "/workspace/life-game/personal-lab/verification/LAB-015-ai-pilot-20261112T193728Z/profiles/P02",
+        "offline": true
+      },
+      "platform": "linux",
+      "wallTime": 1794512637274,
+      "monotonicTime": 324043.346,
+      "sdkLanguage": "python",
+      "testIdAttributeName": "data-testid",
+      "contextId": "browser-context@115178d361bbebf38ce59a3f2cb387e8",
+      "title": "P02 day 6"
+    },
+    {
+      "type": "before",
+      "callId": "call@3690",
+      "startTime": 324127.496,
+      "class": "BrowserContext",
+      "method": "clockInstall",
+      "params": {
+        "timeNumber": 1795248000000
+      }
+    },
+    {
+      "type": "before",
+      "callId": "call@3692",
+      "startTime": 324149.162,
+      "class": "Frame",
+      "method": "goto",
+      "params": {
+        "url": "http://127.0.0.1:42367/personal-lab/",
+        "waitUntil": "networkidle",
+        "timeout": 4000
+      },
+      "pageId": "page@331bbc01ddaccae1ebb3f5df154272d6",
+      "beforeSnapshot": "before@call@3692"
+    },
+    {
+      "type": "after",
+      "callId": "call@3690",
+      "endTime": 324147.336
+    },
+    {
+      "type": "after",
+      "callId": "call@3692",
+      "endTime": 324881.046,
+      "result": {
+        "response": "<Response>"
+      },
+      "afterSnapshot": "after@call@3692"
+    }
+  ],
+  "network_entry": "trace.network",
+  "network_events": [
+    {
+      "type": "resource-snapshot",
+      "snapshot": {
+        "startedDateTime": "2026-11-12T19:43:57.415Z",
+        "time": -1,
+        "request": {
+          "method": "GET",
+          "url": "http://127.0.0.1:42367/personal-lab/",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            },
+            {
+              "name": "Referer",
+              "value": ""
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru-RU"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\""
+            },
+            {
+              "name": "Upgrade-Insecure-Requests",
+              "value": "1"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+            }
+          ],
+          "queryString": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": -1,
+          "statusText": "",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [],
+          "content": {
+            "size": -1,
+            "mimeType": "x-unknown"
+          },
+          "headersSize": -1,
+          "bodySize": -1,
+          "redirectURL": "",
+          "_transferSize": -1,
+          "_failureText": "net::ERR_INTERNET_DISCONNECTED"
+        },
+        "cache": {},
+        "timings": {
+          "send": -1,
+          "wait": -1,
+          "receive": -1
+        },
+        "_monotonicTime": 324188.726,
+        "_resourceType": "fetch"
+      }
+    },
+    {
+      "type": "resource-snapshot",
+      "snapshot": {
+        "pageref": "page@331bbc01ddaccae1ebb3f5df154272d6",
+        "startedDateTime": "2026-11-12T19:43:57.395Z",
+        "time": 19.857,
+        "request": {
+          "method": "GET",
+          "url": "http://127.0.0.1:42367/personal-lab/",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Accept-Language",
+              "value": "ru-RU"
+            },
+            {
+              "name": "Upgrade-Insecure-Requests",
+              "value": "1"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            }
+          ],
+          "queryString": [],
+          "headersSize": 309,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Length",
+              "value": "1277"
+            },
+            {
+              "name": "Content-type",
+              "value": "text/html"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 12 Nov 2026 19:38:53 GMT"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 12 Nov 2026 19:37:28 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "SimpleHTTP/0.6 Python/3.12.14"
+            }
+          ],
+          "content": {
+            "size": 1277,
+            "mimeType": "text/html",
+            "compression": 1465,
+            "_sha1": "bed4aa8713a01755dedcc3dd872da92570b8ae02.html"
+          },
+          "headersSize": 188,
+          "bodySize": -188,
+          "redirectURL": "",
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 10.325,
+          "receive": 9.532
+        },
+        "_frameref": "frame@19a0d30a3b46def683b2317b1993d048",
+        "_monotonicTime": 324194.576,
+        "_resourceType": "document",
+        "_securityDetails": {}
+      }
+    },
+    {
+      "type": "resource-snapshot",
+      "snapshot": {
+        "pageref": "page@331bbc01ddaccae1ebb3f5df154272d6",
+        "startedDateTime": "2026-11-12T19:43:57.432Z",
+        "time": 21.168,
+        "request": {
+          "method": "GET",
+          "url": "http://127.0.0.1:42367/personal-lab/flex-ui.js",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Linux\""
+            },
+            {
+              "name": "Referer",
+              "value": "http://127.0.0.1:42367/personal-lab/"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\""
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru-RU"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 336,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "cookies": [],
+          "headers": [
+            {
+              "name": "Content-Length",
+              "value": "15647"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 12 Nov 2026 19:38:53 GMT"
+            },
+            {
+              "name": "Content-type",
+              "value": "text/javascript"
+            },
+            {
+              "name": "Last-Modified",
+              "value": "Thu, 12 Nov 2026 19:37:28 GMT"
+            },
+            {
+              "name": "Server",
+              "value": "SimpleHTTP/0.6 Python/3.12.14"
+            }
+          ],
+          "content": {
+            "size": -1,
+            "mimeType": "text/javascript",
+            "compression": 195
+          },
+          "headersSize": 195,
+          "bodySize": -195,
+          "redirectURL": "",
+          "_transferSize": 0
+        },
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 1.928,
+          "receive": 19.24
+        },
+        "_frameref": "frame@19a0d30a3b46def683b2317b1993d048",
+        "_monotonicTime": 324230.017,
+        "_resourceType": "script",
+        "_securityDetails": {}
+      }
+    }
+  ],
+  "note": "Actual trace excerpts; not a newly generated browser trace."
+}

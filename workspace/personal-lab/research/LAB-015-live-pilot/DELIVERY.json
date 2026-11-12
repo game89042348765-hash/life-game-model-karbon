@@ -1,0 +1,78 @@
+{
+  "task": "LAB-015",
+  "payload_commit": "38996a8851dc3e292ca59ab8399680e91a645e79",
+  "primary_evidence_commit": "f604b35b50246ee52ce067968a1810d707ed931b",
+  "branch": "lab/synthetic-users",
+  "remote_ref_verified": "38996a8851dc3e292ca59ab8399680e91a645e79",
+  "main_ref_verified": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "verified_at": "2026-11-12T20:20:42.578877+00:00",
+  "pinned_raw_verified_files": [
+    {
+      "file": "downloads/lab-packets/LifeGame-LAB-015-P01-evidence.zip",
+      "bytes": 7889032,
+      "sha256": "a10169e394444edd679f9307d2a72f41ce1fcf23712688a32aaab3d88f00e56d",
+      "match": true,
+      "zip_crc": "passed",
+      "verified_manifest_entries": 77
+    },
+    {
+      "file": "downloads/lab-packets/LifeGame-LAB-015-P02-evidence.zip",
+      "bytes": 12573961,
+      "sha256": "0ba875e60dfcc568fa0a9a96f545226a1059281754d2c9f12c1f76b0203aa1e5",
+      "match": true,
+      "zip_crc": "passed",
+      "verified_manifest_entries": 127
+    },
+    {
+      "file": "downloads/lab-packets/LifeGame-LAB-015-P03-evidence.zip",
+      "bytes": 10711643,
+      "sha256": "9b2bd8022355369bc56708670006fc85650f596f52718c895af7c2aa71186364",
+      "match": true,
+      "zip_crc": "passed",
+      "verified_manifest_entries": 91
+    },
+    {
+      "file": "downloads/lab-packets/LifeGame-LAB-015-results.zip",
+      "bytes": 19715348,
+      "sha256": "8d3d8e3e4cb77d6f55142e90b0cf9fe26e650e1511ed7470341a0bd3464006eb",
+      "match": true,
+      "zip_crc": "passed",
+      "verified_manifest_entries": 319
+    },
+    {
+      "file": "personal-lab/research/LAB-015-live-pilot/UX-REPORT.md",
+      "bytes": 25354,
+      "sha256": "77babfee75ad28def1e5aa8e8605b738a05225625dcab034ba5f536f039ffbd1",
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-015-live-pilot/VERIFICATION.json",
+      "bytes": 2167,
+      "sha256": "afd0fb6ab7f044457a0a32e4698d9705ef09c2bf923992e89d5857024e8a1116",
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-015-live-pilot/EVIDENCE-PACKAGES.json",
+      "bytes": 1606,
+      "sha256": "962e3682141b3b12ce491b3e59cb8065380e69164cad5c80867d673528d656a6",
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-015-live-pilot/README.md",
+      "bytes": 7679,
+      "sha256": "1ba6bfcec0b8920a926646b794a56131fd0188266458fa875501a9c3ce4437e4",
+      "match": true
+    },
+    {
+      "file": "personal-lab/research/LAB-015-live-pilot/evidence/R1-day2-thirteen-retained.png",
+      "bytes": 30466,
+      "sha256": "fb6e18f572dd5207d241e87921e615e49403d1dd109b111d457b8861b7239d5f",
+      "match": true
+    }
+  ],
+  "all_301_primary_files_covered_by_archives": true,
+  "independent_ai_pilot_executed": true,
+  "human_acceptance": "pending",
+  "main_or_pages_updated": false,
+  "note": "Following documentation commit records delivery; reports, raw proof, ZIPs and frozen application remain unchanged."
+}

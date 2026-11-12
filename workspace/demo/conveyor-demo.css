@@ -1,0 +1,12 @@
+/* Functionality experiment: reuse all current LifeGame surfaces, type and controls. */
+.cv-demo-tools{font-size:11px;color:var(--muted);padding:10px 0 14px;border-bottom:1px solid #ffffff12;margin-bottom:18px}
+.cv-demo-tools summary{cursor:pointer;line-height:1.6}.cv-demo-tools>.meta{margin-top:10px}
+.cv-buttons{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.cv-buttons>.button{flex:1 1 115px;min-width:0;min-height:40px;font-size:11px;padding:10px 12px}
+.cv-card h3{font-size:15px;line-height:1.4;margin:0 0 8px}.cv-card p{white-space:pre-wrap;overflow-wrap:anywhere}
+.cv-route-controls{padding:12px;margin:14px 0}.cv-route-controls .cv-buttons{margin:0}.cv-route-controls .button{flex-basis:84px;font-size:10px}
+#screen.cv-routine .lg-work-future-path,#screen.cv-routine .lg-path-aesthetics>.is-optimal:not(.is-current),#screen.cv-routine .lg-path-aesthetics>.is-horizon:not(.is-current){display:none}
+#editor textarea[id="edit-steps"]{min-height:180px;line-height:1.65;font-size:12px}
+#editor input,#editor select,#editor textarea{max-width:100%}
+.cv-demo-tools .button{font-size:10px}
+
+#backup-dialog .lg-sunrise-options{display:none}

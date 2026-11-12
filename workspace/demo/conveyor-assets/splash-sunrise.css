@@ -1,0 +1,68 @@
+
+.lg-sunrise{--accent:#ffd54a;--accent-rgb:255,213,74}
+.lg-sunrise,.lg-sunrise *{box-sizing:border-box}
+.lg-sunrise{margin:0;height:100%;background:#050504;color:#f4f3e9;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Inter,Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden}
+.lg-sunrise{position:fixed;inset:0;display:grid;place-items:center;background:#050504;z-index:10;overflow:hidden;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.lg-sunrise.lg-splash-out{animation:lg-splash-out .65s ease forwards}@keyframes lg-splash-out{to{opacity:0;visibility:hidden}}
+.lg-splash-amb{position:absolute;inset:-7%;background:var(--art) center/cover;filter:blur(26px) brightness(.24) saturate(.8);transform:scale(1.12)}
+.lg-splash-fr{position:relative;aspect-ratio:941/1672;width:min(100vw,56.28dvh);max-height:100dvh;overflow:hidden;isolation:isolate;background:#090909;container-type:size}
+.lg-splash-poster{position:absolute;inset:0;background:var(--art) center/100% 100%}
+/* слои света */
+.lg-splash-sun{position:absolute;left:43.6%;top:50.8%;width:0;height:0}
+.lg-splash-sun-glow{position:absolute;width:62cqw;height:62cqw;margin:-31cqw 0 0 -31cqw;border-radius:50%;mix-blend-mode:screen;opacity:0;
+  background:radial-gradient(circle,rgba(255,248,220,.9) 0 3%,rgba(255,214,90,.5) 10%,rgba(255,170,40,.14) 30%,transparent 60%)}
+.lg-splash-sun-rays{position:absolute;width:260cqw;height:260cqw;margin:-130cqw 0 0 -130cqw;mix-blend-mode:screen;opacity:0;
+  background:repeating-conic-gradient(rgba(255,226,150,.07) 0deg 1.6deg,transparent 1.6deg 9deg);
+  -webkit-mask-image:radial-gradient(circle,#000 2%,transparent 40%);mask-image:radial-gradient(circle,#000 2%,transparent 40%)}
+.lg-splash-ring{position:absolute;inset:0;width:100%;height:100%;overflow:visible;mix-blend-mode:screen;pointer-events:none}
+.lg-splash-ring .lg-splash-main{fill:none;stroke:#ffd45a;stroke-width:1.7;stroke-linecap:round;filter:drop-shadow(0 0 5px #ffc400) drop-shadow(0 0 10px rgba(255,190,0,.45))}
+.lg-splash-ring .lg-splash-halo{fill:none;stroke:rgba(255,200,80,.14);stroke-width:12;filter:blur(8px)}
+.lg-splash-ring .lg-splash-orbit{fill:none;stroke:rgba(255,226,150,.45);stroke-width:1;stroke-dasharray:2 14;opacity:0}
+.lg-splash-ring .lg-splash-bead{fill:#fff6d6;filter:drop-shadow(0 0 5px #ffd54a);opacity:0}
+.lg-splash-embers{position:absolute;inset:0;mix-blend-mode:screen;pointer-events:none}
+/* звезда */
+.lg-splash-star{position:absolute;width:0;height:0;z-index:5;pointer-events:none}
+.lg-splash-star b{position:absolute;left:0;top:0;width:7cqw;height:7cqw;transform:translate(-50%,-50%) scale(.2);background:#fff7dc;opacity:0;
+  -webkit-mask:var(--spark) center/contain no-repeat;mask:var(--spark) center/contain no-repeat;filter:drop-shadow(0 0 6px var(--accent)) drop-shadow(0 0 16px rgba(var(--accent-rgb),.9))}
+.lg-splash-star i{position:absolute;left:0;top:0;width:2px;height:2px;transform:translate(-50%,-50%);opacity:0}
+.lg-splash-star i::before,.lg-splash-star i::after{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+.lg-splash-star i::before{width:34cqw;height:2px;background:linear-gradient(90deg,transparent,rgba(255,240,189,.95),transparent)}
+.lg-splash-star i::after{width:2px;height:22cqw;background:linear-gradient(transparent,rgba(255,240,189,.9),transparent)}
+.lg-sunrise{--spark:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C12.8 6.6 17.4 11.2 24 12 17.4 12.8 12.8 17.4 12 24 11.2 17.4 6.6 12.8 0 12 6.6 11.2 11.2 6.6 12 0Z'/%3E%3C/svg%3E")}
+.lg-splash-trail{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;mix-blend-mode:screen;z-index:4}
+/* надпись — как в оригинале */
+.lg-splash-tx{position:absolute;left:0;right:0;text-align:center;z-index:6;pointer-events:none}
+.lg-splash-logo{top:4.6%;display:flex;justify-content:center;align-items:center;gap:2.6cqw;font-size:3.75cqw;font-weight:760;letter-spacing:.5em;padding-left:.52em}
+.lg-splash-logo i{width:2.1cqw;height:2.1cqw;border-radius:50%;background:#ffd23c;box-shadow:0 0 2cqw #ffc400;margin-right:.2em}
+.lg-splash-logo span{opacity:0;display:inline-block}
+.lg-splash-logo .lg-splash-sl{color:#8f8a78;font-weight:300}
+.lg-splash-title{top:22.4%;font-size:8.95cqw;line-height:1.12;font-weight:700;letter-spacing:-.012em;text-shadow:0 .4cqw 3cqw rgba(0,0,0,.45)}
+.lg-splash-title span{display:inline-block;opacity:0}
+.lg-splash-tagline{top:35.1%;font-size:3.05cqw;font-weight:600;letter-spacing:.36em;padding-left:.36em;color:#ffcf47;opacity:0}
+/* полоса загрузки — как сейчас в приложении */
+.lg-splash-bar-eraser{position:absolute;left:10%;width:80%;top:84.2%;height:5.4%;background:linear-gradient(180deg,transparent,#080907 20%,#080907 85%,transparent)}
+.lg-splash-loading{position:absolute;left:15.1%;width:69.9%;top:85.93%;height:.73%;min-height:3px;border-radius:999px;background:#39392b;box-shadow:0 0 2px #000}
+.lg-splash-loading-fill{height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,#ffcd30 0%,#ffd84a 58%,#fff2a3 95%,#fffbe1 100%);box-shadow:0 0 9px #ffd52d,0 0 18px #f5b52b;position:relative;animation:lg-splash-load 4.6s cubic-bezier(.3,.02,.25,1) .12s both}
+.lg-splash-loading-fill::after{content:"";position:absolute;right:-2px;top:-65%;height:230%;width:15px;border-radius:100%;background:#fff2ba;filter:blur(8px);opacity:.7}
+@keyframes lg-splash-load{0%{width:0}17%{width:19%}42%{width:41%}65%{width:70%}87%{width:90%}100%{width:100%}}
+.lg-splash-ui{position:absolute;z-index:20}
+.lg-splash-snd{top:calc(12px + env(safe-area-inset-top,0px));right:16px;width:44px;height:44px;border:1px solid #ffda2950;border-radius:10px;background:#090909cc;color:#ffda29;display:grid;place-items:center}
+.lg-splash-snd svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.lg-splash-skip{bottom:calc(10px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);min-height:44px;white-space:nowrap;border:0;border-radius:10px;background:#090909cc;color:#d5d1bb;padding:9px 13px;font-size:11px}
+
+/* Native modal integration and inherited app-style reset. */
+dialog.lg-sunrise{width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;border-radius:0;line-height:normal;font-size:16px;font-weight:400;letter-spacing:normal}
+.lg-sunrise:not([open]){display:none}
+.lg-sunrise::backdrop{background:#050504}
+html.lg-sunrise-open{overflow:hidden}
+.lg-sunrise .lg-splash-embers{width:100%;height:100%}
+.lg-sunrise-controls{display:contents}
+.lg-sunrise .lg-splash-snd{padding:0;cursor:pointer}
+.lg-sunrise button:focus-visible{outline:2px solid #ffda29;outline-offset:3px}
+
+/* Existing settings controls. */
+.lg-sunrise-options{margin:16px 0;padding:14px;border:1px solid var(--border);border-radius:10px}
+.lg-sunrise-options h3{margin:0 0 12px;font-size:15px}
+.lg-sunrise-options label{display:block;margin-bottom:7px;font-size:12px;color:var(--muted)}
+.lg-sunrise-options select{width:100%;margin-bottom:10px;min-height:44px}
+.lg-sunrise-status{font-size:12px;color:var(--muted);margin:8px 0 0}

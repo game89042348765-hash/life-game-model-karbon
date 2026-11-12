@@ -1,0 +1,82 @@
+{
+  "title": "LifeGame Ритм Lab — лаборатория",
+  "url": "http://127.0.0.1:42367/personal-lab/",
+  "virtual_time_observed": "2026-11-19T18:00:18.462Z",
+  "modal": false,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "visible_text": "Мой ритм\n19 ноября, четверг\nПолный\nСегодня\n+\nВечернее чтение 10 минут\nкаждый день · записано 8 мин.\nЗаписать время\nДобавить в ритм\nНастроить\nСохранено",
+  "elements": [
+    {
+      "element": "e1",
+      "label": "Полный",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 295,
+        "y": 26,
+        "width": 73,
+        "height": 28
+      },
+      "value": ""
+    },
+    {
+      "element": "e2",
+      "label": "Отметить: Вечернее чтение 10 минут",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 22,
+        "y": 174,
+        "width": 38,
+        "height": 38
+      },
+      "value": ""
+    },
+    {
+      "element": "e3",
+      "label": "Записать время",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 74,
+        "y": 205,
+        "width": 125,
+        "height": 28
+      },
+      "value": ""
+    },
+    {
+      "element": "e4",
+      "label": "Добавить в ритм",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 22,
+        "y": 275,
+        "width": 145,
+        "height": 36
+      },
+      "value": ""
+    },
+    {
+      "element": "e5",
+      "label": "Настроить",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 175,
+        "y": 275,
+        "width": 102,
+        "height": 36
+      },
+      "value": ""
+    }
+  ],
+  "observation_id": "P01-d04-o0019",
+  "screenshot": "/workspace/life-game/personal-lab/verification/LAB-015-ai-pilot-20261112T193728Z/P01/day-04/P01-d04-o0019.png",
+  "actions_used": 3,
+  "action_budget": 18
+}

@@ -1,0 +1,14 @@
+{
+  "branch": "lab/synthetic-users",
+  "verified_payload_commit": "f6620f322e5c79b9db197a1e8317a43c550db05b",
+  "remote_branch_matches_payload": true,
+  "main_before": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "main_after": "90df9542bbffa5651fd31bdad12460a4c586c3ef",
+  "main_unchanged": true,
+  "committed_evidence_verification": "passed in fresh temporary export from fetched remote ref",
+  "verified_original_evidence_files": 218,
+  "external_model_tasks": "prepared; user must transfer to their external accounts",
+  "site_deployment": "not requested or performed",
+  "new_month_run": "not started",
+  "verified_at_moscow": "2026-11-11T23:05:16+03:00"
+}

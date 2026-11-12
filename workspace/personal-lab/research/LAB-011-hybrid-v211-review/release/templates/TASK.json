@@ -1,0 +1,34 @@
+{
+  "template": true,
+  "task_id": "REPLACE_WITH_ASSIGNED_ID",
+  "stage": "search",
+  "mode": null,
+  "owner_id": null,
+  "status": "planned",
+  "attempt": 1,
+  "protocol_version": "2.1",
+  "taxonomy_version": "2.1",
+  "rubric_version": "2.1",
+  "input_snapshot": null,
+  "input_hashes": {},
+  "scope": {
+    "category_ids": [],
+    "source_classes": [],
+    "contexts": [],
+    "languages": [],
+    "orientation_count": null
+  },
+  "exclusions": [
+    "Do not use current LifeGame feature inventory to limit discovery",
+    "Do not invent sources or completed checks"
+  ],
+  "id_prefixes": {
+    "source": null,
+    "finding": null,
+    "element": null,
+    "rating": null
+  },
+  "deliverables": [],
+  "acceptance": [],
+  "due_at": null
+}

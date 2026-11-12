@@ -1,0 +1,88 @@
+{
+  "status": "technical_smoke_passed_not_ai_pilot",
+  "checks": [
+    {
+      "name": "standalone manifest matches all packaged files",
+      "passed": true
+    },
+    {
+      "name": "actual Basic UI creates habit and five minutes without completion/reward; native trace saved",
+      "passed": true
+    },
+    {
+      "name": "restart/resume retains own memory, original item ID and time across virtual dates",
+      "passed": true
+    },
+    {
+      "name": "unavailable day closes without opening the browser",
+      "passed": true
+    },
+    {
+      "name": "all three persistent profiles are separate; P01 habit/minutes do not leak to P02/P03",
+      "passed": true
+    },
+    {
+      "name": "finished run can be read without rewriting evidence",
+      "passed": true
+    },
+    {
+      "name": "modified Flex policy is rejected before resume or evidence mutation",
+      "passed": true
+    },
+    {
+      "name": "real Flex saved states validate; analyzer preserves 16 unrun dates instead of inventing completion",
+      "passed": true
+    },
+    {
+      "name": "return ZIP contains actual artifacts and excludes browser profiles",
+      "passed": true
+    }
+  ],
+  "passed": 9,
+  "manifest_entries": 45,
+  "artifacts": "/tmp/lab014-smoke-02",
+  "return_zip": {
+    "zip": "/tmp/lab014-smoke-02/technical-return.zip",
+    "files": 46,
+    "bytes": 3881099,
+    "sha256": "649f24a7b8351ef28f40b3cf146de5ec9ab4ed004d84925c78110ab353ac6084"
+  },
+  "independent_ai_user_pilot_executed": false,
+  "recorded_at": "2026-11-12T19:27:56.964507+00:00",
+  "source_commit": "27919b94a7e7bb5f038dbb5235b79ea89b29c916",
+  "archive": {
+    "task": "LAB-014",
+    "file": "downloads/lab-packets/LifeGame-LAB-014-Pilot.zip",
+    "bytes": 535607,
+    "sha256": "2ef8f218ac75cf963c6e1f431509f1c75f04f51b6e91dc6dfad4ba9ffe5d727f",
+    "zip_entries": 46,
+    "manifest_entries": 45,
+    "runtime_files": 27,
+    "crc": "passed",
+    "all_manifest_hashes": "passed",
+    "status": "prepared_kit_not_executed_ai_pilot"
+  },
+  "preflight": {
+    "python": "3.12.14",
+    "node": "v24.22.1",
+    "playwright": "1.62.0",
+    "chromium": "/usr/bin/chromium",
+    "browser_launch": "passed",
+    "platform": "Linux"
+  },
+  "earlier_attempt": {
+    "status": "fixture_error_fixed",
+    "artifacts": "/tmp/lab014-smoke-01",
+    "reason": "smoke selected an abbreviated option label; real UI label is Ежедневная привычка; no product change"
+  },
+  "app_runtime_changed": false,
+  "main_or_pages_updated": false,
+  "standalone_cli_check": {
+    "status": "passed",
+    "mode": "standalone serve and request CLI",
+    "artifacts": "/tmp/lab014-cli-check",
+    "ai_sessions_executed": 0,
+    "unrun_dates_preserved": 21
+  },
+  "preflight_on_final_identical_archive": "passed; candidate-02 is byte-identical to delivered ZIP"
+}

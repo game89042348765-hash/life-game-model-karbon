@@ -1,0 +1,6739 @@
+{
+  "status": "completed",
+  "task": "LAB-015",
+  "analysis_identity": {
+    "context_id": "/root/lab015_independent_analyst",
+    "fork_turns": "none",
+    "independence": "Independent context; no participant decisions, parent history, old results, expected defects, acceptance or repository documentation read. Only analyst contract, METHOD, REPORT-TEMPLATE and this run artifacts read. Shared filesystem separation is instructional, not ACL enforced.",
+    "exact_model_id": "unknown",
+    "model_family_diversity_established": false
+  },
+  "source_commit": "27919b94a7e7bb5f038dbb5235b79ea89b29c916",
+  "application_variant": "LAB-009 flexible-complexity + LAB-013",
+  "integrity": {
+    "sealed_files_checked": 301,
+    "sealed_mismatches": [],
+    "source_kit_sha256": "2ef8f218ac75cf963c6e1f431509f1c75f04f51b6e91dc6dfad4ba9ffe5d727f",
+    "source_kit_matches_provenance": true,
+    "manifest_package_files_checked": 27,
+    "package_mismatches": [],
+    "runtime_body_hashes_checked": {
+      "personal-lab/app.js": [
+        "0b9c0230ca3f2e2a7ac433fd6cbc8f886a40e9601b52cf4dc5e6c0d029ad117b"
+      ],
+      "personal-lab/flex-model.js": [
+        "123a473eedb5ca89fe577d97e4afcee9bc6cd22592c13d204d23428a0b55a28e"
+      ],
+      "personal-lab/flex-ui.js": [
+        "1a9585a8728912ce5715e0388823633e595c85e38279e349a0c3231f329e2cb0"
+      ],
+      "personal-lab/fonts/dela-gothic-one-cyrillic-400-normal.woff2": [
+        "2b94e6983ad5f7fa24db93768f0335445e89cab703e1c42b4f056911a96c1e9c"
+      ],
+      "personal-lab/fonts/dela-gothic-one-latin-400-normal.woff2": [
+        "00ffa61fea9edb126e8e4fd3cf2b46e96ad158a0c1078b3cd22a3f6964993a88"
+      ],
+      "personal-lab/fonts/golos-text-cyrillic-wght-normal.woff2": [
+        "17d048ca05cb1218af3c0d6dcdf882989e6d1cc5dcb598ea50eaf54850ff7229"
+      ],
+      "personal-lab/fonts/golos-text-latin-wght-normal.woff2": [
+        "9a69d0aa4734c4022224c002a3d944a702e0204972a49d892789f5668b922c2a"
+      ],
+      "personal-lab/fonts/jetbrains-mono-cyrillic-wght-normal.woff2": [
+        "d274604c40757f98f07df623a8b8fb5194508a6fa4f5413a7a107f09e3b7452a"
+      ],
+      "personal-lab/fonts/jetbrains-mono-latin-wght-normal.woff2": [
+        "18be452724bfdc236c074ca94a249a7f41a86752c7d04ab258ce9ed5651f6a7e"
+      ],
+      "personal-lab/fonts/nunito-cyrillic-wght-normal.woff2": [
+        "63b14e3ef0966785438b8947380dfbcad178cbd3c6a5ed2172672ca0d8b839ac"
+      ],
+      "personal-lab/fonts/nunito-latin-wght-normal.woff2": [
+        "ba344451eab25b217a165363b1982048a5e5830a0daf36577973955a04cac793"
+      ],
+      "personal-lab/fonts/rubik-cyrillic-wght-normal.woff2": [
+        "bdb2b33ab916e9e7b42edb61f8aea5f5dd83ad773d6ee4e9b55665daf8954ce8"
+      ],
+      "personal-lab/fonts/rubik-latin-wght-normal.woff2": [
+        "691cd1d9b4c0cdf31a1dcf04259c86f92c85e69f6622abab7964d81e36890691"
+      ],
+      "personal-lab/fonts/tektur-cyrillic-wght-normal.woff2": [
+        "717684b09fd7c875416b30e168f51256ebc7cf811c908218fae6182069e41f01"
+      ],
+      "personal-lab/fonts/tektur-latin-wght-normal.woff2": [
+        "2c4e3f0723427b12e30b10fd233c362244963124ecbdd3a3cba40dcf78c3f22e"
+      ],
+      "personal-lab/fonts/unbounded-cyrillic-wght-normal.woff2": [
+        "e30bf6a6063b6a47232bbd657e24c7cf4fdaf76fc2c50d92d9ee63e2ad2087cf"
+      ],
+      "personal-lab/fonts/unbounded-latin-wght-normal.woff2": [
+        "22f9b928aa3928a896340422b54d690fbb5875c30eae4c106f029c61f2289fd6"
+      ],
+      "personal-lab/icon-192.png": [
+        "60184660f855476a6e3146619f4b15d5f6366144d74ba45efc6cd0b3fe842e8e"
+      ],
+      "personal-lab/icon-512.png": [
+        "1816c6b200cfa39198b9011dc6817d4f57dd68589ea20949043e2c4f7ddbaf0d"
+      ],
+      "personal-lab/icon.svg": [
+        "e2df42d0da3fd69710a109ef51cc9c3a6999436f2b22d7bd3b86d4d44d2d57e1"
+      ],
+      "personal-lab/index.html": [
+        "0bf8334f0f895ca2e33b19ed650a9540489e025ad9993a07aa2ebe8537b14dc3"
+      ],
+      "personal-lab/manifest.webmanifest": [
+        "4024559c3932c7be450fe530464e19abd144505527410f7f73a97f3319bba7bc"
+      ],
+      "personal-lab/persistence.js": [
+        "a00eb26c91ac2abdc5d990aec19f2b85868a6f28c86a99fa472dddc9188126e9"
+      ],
+      "personal-lab/planning.js": [
+        "55a0170e210ddcf8b5d767102254208e9df5cbe7a6fd7dd5c0d45bf3a35f1422"
+      ],
+      "personal-lab/pwa.js": [
+        "c83a520c878580afc998ca82db1a3d737d5e606f312c64471bc4d766a54e91ee"
+      ],
+      "personal-lab/style.css": [
+        "01cb6092caa939586ade1d401c9041119d76d865e71792afd1d92160e3b64ad5"
+      ]
+    },
+    "runtime_mismatches": {},
+    "runtime_body_hash_not_captured_for": [
+      "personal-lab/sw.js"
+    ]
+  },
+  "completeness": {
+    "planned": 21,
+    "opened": 16,
+    "completed": 16,
+    "no_use_by_reason": {
+      "unavailable": 4,
+      "actor_choice": 1
+    },
+    "active": 0,
+    "unrun": 0,
+    "all_dates_closed": true,
+    "observations": 130,
+    "traces": 16,
+    "observer_states": 16,
+    "primary_schema_validation": {
+      "source": "FACTS.json",
+      "valid": true,
+      "states": 16,
+      "independent_schema_validator_rerun": false
+    },
+    "finish_event_present": true
+  },
+  "event_integrity": {
+    "events": 397,
+    "kinds": {
+      "run_started": 1,
+      "session_opened": 16,
+      "observation": 130,
+      "action_started": 114,
+      "action": 114,
+      "session_ended": 16,
+      "no_use": 5,
+      "run_finished": 1
+    },
+    "sequence_contiguous": true,
+    "real_times_nondecreasing": true,
+    "actions": 114,
+    "action_pairs_checked": 114,
+    "action_errors": [],
+    "trace_api_errors": [],
+    "pending_or_reconcile_required": false,
+    "memory_cap": 600,
+    "maximum_saved_memory_chars": 353
+  },
+  "isolation": {
+    "profile_paths_from_traces": {
+      "P01": [
+        "profiles/P01"
+      ],
+      "P02": [
+        "profiles/P02"
+      ],
+      "P03": [
+        "profiles/P03"
+      ]
+    },
+    "unique_profile_per_actor": true,
+    "cross_actor_created_id_overlaps": {
+      "P01/P02": [],
+      "P01/P03": [],
+      "P02/P03": []
+    },
+    "namespace_keys_per_final_state": {
+      "P01": [
+        "lifegame-flex-lab-meta-v1",
+        "lifegame-flex-lab-my-v1",
+        "lifegame-flex-lab-my-v1-daily",
+        "lifegame-flex-lab-my-v1-last-good"
+      ],
+      "P02": [
+        "lifegame-flex-lab-meta-v1",
+        "lifegame-flex-lab-my-v1",
+        "lifegame-flex-lab-my-v1-daily",
+        "lifegame-flex-lab-my-v1-last-good"
+      ],
+      "P03": [
+        "lifegame-flex-lab-meta-v1",
+        "lifegame-flex-lab-my-v1",
+        "lifegame-flex-lab-my-v1-daily",
+        "lifegame-flex-lab-my-v1-last-good"
+      ]
+    },
+    "model_contexts_from_runner_provenance": [
+      {
+        "actor": "P01",
+        "model": "unknown exact runtime identifier",
+        "family": "unknown; inherited parent defaults",
+        "context_id": "/root/lab015_user_p01",
+        "clean_context_confirmed": true,
+        "context_reused_across_days": true,
+        "decision_log": "P01/FINAL.md",
+        "fork_turns": "none"
+      },
+      {
+        "actor": "P02",
+        "model": "unknown exact runtime identifier",
+        "family": "unknown; inherited parent defaults",
+        "context_id": "/root/lab015_user_p02",
+        "clean_context_confirmed": true,
+        "context_reused_across_days": true,
+        "decision_log": "P02/FINAL.md",
+        "fork_turns": "none"
+      },
+      {
+        "actor": "P03",
+        "model": "unknown exact runtime identifier",
+        "family": "unknown; inherited parent defaults",
+        "context_id": "/root/lab015_user_p03",
+        "clean_context_confirmed": true,
+        "context_reused_across_days": true,
+        "decision_log": "P03/FINAL.md",
+        "fork_turns": "none"
+      }
+    ],
+    "independent_participant_contexts": "Supported by recorded fork_turns=none and distinct context IDs, not a security isolation proof.",
+    "no_observed_cross_actor_entities": true
+  },
+  "days": [
+    {
+      "actor": "P01",
+      "day": 1,
+      "date": "2026-11-16",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 10,
+      "budget": 32,
+      "observations": 11,
+      "outcome_statement": "Выбрала Базовый, добавила ежедневное вечернее чтение, записала 10 минут и увидела галочку выполнения.",
+      "participant_memory_chars": 247,
+      "first_observation_id": "P01-d01-o0001",
+      "last_observation_id": "P01-d01-o0011",
+      "observer_state": "P01/day-01/observer-state.json",
+      "trace": "P01/day-01/trace.zip",
+      "retained_minutes": 10,
+      "facts": 2,
+      "ledger_entries": 1,
+      "rewards": {
+        "coins": 5,
+        "xp": 5
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P01",
+      "day": 2,
+      "date": "2026-11-17",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 3,
+      "budget": 18,
+      "observations": 4,
+      "outcome_statement": "Сохранила 5 минут чтения; вижу «записано 5 мин.». Полное выполнение десяти минут не отмечала.",
+      "participant_memory_chars": 277,
+      "first_observation_id": "P01-d02-o0012",
+      "last_observation_id": "P01-d02-o0015",
+      "observer_state": "P01/day-02/observer-state.json",
+      "trace": "P01/day-02/trace.zip",
+      "retained_minutes": 15,
+      "facts": 2,
+      "ledger_entries": 1,
+      "rewards": {
+        "coins": 5,
+        "xp": 5
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P01",
+      "day": 3,
+      "date": "2026-11-18",
+      "status": "no_use",
+      "reason": "unavailable",
+      "available": false,
+      "opened": 0,
+      "actions": 0,
+      "budget": 0,
+      "observations": 0,
+      "outcome_statement": "Помогала родственнику, не читала и времени на приложение нет.",
+      "participant_memory_chars": 280
+    },
+    {
+      "actor": "P01",
+      "day": 4,
+      "date": "2026-11-19",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 3,
+      "budget": 18,
+      "observations": 4,
+      "outcome_statement": "После дня без приложения сохранила 8 минут чтения. Вижу сегодняшние минуты, полное выполнение не отмечала.",
+      "participant_memory_chars": 252,
+      "first_observation_id": "P01-d04-o0016",
+      "last_observation_id": "P01-d04-o0019",
+      "observer_state": "P01/day-04/observer-state.json",
+      "trace": "P01/day-04/trace.zip",
+      "retained_minutes": 23,
+      "facts": 2,
+      "ledger_entries": 1,
+      "rewards": {
+        "coins": 5,
+        "xp": 5
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P01",
+      "day": 5,
+      "date": "2026-11-20",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 8,
+      "budget": 18,
+      "observations": 9,
+      "outcome_statement": "Записала 10 минут и отметила выполнение. Включила спокойную статистику: вижу 2 отметки за семь дней. Сумму минут и отдельные прошлые вечера на этом экране не нашла; дальше искать сегодня не стала.",
+      "participant_memory_chars": 319,
+      "first_observation_id": "P01-d05-o0020",
+      "last_observation_id": "P01-d05-o0028",
+      "observer_state": "P01/day-05/observer-state.json",
+      "trace": "P01/day-05/trace.zip",
+      "retained_minutes": 33,
+      "facts": 4,
+      "ledger_entries": 2,
+      "rewards": {
+        "coins": 10,
+        "xp": 10
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P01",
+      "day": 6,
+      "date": "2026-11-21",
+      "status": "no_use",
+      "reason": "actor_choice",
+      "available": true,
+      "opened": 0,
+      "actions": 0,
+      "budget": 12,
+      "observations": 0,
+      "outcome_statement": "Устала после дороги и не читала. Сегодня откладываю приложение: записывать нечего, а разбираться с прошлыми результатами нет сил.",
+      "participant_memory_chars": 307
+    },
+    {
+      "actor": "P01",
+      "day": 7,
+      "date": "2026-11-22",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 4,
+      "budget": 20,
+      "observations": 5,
+      "outcome_statement": "Записала 12 минут и отметила чтение. Вижу 3 отметки за семь дней. На следующей неделе готова возвращаться после чтения для записи минут; общий след коротких вечеров здесь по-прежнему не вижу.",
+      "participant_memory_chars": 353,
+      "first_observation_id": "P01-d07-o0029",
+      "last_observation_id": "P01-d07-o0033",
+      "observer_state": "P01/day-07/observer-state.json",
+      "trace": "P01/day-07/trace.zip",
+      "retained_minutes": 45,
+      "facts": 6,
+      "ledger_entries": 3,
+      "rewards": {
+        "coins": 15,
+        "xp": 15
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P02",
+      "day": 1,
+      "date": "2026-11-16",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 19,
+      "budget": 36,
+      "observations": 20,
+      "outcome_statement": "Создал три разовых задания проекта и встречу 19 ноября в 14:00. Встреча видна в ближайших событиях. Ничего не отмечал сделанным: работа ещё не выполнена.",
+      "participant_memory_chars": 317,
+      "first_observation_id": "P02-d01-o0001",
+      "last_observation_id": "P02-d01-o0020",
+      "observer_state": "P02/day-01/observer-state.json",
+      "trace": "P02/day-01/trace.zip",
+      "retained_minutes": 0,
+      "facts": 0,
+      "ledger_entries": 0,
+      "rewards": {
+        "coins": 0,
+        "xp": 0
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P02",
+      "day": 2,
+      "date": "2026-11-17",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 4,
+      "budget": 22,
+      "observations": 5,
+      "outcome_statement": "Записал 40 минут на сбор материалов и отдельно отметил задание выполненным. Следующий незаконченный шаг — черновик; срок отправки и встреча видны в обзоре.",
+      "participant_memory_chars": 238,
+      "first_observation_id": "P02-d02-o0021",
+      "last_observation_id": "P02-d02-o0025",
+      "observer_state": "P02/day-02/observer-state.json",
+      "trace": "P02/day-02/trace.zip",
+      "retained_minutes": 40,
+      "facts": 1,
+      "ledger_entries": 1,
+      "rewards": {
+        "coins": 10,
+        "xp": 10
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P02",
+      "day": 3,
+      "date": "2026-11-18",
+      "status": "no_use",
+      "reason": "unavailable",
+      "available": false,
+      "opened": 0,
+      "actions": 0,
+      "budget": 0,
+      "observations": 0,
+      "outcome_statement": "Срочная работа заняла день; проект не продвинулся и приложение не открываю.",
+      "participant_memory_chars": 219
+    },
+    {
+      "actor": "P02",
+      "day": 4,
+      "date": "2026-11-19",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 11,
+      "budget": 24,
+      "observations": 12,
+      "outcome_statement": "Записал 20 минут на черновик, оставил его невыполненным. Через Полный режим перенёс встречу на 20 ноября 15:00 и проверил новую дату в Базовом. Отправка по-прежнему до 20:00 пятницы.",
+      "participant_memory_chars": 274,
+      "first_observation_id": "P02-d04-o0026",
+      "last_observation_id": "P02-d04-o0037",
+      "observer_state": "P02/day-04/observer-state.json",
+      "trace": "P02/day-04/trace.zip",
+      "retained_minutes": 60,
+      "facts": 1,
+      "ledger_entries": 1,
+      "rewards": {
+        "coins": 10,
+        "xp": 10
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P02",
+      "day": 5,
+      "date": "2026-11-20",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 6,
+      "budget": 26,
+      "observations": 7,
+      "outcome_statement": "Отметил готовый черновик, состоявшуюся встречу и отправку проекта. Записал 60 минут финальной работы к заданию отправки. Все три строки показаны с галочками. По жизненному контексту файл отправлен в 18:30; это время отдельно в приложение не вводил.",
+      "participant_memory_chars": 296,
+      "first_observation_id": "P02-d05-o0038",
+      "last_observation_id": "P02-d05-o0044",
+      "observer_state": "P02/day-05/observer-state.json",
+      "trace": "P02/day-05/trace.zip",
+      "retained_minutes": 120,
+      "facts": 4,
+      "ledger_entries": 4,
+      "rewards": {
+        "coins": 35,
+        "xp": 35
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P02",
+      "day": 6,
+      "date": "2026-11-21",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 6,
+      "budget": 18,
+      "observations": 7,
+      "outcome_statement": "Проверил: в Базовом на сегодня свободно. Через Полный и поиск по слову проект нашёл задание отправки; в карточке есть одно выполнение от 20 ноября. Интерфейс в дорожном контексте открылся, действий с данными не делал.",
+      "participant_memory_chars": 303,
+      "first_observation_id": "P02-d06-o0045",
+      "last_observation_id": "P02-d06-o0051",
+      "observer_state": "P02/day-06/observer-state.json",
+      "trace": "P02/day-06/trace.zip",
+      "retained_minutes": 120,
+      "facts": 4,
+      "ledger_entries": 4,
+      "rewards": {
+        "coins": 35,
+        "xp": 35
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P02",
+      "day": 7,
+      "date": "2026-11-22",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 5,
+      "budget": 22,
+      "observations": 6,
+      "outcome_statement": "Добавил Подготовить счёт заказчику как событие календаря на 25 ноября без времени. В ближайших событиях видна среда 25 ноября; на сегодня свободно, старые выполненные дела в кратком обзоре не мешают. Архивировать их не потребовалось.",
+      "participant_memory_chars": 330,
+      "first_observation_id": "P02-d07-o0052",
+      "last_observation_id": "P02-d07-o0057",
+      "observer_state": "P02/day-07/observer-state.json",
+      "trace": "P02/day-07/trace.zip",
+      "retained_minutes": 120,
+      "facts": 4,
+      "ledger_entries": 4,
+      "rewards": {
+        "coins": 35,
+        "xp": 35
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P03",
+      "day": 1,
+      "date": "2026-11-16",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 10,
+      "budget": 30,
+      "observations": 11,
+      "outcome_statement": "В Базовом добавила разовое «Порисовать немного», записала 3 минуты и поставила отметку; недельный счётчик стал 1.",
+      "participant_memory_chars": 234,
+      "first_observation_id": "P03-d01-o0001",
+      "last_observation_id": "P03-d01-o0011",
+      "observer_state": "P03/day-01/observer-state.json",
+      "trace": "P03/day-01/trace.zip",
+      "retained_minutes": 3,
+      "facts": 1,
+      "ledger_entries": 1,
+      "rewards": {
+        "coins": 10,
+        "xp": 10
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P03",
+      "day": 2,
+      "date": "2026-11-17",
+      "status": "no_use",
+      "reason": "unavailable",
+      "available": false,
+      "opened": 0,
+      "actions": 0,
+      "budget": 0,
+      "observations": 0,
+      "outcome_statement": "Спонтанная поездка, не рисовала и приложение сегодня не открываю.",
+      "participant_memory_chars": 192
+    },
+    {
+      "actor": "P03",
+      "day": 3,
+      "date": "2026-11-18",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 0,
+      "budget": 16,
+      "observations": 1,
+      "outcome_statement": "Вернулась посмотреть после пропуска: на сегодня свободно, прежняя недельная отметка 1 сохранилась. Не рисовала, ничего не отмечала.",
+      "participant_memory_chars": 250,
+      "first_observation_id": "P03-d03-o0012",
+      "last_observation_id": "P03-d03-o0012",
+      "observer_state": "P03/day-03/observer-state.json",
+      "trace": "P03/day-03/trace.zip",
+      "retained_minutes": 3,
+      "facts": 1,
+      "ledger_entries": 1,
+      "rewards": {
+        "coins": 10,
+        "xp": 10
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P03",
+      "day": 4,
+      "date": "2026-11-19",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 10,
+      "budget": 18,
+      "observations": 11,
+      "outcome_statement": "Создала разовое «Рисование 19 ноября», записала 6 минут и отметила выполнение. На экране 6 минут и 2 отметки за неделю.",
+      "participant_memory_chars": 309,
+      "first_observation_id": "P03-d04-o0013",
+      "last_observation_id": "P03-d04-o0023",
+      "observer_state": "P03/day-04/observer-state.json",
+      "trace": "P03/day-04/trace.zip",
+      "retained_minutes": 9,
+      "facts": 2,
+      "ledger_entries": 2,
+      "rewards": {
+        "coins": 20,
+        "xp": 20
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P03",
+      "day": 5,
+      "date": "2026-11-20",
+      "status": "no_use",
+      "reason": "unavailable",
+      "available": false,
+      "opened": 0,
+      "actions": 0,
+      "budget": 0,
+      "observations": 0,
+      "outcome_statement": "Сегодня нет сил рисовать или открывать приложение.",
+      "participant_memory_chars": 237
+    },
+    {
+      "actor": "P03",
+      "day": 6,
+      "date": "2026-11-21",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 15,
+      "budget": 18,
+      "observations": 16,
+      "outcome_statement": "Через Полный и поиск изменила «Порисовать немного» на раз в неделю по субботам. Вернулась в Базовый, записала 4 минуты и отметила шаг. На экране недельный счётчик 3.",
+      "participant_memory_chars": 296,
+      "first_observation_id": "P03-d06-o0024",
+      "last_observation_id": "P03-d06-o0039",
+      "observer_state": "P03/day-06/observer-state.json",
+      "trace": "P03/day-06/trace.zip",
+      "retained_minutes": 13,
+      "facts": 3,
+      "ledger_entries": 3,
+      "rewards": {
+        "coins": 30,
+        "xp": 30
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    },
+    {
+      "actor": "P03",
+      "day": 7,
+      "date": "2026-11-22",
+      "status": "completed",
+      "reason": null,
+      "available": true,
+      "opened": 1,
+      "actions": 0,
+      "budget": 20,
+      "observations": 1,
+      "outcome_statement": "Посмотрела неделю в Базовом: 3 отметки, сегодня свободно. Не рисовала и новых отметок не ставила. Хочу продолжать раз в неделю; спокойный экран помогает вернуться, длинные настройки хочется избегать.",
+      "participant_memory_chars": 309,
+      "first_observation_id": "P03-d07-o0040",
+      "last_observation_id": "P03-d07-o0040",
+      "observer_state": "P03/day-07/observer-state.json",
+      "trace": "P03/day-07/trace.zip",
+      "retained_minutes": 13,
+      "facts": 3,
+      "ledger_entries": 3,
+      "rewards": {
+        "coins": 30,
+        "xp": 30
+      },
+      "trace_interrupted": false,
+      "reconciled_actions": []
+    }
+  ],
+  "semantic_checks": [
+    {
+      "actor": "P01",
+      "check": "minutes by date",
+      "expected": [
+        [
+          "2026-11-16",
+          10
+        ],
+        [
+          "2026-11-17",
+          5
+        ],
+        [
+          "2026-11-19",
+          8
+        ],
+        [
+          "2026-11-20",
+          10
+        ],
+        [
+          "2026-11-22",
+          12
+        ]
+      ],
+      "actual": [
+        [
+          "2026-11-16",
+          10
+        ],
+        [
+          "2026-11-17",
+          5
+        ],
+        [
+          "2026-11-19",
+          8
+        ],
+        [
+          "2026-11-20",
+          10
+        ],
+        [
+          "2026-11-22",
+          12
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "actor": "P01",
+      "check": "prior facts, ledger, timeLog unchanged across all captured states",
+      "passed": true
+    },
+    {
+      "actor": "P01",
+      "check": "fact ledger links resolve",
+      "passed": true
+    },
+    {
+      "actor": "P02",
+      "check": "minutes by date",
+      "expected": [
+        [
+          "2026-11-17",
+          40
+        ],
+        [
+          "2026-11-19",
+          20
+        ],
+        [
+          "2026-11-20",
+          60
+        ]
+      ],
+      "actual": [
+        [
+          "2026-11-17",
+          40
+        ],
+        [
+          "2026-11-19",
+          20
+        ],
+        [
+          "2026-11-20",
+          60
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "actor": "P02",
+      "check": "prior facts, ledger, timeLog unchanged across all captured states",
+      "passed": true
+    },
+    {
+      "actor": "P02",
+      "check": "fact ledger links resolve",
+      "passed": true
+    },
+    {
+      "actor": "P03",
+      "check": "minutes by date",
+      "expected": [
+        [
+          "2026-11-16",
+          3
+        ],
+        [
+          "2026-11-19",
+          6
+        ],
+        [
+          "2026-11-21",
+          4
+        ]
+      ],
+      "actual": [
+        [
+          "2026-11-16",
+          3
+        ],
+        [
+          "2026-11-19",
+          6
+        ],
+        [
+          "2026-11-21",
+          4
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "actor": "P03",
+      "check": "prior facts, ledger, timeLog unchanged across all captured states",
+      "passed": true
+    },
+    {
+      "actor": "P03",
+      "check": "fact ledger links resolve",
+      "passed": true
+    },
+    {
+      "actor": "P02",
+      "check": "meeting exception retains original identity and effective date/time",
+      "passed": true
+    },
+    {
+      "actor": "P02",
+      "check": "all three one-off task dates remain null (deadline only in title)",
+      "passed": true
+    },
+    {
+      "actor": "P02",
+      "check": "invoice stored on 25 November without time",
+      "passed": true
+    },
+    {
+      "actor": "P03",
+      "check": "original drawing facts retain cycles 0 and 1 on 16 and 21 November",
+      "passed": true
+    }
+  ],
+  "state_semantics": [
+    {
+      "actor": "P01",
+      "day": 1,
+      "state_path": "P01/day-01/observer-state.json",
+      "timeLog": [
+        {
+          "id": "8b42ab75-5a27-4d38-9166-b622bba5b350",
+          "date": "2026-11-16",
+          "minutes": 10,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794852048647
+        }
+      ],
+      "facts": [
+        {
+          "id": "677114ca-e680-4721-975c-955273fd7e17",
+          "kind": "habitStep",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 0,
+          "xp": 0,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут — подход",
+          "target": 1,
+          "dayReward": 5,
+          "loc": null,
+          "locationTitle": "Без локации",
+          "habitFact": "198dd195-5eca-4124-8624-bb0ccdacda07"
+        },
+        {
+          "id": "198dd195-5eca-4124-8624-bb0ccdacda07",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут",
+          "parentStep": "677114ca-e680-4721-975c-955273fd7e17",
+          "target": 1,
+          "ledger": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179
+        }
+      ],
+      "misses": [],
+      "tasks": [],
+      "habits": [
+        {
+          "id": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "title": "Вечернее чтение 10 минут",
+          "locs": [],
+          "desc": "",
+          "reward": 5,
+          "dailyTarget": 1,
+          "norms": [],
+          "sched": {
+            "type": "daily",
+            "days": []
+          },
+          "goal": {
+            "mode": "total",
+            "period": "month",
+            "target": 30,
+            "reward": 50,
+            "bonus": []
+          },
+          "level": 1,
+          "levelLog": [],
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "fit": [
+            "rest",
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "cal": [],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": false
+        },
+        "sequence": 2,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794852008848,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794852034381,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P01",
+      "day": 2,
+      "state_path": "P01/day-02/observer-state.json",
+      "timeLog": [
+        {
+          "id": "8b42ab75-5a27-4d38-9166-b622bba5b350",
+          "date": "2026-11-16",
+          "minutes": 10,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794852048647
+        },
+        {
+          "id": "3e4fd784-56d7-45bd-833a-cf1a44d33499",
+          "date": "2026-11-17",
+          "minutes": 5,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794938417442
+        }
+      ],
+      "facts": [
+        {
+          "id": "677114ca-e680-4721-975c-955273fd7e17",
+          "kind": "habitStep",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 0,
+          "xp": 0,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут — подход",
+          "target": 1,
+          "dayReward": 5,
+          "loc": null,
+          "locationTitle": "Без локации",
+          "habitFact": "198dd195-5eca-4124-8624-bb0ccdacda07"
+        },
+        {
+          "id": "198dd195-5eca-4124-8624-bb0ccdacda07",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут",
+          "parentStep": "677114ca-e680-4721-975c-955273fd7e17",
+          "target": 1,
+          "ledger": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179
+        }
+      ],
+      "misses": [],
+      "tasks": [],
+      "habits": [
+        {
+          "id": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "title": "Вечернее чтение 10 минут",
+          "locs": [],
+          "desc": "",
+          "reward": 5,
+          "dailyTarget": 1,
+          "norms": [],
+          "sched": {
+            "type": "daily",
+            "days": []
+          },
+          "goal": {
+            "mode": "total",
+            "period": "month",
+            "target": 30,
+            "reward": 50,
+            "bonus": [],
+            "bonusTerms": {}
+          },
+          "level": 1,
+          "levelLog": [],
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "fit": [
+            "rest",
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "cal": [],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": false
+        },
+        "sequence": 2,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794852008848,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794852034381,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P01",
+      "day": 4,
+      "state_path": "P01/day-04/observer-state.json",
+      "timeLog": [
+        {
+          "id": "8b42ab75-5a27-4d38-9166-b622bba5b350",
+          "date": "2026-11-16",
+          "minutes": 10,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794852048647
+        },
+        {
+          "id": "3e4fd784-56d7-45bd-833a-cf1a44d33499",
+          "date": "2026-11-17",
+          "minutes": 5,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794938417442
+        },
+        {
+          "id": "d1830288-12b7-4454-850c-d5d83a05661e",
+          "date": "2026-11-19",
+          "minutes": 8,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1795111218360
+        }
+      ],
+      "facts": [
+        {
+          "id": "677114ca-e680-4721-975c-955273fd7e17",
+          "kind": "habitStep",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 0,
+          "xp": 0,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут — подход",
+          "target": 1,
+          "dayReward": 5,
+          "loc": null,
+          "locationTitle": "Без локации",
+          "habitFact": "198dd195-5eca-4124-8624-bb0ccdacda07"
+        },
+        {
+          "id": "198dd195-5eca-4124-8624-bb0ccdacda07",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут",
+          "parentStep": "677114ca-e680-4721-975c-955273fd7e17",
+          "target": 1,
+          "ledger": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179
+        }
+      ],
+      "misses": [
+        {
+          "id": "c2bef64c-c29a-4da1-95f0-e598f6668e10",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-17",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795111200205
+        },
+        {
+          "id": "0868ea5b-d220-484c-b295-b7eb1f2d1732",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-18",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795111200206
+        }
+      ],
+      "tasks": [],
+      "habits": [
+        {
+          "id": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "title": "Вечернее чтение 10 минут",
+          "locs": [],
+          "desc": "",
+          "reward": 5,
+          "dailyTarget": 1,
+          "norms": [],
+          "sched": {
+            "type": "daily",
+            "days": []
+          },
+          "goal": {
+            "mode": "total",
+            "period": "month",
+            "target": 30,
+            "reward": 50,
+            "bonus": [],
+            "bonusTerms": {}
+          },
+          "level": 1,
+          "levelLog": [],
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "fit": [
+            "rest",
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "cal": [],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": false
+        },
+        "sequence": 2,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794852008848,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794852034381,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P01",
+      "day": 5,
+      "state_path": "P01/day-05/observer-state.json",
+      "timeLog": [
+        {
+          "id": "8b42ab75-5a27-4d38-9166-b622bba5b350",
+          "date": "2026-11-16",
+          "minutes": 10,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794852048647
+        },
+        {
+          "id": "3e4fd784-56d7-45bd-833a-cf1a44d33499",
+          "date": "2026-11-17",
+          "minutes": 5,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794938417442
+        },
+        {
+          "id": "d1830288-12b7-4454-850c-d5d83a05661e",
+          "date": "2026-11-19",
+          "minutes": 8,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1795111218360
+        },
+        {
+          "id": "3ce314b4-56b8-46b6-8a74-540bec785dfc",
+          "date": "2026-11-20",
+          "minutes": 10,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1795197619158
+        }
+      ],
+      "facts": [
+        {
+          "id": "677114ca-e680-4721-975c-955273fd7e17",
+          "kind": "habitStep",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 0,
+          "xp": 0,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут — подход",
+          "target": 1,
+          "dayReward": 5,
+          "loc": null,
+          "locationTitle": "Без локации",
+          "habitFact": "198dd195-5eca-4124-8624-bb0ccdacda07"
+        },
+        {
+          "id": "198dd195-5eca-4124-8624-bb0ccdacda07",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут",
+          "parentStep": "677114ca-e680-4721-975c-955273fd7e17",
+          "target": 1,
+          "ledger": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "439ee230-b086-4f26-a611-af3183e43203",
+          "kind": "habitStep",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-20",
+          "ts": 1795197625040,
+          "coins": 0,
+          "xp": 0,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут — подход",
+          "target": 1,
+          "dayReward": 5,
+          "loc": null,
+          "locationTitle": "Без локации",
+          "habitFact": "36b96e7b-e0ae-4676-9cbb-92050d0ee804"
+        },
+        {
+          "id": "36b96e7b-e0ae-4676-9cbb-92050d0ee804",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-20",
+          "ts": 1795197625040,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут",
+          "parentStep": "439ee230-b086-4f26-a611-af3183e43203",
+          "target": 1,
+          "ledger": "4c570ac6-5e0d-4829-940d-e0a3001feb78",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179
+        },
+        {
+          "id": "4c570ac6-5e0d-4829-940d-e0a3001feb78",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-20",
+          "ts": 1795197625040
+        }
+      ],
+      "misses": [
+        {
+          "id": "c2bef64c-c29a-4da1-95f0-e598f6668e10",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-17",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795111200205
+        },
+        {
+          "id": "0868ea5b-d220-484c-b295-b7eb1f2d1732",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-18",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795111200206
+        },
+        {
+          "id": "150791f1-140a-4b42-b4cc-83c6740c8cd3",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-19",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795197600140
+        }
+      ],
+      "tasks": [],
+      "habits": [
+        {
+          "id": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "title": "Вечернее чтение 10 минут",
+          "locs": [],
+          "desc": "",
+          "reward": 5,
+          "dailyTarget": 1,
+          "norms": [],
+          "sched": {
+            "type": "daily",
+            "days": []
+          },
+          "goal": {
+            "mode": "total",
+            "period": "month",
+            "target": 30,
+            "reward": 50,
+            "bonus": [],
+            "bonusTerms": {}
+          },
+          "level": 1,
+          "levelLog": [],
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "fit": [
+            "rest",
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "cal": [],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": true
+        },
+        "sequence": 3,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794852008848,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794852034381,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-20",
+            "at": 1795197637591,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P01",
+      "day": 7,
+      "state_path": "P01/day-07/observer-state.json",
+      "timeLog": [
+        {
+          "id": "8b42ab75-5a27-4d38-9166-b622bba5b350",
+          "date": "2026-11-16",
+          "minutes": 10,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794852048647
+        },
+        {
+          "id": "3e4fd784-56d7-45bd-833a-cf1a44d33499",
+          "date": "2026-11-17",
+          "minutes": 5,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1794938417442
+        },
+        {
+          "id": "d1830288-12b7-4454-850c-d5d83a05661e",
+          "date": "2026-11-19",
+          "minutes": 8,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1795111218360
+        },
+        {
+          "id": "3ce314b4-56b8-46b6-8a74-540bec785dfc",
+          "date": "2026-11-20",
+          "minutes": 10,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1795197619158
+        },
+        {
+          "id": "9dfb8898-2959-4583-b194-39333506b71c",
+          "date": "2026-11-22",
+          "minutes": 12,
+          "label": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "ts": 1795366816678
+        }
+      ],
+      "facts": [
+        {
+          "id": "677114ca-e680-4721-975c-955273fd7e17",
+          "kind": "habitStep",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 0,
+          "xp": 0,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут — подход",
+          "target": 1,
+          "dayReward": 5,
+          "loc": null,
+          "locationTitle": "Без локации",
+          "habitFact": "198dd195-5eca-4124-8624-bb0ccdacda07"
+        },
+        {
+          "id": "198dd195-5eca-4124-8624-bb0ccdacda07",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут",
+          "parentStep": "677114ca-e680-4721-975c-955273fd7e17",
+          "target": 1,
+          "ledger": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "439ee230-b086-4f26-a611-af3183e43203",
+          "kind": "habitStep",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-20",
+          "ts": 1795197625040,
+          "coins": 0,
+          "xp": 0,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут — подход",
+          "target": 1,
+          "dayReward": 5,
+          "loc": null,
+          "locationTitle": "Без локации",
+          "habitFact": "36b96e7b-e0ae-4676-9cbb-92050d0ee804"
+        },
+        {
+          "id": "36b96e7b-e0ae-4676-9cbb-92050d0ee804",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-20",
+          "ts": 1795197625040,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут",
+          "parentStep": "439ee230-b086-4f26-a611-af3183e43203",
+          "target": 1,
+          "ledger": "4c570ac6-5e0d-4829-940d-e0a3001feb78",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "c3c2c96a-644c-4080-8886-b44c9df760ed",
+          "kind": "habitStep",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-22",
+          "ts": 1795366821111,
+          "coins": 0,
+          "xp": 0,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут — подход",
+          "target": 1,
+          "dayReward": 5,
+          "loc": null,
+          "locationTitle": "Без локации",
+          "habitFact": "6bb7f12e-60aa-4b27-8114-732945aa0e60"
+        },
+        {
+          "id": "6bb7f12e-60aa-4b27-8114-732945aa0e60",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-22",
+          "ts": 1795366821111,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Вечернее чтение 10 минут",
+          "parentStep": "c3c2c96a-644c-4080-8886-b44c9df760ed",
+          "target": 1,
+          "ledger": "2e86e8c0-563e-4c5e-9e1d-8d9d678cc523",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "445c888e-066e-4962-9e56-9b993b3dd6af",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-16",
+          "ts": 1794852053179
+        },
+        {
+          "id": "4c570ac6-5e0d-4829-940d-e0a3001feb78",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-20",
+          "ts": 1795197625040
+        },
+        {
+          "id": "2e86e8c0-563e-4c5e-9e1d-8d9d678cc523",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Вечернее чтение 10 минут",
+          "ref": "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-22",
+          "ts": 1795366821111
+        }
+      ],
+      "misses": [
+        {
+          "id": "c2bef64c-c29a-4da1-95f0-e598f6668e10",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-17",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795111200205
+        },
+        {
+          "id": "0868ea5b-d220-484c-b295-b7eb1f2d1732",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-18",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795111200206
+        },
+        {
+          "id": "150791f1-140a-4b42-b4cc-83c6740c8cd3",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-19",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795197600140
+        },
+        {
+          "id": "9a5a4d26-1642-4da5-8d5e-a01d0288b4ab",
+          "kind": "habit",
+          "ref": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "date": "2026-11-21",
+          "title": "Вечернее чтение 10 минут",
+          "status": "active",
+          "note": "",
+          "created": 1795366800193
+        }
+      ],
+      "tasks": [],
+      "habits": [
+        {
+          "id": "4dfaca8b-0a43-4987-8404-ee8f70d26ee5",
+          "title": "Вечернее чтение 10 минут",
+          "locs": [],
+          "desc": "",
+          "reward": 5,
+          "dailyTarget": 1,
+          "norms": [],
+          "sched": {
+            "type": "daily",
+            "days": []
+          },
+          "goal": {
+            "mode": "total",
+            "period": "month",
+            "target": 30,
+            "reward": 50,
+            "bonus": [],
+            "bonusTerms": {}
+          },
+          "level": 1,
+          "levelLog": [],
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "fit": [
+            "rest",
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "cal": [],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": true
+        },
+        "sequence": 3,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794852008848,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794852034381,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-20",
+            "at": 1795197637591,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "habit:4dfaca8b-0a43-4987-8404-ee8f70d26ee5"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 1,
+      "state_path": "P02/day-01/observer-state.json",
+      "timeLog": [],
+      "facts": [],
+      "ledger": [],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "title": "Проект: собрать материалы",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16"
+        },
+        {
+          "id": "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "title": "Проект: сделать черновик",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16"
+        },
+        {
+          "id": "8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "title": "Отправить проект — 20 ноября до 20:00",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "habits": [],
+      "cal": [
+        {
+          "id": "4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "title": "Встреча с заказчиком",
+          "locs": [],
+          "date": "2026-11-19",
+          "time": "14:00",
+          "note": "",
+          "repeat": {
+            "type": "none",
+            "days": []
+          },
+          "exceptions": {},
+          "retained": [],
+          "until": null,
+          "reminderLead": 15,
+          "reminderReceipts": {},
+          "reward": 5,
+          "blockId": null,
+          "stageId": null,
+          "inDay": true,
+          "reminder": true,
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+        ],
+        "options": {
+          "calendar": true,
+          "notifications": true,
+          "stats": false
+        },
+        "sequence": 6,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794812408554,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794812423019,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794812438068,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 4,
+            "from": "2026-11-16",
+            "at": 1794812456201,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 5,
+            "from": "2026-11-16",
+            "at": 1794812470052,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 6,
+            "from": "2026-11-16",
+            "at": 1794812497801,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+              "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 2,
+      "state_path": "P02/day-02/observer-state.json",
+      "timeLog": [
+        {
+          "id": "8b874da8-35b6-44f4-8a48-187f853a751a",
+          "date": "2026-11-17",
+          "minutes": 40,
+          "label": "Проект: собрать материалы",
+          "ref": "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "ts": 1794927620331
+        }
+      ],
+      "facts": [
+        {
+          "id": "5e0c911f-c1cc-42aa-aef7-292e5d40fec7",
+          "kind": "task",
+          "ref": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "date": "2026-11-17",
+          "ts": 1794927624730,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Проект: собрать материалы",
+          "cycle": 0,
+          "ledger": "d5b29152-afbc-4222-88d0-3d1f7f657d8c",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "d5b29152-afbc-4222-88d0-3d1f7f657d8c",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Проект: собрать материалы",
+          "ref": "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "date": "2026-11-17",
+          "ts": 1794927624730
+        }
+      ],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "title": "Проект: собрать материалы",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "title": "Проект: сделать черновик",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "title": "Отправить проект — 20 ноября до 20:00",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        }
+      ],
+      "habits": [],
+      "cal": [
+        {
+          "id": "4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "title": "Встреча с заказчиком",
+          "locs": [],
+          "date": "2026-11-19",
+          "time": "14:00",
+          "note": "",
+          "repeat": {
+            "type": "none",
+            "days": []
+          },
+          "exceptions": {},
+          "retained": [],
+          "until": null,
+          "reminderLead": 15,
+          "reminderReceipts": {},
+          "reward": 5,
+          "blockId": null,
+          "stageId": null,
+          "inDay": true,
+          "reminder": true,
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+        ],
+        "options": {
+          "calendar": true,
+          "notifications": true,
+          "stats": false
+        },
+        "sequence": 6,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794812408554,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794812423019,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794812438068,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 4,
+            "from": "2026-11-16",
+            "at": 1794812456201,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 5,
+            "from": "2026-11-16",
+            "at": 1794812470052,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 6,
+            "from": "2026-11-16",
+            "at": 1794812497801,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+              "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 4,
+      "state_path": "P02/day-04/observer-state.json",
+      "timeLog": [
+        {
+          "id": "8b874da8-35b6-44f4-8a48-187f853a751a",
+          "date": "2026-11-17",
+          "minutes": 40,
+          "label": "Проект: собрать материалы",
+          "ref": "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "ts": 1794927620331
+        },
+        {
+          "id": "8a92e137-7542-413e-ba63-bf4b14cfd4e2",
+          "date": "2026-11-19",
+          "minutes": 20,
+          "label": "Проект: сделать черновик",
+          "ref": "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "ts": 1795071619076
+        }
+      ],
+      "facts": [
+        {
+          "id": "5e0c911f-c1cc-42aa-aef7-292e5d40fec7",
+          "kind": "task",
+          "ref": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "date": "2026-11-17",
+          "ts": 1794927624730,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Проект: собрать материалы",
+          "cycle": 0,
+          "ledger": "d5b29152-afbc-4222-88d0-3d1f7f657d8c",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "d5b29152-afbc-4222-88d0-3d1f7f657d8c",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Проект: собрать материалы",
+          "ref": "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "date": "2026-11-17",
+          "ts": 1794927624730
+        }
+      ],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "title": "Проект: собрать материалы",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "title": "Проект: сделать черновик",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "title": "Отправить проект — 20 ноября до 20:00",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        }
+      ],
+      "habits": [],
+      "cal": [
+        {
+          "id": "4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "title": "Встреча с заказчиком",
+          "locs": [],
+          "date": "2026-11-19",
+          "time": "14:00",
+          "note": "",
+          "repeat": {
+            "type": "none",
+            "days": []
+          },
+          "exceptions": {
+            "2026-11-19": {
+              "date": "2026-11-20",
+              "time": "15:00"
+            }
+          },
+          "retained": [],
+          "until": null,
+          "reminderLead": 15,
+          "reminderReceipts": {},
+          "reward": 5,
+          "blockId": null,
+          "stageId": null,
+          "inDay": true,
+          "reminder": true,
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+        ],
+        "options": {
+          "calendar": true,
+          "notifications": true,
+          "stats": false
+        },
+        "sequence": 6,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794812408554,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794812423019,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794812438068,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 4,
+            "from": "2026-11-16",
+            "at": 1794812456201,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 5,
+            "from": "2026-11-16",
+            "at": 1794812470052,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 6,
+            "from": "2026-11-16",
+            "at": 1794812497801,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+              "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 5,
+      "state_path": "P02/day-05/observer-state.json",
+      "timeLog": [
+        {
+          "id": "8b874da8-35b6-44f4-8a48-187f853a751a",
+          "date": "2026-11-17",
+          "minutes": 40,
+          "label": "Проект: собрать материалы",
+          "ref": "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "ts": 1794927620331
+        },
+        {
+          "id": "8a92e137-7542-413e-ba63-bf4b14cfd4e2",
+          "date": "2026-11-19",
+          "minutes": 20,
+          "label": "Проект: сделать черновик",
+          "ref": "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "ts": 1795071619076
+        },
+        {
+          "id": "18e4e6d7-8c32-4f2d-8cbf-060775f84e2c",
+          "date": "2026-11-20",
+          "minutes": 60,
+          "label": "Отправить проект — 20 ноября до 20:00",
+          "ref": "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "ts": 1795190432567
+        }
+      ],
+      "facts": [
+        {
+          "id": "5e0c911f-c1cc-42aa-aef7-292e5d40fec7",
+          "kind": "task",
+          "ref": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "date": "2026-11-17",
+          "ts": 1794927624730,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Проект: собрать материалы",
+          "cycle": 0,
+          "ledger": "d5b29152-afbc-4222-88d0-3d1f7f657d8c",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "2bf50c43-9d8f-441d-a535-58883e34e426",
+          "kind": "task",
+          "ref": "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "date": "2026-11-20",
+          "ts": 1795190412850,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Проект: сделать черновик",
+          "cycle": 0,
+          "ledger": "c93c945f-cb79-474f-913a-d26ec73ff69a",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "942ee992-6085-48b1-b5ce-5f348b346ed7",
+          "kind": "cal",
+          "ref": "4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "date": "2026-11-20",
+          "ts": 1795190418134,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Встреча с заказчиком",
+          "occurrence": "2026-11-19",
+          "scheduledDate": "2026-11-20",
+          "scheduledTime": "15:00",
+          "ledger": "dc023026-4782-4642-8fe8-58ab915f98b2",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "46059726-03ad-468c-95d8-6596bf34d051",
+          "kind": "task",
+          "ref": "8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "date": "2026-11-20",
+          "ts": 1795190437066,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Отправить проект — 20 ноября до 20:00",
+          "cycle": 0,
+          "ledger": "4f15f273-ec5f-4c49-8446-b8daeeecffab",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "d5b29152-afbc-4222-88d0-3d1f7f657d8c",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Проект: собрать материалы",
+          "ref": "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "date": "2026-11-17",
+          "ts": 1794927624730
+        },
+        {
+          "id": "c93c945f-cb79-474f-913a-d26ec73ff69a",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Проект: сделать черновик",
+          "ref": "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "date": "2026-11-20",
+          "ts": 1795190412850
+        },
+        {
+          "id": "dc023026-4782-4642-8fe8-58ab915f98b2",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Встреча с заказчиком",
+          "ref": "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "date": "2026-11-20",
+          "ts": 1795190418134
+        },
+        {
+          "id": "4f15f273-ec5f-4c49-8446-b8daeeecffab",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Отправить проект — 20 ноября до 20:00",
+          "ref": "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "date": "2026-11-20",
+          "ts": 1795190437066
+        }
+      ],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "title": "Проект: собрать материалы",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "title": "Проект: сделать черновик",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "title": "Отправить проект — 20 ноября до 20:00",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        }
+      ],
+      "habits": [],
+      "cal": [
+        {
+          "id": "4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "title": "Встреча с заказчиком",
+          "locs": [],
+          "date": "2026-11-19",
+          "time": "14:00",
+          "note": "",
+          "repeat": {
+            "type": "none",
+            "days": []
+          },
+          "exceptions": {
+            "2026-11-19": {
+              "date": "2026-11-20",
+              "time": "15:00"
+            }
+          },
+          "retained": [],
+          "until": null,
+          "reminderLead": 15,
+          "reminderReceipts": {},
+          "reward": 5,
+          "blockId": null,
+          "stageId": null,
+          "inDay": true,
+          "reminder": true,
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+        ],
+        "options": {
+          "calendar": true,
+          "notifications": true,
+          "stats": false
+        },
+        "sequence": 6,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794812408554,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794812423019,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794812438068,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 4,
+            "from": "2026-11-16",
+            "at": 1794812456201,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 5,
+            "from": "2026-11-16",
+            "at": 1794812470052,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 6,
+            "from": "2026-11-16",
+            "at": 1794812497801,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+              "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 6,
+      "state_path": "P02/day-06/observer-state.json",
+      "timeLog": [
+        {
+          "id": "8b874da8-35b6-44f4-8a48-187f853a751a",
+          "date": "2026-11-17",
+          "minutes": 40,
+          "label": "Проект: собрать материалы",
+          "ref": "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "ts": 1794927620331
+        },
+        {
+          "id": "8a92e137-7542-413e-ba63-bf4b14cfd4e2",
+          "date": "2026-11-19",
+          "minutes": 20,
+          "label": "Проект: сделать черновик",
+          "ref": "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "ts": 1795071619076
+        },
+        {
+          "id": "18e4e6d7-8c32-4f2d-8cbf-060775f84e2c",
+          "date": "2026-11-20",
+          "minutes": 60,
+          "label": "Отправить проект — 20 ноября до 20:00",
+          "ref": "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "ts": 1795190432567
+        }
+      ],
+      "facts": [
+        {
+          "id": "5e0c911f-c1cc-42aa-aef7-292e5d40fec7",
+          "kind": "task",
+          "ref": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "date": "2026-11-17",
+          "ts": 1794927624730,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Проект: собрать материалы",
+          "cycle": 0,
+          "ledger": "d5b29152-afbc-4222-88d0-3d1f7f657d8c",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "2bf50c43-9d8f-441d-a535-58883e34e426",
+          "kind": "task",
+          "ref": "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "date": "2026-11-20",
+          "ts": 1795190412850,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Проект: сделать черновик",
+          "cycle": 0,
+          "ledger": "c93c945f-cb79-474f-913a-d26ec73ff69a",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "942ee992-6085-48b1-b5ce-5f348b346ed7",
+          "kind": "cal",
+          "ref": "4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "date": "2026-11-20",
+          "ts": 1795190418134,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Встреча с заказчиком",
+          "occurrence": "2026-11-19",
+          "scheduledDate": "2026-11-20",
+          "scheduledTime": "15:00",
+          "ledger": "dc023026-4782-4642-8fe8-58ab915f98b2",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "46059726-03ad-468c-95d8-6596bf34d051",
+          "kind": "task",
+          "ref": "8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "date": "2026-11-20",
+          "ts": 1795190437066,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Отправить проект — 20 ноября до 20:00",
+          "cycle": 0,
+          "ledger": "4f15f273-ec5f-4c49-8446-b8daeeecffab",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "d5b29152-afbc-4222-88d0-3d1f7f657d8c",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Проект: собрать материалы",
+          "ref": "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "date": "2026-11-17",
+          "ts": 1794927624730
+        },
+        {
+          "id": "c93c945f-cb79-474f-913a-d26ec73ff69a",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Проект: сделать черновик",
+          "ref": "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "date": "2026-11-20",
+          "ts": 1795190412850
+        },
+        {
+          "id": "dc023026-4782-4642-8fe8-58ab915f98b2",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Встреча с заказчиком",
+          "ref": "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "date": "2026-11-20",
+          "ts": 1795190418134
+        },
+        {
+          "id": "4f15f273-ec5f-4c49-8446-b8daeeecffab",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Отправить проект — 20 ноября до 20:00",
+          "ref": "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "date": "2026-11-20",
+          "ts": 1795190437066
+        }
+      ],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "title": "Проект: собрать материалы",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "title": "Проект: сделать черновик",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "title": "Отправить проект — 20 ноября до 20:00",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        }
+      ],
+      "habits": [],
+      "cal": [
+        {
+          "id": "4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "title": "Встреча с заказчиком",
+          "locs": [],
+          "date": "2026-11-19",
+          "time": "14:00",
+          "note": "",
+          "repeat": {
+            "type": "none",
+            "days": []
+          },
+          "exceptions": {
+            "2026-11-19": {
+              "date": "2026-11-20",
+              "time": "15:00"
+            }
+          },
+          "retained": [],
+          "until": null,
+          "reminderLead": 15,
+          "reminderReceipts": {},
+          "reward": 5,
+          "blockId": null,
+          "stageId": null,
+          "inDay": true,
+          "reminder": true,
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+        ],
+        "options": {
+          "calendar": true,
+          "notifications": true,
+          "stats": false
+        },
+        "sequence": 6,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794812408554,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794812423019,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794812438068,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 4,
+            "from": "2026-11-16",
+            "at": 1794812456201,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 5,
+            "from": "2026-11-16",
+            "at": 1794812470052,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 6,
+            "from": "2026-11-16",
+            "at": 1794812497801,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+              "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P02",
+      "day": 7,
+      "state_path": "P02/day-07/observer-state.json",
+      "timeLog": [
+        {
+          "id": "8b874da8-35b6-44f4-8a48-187f853a751a",
+          "date": "2026-11-17",
+          "minutes": 40,
+          "label": "Проект: собрать материалы",
+          "ref": "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "ts": 1794927620331
+        },
+        {
+          "id": "8a92e137-7542-413e-ba63-bf4b14cfd4e2",
+          "date": "2026-11-19",
+          "minutes": 20,
+          "label": "Проект: сделать черновик",
+          "ref": "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "ts": 1795071619076
+        },
+        {
+          "id": "18e4e6d7-8c32-4f2d-8cbf-060775f84e2c",
+          "date": "2026-11-20",
+          "minutes": 60,
+          "label": "Отправить проект — 20 ноября до 20:00",
+          "ref": "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "ts": 1795190432567
+        }
+      ],
+      "facts": [
+        {
+          "id": "5e0c911f-c1cc-42aa-aef7-292e5d40fec7",
+          "kind": "task",
+          "ref": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "date": "2026-11-17",
+          "ts": 1794927624730,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Проект: собрать материалы",
+          "cycle": 0,
+          "ledger": "d5b29152-afbc-4222-88d0-3d1f7f657d8c",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "2bf50c43-9d8f-441d-a535-58883e34e426",
+          "kind": "task",
+          "ref": "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "date": "2026-11-20",
+          "ts": 1795190412850,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Проект: сделать черновик",
+          "cycle": 0,
+          "ledger": "c93c945f-cb79-474f-913a-d26ec73ff69a",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "942ee992-6085-48b1-b5ce-5f348b346ed7",
+          "kind": "cal",
+          "ref": "4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "date": "2026-11-20",
+          "ts": 1795190418134,
+          "coins": 5,
+          "xp": 5,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Встреча с заказчиком",
+          "occurrence": "2026-11-19",
+          "scheduledDate": "2026-11-20",
+          "scheduledTime": "15:00",
+          "ledger": "dc023026-4782-4642-8fe8-58ab915f98b2",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "46059726-03ad-468c-95d8-6596bf34d051",
+          "kind": "task",
+          "ref": "8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "date": "2026-11-20",
+          "ts": 1795190437066,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Отправить проект — 20 ноября до 20:00",
+          "cycle": 0,
+          "ledger": "4f15f273-ec5f-4c49-8446-b8daeeecffab",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "d5b29152-afbc-4222-88d0-3d1f7f657d8c",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Проект: собрать материалы",
+          "ref": "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "date": "2026-11-17",
+          "ts": 1794927624730
+        },
+        {
+          "id": "c93c945f-cb79-474f-913a-d26ec73ff69a",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Проект: сделать черновик",
+          "ref": "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "date": "2026-11-20",
+          "ts": 1795190412850
+        },
+        {
+          "id": "dc023026-4782-4642-8fe8-58ab915f98b2",
+          "type": "earn",
+          "coins": 5,
+          "xp": 5,
+          "note": "Встреча с заказчиком",
+          "ref": "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "date": "2026-11-20",
+          "ts": 1795190418134
+        },
+        {
+          "id": "4f15f273-ec5f-4c49-8446-b8daeeecffab",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Отправить проект — 20 ноября до 20:00",
+          "ref": "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "date": "2026-11-20",
+          "ts": 1795190437066
+        }
+      ],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "04dd951b-aa16-43df-90da-1b063732e3e9",
+          "title": "Проект: собрать материалы",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "title": "Проект: сделать черновик",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "title": "Отправить проект — 20 ноября до 20:00",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        }
+      ],
+      "habits": [],
+      "cal": [
+        {
+          "id": "4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "title": "Встреча с заказчиком",
+          "locs": [],
+          "date": "2026-11-19",
+          "time": "14:00",
+          "note": "",
+          "repeat": {
+            "type": "none",
+            "days": []
+          },
+          "exceptions": {
+            "2026-11-19": {
+              "date": "2026-11-20",
+              "time": "15:00"
+            }
+          },
+          "retained": [],
+          "until": null,
+          "reminderLead": 15,
+          "reminderReceipts": {},
+          "reward": 5,
+          "blockId": null,
+          "stageId": null,
+          "inDay": true,
+          "reminder": true,
+          "status": "active",
+          "created": "2026-11-16"
+        },
+        {
+          "id": "928a4538-05d3-4665-a23c-a643458a8992",
+          "title": "Подготовить счёт заказчику",
+          "locs": [],
+          "date": "2026-11-25",
+          "time": "",
+          "note": "",
+          "repeat": {
+            "type": "none",
+            "days": []
+          },
+          "exceptions": {},
+          "retained": [],
+          "until": null,
+          "reminderLead": 15,
+          "reminderReceipts": {},
+          "reward": 5,
+          "blockId": null,
+          "stageId": null,
+          "inDay": true,
+          "reminder": true,
+          "status": "active",
+          "created": "2026-11-22"
+        }
+      ],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+          "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+          "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+          "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+          "cal:928a4538-05d3-4665-a23c-a643458a8992"
+        ],
+        "options": {
+          "calendar": true,
+          "notifications": true,
+          "stats": false
+        },
+        "sequence": 7,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794812408554,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794812423019,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794812438068,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 4,
+            "from": "2026-11-16",
+            "at": 1794812456201,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 5,
+            "from": "2026-11-16",
+            "at": 1794812470052,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 6,
+            "from": "2026-11-16",
+            "at": 1794812497801,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+              "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          },
+          {
+            "seq": 7,
+            "from": "2026-11-22",
+            "at": 1795363226808,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:04dd951b-aa16-43df-90da-1b063732e3e9",
+              "task:6a4716a7-5a4f-4e7c-a013-54ac67487ae5",
+              "task:8a9afc9e-a692-4f36-bb99-e5239efff5a9",
+              "cal:4b8afb28-36c3-4f5d-9830-29e3530f09ea",
+              "cal:928a4538-05d3-4665-a23c-a643458a8992"
+            ],
+            "options": {
+              "calendar": true,
+              "notifications": true,
+              "stats": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P03",
+      "day": 1,
+      "state_path": "P03/day-01/observer-state.json",
+      "timeLog": [
+        {
+          "id": "5277e4ad-5a15-4924-98f7-15c1910bab46",
+          "date": "2026-11-16",
+          "minutes": 3,
+          "label": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "ts": 1794848450385
+        }
+      ],
+      "facts": [
+        {
+          "id": "71094990-85d2-470e-8343-754bf7ae93de",
+          "kind": "task",
+          "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Порисовать немного",
+          "cycle": 0,
+          "ledger": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217
+        }
+      ],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "title": "Порисовать немного",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16"
+        }
+      ],
+      "habits": [],
+      "cal": [],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": true
+        },
+        "sequence": 3,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794848408170,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794848417703,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794848435902,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P03",
+      "day": 3,
+      "state_path": "P03/day-03/observer-state.json",
+      "timeLog": [
+        {
+          "id": "5277e4ad-5a15-4924-98f7-15c1910bab46",
+          "date": "2026-11-16",
+          "minutes": 3,
+          "label": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "ts": 1794848450385
+        }
+      ],
+      "facts": [
+        {
+          "id": "71094990-85d2-470e-8343-754bf7ae93de",
+          "kind": "task",
+          "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Порисовать немного",
+          "cycle": 0,
+          "ledger": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217
+        }
+      ],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "title": "Порисовать немного",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        }
+      ],
+      "habits": [],
+      "cal": [],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": true
+        },
+        "sequence": 3,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794848408170,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794848417703,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794848435902,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P03",
+      "day": 4,
+      "state_path": "P03/day-04/observer-state.json",
+      "timeLog": [
+        {
+          "id": "5277e4ad-5a15-4924-98f7-15c1910bab46",
+          "date": "2026-11-16",
+          "minutes": 3,
+          "label": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "ts": 1794848450385
+        },
+        {
+          "id": "0c2c4d24-d07e-4043-9cd0-5f71f187a1ba",
+          "date": "2026-11-19",
+          "minutes": 6,
+          "label": "Рисование 19 ноября",
+          "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "ts": 1795111257833
+        }
+      ],
+      "facts": [
+        {
+          "id": "71094990-85d2-470e-8343-754bf7ae93de",
+          "kind": "task",
+          "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Порисовать немного",
+          "cycle": 0,
+          "ledger": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "6ebf02ff-508a-499a-ac70-3ab37cb34c8a",
+          "kind": "task",
+          "ref": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "date": "2026-11-19",
+          "ts": 1795111262116,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Рисование 19 ноября",
+          "cycle": 0,
+          "ledger": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217
+        },
+        {
+          "id": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Рисование 19 ноября",
+          "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "date": "2026-11-19",
+          "ts": 1795111262116
+        }
+      ],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "title": "Порисовать немного",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {}
+        },
+        {
+          "id": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "title": "Рисование 19 ноября",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-19"
+        }
+      ],
+      "habits": [],
+      "cal": [],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": true
+        },
+        "sequence": 4,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794848408170,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794848417703,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794848435902,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          },
+          {
+            "seq": 4,
+            "from": "2026-11-19",
+            "at": 1795111243217,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+              "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P03",
+      "day": 6,
+      "state_path": "P03/day-06/observer-state.json",
+      "timeLog": [
+        {
+          "id": "5277e4ad-5a15-4924-98f7-15c1910bab46",
+          "date": "2026-11-16",
+          "minutes": 3,
+          "label": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "ts": 1794848450385
+        },
+        {
+          "id": "0c2c4d24-d07e-4043-9cd0-5f71f187a1ba",
+          "date": "2026-11-19",
+          "minutes": 6,
+          "label": "Рисование 19 ноября",
+          "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "ts": 1795111257833
+        },
+        {
+          "id": "3a53ea58-f7b3-4b18-9e62-28b75e4c8be1",
+          "date": "2026-11-21",
+          "minutes": 4,
+          "label": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "ts": 1795284083364
+        }
+      ],
+      "facts": [
+        {
+          "id": "71094990-85d2-470e-8343-754bf7ae93de",
+          "kind": "task",
+          "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Порисовать немного",
+          "cycle": 0,
+          "ledger": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "6ebf02ff-508a-499a-ac70-3ab37cb34c8a",
+          "kind": "task",
+          "ref": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "date": "2026-11-19",
+          "ts": 1795111262116,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Рисование 19 ноября",
+          "cycle": 0,
+          "ledger": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "24a33a71-e7ca-42d4-8bbe-20995dc4fb18",
+          "kind": "task",
+          "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-21",
+          "ts": 1795284088479,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Порисовать немного",
+          "cycle": 1,
+          "ledger": "4f45f36f-9cf4-4c07-b90d-eb5479208b83",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217
+        },
+        {
+          "id": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Рисование 19 ноября",
+          "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "date": "2026-11-19",
+          "ts": 1795111262116
+        },
+        {
+          "id": "4f45f36f-9cf4-4c07-b90d-eb5479208b83",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-21",
+          "ts": 1795284088479
+        }
+      ],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "title": "Порисовать немного",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "weekly",
+            "days": [
+              6
+            ],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {},
+          "cycle": 1
+        },
+        {
+          "id": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "title": "Рисование 19 ноября",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-19",
+          "bonusTerms": {}
+        }
+      ],
+      "habits": [],
+      "cal": [],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": true
+        },
+        "sequence": 4,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794848408170,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794848417703,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794848435902,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          },
+          {
+            "seq": 4,
+            "from": "2026-11-19",
+            "at": 1795111243217,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+              "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "actor": "P03",
+      "day": 7,
+      "state_path": "P03/day-07/observer-state.json",
+      "timeLog": [
+        {
+          "id": "5277e4ad-5a15-4924-98f7-15c1910bab46",
+          "date": "2026-11-16",
+          "minutes": 3,
+          "label": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "ts": 1794848450385
+        },
+        {
+          "id": "0c2c4d24-d07e-4043-9cd0-5f71f187a1ba",
+          "date": "2026-11-19",
+          "minutes": 6,
+          "label": "Рисование 19 ноября",
+          "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "ts": 1795111257833
+        },
+        {
+          "id": "3a53ea58-f7b3-4b18-9e62-28b75e4c8be1",
+          "date": "2026-11-21",
+          "minutes": 4,
+          "label": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "ts": 1795284083364
+        }
+      ],
+      "facts": [
+        {
+          "id": "71094990-85d2-470e-8343-754bf7ae93de",
+          "kind": "task",
+          "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Порисовать немного",
+          "cycle": 0,
+          "ledger": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "6ebf02ff-508a-499a-ac70-3ab37cb34c8a",
+          "kind": "task",
+          "ref": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "date": "2026-11-19",
+          "ts": 1795111262116,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Рисование 19 ноября",
+          "cycle": 0,
+          "ledger": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+          "loc": null,
+          "locationTitle": "Без локации"
+        },
+        {
+          "id": "24a33a71-e7ca-42d4-8bbe-20995dc4fb18",
+          "kind": "task",
+          "ref": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-21",
+          "ts": 1795284088479,
+          "coins": 10,
+          "xp": 10,
+          "insts": [],
+          "consumed": [],
+          "cancelled": false,
+          "title": "Порисовать немного",
+          "cycle": 1,
+          "ledger": "4f45f36f-9cf4-4c07-b90d-eb5479208b83",
+          "loc": null,
+          "locationTitle": "Без локации"
+        }
+      ],
+      "ledger": [
+        {
+          "id": "38576f85-9d5f-4dc2-8d39-cf98bfea76da",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-16",
+          "ts": 1794848455217
+        },
+        {
+          "id": "9c80d146-ab3d-4d4c-8e2b-b150b81a32a9",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Рисование 19 ноября",
+          "ref": "task:d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "date": "2026-11-19",
+          "ts": 1795111262116
+        },
+        {
+          "id": "4f45f36f-9cf4-4c07-b90d-eb5479208b83",
+          "type": "earn",
+          "coins": 10,
+          "xp": 10,
+          "note": "Порисовать немного",
+          "ref": "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "date": "2026-11-21",
+          "ts": 1795284088479
+        }
+      ],
+      "misses": [],
+      "tasks": [
+        {
+          "id": "26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "title": "Порисовать немного",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "weekly",
+            "days": [
+              6
+            ],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-16",
+          "bonusTerms": {},
+          "cycle": 1
+        },
+        {
+          "id": "d25353bd-7c65-40c7-a193-eb0d7be301fd",
+          "title": "Рисование 19 ноября",
+          "locs": [],
+          "desc": "",
+          "reward": 10,
+          "sched": {
+            "type": "once",
+            "days": [],
+            "date": null
+          },
+          "blockId": null,
+          "stageId": null,
+          "goalId": null,
+          "inDay": true,
+          "key": false,
+          "fit": [
+            "normal",
+            "hard"
+          ],
+          "cat": "",
+          "tags": [],
+          "ifThen": "",
+          "bonus": [],
+          "status": "active",
+          "created": "2026-11-19",
+          "bonusTerms": {}
+        }
+      ],
+      "habits": [],
+      "cal": [],
+      "flex": {
+        "v": 1,
+        "view": "basic",
+        "introduced": true,
+        "members": [
+          "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+          "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+        ],
+        "options": {
+          "calendar": false,
+          "notifications": false,
+          "stats": true
+        },
+        "sequence": 4,
+        "changes": [
+          {
+            "seq": 1,
+            "from": "2026-11-16",
+            "at": 1794848408170,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": false
+            }
+          },
+          {
+            "seq": 2,
+            "from": "2026-11-16",
+            "at": 1794848417703,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          },
+          {
+            "seq": 3,
+            "from": "2026-11-16",
+            "at": 1794848435902,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          },
+          {
+            "seq": 4,
+            "from": "2026-11-19",
+            "at": 1795111243217,
+            "zone": "Europe/Moscow",
+            "policy": "basic",
+            "refs": [
+              "task:26c8fa45-b5c7-4f0a-ad4f-c5e85805f406",
+              "task:d25353bd-7c65-40c7-a193-eb0d7be301fd"
+            ],
+            "options": {
+              "calendar": false,
+              "notifications": false,
+              "stats": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "resolved_action_chain": [
+    {
+      "sequence": 6,
+      "actor": "P01",
+      "day": 1,
+      "step": 1,
+      "intent": "Начать с простого режима для чтения",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Базовый\nНесколько своих действий. Всё дополнительное — по желанию.",
+      "before_observation_id": "P01-d01-o0001",
+      "after_observation_id": "P01-d01-o0002",
+      "success": true
+    },
+    {
+      "sequence": 9,
+      "actor": "P01",
+      "day": 1,
+      "step": 2,
+      "intent": "Сохранить простой ритм без дополнительных разделов",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Сохранить ритм",
+      "before_observation_id": "P01-d01-o0002",
+      "after_observation_id": "P01-d01-o0003",
+      "success": true
+    },
+    {
+      "sequence": 12,
+      "actor": "P01",
+      "day": 1,
+      "step": 3,
+      "intent": "Добавить вечернее чтение",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P01-d01-o0003",
+      "after_observation_id": "P01-d01-o0004",
+      "success": true
+    },
+    {
+      "sequence": 17,
+      "actor": "P01",
+      "day": 1,
+      "step": 4,
+      "intent": "Назвать спокойную привычку чтения",
+      "operation": "fill",
+      "value": "Вечернее чтение 10 минут",
+      "ui_target": "Что хотите сделать",
+      "before_observation_id": "P01-d01-o0004",
+      "after_observation_id": "P01-d01-o0005",
+      "success": true
+    },
+    {
+      "sequence": 20,
+      "actor": "P02",
+      "day": 1,
+      "step": 1,
+      "intent": "Начать с простого списка обязательств",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Базовый\nНесколько своих действий. Всё дополнительное — по желанию.",
+      "before_observation_id": "P02-d01-o0001",
+      "after_observation_id": "P02-d01-o0002",
+      "success": true
+    },
+    {
+      "sequence": 25,
+      "actor": "P01",
+      "day": 1,
+      "step": 5,
+      "intent": "Повторять небольшое чтение каждый вечер",
+      "operation": "select",
+      "value": "Ежедневная привычка",
+      "ui_target": "Что это",
+      "before_observation_id": "P01-d01-o0005",
+      "after_observation_id": "P01-d01-o0006",
+      "success": true
+    },
+    {
+      "sequence": 28,
+      "actor": "P02",
+      "day": 1,
+      "step": 2,
+      "intent": "Показывать встречу в календаре",
+      "operation": "check",
+      "value": true,
+      "ui_target": "Календарь: только выбранные события",
+      "before_observation_id": "P02-d01-o0002",
+      "after_observation_id": "P02-d01-o0003",
+      "success": true
+    },
+    {
+      "sequence": 31,
+      "actor": "P01",
+      "day": 1,
+      "step": 6,
+      "intent": "Сохранить привычку чтения",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P01-d01-o0006",
+      "after_observation_id": "P01-d01-o0007",
+      "success": true
+    },
+    {
+      "sequence": 34,
+      "actor": "P03",
+      "day": 1,
+      "step": 1,
+      "intent": "Начать с нескольких действий без обязательств",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Базовый\nНесколько своих действий. Всё дополнительное — по желанию.",
+      "before_observation_id": "P03-d01-o0001",
+      "after_observation_id": "P03-d01-o0002",
+      "success": true
+    },
+    {
+      "sequence": 37,
+      "actor": "P02",
+      "day": 1,
+      "step": 3,
+      "intent": "Не забыть встречу",
+      "operation": "check",
+      "value": true,
+      "ui_target": "Напоминания о выбранных событиях",
+      "before_observation_id": "P02-d01-o0003",
+      "after_observation_id": "P02-d01-o0004",
+      "success": true
+    },
+    {
+      "sequence": 40,
+      "actor": "P01",
+      "day": 1,
+      "step": 7,
+      "intent": "Записать сегодняшние десять минут чтения",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P01-d01-o0007",
+      "after_observation_id": "P01-d01-o0008",
+      "success": true
+    },
+    {
+      "sequence": 43,
+      "actor": "P03",
+      "day": 1,
+      "step": 2,
+      "intent": "Видеть спокойный прогресс за неделю",
+      "operation": "check",
+      "value": true,
+      "ui_target": "Спокойная статистика за неделю",
+      "before_observation_id": "P03-d01-o0002",
+      "after_observation_id": "P03-d01-o0003",
+      "success": true
+    },
+    {
+      "sequence": 46,
+      "actor": "P02",
+      "day": 1,
+      "step": 4,
+      "intent": "Сохранить простой режим с календарём",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Сохранить ритм",
+      "before_observation_id": "P02-d01-o0004",
+      "after_observation_id": "P02-d01-o0005",
+      "success": true
+    },
+    {
+      "sequence": 49,
+      "actor": "P01",
+      "day": 1,
+      "step": 8,
+      "intent": "Указать десять прочитанных минут",
+      "operation": "fill",
+      "value": "10",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P01-d01-o0008",
+      "after_observation_id": "P01-d01-o0009",
+      "success": true
+    },
+    {
+      "sequence": 52,
+      "actor": "P03",
+      "day": 1,
+      "step": 3,
+      "intent": "Сохранить простой ритм с недельным прогрессом",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Сохранить ритм",
+      "before_observation_id": "P03-d01-o0003",
+      "after_observation_id": "P03-d01-o0004",
+      "success": true
+    },
+    {
+      "sequence": 55,
+      "actor": "P02",
+      "day": 1,
+      "step": 5,
+      "intent": "Записать проект к пятнице",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P02-d01-o0005",
+      "after_observation_id": "P02-d01-o0006",
+      "success": true
+    },
+    {
+      "sequence": 58,
+      "actor": "P01",
+      "day": 1,
+      "step": 9,
+      "intent": "Сохранить время чтения",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P01-d01-o0009",
+      "after_observation_id": "P01-d01-o0010",
+      "success": true
+    },
+    {
+      "sequence": 61,
+      "actor": "P03",
+      "day": 1,
+      "step": 4,
+      "intent": "Добавить рисование в свой ритм",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P03-d01-o0004",
+      "after_observation_id": "P03-d01-o0005",
+      "success": true
+    },
+    {
+      "sequence": 64,
+      "actor": "P02",
+      "day": 1,
+      "step": 6,
+      "intent": "Зафиксировать первый шаг",
+      "operation": "fill",
+      "value": "Проект: собрать материалы",
+      "ui_target": "Что хотите сделать",
+      "before_observation_id": "P02-d01-o0006",
+      "after_observation_id": "P02-d01-o0007",
+      "success": true
+    },
+    {
+      "sequence": 67,
+      "actor": "P01",
+      "day": 1,
+      "step": 10,
+      "intent": "Отметить выполненное чтение за сегодня",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отметить: Вечернее чтение 10 минут",
+      "before_observation_id": "P01-d01-o0010",
+      "after_observation_id": "P01-d01-o0011",
+      "success": true
+    },
+    {
+      "sequence": 70,
+      "actor": "P02",
+      "day": 1,
+      "step": 7,
+      "intent": "Сохранить первый шаг проекта",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P02-d01-o0007",
+      "after_observation_id": "P02-d01-o0008",
+      "success": true
+    },
+    {
+      "sequence": 74,
+      "actor": "P03",
+      "day": 1,
+      "step": 5,
+      "intent": "Оставить рисованию небольшой добровольный шаг",
+      "operation": "fill",
+      "value": "Порисовать немного",
+      "ui_target": "Что хотите сделать",
+      "before_observation_id": "P03-d01-o0005",
+      "after_observation_id": "P03-d01-o0006",
+      "success": true
+    },
+    {
+      "sequence": 77,
+      "actor": "P02",
+      "day": 1,
+      "step": 8,
+      "intent": "Добавить следующий шаг проекта",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P02-d01-o0008",
+      "after_observation_id": "P02-d01-o0009",
+      "success": true
+    },
+    {
+      "sequence": 80,
+      "actor": "P03",
+      "day": 1,
+      "step": 6,
+      "intent": "Сохранить небольшой шаг рисования",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P03-d01-o0006",
+      "after_observation_id": "P03-d01-o0007",
+      "success": true
+    },
+    {
+      "sequence": 85,
+      "actor": "P02",
+      "day": 1,
+      "step": 9,
+      "intent": "Записать работу над черновиком",
+      "operation": "fill",
+      "value": "Проект: сделать черновик",
+      "ui_target": "Что хотите сделать",
+      "before_observation_id": "P02-d01-o0009",
+      "after_observation_id": "P02-d01-o0010",
+      "success": true
+    },
+    {
+      "sequence": 88,
+      "actor": "P03",
+      "day": 1,
+      "step": 7,
+      "intent": "Записать сегодняшние три минуты рисования",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P03-d01-o0007",
+      "after_observation_id": "P03-d01-o0008",
+      "success": true
+    },
+    {
+      "sequence": 91,
+      "actor": "P03",
+      "day": 1,
+      "step": 8,
+      "intent": "Указать фактическое время рисования",
+      "operation": "fill",
+      "value": "3",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P03-d01-o0008",
+      "after_observation_id": "P03-d01-o0009",
+      "success": true
+    },
+    {
+      "sequence": 94,
+      "actor": "P02",
+      "day": 1,
+      "step": 10,
+      "intent": "Сохранить шаг черновика",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P02-d01-o0010",
+      "after_observation_id": "P02-d01-o0011",
+      "success": true
+    },
+    {
+      "sequence": 97,
+      "actor": "P01",
+      "day": 2,
+      "step": 1,
+      "intent": "Сохранить даже пять минут чтения",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P01-d02-o0012",
+      "after_observation_id": "P01-d02-o0013",
+      "success": true
+    },
+    {
+      "sequence": 100,
+      "actor": "P03",
+      "day": 1,
+      "step": 9,
+      "intent": "Сохранить три минуты",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P03-d01-o0009",
+      "after_observation_id": "P03-d01-o0010",
+      "success": true
+    },
+    {
+      "sequence": 103,
+      "actor": "P02",
+      "day": 1,
+      "step": 11,
+      "intent": "Добавить срок отправки",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P02-d01-o0011",
+      "after_observation_id": "P02-d01-o0012",
+      "success": true
+    },
+    {
+      "sequence": 106,
+      "actor": "P01",
+      "day": 2,
+      "step": 2,
+      "intent": "Указать фактические пять минут",
+      "operation": "fill",
+      "value": "5",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P01-d02-o0013",
+      "after_observation_id": "P01-d02-o0014",
+      "success": true
+    },
+    {
+      "sequence": 109,
+      "actor": "P03",
+      "day": 1,
+      "step": 10,
+      "intent": "Отметить сегодняшний небольшой шаг рисования",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отметить: Порисовать немного",
+      "before_observation_id": "P03-d01-o0010",
+      "after_observation_id": "P03-d01-o0011",
+      "success": true
+    },
+    {
+      "sequence": 112,
+      "actor": "P02",
+      "day": 1,
+      "step": 12,
+      "intent": "Зафиксировать крайний срок",
+      "operation": "fill",
+      "value": "Отправить проект — 20 ноября до 20:00",
+      "ui_target": "Что хотите сделать",
+      "before_observation_id": "P02-d01-o0012",
+      "after_observation_id": "P02-d01-o0013",
+      "success": true
+    },
+    {
+      "sequence": 115,
+      "actor": "P01",
+      "day": 2,
+      "step": 3,
+      "intent": "Сохранить небольшое сегодняшнее усилие",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P01-d02-o0014",
+      "after_observation_id": "P01-d02-o0015",
+      "success": true
+    },
+    {
+      "sequence": 118,
+      "actor": "P02",
+      "day": 1,
+      "step": 13,
+      "intent": "Сохранить обязательство отправки",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P02-d01-o0013",
+      "after_observation_id": "P02-d01-o0014",
+      "success": true
+    },
+    {
+      "sequence": 123,
+      "actor": "P02",
+      "day": 1,
+      "step": 14,
+      "intent": "Записать встречу с заказчиком",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P02-d01-o0014",
+      "after_observation_id": "P02-d01-o0015",
+      "success": true
+    },
+    {
+      "sequence": 126,
+      "actor": "P02",
+      "day": 1,
+      "step": 15,
+      "intent": "Назвать встречу",
+      "operation": "fill",
+      "value": "Встреча с заказчиком",
+      "ui_target": "Что хотите сделать",
+      "before_observation_id": "P02-d01-o0015",
+      "after_observation_id": "P02-d01-o0016",
+      "success": true
+    },
+    {
+      "sequence": 131,
+      "actor": "P02",
+      "day": 1,
+      "step": 16,
+      "intent": "Указать дату и время встречи",
+      "operation": "select",
+      "value": "Событие календаря",
+      "ui_target": "Что это",
+      "before_observation_id": "P02-d01-o0016",
+      "after_observation_id": "P02-d01-o0017",
+      "success": true
+    },
+    {
+      "sequence": 134,
+      "actor": "P02",
+      "day": 1,
+      "step": 17,
+      "intent": "Поставить встречу на четверг",
+      "operation": "fill",
+      "value": "2026-11-19",
+      "ui_target": "Дата события",
+      "before_observation_id": "P02-d01-o0017",
+      "after_observation_id": "P02-d01-o0018",
+      "success": true
+    },
+    {
+      "sequence": 141,
+      "actor": "P02",
+      "day": 1,
+      "step": 18,
+      "intent": "Запомнить время встречи",
+      "operation": "fill",
+      "value": "14:00",
+      "ui_target": "Время (по желанию)",
+      "before_observation_id": "P02-d01-o0018",
+      "after_observation_id": "P02-d01-o0019",
+      "success": true
+    },
+    {
+      "sequence": 144,
+      "actor": "P02",
+      "day": 1,
+      "step": 19,
+      "intent": "Сохранить встречу",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P02-d01-o0019",
+      "after_observation_id": "P02-d01-o0020",
+      "success": true
+    },
+    {
+      "sequence": 148,
+      "actor": "P01",
+      "day": 4,
+      "step": 1,
+      "intent": "Записать восемь минут после перерыва",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P01-d04-o0016",
+      "after_observation_id": "P01-d04-o0017",
+      "success": true
+    },
+    {
+      "sequence": 151,
+      "actor": "P01",
+      "day": 4,
+      "step": 2,
+      "intent": "Указать фактическое время чтения",
+      "operation": "fill",
+      "value": "8",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P01-d04-o0017",
+      "after_observation_id": "P01-d04-o0018",
+      "success": true
+    },
+    {
+      "sequence": 156,
+      "actor": "P01",
+      "day": 4,
+      "step": 3,
+      "intent": "Сохранить сегодняшнее чтение",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P01-d04-o0018",
+      "after_observation_id": "P01-d04-o0019",
+      "success": true
+    },
+    {
+      "sequence": 163,
+      "actor": "P03",
+      "day": 4,
+      "step": 1,
+      "intent": "Найти прежнее рисование для сегодняшнего результата",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Настроить",
+      "before_observation_id": "P03-d04-o0013",
+      "after_observation_id": "P03-d04-o0014",
+      "success": true
+    },
+    {
+      "sequence": 168,
+      "actor": "P03",
+      "day": 4,
+      "step": 2,
+      "intent": "Посмотреть список сохранённых действий",
+      "operation": "scroll",
+      "value": null,
+      "ui_target": "scroll",
+      "before_observation_id": "P03-d04-o0014",
+      "after_observation_id": "P03-d04-o0015",
+      "success": true
+    },
+    {
+      "sequence": 171,
+      "actor": "P02",
+      "day": 2,
+      "step": 1,
+      "intent": "Сохранить сорок минут сбора материалов",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P02-d02-o0021",
+      "after_observation_id": "P02-d02-o0022",
+      "success": true
+    },
+    {
+      "sequence": 174,
+      "actor": "P01",
+      "day": 5,
+      "step": 1,
+      "intent": "Сначала сохранить сегодняшние десять минут",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P01-d05-o0020",
+      "after_observation_id": "P01-d05-o0021",
+      "success": true
+    },
+    {
+      "sequence": 177,
+      "actor": "P02",
+      "day": 2,
+      "step": 2,
+      "intent": "Указать затраченное время",
+      "operation": "fill",
+      "value": "40",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P02-d02-o0022",
+      "after_observation_id": "P02-d02-o0023",
+      "success": true
+    },
+    {
+      "sequence": 180,
+      "actor": "P03",
+      "day": 4,
+      "step": 3,
+      "intent": "Вернуться и записать сегодняшний рисунок отдельно",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отмена",
+      "before_observation_id": "P03-d04-o0015",
+      "after_observation_id": "P03-d04-o0016",
+      "success": true
+    },
+    {
+      "sequence": 183,
+      "actor": "P01",
+      "day": 5,
+      "step": 2,
+      "intent": "Указать прочитанные десять минут",
+      "operation": "fill",
+      "value": "10",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P01-d05-o0021",
+      "after_observation_id": "P01-d05-o0022",
+      "success": true
+    },
+    {
+      "sequence": 186,
+      "actor": "P02",
+      "day": 2,
+      "step": 3,
+      "intent": "Сохранить сорок минут",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P02-d02-o0023",
+      "after_observation_id": "P02-d02-o0024",
+      "success": true
+    },
+    {
+      "sequence": 189,
+      "actor": "P03",
+      "day": 4,
+      "step": 4,
+      "intent": "Добавить сегодняшний небольшой рисунок",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P03-d04-o0016",
+      "after_observation_id": "P03-d04-o0017",
+      "success": true
+    },
+    {
+      "sequence": 192,
+      "actor": "P01",
+      "day": 5,
+      "step": 3,
+      "intent": "Сохранить минуты за сегодня",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P01-d05-o0022",
+      "after_observation_id": "P01-d05-o0023",
+      "success": true
+    },
+    {
+      "sequence": 195,
+      "actor": "P02",
+      "day": 2,
+      "step": 4,
+      "intent": "Отметить материалы собранными",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отметить: Проект: собрать материалы",
+      "before_observation_id": "P02-d02-o0024",
+      "after_observation_id": "P02-d02-o0025",
+      "success": true
+    },
+    {
+      "sequence": 198,
+      "actor": "P03",
+      "day": 4,
+      "step": 5,
+      "intent": "Назвать сегодняшний шаг",
+      "operation": "fill",
+      "value": "Рисование 19 ноября",
+      "ui_target": "Что хотите сделать",
+      "before_observation_id": "P03-d04-o0017",
+      "after_observation_id": "P03-d04-o0018",
+      "success": true
+    },
+    {
+      "sequence": 201,
+      "actor": "P01",
+      "day": 5,
+      "step": 4,
+      "intent": "Отметить завершённые десять минут чтения",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отметить: Вечернее чтение 10 минут",
+      "before_observation_id": "P01-d05-o0023",
+      "after_observation_id": "P01-d05-o0024",
+      "success": true
+    },
+    {
+      "sequence": 204,
+      "actor": "P03",
+      "day": 4,
+      "step": 6,
+      "intent": "Сохранить отдельный шаг рисования",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P03-d04-o0018",
+      "after_observation_id": "P03-d04-o0019",
+      "success": true
+    },
+    {
+      "sequence": 208,
+      "actor": "P01",
+      "day": 5,
+      "step": 5,
+      "intent": "Найти результат прошлых вечеров за неделю",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Настроить",
+      "before_observation_id": "P01-d05-o0024",
+      "after_observation_id": "P01-d05-o0025",
+      "success": true
+    },
+    {
+      "sequence": 211,
+      "actor": "P03",
+      "day": 4,
+      "step": 7,
+      "intent": "Записать шесть минут сегодняшнего рисования",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P03-d04-o0019",
+      "after_observation_id": "P03-d04-o0020",
+      "success": true
+    },
+    {
+      "sequence": 214,
+      "actor": "P01",
+      "day": 5,
+      "step": 6,
+      "intent": "Показать спокойную статистику недели",
+      "operation": "check",
+      "value": true,
+      "ui_target": "Спокойная статистика за неделю",
+      "before_observation_id": "P01-d05-o0025",
+      "after_observation_id": "P01-d05-o0026",
+      "success": true
+    },
+    {
+      "sequence": 217,
+      "actor": "P03",
+      "day": 4,
+      "step": 8,
+      "intent": "Указать фактические шесть минут",
+      "operation": "fill",
+      "value": "6",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P03-d04-o0020",
+      "after_observation_id": "P03-d04-o0021",
+      "success": true
+    },
+    {
+      "sequence": 220,
+      "actor": "P01",
+      "day": 5,
+      "step": 7,
+      "intent": "Сохранить показ статистики недели",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Сохранить ритм",
+      "before_observation_id": "P01-d05-o0026",
+      "after_observation_id": "P01-d05-o0027",
+      "success": true
+    },
+    {
+      "sequence": 224,
+      "actor": "P03",
+      "day": 4,
+      "step": 9,
+      "intent": "Сохранить шесть минут",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P03-d04-o0021",
+      "after_observation_id": "P03-d04-o0022",
+      "success": true
+    },
+    {
+      "sequence": 227,
+      "actor": "P03",
+      "day": 4,
+      "step": 10,
+      "intent": "Отметить выполненный маленький шаг",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отметить: Рисование 19 ноября",
+      "before_observation_id": "P03-d04-o0022",
+      "after_observation_id": "P03-d04-o0023",
+      "success": true
+    },
+    {
+      "sequence": 232,
+      "actor": "P01",
+      "day": 5,
+      "step": 8,
+      "intent": "Посмотреть, есть ли ниже минуты и прошлые вечера",
+      "operation": "scroll",
+      "value": null,
+      "ui_target": "scroll",
+      "before_observation_id": "P01-d05-o0027",
+      "after_observation_id": "P01-d05-o0028",
+      "success": true
+    },
+    {
+      "sequence": 236,
+      "actor": "P02",
+      "day": 4,
+      "step": 1,
+      "intent": "Записать время на незавершённый черновик",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P02-d04-o0026",
+      "after_observation_id": "P02-d04-o0027",
+      "success": true
+    },
+    {
+      "sequence": 240,
+      "actor": "P02",
+      "day": 4,
+      "step": 2,
+      "intent": "Указать двадцать минут работы",
+      "operation": "fill",
+      "value": "20",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P02-d04-o0027",
+      "after_observation_id": "P02-d04-o0028",
+      "success": true
+    },
+    {
+      "sequence": 244,
+      "actor": "P02",
+      "day": 4,
+      "step": 3,
+      "intent": "Сохранить время черновика",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P02-d04-o0028",
+      "after_observation_id": "P02-d04-o0029",
+      "success": true
+    },
+    {
+      "sequence": 248,
+      "actor": "P02",
+      "day": 4,
+      "step": 4,
+      "intent": "Найти изменение даты встречи",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Полный",
+      "before_observation_id": "P02-d04-o0029",
+      "after_observation_id": "P02-d04-o0030",
+      "success": true
+    },
+    {
+      "sequence": 253,
+      "actor": "P02",
+      "day": 4,
+      "step": 5,
+      "intent": "Открыть встречу для переноса",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Встреча с заказчиком\n19 ноя 14:00 · Самостоятельное",
+      "before_observation_id": "P02-d04-o0030",
+      "after_observation_id": "P02-d04-o0031",
+      "success": true
+    },
+    {
+      "sequence": 258,
+      "actor": "P02",
+      "day": 4,
+      "step": 6,
+      "intent": "Перенести встречу на пятницу",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Перенести",
+      "before_observation_id": "P02-d04-o0031",
+      "after_observation_id": "P02-d04-o0032",
+      "success": true
+    },
+    {
+      "sequence": 261,
+      "actor": "P03",
+      "day": 6,
+      "step": 1,
+      "intent": "Найти удобную периодичность для рисования",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Полный",
+      "before_observation_id": "P03-d06-o0024",
+      "after_observation_id": "P03-d06-o0025",
+      "success": true
+    },
+    {
+      "sequence": 264,
+      "actor": "P01",
+      "day": 7,
+      "step": 1,
+      "intent": "Сохранить двенадцать минут чтения",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P01-d07-o0029",
+      "after_observation_id": "P01-d07-o0030",
+      "success": true
+    },
+    {
+      "sequence": 267,
+      "actor": "P02",
+      "day": 4,
+      "step": 7,
+      "intent": "Указать новую дату встречи",
+      "operation": "fill",
+      "value": "2026-11-20",
+      "ui_target": "Дата",
+      "before_observation_id": "P02-d04-o0032",
+      "after_observation_id": "P02-d04-o0033",
+      "success": true
+    },
+    {
+      "sequence": 270,
+      "actor": "P03",
+      "day": 6,
+      "step": 2,
+      "intent": "Найти прежнее действие рисования",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Поиск",
+      "before_observation_id": "P03-d06-o0025",
+      "after_observation_id": "P03-d06-o0026",
+      "success": true
+    },
+    {
+      "sequence": 273,
+      "actor": "P01",
+      "day": 7,
+      "step": 2,
+      "intent": "Указать сегодняшнее время чтения",
+      "operation": "fill",
+      "value": "12",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P01-d07-o0030",
+      "after_observation_id": "P01-d07-o0031",
+      "success": true
+    },
+    {
+      "sequence": 276,
+      "actor": "P02",
+      "day": 4,
+      "step": 8,
+      "intent": "Указать новое время встречи",
+      "operation": "fill",
+      "value": "15:00",
+      "ui_target": "Время",
+      "before_observation_id": "P02-d04-o0033",
+      "after_observation_id": "P02-d04-o0034",
+      "success": true
+    },
+    {
+      "sequence": 279,
+      "actor": "P03",
+      "day": 6,
+      "step": 3,
+      "intent": "Найти первое рисование",
+      "operation": "fill",
+      "value": "Порисовать",
+      "ui_target": "Задания, привычки, квесты, календарь, бонусы, ништяки, решения",
+      "before_observation_id": "P03-d06-o0026",
+      "after_observation_id": "P03-d06-o0027",
+      "success": true
+    },
+    {
+      "sequence": 282,
+      "actor": "P01",
+      "day": 7,
+      "step": 3,
+      "intent": "Сохранить прочитанные минуты",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P01-d07-o0031",
+      "after_observation_id": "P01-d07-o0032",
+      "success": true
+    },
+    {
+      "sequence": 285,
+      "actor": "P02",
+      "day": 4,
+      "step": 9,
+      "intent": "Подтвердить перенос встречи",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Перенести",
+      "before_observation_id": "P02-d04-o0034",
+      "after_observation_id": "P02-d04-o0035",
+      "success": true
+    },
+    {
+      "sequence": 288,
+      "actor": "P03",
+      "day": 6,
+      "step": 4,
+      "intent": "Открыть настройки рисования",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Порисовать немного\nСамостоятельное",
+      "before_observation_id": "P03-d06-o0027",
+      "after_observation_id": "P03-d06-o0028",
+      "success": true
+    },
+    {
+      "sequence": 291,
+      "actor": "P01",
+      "day": 7,
+      "step": 4,
+      "intent": "Отметить выполненное чтение за воскресенье",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отметить: Вечернее чтение 10 минут",
+      "before_observation_id": "P01-d07-o0032",
+      "after_observation_id": "P01-d07-o0033",
+      "success": true
+    },
+    {
+      "sequence": 294,
+      "actor": "P03",
+      "day": 6,
+      "step": 5,
+      "intent": "Выбрать повторение без ежедневного обязательства",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Изменить / перенести",
+      "before_observation_id": "P03-d06-o0028",
+      "after_observation_id": "P03-d06-o0029",
+      "success": true
+    },
+    {
+      "sequence": 297,
+      "actor": "P02",
+      "day": 4,
+      "step": 10,
+      "intent": "Вернуться к обзору",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Закрыть",
+      "before_observation_id": "P02-d04-o0035",
+      "after_observation_id": "P02-d04-o0036",
+      "success": true
+    },
+    {
+      "sequence": 300,
+      "actor": "P02",
+      "day": 4,
+      "step": 11,
+      "intent": "Проверить привычный краткий обзор",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Базовый",
+      "before_observation_id": "P02-d04-o0036",
+      "after_observation_id": "P02-d04-o0037",
+      "success": true
+    },
+    {
+      "sequence": 304,
+      "actor": "P03",
+      "day": 6,
+      "step": 6,
+      "intent": "Оставить рисование раз в неделю",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Раз в неделю",
+      "before_observation_id": "P03-d06-o0029",
+      "after_observation_id": "P03-d06-o0030",
+      "success": true
+    },
+    {
+      "sequence": 308,
+      "actor": "P03",
+      "day": 6,
+      "step": 7,
+      "intent": "Оставить один рисунок по субботам",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Сб",
+      "before_observation_id": "P03-d06-o0030",
+      "after_observation_id": "P03-d06-o0031",
+      "success": true
+    },
+    {
+      "sequence": 311,
+      "actor": "P03",
+      "day": 6,
+      "step": 8,
+      "intent": "Найти сохранение недельного ритма",
+      "operation": "scroll",
+      "value": null,
+      "ui_target": "scroll",
+      "before_observation_id": "P03-d06-o0031",
+      "after_observation_id": "P03-d06-o0032",
+      "success": true
+    },
+    {
+      "sequence": 316,
+      "actor": "P03",
+      "day": 6,
+      "step": 9,
+      "intent": "Дойти до кнопки сохранения",
+      "operation": "scroll",
+      "value": null,
+      "ui_target": "scroll",
+      "before_observation_id": "P03-d06-o0032",
+      "after_observation_id": "P03-d06-o0033",
+      "success": true
+    },
+    {
+      "sequence": 319,
+      "actor": "P03",
+      "day": 6,
+      "step": 10,
+      "intent": "Сохранить рисование раз в неделю",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Сохранить",
+      "before_observation_id": "P03-d06-o0033",
+      "after_observation_id": "P03-d06-o0034",
+      "success": true
+    },
+    {
+      "sequence": 322,
+      "actor": "P02",
+      "day": 5,
+      "step": 1,
+      "intent": "Отметить готовый черновик",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отметить: Проект: сделать черновик",
+      "before_observation_id": "P02-d05-o0038",
+      "after_observation_id": "P02-d05-o0039",
+      "success": true
+    },
+    {
+      "sequence": 325,
+      "actor": "P03",
+      "day": 6,
+      "step": 11,
+      "intent": "Вернуться к простому ритму и записать четыре минуты",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Базовый",
+      "before_observation_id": "P03-d06-o0034",
+      "after_observation_id": "P03-d06-o0035",
+      "success": true
+    },
+    {
+      "sequence": 328,
+      "actor": "P02",
+      "day": 5,
+      "step": 2,
+      "intent": "Сохранить состоявшуюся встречу",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отметить: Встреча с заказчиком",
+      "before_observation_id": "P02-d05-o0039",
+      "after_observation_id": "P02-d05-o0040",
+      "success": true
+    },
+    {
+      "sequence": 331,
+      "actor": "P03",
+      "day": 6,
+      "step": 12,
+      "intent": "Записать сегодняшние четыре минуты",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P03-d06-o0035",
+      "after_observation_id": "P03-d06-o0036",
+      "success": true
+    },
+    {
+      "sequence": 334,
+      "actor": "P02",
+      "day": 5,
+      "step": 3,
+      "intent": "Записать час финальной работы над отправкой проекта",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать время",
+      "before_observation_id": "P02-d05-o0040",
+      "after_observation_id": "P02-d05-o0041",
+      "success": true
+    },
+    {
+      "sequence": 337,
+      "actor": "P03",
+      "day": 6,
+      "step": 13,
+      "intent": "Указать фактическое время",
+      "operation": "fill",
+      "value": "4",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P03-d06-o0036",
+      "after_observation_id": "P03-d06-o0037",
+      "success": true
+    },
+    {
+      "sequence": 340,
+      "actor": "P02",
+      "day": 5,
+      "step": 4,
+      "intent": "Указать час финальной работы",
+      "operation": "fill",
+      "value": "60",
+      "ui_target": "Сколько минут уже потратили",
+      "before_observation_id": "P02-d05-o0041",
+      "after_observation_id": "P02-d05-o0042",
+      "success": true
+    },
+    {
+      "sequence": 343,
+      "actor": "P03",
+      "day": 6,
+      "step": 14,
+      "intent": "Сохранить четыре минуты рисования",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P03-d06-o0037",
+      "after_observation_id": "P03-d06-o0038",
+      "success": true
+    },
+    {
+      "sequence": 346,
+      "actor": "P02",
+      "day": 5,
+      "step": 5,
+      "intent": "Сохранить час работы",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Записать минуты",
+      "before_observation_id": "P02-d05-o0042",
+      "after_observation_id": "P02-d05-o0043",
+      "success": true
+    },
+    {
+      "sequence": 349,
+      "actor": "P03",
+      "day": 6,
+      "step": 15,
+      "intent": "Отметить сегодняшний шаг рисования",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отметить: Порисовать немного",
+      "before_observation_id": "P03-d06-o0038",
+      "after_observation_id": "P03-d06-o0039",
+      "success": true
+    },
+    {
+      "sequence": 352,
+      "actor": "P02",
+      "day": 5,
+      "step": 6,
+      "intent": "Отметить проект отправленным в срок",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отметить: Отправить проект — 20 ноября до 20:00",
+      "before_observation_id": "P02-d05-o0043",
+      "after_observation_id": "P02-d05-o0044",
+      "success": true
+    },
+    {
+      "sequence": 361,
+      "actor": "P02",
+      "day": 6,
+      "step": 1,
+      "intent": "Найти выполненный проект",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Полный",
+      "before_observation_id": "P02-d06-o0045",
+      "after_observation_id": "P02-d06-o0046",
+      "success": true
+    },
+    {
+      "sequence": 364,
+      "actor": "P02",
+      "day": 6,
+      "step": 2,
+      "intent": "Искать отправленный проект",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Поиск",
+      "before_observation_id": "P02-d06-o0046",
+      "after_observation_id": "P02-d06-o0047",
+      "success": true
+    },
+    {
+      "sequence": 368,
+      "actor": "P02",
+      "day": 6,
+      "step": 3,
+      "intent": "Найти задания проекта",
+      "operation": "fill",
+      "value": "проект",
+      "ui_target": "Задания, привычки, квесты, календарь, бонусы, ништяки, решения",
+      "before_observation_id": "P02-d06-o0047",
+      "after_observation_id": "P02-d06-o0048",
+      "success": true
+    },
+    {
+      "sequence": 371,
+      "actor": "P02",
+      "day": 6,
+      "step": 4,
+      "intent": "Посмотреть сохранённый результат отправки",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Отправить проект — 20 ноября до 20:00\nСамостоятельное",
+      "before_observation_id": "P02-d06-o0048",
+      "after_observation_id": "P02-d06-o0049",
+      "success": true
+    },
+    {
+      "sequence": 374,
+      "actor": "P02",
+      "day": 6,
+      "step": 5,
+      "intent": "Закрыть найденное выполненное задание",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Закрыть",
+      "before_observation_id": "P02-d06-o0049",
+      "after_observation_id": "P02-d06-o0050",
+      "success": true
+    },
+    {
+      "sequence": 377,
+      "actor": "P02",
+      "day": 6,
+      "step": 6,
+      "intent": "Оставить краткий обзор плана",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Базовый",
+      "before_observation_id": "P02-d06-o0050",
+      "after_observation_id": "P02-d06-o0051",
+      "success": true
+    },
+    {
+      "sequence": 383,
+      "actor": "P02",
+      "day": 7,
+      "step": 1,
+      "intent": "Запланировать подготовку счёта",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P02-d07-o0052",
+      "after_observation_id": "P02-d07-o0053",
+      "success": true
+    },
+    {
+      "sequence": 386,
+      "actor": "P02",
+      "day": 7,
+      "step": 2,
+      "intent": "Назвать обязательство новой недели",
+      "operation": "fill",
+      "value": "Подготовить счёт заказчику",
+      "ui_target": "Что хотите сделать",
+      "before_observation_id": "P02-d07-o0053",
+      "after_observation_id": "P02-d07-o0054",
+      "success": true
+    },
+    {
+      "sequence": 389,
+      "actor": "P02",
+      "day": 7,
+      "step": 3,
+      "intent": "Поставить подготовку счёта на среду",
+      "operation": "select",
+      "value": "Событие календаря",
+      "ui_target": "Что это",
+      "before_observation_id": "P02-d07-o0054",
+      "after_observation_id": "P02-d07-o0055",
+      "success": true
+    },
+    {
+      "sequence": 392,
+      "actor": "P02",
+      "day": 7,
+      "step": 4,
+      "intent": "Указать среду 25 ноября",
+      "operation": "fill",
+      "value": "2026-11-25",
+      "ui_target": "Дата события",
+      "before_observation_id": "P02-d07-o0055",
+      "after_observation_id": "P02-d07-o0056",
+      "success": true
+    },
+    {
+      "sequence": 395,
+      "actor": "P02",
+      "day": 7,
+      "step": 5,
+      "intent": "Сохранить подготовку счёта на среду",
+      "operation": "click",
+      "value": null,
+      "ui_target": "Добавить в ритм",
+      "before_observation_id": "P02-d07-o0056",
+      "after_observation_id": "P02-d07-o0057",
+      "success": true
+    }
+  ],
+  "browser_trace_checks": [
+    {
+      "actor": "P01",
+      "day": 1,
+      "trace": "P01/day-01/trace.zip",
+      "profile": "profiles/P01",
+      "context_id": "browser-context@b1f4781bc43a8c2fe8c51352ab98ed58",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-16T21:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P01",
+      "day": 2,
+      "trace": "P01/day-02/trace.zip",
+      "profile": "profiles/P01",
+      "context_id": "browser-context@afb12ca1c82112b100e4bdf8697b3eb0",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-17T21:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P01",
+      "day": 4,
+      "trace": "P01/day-04/trace.zip",
+      "profile": "profiles/P01",
+      "context_id": "browser-context@c665843c7cecf70c0a2807c2c0adc7df",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-19T21:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P01",
+      "day": 5,
+      "trace": "P01/day-05/trace.zip",
+      "profile": "profiles/P01",
+      "context_id": "browser-context@4a41c3f77b5dcd0d996c3fe146787810",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-20T21:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P01",
+      "day": 7,
+      "trace": "P01/day-07/trace.zip",
+      "profile": "profiles/P01",
+      "context_id": "browser-context@f92b8dfbf00b436a0d6e2274c8984b5c",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-22T20:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P02",
+      "day": 1,
+      "trace": "P02/day-01/trace.zip",
+      "profile": "profiles/P02",
+      "context_id": "browser-context@2ea6decafedf568a714d079e62ba75b7",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-16T10:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P02",
+      "day": 2,
+      "trace": "P02/day-02/trace.zip",
+      "profile": "profiles/P02",
+      "context_id": "browser-context@72720200129c4ce8ceb7f5e2197f4776",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-17T18:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P02",
+      "day": 4,
+      "trace": "P02/day-04/trace.zip",
+      "profile": "profiles/P02",
+      "context_id": "browser-context@8ad36baf892d2159e1871614d4357831",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-19T10:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P02",
+      "day": 5,
+      "trace": "P02/day-05/trace.zip",
+      "profile": "profiles/P02",
+      "context_id": "browser-context@651081c47e3c09c6de1f82d866c040da",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-20T19:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P02",
+      "day": 6,
+      "trace": "P02/day-06/trace.zip",
+      "profile": "profiles/P02",
+      "context_id": "browser-context@115178d361bbebf38ce59a3f2cb387e8",
+      "offline": true,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-21T11:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P02",
+      "day": 7,
+      "trace": "P02/day-07/trace.zip",
+      "profile": "profiles/P02",
+      "context_id": "browser-context@5b57dc3d77cad3e48a15e025f0697cd0",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-22T19:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P03",
+      "day": 1,
+      "trace": "P03/day-01/trace.zip",
+      "profile": "profiles/P03",
+      "context_id": "browser-context@2a5b1047b72262d38a4b08ec561841c7",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-16T20:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P03",
+      "day": 3,
+      "trace": "P03/day-03/trace.zip",
+      "profile": "profiles/P03",
+      "context_id": "browser-context@716a5467c955e72e8c62a8a1b48cb246",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-18T22:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P03",
+      "day": 4,
+      "trace": "P03/day-04/trace.zip",
+      "profile": "profiles/P03",
+      "context_id": "browser-context@eb439ee01efe02f7cf94bc5179867667",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-19T21:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P03",
+      "day": 6,
+      "trace": "P03/day-06/trace.zip",
+      "profile": "profiles/P03",
+      "context_id": "browser-context@965d62ffb9058b01b9d5f088ffa6f893",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-21T21:00:00+03:00",
+      "playwright_version": "1.62.0"
+    },
+    {
+      "actor": "P03",
+      "day": 7,
+      "trace": "P03/day-07/trace.zip",
+      "profile": "profiles/P03",
+      "context_id": "browser-context@31440a6581f49e23ec2740ba6101caee",
+      "offline": false,
+      "clock_before_navigation": true,
+      "installed_virtual_time": "2026-11-22T20:00:00+03:00",
+      "playwright_version": "1.62.0"
+    }
+  ],
+  "network_summary": [
+    {
+      "host": "127.0.0.1:42367",
+      "status": -1,
+      "requests": 1
+    },
+    {
+      "host": "127.0.0.1:42367",
+      "status": 200,
+      "requests": 323
+    }
+  ],
+  "costs": {
+    "actions": 114,
+    "planned_action_ceiling": 368,
+    "by_actor": {
+      "P01": 28,
+      "P02": 51,
+      "P03": 35
+    },
+    "action_types": {
+      "click": 77,
+      "fill": 26,
+      "select": 3,
+      "check": 4,
+      "scroll": 4
+    },
+    "budget_exhaustions": 0,
+    "observations": 130,
+    "sealed_files": 301,
+    "sealed_bytes": 36631147,
+    "transport_action_duration_ms": {
+      "sum": 3895.8,
+      "median": 29.4,
+      "maximum": 162.5
+    },
+    "run_wall_seconds": 535.682,
+    "first_event_utc": "2026-11-12T19:37:45.773+00:00",
+    "last_event_utc": "2026-11-12T19:46:41.455+00:00",
+    "model_tokens": null,
+    "model_price": null,
+    "paid_api_calls_reported": 0,
+    "human_relay_minutes_reported": 0,
+    "human_relay_source": "execution-provenance.json; not independently timed"
+  },
+  "semantic_conclusions": [
+    {
+      "actor": "P01",
+      "minutes_expected_and_retained": [
+        10,
+        5,
+        8,
+        10,
+        12
+      ],
+      "total_minutes": 45,
+      "completion_dates": [
+        "2026-11-16",
+        "2026-11-20",
+        "2026-11-22"
+      ],
+      "habit_completion_facts": 3,
+      "supporting_zero_reward_habitStep_facts": 3,
+      "ledger_entries": 3,
+      "coins": 15,
+      "xp": 15,
+      "partial_efforts_preserved_without_completion": true,
+      "miss_dates": [
+        "2026-11-17",
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-21"
+      ],
+      "interpretation": "5 and 8 minute efforts are retained in timeLog; incomplete marks create later misses, without coin/XP debit in captured ledger. Basic weekly count of 3 is accurate for marks, not a weekly effort total. Title mentions ten minutes; stored dailyTarget is one approach, not ten minutes."
+    },
+    {
+      "actor": "P02",
+      "minutes_expected_and_retained": [
+        40,
+        20,
+        60
+      ],
+      "total_minutes": 120,
+      "completion_facts": 4,
+      "coins": 35,
+      "xp": 35,
+      "meeting_original": {
+        "date": "2026-11-19",
+        "time": "14:00"
+      },
+      "meeting_effective_exception": {
+        "date": "2026-11-20",
+        "time": "15:00"
+      },
+      "meeting_completion": {
+        "occurrence": "2026-11-19",
+        "scheduledDate": "2026-11-20",
+        "scheduledTime": "15:00",
+        "date": "2026-11-20"
+      },
+      "invoice_date": "2026-11-25",
+      "invoice_time": "",
+      "deadline_representation": "20 November 20:00 appears only in task title; sched.date null, no structured deadline saved. This follows the explicit workaround, not a failed save.",
+      "hour_allocation": "Final 60 minutes assigned to send task by participant; no exact 18:30 sending timestamp or file stored. Fact timestamp is recording around 19:00, not evidence of actual sending time.",
+      "offline": "day-06 context offline true, clock installed before navigation; trace records net::ERR_INTERNET_DISCONNECTED plus cached 200 responses and usable UI/search. Existing cache, not cold-offline installation or device delivery."
+    },
+    {
+      "actor": "P03",
+      "minutes_expected_and_retained": [
+        3,
+        6,
+        4
+      ],
+      "total_minutes": 13,
+      "completion_facts": 3,
+      "coins": 30,
+      "xp": 30,
+      "first_task_cycles": [
+        0,
+        1
+      ],
+      "weekly_schedule": {
+        "type": "weekly",
+        "days": [
+          6
+        ]
+      },
+      "separate_task_on_day4": true,
+      "misses": 0,
+      "interpretation": "Session marks are not proof of a seven-minute norm. Changing first one-off task to Saturdays retains cycle-0 fact on 16 November and adds cycle-1 fact on 21 November. Future Saturday not observed."
+    }
+  ],
+  "transport_and_method_limits": [
+    "No errors/dialog dismissals/reconciliation events in events.jsonl; native-dialog rejection, file upload and tab control remain transport limitations, not product findings.",
+    "Recommended CLI output budget is 2600 tokens; full observation JSON persisted. Participant-facing terminal transcript is not in these artifacts, so no specific CLI truncation is established.",
+    "DOM may show labels off viewport; PNG reflects captured viewport. Mobile Full edit is scrollable. Action duration is transport latency, not human task time.",
+    "Exact model IDs, settings, token use and price not exposed; distinct inherited contexts do not establish model-family diversity.",
+    "AI persona choices and accelerated dates do not establish human retention, fatigue frequency or Safari/iPhone behavior."
+  ]
+}

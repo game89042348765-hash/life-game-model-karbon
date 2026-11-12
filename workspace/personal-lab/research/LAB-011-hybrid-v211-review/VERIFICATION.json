@@ -1,0 +1,41 @@
+{
+  "task": "LAB-011",
+  "decision": "technically_accepted_for_calibration_after_local_patch",
+  "received_version": "2.1.1",
+  "working_version": "2.1.1+lab.1",
+  "rubric_version": "2.1",
+  "original_native_checks": {
+    "passed": 27,
+    "total": 27
+  },
+  "original_independent_checks": {
+    "passed": 7,
+    "total": 9
+  },
+  "working_native_checks": {
+    "passed": 27,
+    "total": 27
+  },
+  "working_independent_checks": {
+    "passed": 9,
+    "total": 9
+  },
+  "original_zip_sha256": "b62283ea6288ec5cddf0605324552e6ff8f2759eb47749037b5a12163f9c6d0b",
+  "original_tool_sha256": "42acd749576d5d264307a2f6eea7a57194ae3f89f3636e58ccb281a88b1d92e2",
+  "working_tool_sha256": "a47e9b5d51db57b5888bb0deee79870b7e2e74e055cff50df5ccf78b39592035",
+  "local_artifacts": "/workspace/life-game/personal-lab/verification/LAB-011-20261112T161851Z",
+  "platform_tested": "Linux/Python 3.12.14",
+  "publication_requires_hardlinks": true,
+  "real_research_executed": false,
+  "external_model_called_by_coordinator": false,
+  "paid_api_calls": 0,
+  "app_changed": false,
+  "final_packet_verification": {
+    "cli_verify": true,
+    "native": 27,
+    "independent": 9,
+    "without_repository": true,
+    "artifacts": "/tmp/lab011-final-packet-0bww8io7"
+  },
+  "scope": "Technical fictional checks, not content validation or finished atlas"
+}

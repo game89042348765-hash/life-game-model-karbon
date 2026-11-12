@@ -1,0 +1,66 @@
+{
+  "template": false,
+  "task_id": "CAL-SEARCH-02",
+  "stage": "search",
+  "mode": null,
+  "owner_id": null,
+  "status": "planned",
+  "attempt": 1,
+  "protocol_version": "2.1",
+  "taxonomy_version": "2.1",
+  "rubric_version": "2.1",
+  "input_snapshot": "LifeGame-Atlas-Hybrid-v2.1.1",
+  "input_hashes": {
+    "PROMPTS/01-SEARCH.md": "50070e7c43ddbcd8c93dd3a54a36069de04b0ea1d541de994bf29949d48e53cc",
+    "DATA_CONTRACT.md": "8a785c5249d4008cd31cdef41280daf22372bfd127989bde51fd86ac9ac88bad",
+    "TAXONOMY.md": "e42b9a34e6f742ee6e2b683454360361a1173f1e8d386dd31ef73ac3524b5ff2",
+    "taxonomy.json": "317bd62120fad45150543fbb752740ddb8b47c7b7ea00e0bd5f60d96cef94dbd",
+    "SYSTEM.md": "9e0cf21146ee76c95b2b64832fae6630cbd9d0fc91accfbfb0e655c227013594"
+  },
+  "scope": {
+    "category_ids": [
+      "C09",
+      "C12"
+    ],
+    "source_classes": [
+      "research",
+      "practice_manual",
+      "first_person_report"
+    ],
+    "contexts": [
+      "Нагрузка и возвращение после перерывов"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "orientation_count": "10–15; fewer allowed with explanation"
+  },
+  "exclusions": [
+    "Do not use current LifeGame feature inventory to limit discovery",
+    "Do not invent sources or completed checks"
+  ],
+  "id_prefixes": {
+    "source": "S-CAL02-",
+    "finding": "F-CAL02-",
+    "element": null,
+    "rating": null
+  },
+  "deliverables": [
+    "sources.jsonl",
+    "findings.jsonl",
+    "leads.jsonl",
+    "search_log.jsonl",
+    "COVERAGE.md",
+    "REPORT.md",
+    "RESULT_MANIFEST.json",
+    "TASK.json"
+  ],
+  "acceptance": [
+    "Sources really inspected or explicitly unverified",
+    "Existence claims have exact locations",
+    "No fabricated quotas",
+    "Correct IDs, references and counts"
+  ],
+  "due_at": null
+}

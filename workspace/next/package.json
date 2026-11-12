@@ -1,0 +1,1 @@
+{"name":"lifegame-next","private":true,"type":"module","scripts":{"test":"node --test --test-isolation=none tests/*.test.js"}}

@@ -1,0 +1,28 @@
+{
+  "task": "LAB-013",
+  "date": "2026-11-12",
+  "timezone": "Europe/Moscow",
+  "baseline_commit": "50bfec575c6d173be901fd60d38c1fc576668651",
+  "scope": "Daily completion feedback, manual time and completed-task lookup in three isolated lab copies; app-tool inventory",
+  "before": {
+    "personal-lab/app.js": "bf2f0c84240d6a42c30bfd611022ccec3cdf3998948619512e2ba712de513c1e",
+    "personal-lab/sw.js": "e8d5e0e916aded2a6ba0570b6c7a5a31069069a0e371ec7717ef659b02675048",
+    "personal-lab/experiments/ai-strategy/app.js": "fbe4822cc70c4e9bad9dbd2c654060de0d6081da8dd919798fdc26fc989012d8",
+    "personal-lab/experiments/ai-strategy/sw.js": "79642857d0cc4fc05f1b561ee05b337ad71641dd455fa8407bf5d311feb11e38",
+    "personal-lab/experiments/flexible-complexity/app.js": "8e2ba1fcd5ed80afc2f99767e525b36ba1a7cf58b3e93ced1c3038ef70ebc52d",
+    "personal-lab/experiments/flexible-complexity/sw.js": "4f6d3afe9fada99d725830e2d8401e98bbc3d455d7686c1d2b594b8aab070fa4",
+    "personal-lab/experiments/flexible-complexity/flex-ui.js": "9f5fe5d06c9a9d4649b04dd7d88e5f0620a2f06ae9a8b69459805fca40e0599a"
+  },
+  "after": {
+    "personal-lab/app.js": "31d39c49ae44826b78a4fd000a6f9961546d3a5f72361a90b1cb9700135cd627",
+    "personal-lab/sw.js": "cb5126b197d47d2512b22e0097da4e86a6e5da81b51b69567b5bcbd1408ac308",
+    "personal-lab/experiments/ai-strategy/app.js": "fbf8742a7a6c8e4708dc0685f75463a242f83c2b50d7a54001393f8514841bf8",
+    "personal-lab/experiments/ai-strategy/sw.js": "b75497ececd1da507926475cce620e7d6b79884a523186a1a0c261ad96f39fff",
+    "personal-lab/experiments/flexible-complexity/app.js": "0b9c0230ca3f2e2a7ac433fd6cbc8f886a40e9601b52cf4dc5e6c0d029ad117b",
+    "personal-lab/experiments/flexible-complexity/sw.js": "b0689b97a9e878a8e34530112c710a3cd7eb9924d43f83b10a10ad42b5877b6f",
+    "personal-lab/experiments/flexible-complexity/flex-ui.js": "1a9585a8728912ce5715e0388823633e595c85e38279e349a0c3231f329e2cb0"
+  },
+  "main_personal_changed": false,
+  "schema_changed": false,
+  "economy_changed": false
+}

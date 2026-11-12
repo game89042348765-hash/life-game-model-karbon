@@ -1,0 +1,120 @@
+{
+  "task": "LAB-009",
+  "status": "technical_fictional_checks_not_user_study",
+  "checks": [
+    {
+      "name": "first entry and isolated empty Basic",
+      "passed": true,
+      "details": "Basic starts empty, all optional tools off, no full strategy required; parent keys not read"
+    },
+    {
+      "name": "Basic quick creation, real marks and unchanged economy rules",
+      "passed": true,
+      "details": {
+        "real_ui_marks": "task and 3-step habit; partial undo, completion and reward reversal",
+        "ledger_net": 0
+      }
+    },
+    {
+      "name": "Full editor entry and new habit never resume expectations",
+      "passed": true,
+      "details": "real Full item form creates a habit without enrolling it; expectations and IDs retained"
+    },
+    {
+      "name": "manual and suggested rhythm with no hard ten-item limit",
+      "passed": true,
+      "details": "suggestion remains an uncommitted draft; search works; 12 choices accepted after a soft warning"
+    },
+    {
+      "name": "calendar opt-in and per-event notifications",
+      "passed": true,
+      "details": "Basic is muted by default even while editing Full; explicit opt-in targets only the chosen event and respects its own mute"
+    },
+    {
+      "name": "timer and combinations with Personal day filters",
+      "passed": true,
+      "details": "timer paused with no minutes recorded; outer freeze cannot be bypassed by force; chosen actions retain focus/creative/tempo/location filters"
+    },
+    {
+      "name": "ninety closed-app days and eight hundred frozen plans",
+      "passed": true,
+      "details": {
+        "frozen_plans": 800,
+        "closed_app_days": 90,
+        "frozen_calendar_new_misses": 0,
+        "selected_daily_misses": 90,
+        "selected_weekly_misses": 13,
+        "old_miss_preserved": true,
+        "ledger_and_facts_unchanged": true
+      }
+    },
+    {
+      "name": "explicit resume boundary and cancellation of pending resume",
+      "passed": true,
+      "details": "cancel leaves policy untouched; resume begins tomorrow; re-entering Basic cancels pending resume; no retroactive frozen-day debt"
+    },
+    {
+      "name": "export, quota rollback and stale-tab writes",
+      "passed": true,
+      "details": "new export roundtrip exact; quota rolls back mode/config and history; stale revision preserves current durable state and user draft"
+    },
+    {
+      "name": "archive membership, legacy saves and invalid history guards",
+      "passed": true,
+      "details": "archive removes current enrollment, restore does not silently enroll; historical membership remains; legacy upgrades Full without economy/history changes; invalid new format and backdated mode changes rejected"
+    },
+    {
+      "name": "checklist steps and dependent reward undo in Basic",
+      "passed": true,
+      "details": "selected checklist with original inDay=false works; final reward undone with step; original shared identity retained"
+    },
+    {
+      "name": "calendar recurrence exceptions and historical policy",
+      "passed": true,
+      "details": "nominal recurrence and moved occurrence remain intact; freeze and Full resumption use recorded local calendar dates"
+    },
+    {
+      "name": "mobile layouts and no external requests",
+      "passed": true,
+      "details": {
+        "widths": [
+          375,
+          390,
+          1280
+        ],
+        "page_errors": 0,
+        "external_requests": 0,
+        "cross_app_reads": 0
+      }
+    },
+    {
+      "name": "real PWA offline and sibling isolation",
+      "passed": true,
+      "details": "real own service-worker scope, own offline shell, uninjected reload and preserved parent/AI data and caches"
+    },
+    {
+      "name": "time-zone replay and actual legacy Full startup",
+      "passed": true,
+      "details": "uninjected saved Basic loads in Los Angeles and Tokyo without rewriting history/economy; legacy v2 opens Full and can enter Basic safely"
+    },
+    {
+      "name": "backward date boundaries and Demo history guard",
+      "passed": true,
+      "details": "a westward date boundary does not expose 800 ordinary plans; Demo cannot reset lastProcessed behind its mode history"
+    }
+  ],
+  "passed": 16,
+  "page_errors": [],
+  "external_requests": [],
+  "artifacts": "/workspace/life-game/personal-lab/verification/LAB-013-flex-20261112T180815Z",
+  "source_product": "Personal 1.2.0",
+  "hashes": {
+    "app.js": "0b9c0230ca3f2e2a7ac433fd6cbc8f886a40e9601b52cf4dc5e6c0d029ad117b",
+    "flex-model.js": "123a473eedb5ca89fe577d97e4afcee9bc6cd22592c13d204d23428a0b55a28e",
+    "flex-ui.js": "1a9585a8728912ce5715e0388823633e595c85e38279e349a0c3231f329e2cb0",
+    "persistence.js": "a00eb26c91ac2abdc5d990aec19f2b85868a6f28c86a99fa472dddc9188126e9",
+    "style.css": "01cb6092caa939586ade1d401c9041119d76d865e71792afd1d92160e3b64ad5",
+    "sw.js": "b0689b97a9e878a8e34530112c710a3cd7eb9924d43f83b10a10ad42b5877b6f",
+    "index.html": "0bf8334f0f895ca2e33b19ed650a9540489e025ad9993a07aa2ebe8537b14dc3"
+  }
+}

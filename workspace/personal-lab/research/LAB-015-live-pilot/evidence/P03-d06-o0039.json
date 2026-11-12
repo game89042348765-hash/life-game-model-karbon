@@ -1,0 +1,82 @@
+{
+  "title": "LifeGame Ритм Lab — лаборатория",
+  "url": "http://127.0.0.1:42367/personal-lab/",
+  "virtual_time_observed": "2026-11-21T18:01:28.582Z",
+  "modal": false,
+  "viewport": {
+    "width": 375,
+    "height": 844
+  },
+  "visible_text": "Мой ритм\n21 ноября, суббота\nПолный\nСегодня\n✓\nПорисовать немного\nраз в неделю (Сб) · записано 4 мин.\nЗаписать время\nДобавить в ритм\nНастроить\nЗа последние семь дней\nОтметок в выбранном ритме: 3\nСохранено",
+  "elements": [
+    {
+      "element": "e1",
+      "label": "Полный",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 280,
+        "y": 26,
+        "width": 73,
+        "height": 28
+      },
+      "value": ""
+    },
+    {
+      "element": "e2",
+      "label": "Снять отметку: Порисовать немного",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 22,
+        "y": 174,
+        "width": 38,
+        "height": 38
+      },
+      "value": ""
+    },
+    {
+      "element": "e3",
+      "label": "Записать время",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 74,
+        "y": 205,
+        "width": 125,
+        "height": 28
+      },
+      "value": ""
+    },
+    {
+      "element": "e4",
+      "label": "Добавить в ритм",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 22,
+        "y": 275,
+        "width": 145,
+        "height": 36
+      },
+      "value": ""
+    },
+    {
+      "element": "e5",
+      "label": "Настроить",
+      "type": "button",
+      "disabled": false,
+      "rect": {
+        "x": 175,
+        "y": 275,
+        "width": 102,
+        "height": 36
+      },
+      "value": ""
+    }
+  ],
+  "observation_id": "P03-d06-o0039",
+  "screenshot": "/workspace/life-game/personal-lab/verification/LAB-015-ai-pilot-20261112T193728Z/P03/day-06/P03-d06-o0039.png",
+  "actions_used": 15,
+  "action_budget": 18
+}
