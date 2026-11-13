@@ -1,0 +1,14 @@
+{
+  "package": "LifeGame 2.0 Unified — Full Repository Release",
+  "version": "2.0.0",
+  "built_at": "2026-11-13",
+  "base_developer_pack_commit": "89112c29dacea254cd8f50c4197a8ee77e764917",
+  "base_branch_origin": "lab/synthetic-users",
+  "storage_namespace": {
+    "personal": "lifegame_u2_personal_v1",
+    "demo": "lifegame_u2_demo_v1",
+    "meta": "lifegame_u2_meta_v1",
+    "sw_cache": "lifegame-unified-v2-shell-v1"
+  },
+  "external_runtime_dependencies": "none (100% self-hosted fonts, icons, and scripts)"
+}

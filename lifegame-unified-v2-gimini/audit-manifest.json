@@ -1,0 +1,232 @@
+{
+  "package": "LifeGame 2.0 Unified Repository",
+  "version": "2.0.0",
+  "total_files": 45,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 54,
+      "sha256": "976fd4c6dbb58664d16b4c09be0f5900c6732c7bf9924a8259034d9b47173b54"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CHANGE_SUMMARY.md",
+      "bytes": 5441,
+      "sha256": "e84c2c232727ae4394ca0e5955185b0f6a18331741226b9473dcb3e478bbed94"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4073,
+      "sha256": "890236e8143896995886262d516a14c0d13e8dc14eaf8b695b17d48eada9b6c5"
+    },
+    {
+      "path": "SOURCE.json",
+      "bytes": 518,
+      "sha256": "7f752f0c8f6ae991a10e2d78b6f26211a3d00632de138cd39dbfb327127664ca"
+    },
+    {
+      "path": "TEST_RESULTS.md",
+      "bytes": 2052,
+      "sha256": "d6e484d2b1cf88a7e926403db9a52a71da45782980d8f67dc2e0bc20a309ac4e"
+    },
+    {
+      "path": "data.js",
+      "bytes": 39720,
+      "sha256": "deaf7d6e2ccdcb9d2c15b3b994c8a0610b055d03cddfdbd3d4745d544ddee22b"
+    },
+    {
+      "path": "engine.js",
+      "bytes": 15727,
+      "sha256": "6e3ac89469f9e2ae802d777f6d2b787cca709d4ca63a9a0dae6c46ffd4236ba8"
+    },
+    {
+      "path": "icon-192.png",
+      "bytes": 2044,
+      "sha256": "60184660f855476a6e3146619f4b15d5f6366144d74ba45efc6cd0b3fe842e8e"
+    },
+    {
+      "path": "icon-512.png",
+      "bytes": 5693,
+      "sha256": "1816c6b200cfa39198b9011dc6817d4f57dd68589ea20949043e2c4f7ddbaf0d"
+    },
+    {
+      "path": "icon.svg",
+      "bytes": 340,
+      "sha256": "e2df42d0da3fd69710a109ef51cc9c3a6999436f2b22d7bd3b86d4d44d2d57e1"
+    },
+    {
+      "path": "index.html",
+      "bytes": 952,
+      "sha256": "d79fef1f8cf45e99ab9b050b36662d5eb7ffdeb72edd5f19f79543e1730a4c1c"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 770,
+      "sha256": "3f82ebf96d9240d01b6cd956e4013c1a40899fd03c5e3900d469404b21154ae8"
+    },
+    {
+      "path": "map-views.js",
+      "bytes": 29284,
+      "sha256": "45374517cd5e21f045a21b23515de281631b244875430575ba36a1a2203f0c76"
+    },
+    {
+      "path": "messages.js",
+      "bytes": 43824,
+      "sha256": "28bedb8c9b95f85dfc1cd8570cf4de3b0dd06966522cd696f4989bc73bdd6c11"
+    },
+    {
+      "path": "pwa.js",
+      "bytes": 1645,
+      "sha256": "0bef1aee97682316106ea07b5f96457df9e0c9157bca37af5790531842f6a6dd"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 16650,
+      "sha256": "03482bedce7ff4a44617d69e4dd6edef781c1fccafa53c9bb31ddce4c32a676f"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 2219,
+      "sha256": "8115a60a9f55bf6075694e666df7dbcfbe2988de70d346ae78202c84a6179806"
+    },
+    {
+      "path": "ui.js",
+      "bytes": 113761,
+      "sha256": "7d25f57a3ac498f8a183c5a73620b689b9d9357a9102de9fcd5248cbb1e38217"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 712,
+      "sha256": "ff22d5fbc8d1901848024fe0a97112e4b6947e75303b98457d1a66d84dab4100"
+    },
+    {
+      "path": "dist/lifegame-unified-v2-standalone.html",
+      "bytes": 211444,
+      "sha256": "232c85b94520b961f9b67c79eb453ea80c28935337aedc2c42c68e53526bc799"
+    },
+    {
+      "path": "fonts/SOURCES.json",
+      "bytes": 3799,
+      "sha256": "f7df49c7acdf27ded63c24fa2feaef327e9afcfdcd800f7419499f466d1322b4"
+    },
+    {
+      "path": "fonts/dela-gothic-one-LICENSE.txt",
+      "bytes": 4390,
+      "sha256": "216021cbd0bc9b76c023500f64ec2272a157658ba58cbeed49d2518ebe094b89"
+    },
+    {
+      "path": "fonts/dela-gothic-one-cyrillic-400-normal.woff2",
+      "bytes": 7292,
+      "sha256": "2b94e6983ad5f7fa24db93768f0335445e89cab703e1c42b4f056911a96c1e9c"
+    },
+    {
+      "path": "fonts/dela-gothic-one-latin-400-normal.woff2",
+      "bytes": 13804,
+      "sha256": "00ffa61fea9edb126e8e4fd3cf2b46e96ad158a0c1078b3cd22a3f6964993a88"
+    },
+    {
+      "path": "fonts/golos-text-LICENSE.txt",
+      "bytes": 4392,
+      "sha256": "54dcae300688bccf111e43c818a6ee2261d10fc8d7eb5b9c9aa2a1e9b03189c9"
+    },
+    {
+      "path": "fonts/golos-text-cyrillic-wght-normal.woff2",
+      "bytes": 22032,
+      "sha256": "17d048ca05cb1218af3c0d6dcdf882989e6d1cc5dcb598ea50eaf54850ff7229"
+    },
+    {
+      "path": "fonts/golos-text-latin-wght-normal.woff2",
+      "bytes": 37916,
+      "sha256": "9a69d0aa4734c4022224c002a3d944a702e0204972a49d892789f5668b922c2a"
+    },
+    {
+      "path": "fonts/jetbrains-mono-LICENSE.txt",
+      "bytes": 4524,
+      "sha256": "403581b69dac5cff4079205e01c6b467e56af449ecbd7247693ddb1baafa005b"
+    },
+    {
+      "path": "fonts/jetbrains-mono-cyrillic-wght-normal.woff2",
+      "bytes": 12108,
+      "sha256": "d274604c40757f98f07df623a8b8fb5194508a6fa4f5413a7a107f09e3b7452a"
+    },
+    {
+      "path": "fonts/jetbrains-mono-latin-wght-normal.woff2",
+      "bytes": 40404,
+      "sha256": "18be452724bfdc236c074ca94a249a7f41a86752c7d04ab258ce9ed5651f6a7e"
+    },
+    {
+      "path": "fonts/nunito-LICENSE.txt",
+      "bytes": 4491,
+      "sha256": "40991bfa02ac620aae16dc527f3c47765a25e43f270d4c301ee6ab663a8d9015"
+    },
+    {
+      "path": "fonts/nunito-cyrillic-wght-normal.woff2",
+      "bytes": 20776,
+      "sha256": "63b14e3ef0966785438b8947380dfbcad178cbd3c6a5ed2172672ca0d8b839ac"
+    },
+    {
+      "path": "fonts/nunito-latin-wght-normal.woff2",
+      "bytes": 39128,
+      "sha256": "ba344451eab25b217a165363b1982048a5e5830a0daf36577973955a04cac793"
+    },
+    {
+      "path": "fonts/rubik-LICENSE.txt",
+      "bytes": 4486,
+      "sha256": "46a250495a963b0b84f2736c0185d0e3af8df9d23427bd425b92a8ece020283c"
+    },
+    {
+      "path": "fonts/rubik-cyrillic-wght-normal.woff2",
+      "bytes": 15112,
+      "sha256": "bdb2b33ab916e9e7b42edb61f8aea5f5dd83ad773d6ee4e9b55665daf8954ce8"
+    },
+    {
+      "path": "fonts/rubik-latin-wght-normal.woff2",
+      "bytes": 35348,
+      "sha256": "691cd1d9b4c0cdf31a1dcf04259c86f92c85e69f6622abab7964d81e36890691"
+    },
+    {
+      "path": "fonts/tektur-LICENSE.txt",
+      "bytes": 4383,
+      "sha256": "865c2067daf0c957ed41ee040168088a5253be10df167549defcb775d0bbd0c3"
+    },
+    {
+      "path": "fonts/tektur-cyrillic-wght-normal.woff2",
+      "bytes": 8664,
+      "sha256": "717684b09fd7c875416b30e168f51256ebc7cf811c908218fae6182069e41f01"
+    },
+    {
+      "path": "fonts/tektur-latin-wght-normal.woff2",
+      "bytes": 12148,
+      "sha256": "2c4e3f0723427b12e30b10fd233c362244963124ecbdd3a3cba40dcf78c3f22e"
+    },
+    {
+      "path": "fonts/unbounded-LICENSE.txt",
+      "bytes": 4390,
+      "sha256": "48a780bc857729859e54d1e691b05792894a26634edc1c4b5dbeabffe6941758"
+    },
+    {
+      "path": "fonts/unbounded-cyrillic-wght-normal.woff2",
+      "bytes": 31424,
+      "sha256": "e30bf6a6063b6a47232bbd657e24c7cf4fdaf76fc2c50d92d9ee63e2ad2087cf"
+    },
+    {
+      "path": "fonts/unbounded-latin-wght-normal.woff2",
+      "bytes": 50904,
+      "sha256": "22f9b928aa3928a896340422b54d690fbb5875c30eae4c106f029c61f2289fd6"
+    },
+    {
+      "path": "tests/runtime_e2e.js",
+      "bytes": 2635,
+      "sha256": "2a8bde2c3ffcfdc2b7eafaccbb6641a9623f3932586e0e3723cbeb17f8c26863"
+    },
+    {
+      "path": "tests/verify_repo.py",
+      "bytes": 1659,
+      "sha256": "206e0d15da0687051bdc924902081bde3b231071da336fc6fc19a1a63e97a607"
+    }
+  ]
+}
